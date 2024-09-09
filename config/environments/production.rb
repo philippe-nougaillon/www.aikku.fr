@@ -61,14 +61,13 @@ Rails.application.configure do
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
   config.cache_store = :mem_cache_store,
-                        (ENV["MEMCACHIER_SERVERS"] || "").split(","),
-                        {:username => ENV["MEMCACHIER_USERNAME"],
-                        :password => ENV["MEMCACHIER_PASSWORD"],
-                        :failover => true,
-                        :socket_timeout => 1.5,
-                        :socket_failure_delay => 0.2,
-                        :down_retry_delay => 60
-                        }
+                       (ENV['MEMCACHIER_SERVERS'] || '').split(','),
+                       { username: ENV['MEMCACHIER_USERNAME'],
+                         password: ENV['MEMCACHIER_PASSWORD'],
+                         failover: true,
+                         socket_timeout: 1.5,
+                         socket_failure_delay: 0.2,
+                         down_retry_delay: 60 }
 
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter = :sidekiq
@@ -103,16 +102,12 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  ActionMailer::Base.smtp_settings = {
-    :port           => ENV['MAILGUN_SMTP_PORT'],
-    :address        => ENV['MAILGUN_SMTP_SERVER'],
-    :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
-    :password       => ENV['MAILGUN_SMTP_PASSWORD'],
-    :domain         => 'www.philnoug.com',
-    :authentication => :plain,
+  ActionMailer::Base.delivery_method = :mailgun
+  config.action_mailer.mailgun_settings = {
+    api_key: ENV['MAILGUN_API_KEY'],
+    domain: ENV['MAILGUN_DOMAIN'],
+    api_host: 'api.eu.mailgun.net' # Uncomment this line for EU region domains
   }
-  ActionMailer::Base.delivery_method = :smtp
 
   config.action_mailer.default_url_options = { host: 'www.philnoug.com', protocol: 'https' }
-
 end
