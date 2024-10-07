@@ -3,6 +3,6 @@ class ApplicationController < ActionController::Base
   before_action :set_layout_variables
 
   def set_layout_variables
-    @sitename = "Philippe NOUGAILLON (Consulting IT)"
+    @sitename = 'Aikku >> Ai for you'
   end
 end
