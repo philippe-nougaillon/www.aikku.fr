@@ -1,5 +1,5 @@
 # Set the host name for URL creation
-SitemapGenerator::Sitemap.default_host = "https://www.philnoug.com/"
+SitemapGenerator::Sitemap.default_host = 'https://www.aikku.eu/'
 
 SitemapGenerator::Sitemap.create do
   # Put links creation logic here.
@@ -44,5 +44,4 @@ SitemapGenerator::Sitemap.create do
   Post.where(published: true).find_each do |post|
     add post_path(post), lastmod: post.updated_at
   end
-
 end
