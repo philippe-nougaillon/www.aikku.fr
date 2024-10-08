@@ -29,19 +29,16 @@
   </head>
 
   <body class="flex flex-col justify-between min-h-screen" style="background-image: linear-gradient(
-  105deg,
-  hsl(240deg 100% 98%) 59%,
-  hsl(254deg 100% 97%) 98%,
-  hsl(268deg 100% 97%) 100%
-);">
+      105deg,
+      hsl(240deg 100% 98%) 59%,
+      hsl(254deg 100% 97%) 98%,
+      hsl(268deg 100% 97%) 100%);">
+
     <%= render partial: "partials/navbar" %>
     <%= render partial: "partials/notification" %>
     <main class="mb-auto">
       <%= yield %>
     </main>
-    <% if cookies[:axeptio_cookies].blank? %>
-      <%= render 'layouts/cookies_axeptio' %>
-    <% end %>
     <%= render partial: "partials/footer" %>
   </body>
 </html>
