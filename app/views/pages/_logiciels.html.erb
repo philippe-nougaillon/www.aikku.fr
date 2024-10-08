@@ -5,7 +5,7 @@
     </h1>
 
     <h2 class="xl:text-2xl mt-6 lg:px-10 mb-12">
-      Nous avons produit plusieurs logiciels libres, certains publiés en open-source,
+      Nous avons produit plusieurs logiciels, certains publiés en open-source,
       en assurons la maintenance et l'évolution
       pour le compte d'entités publiques et d'un établissement de l'enseignement supérieur
     </h3>
@@ -13,23 +13,6 @@
 
   <div class="flex flex-col justify-between gap-4 md:gap-8 lg:gap-16 md:mx-8 lg:mx-16 my-6">
     <div class="flex flex-wrap justify-between w-full gap-4 lg:gap-8">
-      <%= link_to planning_path, class:"flex-1 min-w-fit sm:min-w-min", 'data-turbo': false do %>
-        <div class="card shadow hover:shadow-xl cursor-pointer duration-300 bg-white h-full">
-          <%= image_tag "projets/planning iae-paris/screen_0.png", class:"object-fill w-full" %>
-          <div class="card-body">
-            <hr>
-            <h2 class="card-title text-xl lg:text-2xl text-accent underline underline-offset-8">
-              Business School Planning
-            </h2>
-            <p class="my-4 first-line:uppercase first-line:tracking-widest first-letter:text-5xl first-letter:font-black first-letter:mr-3 first-letter:float-left">
-              Logiciel libre et coopératif de gestion de planification de salles, 
-              à l’usage d’établissement de l’enseignement supérieur.
-              <br><br>
-              De la création des planning à l’édition des feuille d'émargement, en passant par les états de services, cette application assure la gestion complète et collaborative des processus de planification des cours, formation, intervenants, etc.
-            </p>
-          </div>
-        </div>
-      <% end %>
 
       <%= link_to crystal_data_path, class:"flex-1 min-w-fit sm:min-w-min", 'data-turbo': false do %>
         <div class="card shadow hover:shadow-xl cursor-pointer duration-300 bg-white h-full">
@@ -47,8 +30,27 @@
           </div>
         </div>
       <% end %>
+
+      <%= link_to planning_path, class:"flex-1 min-w-fit sm:min-w-min", 'data-turbo': false do %>
+        <div class="card shadow hover:shadow-xl cursor-pointer duration-300 bg-white h-full">
+          <%= image_tag "projets/planning iae-paris/screen_0.png", class:"object-fill w-full" %>
+          <div class="card-body">
+            <hr>
+            <h2 class="card-title text-xl lg:text-2xl text-accent underline underline-offset-8">
+              Business School Planning
+            </h2>
+            <p class="my-4 first-line:uppercase first-line:tracking-widest first-letter:text-5xl first-letter:font-black first-letter:mr-3 first-letter:float-left">
+              Logiciel libre et coopératif de gestion de planification de salles, 
+              à l’usage d’établissement de l’enseignement supérieur.
+              <br><br>
+              De la création des planning à l’édition des feuille d'émargement, en passant par les états de services, cette application assure la gestion complète et collaborative des processus de planification des cours, formation, intervenants, etc.
+            </p>
+          </div>
+        </div>
+      <% end %>
     </div>
 
+    <% if false %>
     <div class="flex flex-wrap justify-between w-full gap-4 lg:gap-8">
       <%= link_to camino_path, class:"flex-1 min-w-fit sm:min-w-min", 'data-turbo': false do %>
         <div class="card shadow hover:shadow-xl cursor-pointer duration-300 bg-white h-full">
@@ -83,7 +85,9 @@
         </div>
       <% end %>
     </div>
+    <% end %>
 
+    <% if false %>
     <div class="flex flex-wrap justify-between w-full gap-4 lg:gap-8">
       <%= link_to emargements_path, class:"flex-1 min-w-fit sm:min-w-min", 'data-turbo': false do %>
         <div class="card shadow hover:shadow-xl cursor-pointer duration-300 bg-white h-full">
@@ -121,6 +125,7 @@
 
 
     </div>
+    <% end %>
 
   </div>
 </section>
