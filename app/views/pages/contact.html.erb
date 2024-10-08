@@ -1,13 +1,13 @@
 <%= form_tag do %>
   <section class="mx-auto px-4 md:w-1/2 ">
-    <div class="card shadow mt-4 mb-6">
+    <div class="card shadow-lg bg-white mt-4">
       <div class="card-body px-4 lg:px-8 pt-4">
-        <h1 class="font-black text-5xl lg:text-6xl text-center text-accent mb-6 italic">
+        <h1 class="font-black text-5xl lg:text-6xl text-center text-accent mb-8 italic">
           <%= title "Contact" %>
         </h1>
         <p>
           <%= description "<b>Vous avez une question, une remarque ou un projet à nous soumettre ?</b>".html_safe %>
-          <br>
+          <br><br>
           Remplissez ce formulaire et nous vous recontacterons dès que possible.
           <br>
           Vous pouvez aussi nous contacter directement sur contact @ aikku .eu
@@ -23,10 +23,10 @@
         </div>
         <div>
           <%= label_tag :contenu, "Message" %>
-          <%= text_area_tag :contenu, params[:contenu], class:"textarea textarea-bordered w-full", rows: 3, required: true %>
+          <%= text_area_tag :contenu, params[:contenu], class:"textarea textarea-bordered w-full", rows: 5, required: true %>
         </div>
         <%= recaptcha_tags unless %w[localhost 127.0.0.1].include?(request.host) %>
-        <%= submit_tag "Envoyer", class:"btn btn-secondary btn-outline", 'data-turbo': false %>
+        <%= submit_tag "Envoyer", class:"btn btn-primary btn-outline", 'data-turbo': false %>
       </div>
     </div>
   </section>
