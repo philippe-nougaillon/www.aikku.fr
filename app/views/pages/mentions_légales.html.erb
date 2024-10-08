@@ -1,15 +1,19 @@
 
 <section id="mention_légales_content">
-  <h1 class="text-2xl mt-8">
+  <h1 class="font-black text-5xl lg:text-6xl text-accent mb-6 pt-8 italic">
     <%= title "Mentions légales" %> 
   </h1>
   <h2 class="text-xl font-black mt-8 mb-4">
     1. Éditeur du site
   </h2>
+  
   <p class="mb-4">
-    <%= @sitename %>
-    <br>
+    <b><%= @sitename %></b>
+
+    <br><br>
     Directeur de la publication : Philippe Nougaillon<br>
+    <br>
+
     Siège social :<br>
 
     Tour CB21 
@@ -24,14 +28,14 @@
     SIRET : 384 396 719 00047
     <br><br>
     
-    Mail : <%= mail_to "contact@aikku.eu", class:"link" %>
+    Contact : <%= mail_to "contact@aikku.eu", class:"link" %>
   </p>
 
   <h2 class="text-xl font-black mt-8 mb-4">
     2. Conception et développement
   </h2>
   <p class="mb-4">
-    Création du site en 2012
+    Création du site en 2024
     <br>
     Ce site a été conçu et développé par nous-même en Ruby on Rails.
   </p>
@@ -40,15 +44,15 @@
     3. Hébergement
   </h2>
   <p class="mb-4">
-    <strong>Heroku Inc</strong>
+    <strong>GANDI SAS</strong>
     <br>
-    1 Market St. Suite 300
+    63-65 boulevard Masséna
     <br>
-    San Francisco
+    75013 Paris
     <br>
-    CA 94105 USA.
-    <br>
-    Contact : <%= link_to "heroku.com/contact", "https://www.heroku.com/contact", target: '_blank', class:'link' %>
+    FRANCE
+    <br><br>
+    Contact : <%= link_to "gandi.net", "https://www.gandi.net/fr", target: '_blank', class:'link' %>
   </p>
 
   <h2 class="text-xl font-black mt-8 mb-4">
