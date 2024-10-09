@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   devise_for :users
 
-  resources :projets
-  resources :posts
   resources :clients
+  # resources :projets
+  # resources :posts
 
   controller :pages do
     get :home, to: 'pages#home'
