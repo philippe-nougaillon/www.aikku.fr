@@ -10,23 +10,7 @@
     </div>
 
     <div class="my-6">
-
       <%= render(ClientComponent.with_collection(@clients))%>
-
-      <% if @clients.count == Client.all.count %>
-        <p class="my-6">
-          <p class="font-black text-3xl text-accent mb-6">
-            Et aussi :
-          </p>
-          Bluelinea,
-          Chubb,
-          A.C.S.C,
-          Expertise-Ottavi,
-          NOOS/Numericable,
-          Kuoni,
-          Ucopia…
-        </p>
-      <% end %>
     </div>
   <% end %>
 </section>
