@@ -51,8 +51,8 @@ class PagesController < ApplicationController
   # end
 
   def nos_clients
+    @tags = Client.tag_counts_on(:tags).order(:taggings_count).reverse
     @clients = Client.all
-    @tags = @clients.tag_counts_on(:tags).order(:taggings_count).reverse
 
     return if params[:tag].blank?
 
