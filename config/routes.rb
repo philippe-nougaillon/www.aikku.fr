@@ -7,9 +7,7 @@ Rails.application.routes.draw do
 
   controller :pages do
     get :home, to: 'pages#home'
-    get :portfolio, to: 'pages#portfolio'
     get :qui_sommes_nous, to: 'pages#qui_sommes_nous'
-    get :blog, to: 'pages#blog'
     get :nos_clients, to: 'pages#nos_clients'
     get :services, to: 'pages#services'
     get :logiciels, to: 'pages#logiciels'
@@ -23,6 +21,8 @@ Rails.application.routes.draw do
     get :mentions_légales, to: 'pages#mentions_légales', as: :mentions_legales
     get :contact, to: 'pages#contact'
     post :contact, to: 'pages#contact_submit'
+    # get :portfolio, to: 'pages#portfolio'
+    # get :blog, to: 'pages#blog'
   end
 
   root 'pages#home'
