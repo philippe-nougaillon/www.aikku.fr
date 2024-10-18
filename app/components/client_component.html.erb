@@ -4,14 +4,9 @@
       <h2 class="hidden lg:block font-black text-3xl text-accent underline underline-offset-8 mb-6">
         <%= @client.name %>
       </h2>
-
       <p><%= simple_format(@client.description) %></p>
-
-      <div class="my-3">
-        <%= render(TagListComponent.new(tags: @client.tag_list)) %>
-      </div>
     </div>
-    <div class="lg:w-64 card shadow hover:shadow-xl p-8 ">
+    <div class="lg:w-64 card shadow-lg hover:shadow-xl p-8">
       <%= image_tag "logos/#{@client.id}.png" %>
     </div>
   </div>
