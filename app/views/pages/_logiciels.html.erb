@@ -20,7 +20,7 @@
           <div class="card-body">
             <hr>
             <h2 class="card-title text-xl lg:text-2xl text-accent underline underline-offset-8">
-              CrystalData
+              Aikku Access
             </h2>
             <p class="my-4 first-line:uppercase first-line:tracking-widest first-letter:text-5xl first-letter:font-black first-letter:mr-3 first-letter:float-left">
               Application NO-CODE de base de données en ligne. Vos données métier 'In da Cloud' ! 
@@ -37,7 +37,7 @@
           <div class="card-body">
             <hr>
             <h2 class="card-title text-xl lg:text-2xl text-accent underline underline-offset-8">
-              Business School Planning
+              Aikku Teach
             </h2>
             <p class="my-4 first-line:uppercase first-line:tracking-widest first-letter:text-5xl first-letter:font-black first-letter:mr-3 first-letter:float-left">
               Logiciel libre et coopératif de gestion de planification de salles, 
@@ -50,7 +50,6 @@
       <% end %>
     </div>
 
-    <% if false %>
     <div class="flex flex-wrap justify-between w-full gap-4 lg:gap-8">
       <%= link_to camino_path, class:"flex-1 min-w-fit sm:min-w-min", 'data-turbo': false do %>
         <div class="card shadow hover:shadow-xl cursor-pointer duration-300 bg-white h-full">
@@ -58,7 +57,7 @@
           <div class="card-body">
             <hr>
             <h2 class="card-title text-xl lg:text-2xl text-accent underline underline-offset-8">
-              Camino
+              Aikku Plan
             </h2>
             <p class="my-4 first-line:uppercase first-line:tracking-widest first-letter:text-5xl first-letter:font-black first-letter:mr-3 first-letter:float-left">
               Application Web de gestion de projets, en équipe et en mobilité.
@@ -68,39 +67,38 @@
         </div>
       <% end %>
 
+      <%= link_to emargements_path, class:"flex-1 min-w-fit sm:min-w-min", 'data-turbo': false do %>
+        <div class="card shadow hover:shadow-xl cursor-pointer duration-300 bg-white h-full">
+          <%= image_tag "emargements/admin.png", class:"object-fill w-full mb-8" %>
+          <div class="card-body">
+            <hr>
+            <h2 class="card-title text-xl lg:text-2xl text-accent underline underline-offset-8">
+              Aikku Sign
+            </h2>
+            <p class="my-4 first-line:uppercase first-line:tracking-widest first-letter:text-5xl first-letter:font-black first-letter:mr-3 first-letter:float-left">
+              Feuille de présence numérique
+              <br><br>
+              Vous souhaitez remplacer vos feuilles de présence papier par une solution numérique, simple et automatique ?
+            </p>
+          </div>
+        </div>
+      <% end %>
+
+    </div>
+
+    <% if false %>
       <%= link_to prestofacto_path, class:"flex-1 min-w-fit sm:min-w-min", 'data-turbo': false do %>
         <div class="card shadow hover:shadow-xl cursor-pointer duration-300 bg-white h-full">
           <%= image_tag "prestofacto/portail_parent.png", class:"object-fill w-full" %>
           <div class="card-body">
             <hr>
             <h2 class="card-title text-xl lg:text-2xl text-accent underline underline-offset-8">
-              PrestoFacto
+              Aikku 
             </h2>
             <p class="my-4 first-line:uppercase first-line:tracking-widest first-letter:text-5xl first-letter:font-black first-letter:mr-3 first-letter:float-left">
               Application de gestion et de facturation des services journaliers.
               <br><br>
               Aide les petites organisations dans la gestion et la facturation de leurs prestations (repas, garderie, activités périscolaires, nuitée d'hébergement, colonie de vacances, etc.).
-            </p>
-          </div>
-        </div>
-      <% end %>
-    </div>
-    <% end %>
-
-    <% if false %>
-    <div class="flex flex-wrap justify-between w-full gap-4 lg:gap-8">
-      <%= link_to emargements_path, class:"flex-1 min-w-fit sm:min-w-min", 'data-turbo': false do %>
-        <div class="card shadow hover:shadow-xl cursor-pointer duration-300 bg-white h-full">
-          <%= image_tag "emargements/admin.png", class:"object-fill w-full mb-24" %>
-          <div class="card-body">
-            <hr>
-            <h2 class="card-title text-xl lg:text-2xl text-accent underline underline-offset-8">
-              Émargements
-            </h2>
-            <p class="my-4 first-line:uppercase first-line:tracking-widest first-letter:text-5xl first-letter:font-black first-letter:mr-3 first-letter:float-left">
-              Feuille de présence numérique
-              <br><br>
-              Vous souhaitez remplacer vos feuilles de présence papier par une solution numérique, simple et automatique ?
             </p>
           </div>
         </div>
@@ -122,9 +120,6 @@
           </div>
         </div>
       <% end %>
-
-
-    </div>
     <% end %>
 
   </div>
