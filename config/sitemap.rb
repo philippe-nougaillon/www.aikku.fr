@@ -12,13 +12,13 @@ SitemapGenerator::Sitemap.create do
   add prestofacto_path
   add crystal_data_path
   add mentions_legales_path
-  add emargements_path
+  add aikku_sign_path
   add guide_planning_path
   add talea_path
   # add portfolio_path
   # add blog_path
 
-  Post.where(published: true).find_each do |post|
-    add post_path(post), lastmod: post.updated_at
-  end
+  # Post.where(published: true).find_each do |post|
+  #   add post_path(post), lastmod: post.updated_at
+  # end
 end
