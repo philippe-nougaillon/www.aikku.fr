@@ -13,12 +13,12 @@ Rails.application.routes.draw do
     get :nos_clients, to: 'pages#nos_clients'
     get :services, to: 'pages#services'
     get :logiciels, to: 'pages#logiciels'
+    get :aikku_sign, to: 'pages#aikku_sign'
     get :camino, to: 'pages#camino'
     get :prestofacto, to: 'pages#prestofacto'
     get :crystal_data, to: 'pages#crystal_data'
     get :planning, to: 'pages#planning'
     get :guide_planning, to: 'pages#guide_planning'
-    get :emargements, to: 'pages#emargements'
     get :talea, to: 'pages#talea'
     get :mentions_légales, to: 'pages#mentions_légales', as: :mentions_legales
     get :contact, to: 'pages#contact'
