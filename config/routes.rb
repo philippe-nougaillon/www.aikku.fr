@@ -16,7 +16,7 @@ Rails.application.routes.draw do
     get :aikku_sign, to: 'pages#aikku_sign'
     get :camino, to: 'pages#camino'
     get :prestofacto, to: 'pages#prestofacto'
-    get :crystal_data, to: 'pages#crystal_data'
+    get :aikku_access, to: 'pages#aikku_access'
     get :planning, to: 'pages#planning'
     get :guide_planning, to: 'pages#guide_planning'
     get :talea, to: 'pages#talea'
