@@ -10,7 +10,7 @@ SitemapGenerator::Sitemap.create do
   add planning_path
   add camino_path
   add prestofacto_path
-  add crystal_data_path
+  add aikku_access_path
   add mentions_legales_path
   add aikku_sign_path
   add guide_planning_path
