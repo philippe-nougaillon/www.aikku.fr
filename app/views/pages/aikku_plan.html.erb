@@ -1,13 +1,13 @@
 <section class="text-center mb-16">
   <h1 class="font-black text-6xl text-accent mb-12 pt-8 italic">
-    <%= title "Aikku TEACH " %>
+    <%= title "Aikku PLAN" %>
   </h1>
   <h2 class="text-3xl lg:text-4xl mb-12 font-black !leading-10">
     <%= description "Gérez toutes vos formations et vos salles avec
     <br> une solution simple, abordable et personnalisable".html_safe %>
   </h2>
   <h3 class="text-lg lg:text-2xl">
-    Développé en collaboration avec IAE Paris-Sorbonne, Aikku TEACH  est un logiciel libre de planification d'emplois du temps et de gestion de salles de cours.
+    Développé en collaboration avec IAE Paris-Sorbonne, Aikku PLAN  est un logiciel libre de planification d'emplois du temps et de gestion de salles de cours.
     Il est adapté aux besoins
     <span class="font-black">des universités, écoles de commerce et instituts de formation spécialisés.</span>
   </h3>
@@ -68,8 +68,8 @@
   </div>
 
   <div class="hidden lg:flex flex-wrap justify-center gap-4 mt-24">
-    <%= link_to "Vous êtes gestionnaire de formation", planning_path(anchor: "bref"), class: 'btn btn-accent sm:btn-lg max-w-full' %>
-    <%= link_to "Vous êtes administrateur", planning_path(anchor: "details_fonctionnalites"), class: 'btn btn-secondary sm:btn-lg max-w-full' %>
+    <%= link_to "Vous êtes gestionnaire de formation", aikku_plan_path(anchor: "bref"), class: 'btn btn-accent sm:btn-lg max-w-full' %>
+    <%= link_to "Vous êtes administrateur", aikku_plan_path(anchor: "details_fonctionnalites"), class: 'btn btn-secondary sm:btn-lg max-w-full' %>
   </div>
 </section>
 
@@ -208,7 +208,7 @@
   <div class="mt-8">
     <p class="text-2xl text-center mt-24 mb-12">
       Vous souhaitez découvrir toutes les fonctionnalités ?
-      <%= link_to "Contactez-nous", planning_path(anchor: "contact"), class: 'link' %>.
+      <%= link_to "Contactez-nous", aikku_plan_path(anchor: "contact"), class: 'link' %>.
       <br>
       Besoin d'une fonctionnalité sur-mesure ? Nous la développons !
     </p>
@@ -310,7 +310,7 @@
   <div class="mt-8">
     <p class="text-2xl text-center mt-24 mb-12">
       Vous souhaitez découvrir toutes les fonctionnalités ?
-      <%= link_to "Contactez-nous", planning_path(anchor: 'contact'), class: 'link' %>.
+      <%= link_to "Contactez-nous", aikku_plan_path(anchor: 'contact'), class: 'link' %>.
       <br>
       Besoin d'une fonctionnalité sur-mesure ? Nous la développons !
     </p>
@@ -322,7 +322,7 @@
     <p class="text-2xl text-secondary mb-4">Transparence, coûts, collaboration</p>
     <p class="text-4xl font-black mb-12">Un logiciel libre, open-source et français</p>
     <p class="text-xl mb-12">
-      Avec Aikku TEACH , vous bénéficiez de toute la puissance de l'open-source. Vous faites le choix d'une solution personnalisable, tout en conservant un contrôle total sur votre système de planification et vos coûts.
+      Avec Aikku PLAN, vous bénéficiez de toute la puissance de l'open-source. Vous faites le choix d'une solution personnalisable, tout en conservant un contrôle total sur votre système de planification et vos coûts.
       <br><br>
       Sur demande, notre équipe de développeurs conçoit des fonctionnalités adaptées à vos besoins spécifiques, en respectant vos exigences et votre budget.
       <br><br>
@@ -479,7 +479,7 @@
   </p>
 </section>
 
-<%= link_to planning_path, id: 'fab', class:"hidden lg:flex fixed bottom-4 right-4 bg-accent w-12 h-12 text-white rounded-full items-center z-50" do %>
+<%= link_to aikku_plan_path, id: 'fab', class:"hidden lg:flex fixed bottom-4 right-4 bg-accent w-12 h-12 text-white rounded-full items-center z-50" do %>
   <i class="fa-solid fa-chevron-up fa mx-auto"></i>
 <% end %>
 

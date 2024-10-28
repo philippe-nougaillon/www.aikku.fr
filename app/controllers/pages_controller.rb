@@ -68,11 +68,7 @@ class PagesController < ApplicationController
 
   def logiciels; end
 
-  def camino; end
-
   def prestofacto; end
-
-  def planning; end
 
   def guide_planning; end
 
