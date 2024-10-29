@@ -3,7 +3,7 @@ SitemapGenerator::Sitemap.default_host = 'https://www.aikku.eu/'
 
 SitemapGenerator::Sitemap.create do
   add aikku_access_path
-  add aikku_plan_path
+  add aikku_plann_path
   add aikku_projects_path
   add aikku_sign_path
 
@@ -15,7 +15,6 @@ SitemapGenerator::Sitemap.create do
   add mentions_legales_path
 
   add prestofacto_path
-  add guide_planning_path
   add talea_path
   # add portfolio_path
   # add blog_path
