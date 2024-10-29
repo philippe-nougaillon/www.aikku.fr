@@ -54,6 +54,28 @@
     </div>
 
     <div class="flex flex-wrap justify-between w-full gap-4 lg:gap-8">
+
+      <%= link_to aikku_plan_path, class:"flex-1 min-w-fit sm:min-w-min", 'data-turbo': false do %>
+        <div class="card shadow hover:shadow-xl cursor-pointer duration-300 bg-white h-full">
+          <%= image_tag "projets/planning iae-paris/screen_0.png", class:"object-fill w-full" %>
+          <div class="card-body">
+            <hr>
+            <h2 class="card-title text-xl lg:text-2xl text-accent underline underline-offset-8">
+              Aikku PLAN
+            </h2>
+            <p class="my-4 first-line:uppercase first-line:tracking-widest first-letter:text-5xl first-letter:font-black first-letter:mr-3 first-letter:float-left">
+              Gérez toutes vos formations et vos salles avec
+              une solution simple, abordable et personnalisable
+              <br><br>
+              De la création des planning à l’édition des feuille d'émargement, 
+              en passant par les états de services, 
+              cette application assure la gestion complète et collaborative des processus de planification des cours, 
+              salles, formations, intervenants, étudiants, etc.
+            </p>
+          </div>
+        </div>
+      <% end %>
+
       <%= link_to aikku_sign_path, class:"flex-1 min-w-fit sm:min-w-min", 'data-turbo': false do %>
         <div class="card shadow hover:shadow-xl cursor-pointer duration-300 bg-white h-full">
           <%= image_tag "emargements/admin.png", class:"object-fill w-full mb-8" %>
@@ -78,27 +100,7 @@
           </div>
         </div>
       <% end %>
-
-      <%= link_to aikku_plan_path, class:"flex-1 min-w-fit sm:min-w-min", 'data-turbo': false do %>
-        <div class="card shadow hover:shadow-xl cursor-pointer duration-300 bg-white h-full">
-          <%= image_tag "projets/planning iae-paris/screen_0.png", class:"object-fill w-full" %>
-          <div class="card-body">
-            <hr>
-            <h2 class="card-title text-xl lg:text-2xl text-accent underline underline-offset-8">
-              Aikku PLAN
-            </h2>
-            <p class="my-4 first-line:uppercase first-line:tracking-widest first-letter:text-5xl first-letter:font-black first-letter:mr-3 first-letter:float-left">
-              Gérez toutes vos formations et vos salles avec
-              une solution simple, abordable et personnalisable
-              <br><br>
-              De la création des planning à l’édition des feuille d'émargement, 
-              en passant par les états de services, 
-              cette application assure la gestion complète et collaborative des processus de planification des cours, 
-              salles, formations, intervenants, étudiants, etc.
-            </p>
-          </div>
-        </div>
-      <% end %>
+      
     </div>
 
     <% if false %>
