@@ -30,4 +30,6 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  contact:
+    message_sent: "Your message has been sent."
+    recaptcha_problem: "Problem with reCAPTCHA, please try again "

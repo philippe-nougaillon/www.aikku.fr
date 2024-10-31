@@ -1,0 +1,70 @@
+<section class="text-center">
+  <h1 class="font-black text-5xl lg:text-6xl text-accent mb-6 pt-8 italic">
+    <%= title "Aikku ACCESS" %>
+  </h1>
+  <h2 class="text-lg xl:text-2xl px-6">
+    <%= description "Your business, online and mobility data" %>
+  </h2>
+</section>
+
+<div class="px-8">
+  <div id="carousel" class="carousel min-w-16 sm:w-3/4 mx-auto shadow-lg">
+    <div id="slide1" class="carousel-item relative w-full">
+      <%= image_tag "aikku_access/table.png" %>
+    </div> 
+    <div id="slide2" class="carousel-item relative w-full">
+      <%= image_tag "aikku_access/calendar.png" %>
+    </div>
+    <div id="slide3" class="carousel-item relative w-full">
+      <%= image_tag "aikku_access/objets.png" %>
+    </div>
+    <div id="slide4" class="carousel-item relative w-full">
+      <%= image_tag "aikku_access/attributs.png" %>
+    </div>
+    <div id="slide5" class="carousel-item relative w-full">
+      <%= image_tag "aikku_access/filtres.png" %>
+    </div>
+  </div>
+  <div data-controller="carousel-paginate">
+    <div class="flex flex-wrap justify-center w-full gap-2 mt-4">
+      <a href="#slide1" class="btn btn-accent hover:btn-accent btn-xs carousel-page" data-action="click->carousel-paginate#activate">1</a> 
+      <a href="#slide2" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">2</a> 
+      <a href="#slide3" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">3</a> 
+      <a href="#slide4" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">4</a> 
+      <a href="#slide5" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">5</a> 
+    </div>
+  </div>
+
+  <p class="text-xl mt-12">
+		You are a service company with teams in the field (e.g. construction, after -sales service, installation, maintenance, etc.) and
+    Are you looking for a method of managing interventions or fields management (FSM)?
+		<br><br>
+		Aikku ACCESS is a NO-Code information manager that allows you to create
+    Collections of business objects (eg customers, interventions, technician, costs, projects, etc.),
+    to link them (customers <==> interventions <==> technicians <==> costs)
+    And to share them online with your employees.
+	</p>
+
+  <p class="mt-5">
+    To find out more, please consult
+    <%= link_to "The user guide", "https://access.aikku.eu/a_propos", class: 'link', target: '_blank' %>
+  </p>
+
+  <h3 class="apps-title">Demonstration</h3>
+  <p>
+    Want to test the application?
+    <%= link_to "Launch the demonstration body", 'https://access.aikku.eu', class:'link', target: '_blank' %>
+  </p>
+
+  <h3 class="apps-title">Development</h3>
+  <p>
+    Aikku ACCESS is developed and maintained by
+    <%= link_to 'AIKKU SAS', root_path, class:'link' %>
+  </p>
+
+  <h3 class="apps-title">Support and services</h3>
+  <p>
+    Do you want a new feature or install Aikku ACCESS on your Linux server?
+    <%= link_to 'Consult our service offer', '/services', class:'link' %>
+  </p>
+</div>

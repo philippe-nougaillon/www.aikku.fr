@@ -1,0 +1,39 @@
+<footer class="footer p-10 bg-base-300 text-base-content text-base mt-24">
+  <div>
+    <p>
+      <span class="text-3xl font-black"><%= @sitename %></span>
+
+      <p class="opacity-50 mt-4">
+        AIKKU SAS
+        <br>  
+        Tour CB21/LA DÉFENSE 
+        <br>
+        16 PLACE DE L'IRIS
+        <br>
+        92400 COURBEVOIE
+        <br>
+        FRANCE
+        <br><br>
+        Siret : 384 396 719 00047
+        <br>
+        APE : 5829C
+      </p>
+    </span>
+  </div>
+</footer>
+<footer class="footer px-10 py-6 border-t bg-base-content text-neutral-content border-base-300">
+  <span class="inline">
+    Copyright © 2024 <%= @sitename %> - All rights reserved -
+    <%= link_to "Legal notices", mentions_legales_path, class:'hover:underline' %>
+  </span>
+  <div class="md:place-self-center md:justify-self-end">
+    <div class="grid grid-flow-col gap-4">
+      <%= link_to contact_path do %>
+        <i class="fa-solid fa-envelope fa-2xl"></i>
+      <% end %>
+      <%= link_to "https://www.linkedin.com/in/aikku-sas", target: "_blank" do %>
+        <i class="fa-brands fa-linkedin fa-2xl"></i>
+      <% end %>
+    </div>
+  </div>
+</footer>

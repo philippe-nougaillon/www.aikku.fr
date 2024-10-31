@@ -3,7 +3,7 @@
     <%= title "Aikku SIGN" %>
   </h1>
   <h2 class="text-lg xl:text-2xl px-6">
-    <%= description "Feuille de présence numérique" %>
+    <%= description "Digital presence sheet" %>
   </h2>
 </section>
 
@@ -64,35 +64,35 @@
 
 <div class="px-8">
   <p class="text-xl my-12">
-    Vous souhaitez remplacer vos feuilles de présence papier par une solution numérique, simple et automatique ?
+    Do you want to replace your paper presence sheets with a digital, simple and automatic solution?
     <br><br>
-    Cette application permet de créer des assemblées, d'y associer des participants et de leur envoyer automatiquement 
-    un lien vers un formulaire de signature, 10 minutes avant le début de l'assemblée.
+    This application makes it possible to create meetings, to associate participants in them and to send them automatically
+    A link to a signature form, 10 minutes before the start of the assembly.
     <br><br>
-    Pour une confidentialité renforcée, les données de signature stockées dans la base de données sont chiffrées 
+    For reinforced confidentiality, the signature data stored in the database is encrypted
     (<%= link_to "Active Record Encryption", "https://guides.rubyonrails.org/active_record_encryption.html", class:'link', target: '_blank' %>).
     <br><br>
-    Les données collectées peuvent être traitées par une IA pour faire de la détection d'anomalies
-    (ex: fausses signatures, usages inhabituels, etc.).
+    The data collected can be processed by an AI to make the detection of anomalies
+(ex: false signatures, unusual uses, etc.).
   </p>
 
-  <h3 class="apps-title">Démonstration</h3>
+  <h3 class="apps-title">Demonstration</h3>
 
   <p>
-    Envie de tester l'application ?
-    <%= link_to "Lancer l'instance de démonstration", 'https://sign.aikku.eu', class:'link', target: '_blank' %>
+    Want to test the application?
+    <%= link_to "Launch the demonstration body", 'https://sign.aikku.eu', class:'link', target: '_blank' %>
   </p>
 
-  <h3 class="apps-title">Développement</h3>
+  <h3 class="apps-title">Development</h3>
   <p>
-    Cette application est développée et maintenue par 
-    <%= link_to 'Aikku', root_path, class:'link' %>
+    Aikku SIGN is developed and maintained by
+    <%= link_to 'AIKKU SAS', root_path, class:'link' %>
   </p>
 
-  <h3 class="apps-title">Support et services</h3>
+  <h3 class="apps-title">Support and services</h3>
   <p>
-    Vous souhaitez une nouvelle fonctionnalité ou l'installer sur votre serveur Linux ?
-    <%= link_to 'Consultez notre offre de services', '/services', class:'link' %>
+    Do you want a new feature or install Aikku SIGN on your Linux server?
+    <%= link_to 'Consult our service offer', '/services', class:'link' %>
   </p>
 
 </div>

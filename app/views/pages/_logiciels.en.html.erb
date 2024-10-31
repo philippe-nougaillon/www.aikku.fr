@@ -1,0 +1,145 @@
+<section>
+  <div class="text-center">
+    <h1 class="font-black <%= (action_name != "home") ? 'text-5xl lg:text-6xl' : 'text-4xl lg:text-5xl my-12' %> text-accent pt-8 italic">
+      Our softwares
+    </h1>
+
+    <h2 class="xl:text-2xl mt-6 lg:px-10 mb-12">
+      We have developed several softwares, ensure maintenance and evolution
+      on behalf of public entities and an establishment of higher education
+    </h3>
+  </div>
+
+  <div class="flex flex-col justify-between gap-4 md:gap-8 lg:gap-16 md:mx-8 lg:mx-16 my-6">
+    <div class="flex flex-wrap justify-between w-full gap-4 lg:gap-8">
+      <%= link_to aikku_plann_path, class:"flex-1 min-w-fit sm:min-w-min", 'data-turbo': false do %>
+        <div class="card shadow hover:shadow-xl cursor-pointer duration-300 bg-white h-full">
+          <%= image_tag "projets/planning iae-paris/screen_0.png", class:"object-fill w-full" %>
+          <div class="card-body">
+            <hr>
+            <h2 class="card-title text-xl lg:text-2xl text-accent underline underline-offset-8">
+              Aikku PLANN
+            </h2>
+            <p class="my-4 first-line:uppercase first-line:tracking-widest first-letter:text-5xl first-letter:font-black first-letter:mr-3 first-letter:float-left">
+              Manage all your training and rooms with
+              A simple, affordable and customizable solution
+              <br><br>
+              Developed in collaboration with IAE Paris-Sorbonne, Aikku Plann is a job planning software of time and management room management.It is adapted to the needs of universities, business schools and specialized training institutes.
+              <br><br>
+              From the creation of the planning to the edition of the Sharging Sheets,
+              through service states,
+              This application ensures the complete and collaborative management of the course planning processes,
+              Rooms, training, stakeholders, students, etc.
+            </p>
+          </div>
+        </div>
+      <% end %>
+
+      <%= link_to aikku_sign_path, class:"flex-1 min-w-fit sm:min-w-min", 'data-turbo': false do %>
+        <div class="card shadow hover:shadow-xl cursor-pointer duration-300 bg-white h-full">
+          <%= image_tag "emargements/admin.png", class:"object-fill w-full mb-8" %>
+          <div class="card-body">
+            <hr>
+            <h2 class="card-title text-xl lg:text-2xl text-accent underline underline-offset-8">
+              Aikku SIGN
+            </h2>
+            <p class="my-4 first-line:uppercase first-line:tracking-widest first-letter:text-5xl first-letter:font-black first-letter:mr-3 first-letter:float-left">
+              Digital presence sheet
+              <br><br>
+              Do you want to replace your paper presence sheets with a digital, simple and automatic solution?
+              <br><br>
+              This application makes it possible to create sessions, to associate participants in interest groups,
+              And automatically send them a link to a signature form.
+              <br><br>
+              The data collected can be processed by an AI to make the detection of anomalies
+              (ex: false signatures, unusual uses, etc.).
+            </p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="flex flex-wrap justify-between w-full gap-4 lg:gap-8">
+      <%= link_to aikku_access_path, class:"flex-1 min-w-fit sm:min-w-min", 'data-turbo': false do %>
+        <div class="card shadow hover:shadow-xl cursor-pointer duration-300 bg-white h-full">
+          <%= image_tag "aikku_access/table.png", class:"object-fill w-full pb-9" %>
+          <div class="card-body">
+            <hr>
+            <h2 class="card-title text-xl lg:text-2xl text-accent underline underline-offset-8">
+              Aikku ACCESS 
+            </h2>
+            <p class="my-4 first-line:uppercase first-line:tracking-widest first-letter:text-5xl first-letter:font-black first-letter:mr-3 first-letter:float-left">
+              Online database no-code application.Your business data 'in Da Cloud'!
+              <br><br>
+              Creates collections of various business objects (customers, interventions, technician, costs, projects, etc.),
+              To link them together (customers <--> interventions <--> technicians), and to share them with your employees.
+              <br><br>
+              <b>Assistant (AI):</b> Ask the assistant, based on data from your object collections.
+            </p>
+          </div>
+        </div>
+      <% end %>
+
+      <%= link_to aikku_projects_path, class:"flex-1 min-w-fit sm:min-w-min", 'data-turbo': false do %>
+        <div class="card shadow hover:shadow-xl cursor-pointer duration-300 bg-white h-full">
+          <%= image_tag "projets/camino/screen_0.png", class:"object-fill w-full" %>
+          <div class="card-body">
+            <hr>
+            <h2 class="card-title text-xl lg:text-2xl text-accent underline underline-offset-8">
+              Aikku PROJECTS
+            </h2>
+            <p class="my-4 first-line:uppercase first-line:tracking-widest first-letter:text-5xl first-letter:font-black first-letter:mr-3 first-letter:float-left">
+              Web project management, team management and mobility.
+              <br><br>
+              This application allows you to manage projects, tasks, resources,
+              schedules, documents, discussions, etc.
+              <br>
+              <ul class="list-disc">
+                <li>Cut your projects into lists of things to do</li>
+                <li>Invite your contacts to participate in projects</li>
+                <li>Assign things to do to the participants, set deadlines</li>
+                <li>Follow the activity of the participants by subscribing to the notifications (completed work, new comments, addition/modification ...)</li>
+              </ul>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+    <% if false %>
+      <%= link_to prestofacto_path, class:"flex-1 min-w-fit sm:min-w-min", 'data-turbo': false do %>
+        <div class="card shadow hover:shadow-xl cursor-pointer duration-300 bg-white h-full">
+          <%= image_tag "prestofacto/portail_parent.png", class:"object-fill w-full" %>
+          <div class="card-body">
+            <hr>
+            <h2 class="card-title text-xl lg:text-2xl text-accent underline underline-offset-8">
+              Aikku 
+            </h2>
+            <p class="my-4 first-line:uppercase first-line:tracking-widest first-letter:text-5xl first-letter:font-black first-letter:mr-3 first-letter:float-left">
+              Application for daily management and billing.
+              <br><br>
+              Help small organizations in the management and invoicing of their services (meals, daycare, extracurricular activities, accommodation overnight, summer camp, etc.).
+            </p>
+          </div>
+        </div>
+      <% end %>
+
+      <%= link_to talea_path, class:"flex-1 min-w-fit sm:min-w-min", 'data-turbo': false do %>
+        <div class="card shadow hover:shadow-xl cursor-pointer duration-300 bg-white h-full">
+          <div class="card-body">
+            <%= image_tag "projets/talea2/traffic_cone_3d_by_emilio_gallo.jpg", class:"object-fill mb-6" %>
+            <hr class="mt-4">
+            <h2 class="card-title text-xl lg:text-2xl text-accent underline underline-offset-8">
+              TALEA 2
+            </h2>
+            <p class="my-4 first-line:uppercase first-line:tracking-widest first-letter:text-5xl first-letter:font-black first-letter:mr-3 first-letter:float-left">
+              Intervention management application
+              <br><br>
+              The objective of this application is to dematerialize and manage the workflow of a technical service
+            </p>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+
+  </div>
+</section>

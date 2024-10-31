@@ -268,3 +268,6 @@ fr:
       title: Guide Planning
     mentions_légales:
       title: Mentions Légales
+  contact:
+    message_sent: "Votre message a bien été envoyé."
+    recaptcha_problem: "Problème avec reCAPTCHA, merci de réessayer"

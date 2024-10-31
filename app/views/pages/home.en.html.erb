@@ -1,0 +1,101 @@
+<%
+  set_meta_tags(
+    title: "Welcome"
+  )
+%>
+
+<div class="hero min-h-screen top-0 -mt-12" style="background-image: url(<%= asset_path('background.webp') %>)">
+  <div class="hero-overlay bg-opacity-60"></div>
+  <div class="hero-content text-center text-neutral-content flex-col">
+    <p class="mb-5 text-2xl">Our ambition</p>
+    <h1 class="mb-5 text-4xl lg:text-5xl font-black">
+      <%= description "Translate customer needs into a simple, robust, sustainable and perfectly suitable solution." %>
+    </h1>
+  </div>
+</div>
+
+<section id="outils" class="flex flex-col justify-center text-center min-h-screen mx-4 gap-4 lg:gap-24">
+  <h2 class="text-4xl lg:text-5xl font-black text-accent my-24 reveal">
+    Our tools and areas of expertise
+  </h2>
+  <div class="flex flex-wrap justify-around gap-2">
+    
+    <div class="w-full sm:w-1/2 lg:w-1/3 sm:px-5 reveal">
+      <%= image_tag 'logos/RoR.svg', class: 'h-44 mx-auto' %>
+      <h3 class="font-black text-accent text-2xl mt-7 mb-4">Ruby on Rails</h3>
+      <p>
+        Ruby on Rails (RoR) is an open-source web development framework based on the Ruby programming language.
+        <br>
+        <br>
+        Used by famous sites like Airbnb, Shopify, GitHub, Twitch, SoudCloud, Coinbase, Heroku...
+      </p>
+    </div>
+
+    <div class="w-full sm:w-1/2 lg:w-1/3 sm:px-5 reveal">
+      <%= image_tag 'logos/agile.svg', class: 'h-44 mx-auto' %>
+      <h3 class="font-black text-accent text-2xl mt-7 mb-4">Agile</h3>
+      <p>
+        Particular type of software development which is characterized by its simple, repetitive and least bureaucratic form.
+        <br><br>
+        The advantages of this procedure are the major cost and time savings compared to conventional programming methods.
+      </p>
+    </div>
+
+    <div class="w-full sm:w-1/2 lg:w-1/3 sm:px-5 reveal mt-8">
+      <%= image_tag "Vertex-AI.jpg", class: 'h-44 mx-auto' %>
+      <h3 class="font-black text-accent text-2xl my-8">AI and machine learning</h3>
+      <p>
+        We use the Gemini 1.5 models, the most recent and most advanced multimodal models of Vertex AI.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="logiciels" class="p-0 lg:mt-12">
+  <%= render partial: 'pages/logiciels' %>
+<section>
+
+<section id="clients" class="flex flex-col justify-center min-h-screen">
+  <h2 class="text-center text-4xl lg:text-5xl font-black text-accent mt-24 mb-12 reveal">
+    They trusted us: why not you?
+  </h2>
+  <div class="flex flex-wrap justify-around items-center gap-16 mb-16">
+    <div class="w-64 rounded reveal">
+      <%= link_to nos_clients_path(anchor: 2) do %>
+        <%= image_tag "logos/2.png", class:"mx-auto" %>
+      <% end %>
+    </div>
+    <div class="w-64 rounded reveal">
+      <%= link_to nos_clients_path(anchor: 1) do %>
+        <%= image_tag "logos/1.png", class:"mx-auto" %>
+      <% end %>
+    </div>
+    <div class="w-64 rounded reveal">
+      <%= link_to nos_clients_path(anchor: 4) do %>
+        <%= image_tag "logos/4.png", class:"mx-auto" %>
+      <% end %>
+    </div>
+  </div>
+  <div class="flex flex-wrap justify-around items-center gap-16">
+    <div class="w-64 rounded reveal">
+      <%= link_to nos_clients_path(anchor: 9) do %>
+        <%= image_tag "logos/9.png", class:"mx-auto" %>
+      <% end %>
+    </div>
+    <div class="w-64 rounded reveal">
+      <%= link_to nos_clients_path(anchor: 8) do %>
+        <%= image_tag "logos/8.png", class:"mx-auto" %>
+      <% end %>
+    </div>
+    <div class="w-64 rounded reveal">
+      <%= link_to nos_clients_path(anchor: 5) do %>
+        <%= image_tag "logos/5.png", class:"mx-auto" %>
+      <% end %>
+    </div>
+  </div>
+  <div class="flex justify-center reveal">
+    <%= link_to 'Learn more', nos_clients_path, class: 'btn lg:btn-lg btn-outline btn-primary mx-auto mt-12' %>
+  </div>
+</div>
