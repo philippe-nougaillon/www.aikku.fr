@@ -13,7 +13,7 @@
   <div class="flex flex-col justify-between gap-4 md:gap-8 lg:gap-16 md:mx-8 lg:mx-16 my-6">
     <div class="flex flex-wrap justify-between w-full gap-4 lg:gap-8">
       <%= link_to aikku_plann_path, class:"flex-1 min-w-fit sm:min-w-min", 'data-turbo': false do %>
-        <div class="card shadow hover:shadow-xl cursor-pointer duration-300 bg-white h-full">
+        <div class="card card-compact sm:card-normal shadow hover:shadow-xl cursor-pointer duration-300 bg-white h-full">
           <%= image_tag "projets/planning iae-paris/screen_0.png", class:"object-fill w-full" %>
           <div class="card-body">
             <hr>
@@ -36,7 +36,7 @@
       <% end %>
 
       <%= link_to aikku_sign_path, class:"flex-1 min-w-fit sm:min-w-min", 'data-turbo': false do %>
-        <div class="card shadow hover:shadow-xl cursor-pointer duration-300 bg-white h-full">
+        <div class="card card-compact sm:card-normal shadow hover:shadow-xl cursor-pointer duration-300 bg-white h-full">
           <%= image_tag "emargements/admin.png", class:"object-fill w-full mb-8" %>
           <div class="card-body">
             <hr>
@@ -61,7 +61,7 @@
 
     <div class="flex flex-wrap justify-between w-full gap-4 lg:gap-8">
       <%= link_to aikku_access_path, class:"flex-1 min-w-fit sm:min-w-min", 'data-turbo': false do %>
-        <div class="card shadow hover:shadow-xl cursor-pointer duration-300 bg-white h-full">
+        <div class="card card-compact sm:card-normal shadow hover:shadow-xl cursor-pointer duration-300 bg-white h-full">
           <%= image_tag "aikku_access/table.png", class:"object-fill w-full pb-9" %>
           <div class="card-body">
             <hr>
@@ -81,7 +81,7 @@
       <% end %>
 
       <%= link_to aikku_projects_path, class:"flex-1 min-w-fit sm:min-w-min", 'data-turbo': false do %>
-        <div class="card shadow hover:shadow-xl cursor-pointer duration-300 bg-white h-full">
+        <div class="card card-compact sm:card-normal shadow hover:shadow-xl cursor-pointer duration-300 bg-white h-full">
           <%= image_tag "projets/camino/screen_0.png", class:"object-fill w-full" %>
           <div class="card-body">
             <hr>
@@ -94,7 +94,7 @@
               This application allows you to manage projects, tasks, resources,
               schedules, documents, discussions, etc.
               <br>
-              <ul class="list-disc">
+              <ul class="list-disc list-inside">
                 <li>Cut your projects into lists of things to do</li>
                 <li>Invite your contacts to participate in projects</li>
                 <li>Assign things to do to the participants, set deadlines</li>
@@ -107,7 +107,7 @@
 
     <% if false %>
       <%= link_to prestofacto_path, class:"flex-1 min-w-fit sm:min-w-min", 'data-turbo': false do %>
-        <div class="card shadow hover:shadow-xl cursor-pointer duration-300 bg-white h-full">
+        <div class="card card-compact sm:card-normal shadow hover:shadow-xl cursor-pointer duration-300 bg-white h-full">
           <%= image_tag "prestofacto/portail_parent.png", class:"object-fill w-full" %>
           <div class="card-body">
             <hr>
@@ -124,7 +124,7 @@
       <% end %>
 
       <%= link_to talea_path, class:"flex-1 min-w-fit sm:min-w-min", 'data-turbo': false do %>
-        <div class="card shadow hover:shadow-xl cursor-pointer duration-300 bg-white h-full">
+        <div class="card card-compact sm:card-normal shadow hover:shadow-xl cursor-pointer duration-300 bg-white h-full">
           <div class="card-body">
             <%= image_tag "projets/talea2/traffic_cone_3d_by_emilio_gallo.jpg", class:"object-fill mb-6" %>
             <hr class="mt-4">
