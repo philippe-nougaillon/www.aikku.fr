@@ -9,13 +9,7 @@
 </li>
 
 <li>
-  <% if I18n.locale == :fr %>
-    <%= link_to url_for(request.params.merge(locale: 'en')), class: 'text-black-50' do %>
-      <i class="fa-solid fa-globe"></i> FR
-    <% end %>
-  <% else %>
-    <%= link_to url_for(request.params.merge(locale: 'fr')) , class: 'text-black-50' do %>
-      <i class="fa-solid fa-globe"></i> US
-    <% end %>
+  <%= link_to url_for(request.params.merge(locale: 'en')), class: 'text-black-50', title: "Changer de langue / Switch language" do %>
+    <i class="fa-solid fa-globe"></i> FR
   <% end %>
 </li>
