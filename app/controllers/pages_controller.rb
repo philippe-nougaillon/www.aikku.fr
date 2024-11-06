@@ -27,9 +27,9 @@ class PagesController < ApplicationController
     if verify_recaptcha
       message = Message.create(email: params[:email], objet: params[:objet], contenu: params[:contenu])
       ContactMailer.submitted(message).deliver_now
-      redirect_to root_path, notice: 'Votre message a bien été envoyé.'
+      redirect_to root_path, notice: t('contact.message_sent')
     else
-      flash[:alert] = 'Problème avec reCAPTCHA, merci de réessayer'
+      flash[:alert] = t('contact.recaptcha_problem')
       render 'contact'
     end
   end

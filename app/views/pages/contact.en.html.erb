@@ -1,0 +1,33 @@
+<%= form_tag do %>
+  <section class="mx-auto px-4 md:w-1/2 ">
+    <div class="card shadow-lg bg-white mt-4">
+      <div class="card-body px-4 lg:px-8 pt-4">
+        <h1 class="font-black text-5xl lg:text-6xl text-center text-accent mb-8 italic">
+          <%= title "Contact" %>
+        </h1>
+        <p>
+          <%= description "<b>Do you have a question, a remark or a project to submit to us?</b>".html_safe %>
+          <br><br>
+          Complete this form and we will contact you as soon as possible.
+          <br>
+          You can also contact us directly on contact @ aikku .eu
+        </p>
+        <hr class="mb-6">
+        <div>
+          <%= label_tag :objet, "Object" %>
+          <%= text_field_tag :objet, params[:objet], class:"input input-sm input-bordered w-full", required: true, title: "Please fill in this field" %>
+        </div>
+        <div>
+          <%= label_tag :email, "Email" %>
+          <%= email_field_tag :email, params[:email], class:"input input-sm input-bordered w-full", required: true, title: "Please fill in this field" %>
+        </div>
+        <div>
+          <%= label_tag :contenu, "Message" %>
+          <%= text_area_tag :contenu, params[:contenu], class:"textarea textarea-bordered w-full", rows: 5, required: true, title: "Please fill in this field" %>
+        </div>
+        <%= recaptcha_tags unless %w[localhost 127.0.0.1].include?(request.host) %>
+        <%= submit_tag "Send", class:"btn btn-primary btn-outline", 'data-turbo': false %>
+      </div>
+    </div>
+  </section>
+<% end %>
