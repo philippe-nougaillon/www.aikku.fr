@@ -52,12 +52,12 @@ class PagesController < ApplicationController
 
   def nos_clients
     @tags = Client.tag_counts_on(:tags).order(:taggings_count).reverse
-    @clients = Client.all
+    @clients = Client.ordered
 
     return if params[:tag].blank?
 
     if params[:tag] != session[:tag]
-      @clients = Client.tagged_with(params[:tag])
+      @clients = Client.tagged_with(params[:tag]).ordered
       session[:tag] = params[:tag]
     else
       session[:tag] = params[:tag] = nil
