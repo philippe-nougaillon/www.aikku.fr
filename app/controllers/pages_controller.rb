@@ -24,7 +24,7 @@ class PagesController < ApplicationController
   def contact; end
 
   def contact_submit
-    if verify_recaptcha
+    if verify_recaptcha || Rails.env.development?
       message = Message.create(email: params[:email], objet: params[:objet], contenu: params[:contenu])
       ContactMailer.submitted(message).deliver_now
       redirect_to root_path, notice: t('contact.message_sent')

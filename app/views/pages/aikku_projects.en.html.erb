@@ -112,10 +112,9 @@
     <%= link_to "the user guide", 'https://projects.aikku.eu/about', class: 'link', target: '_blank' %>.
   </p>
 
-  <h3 class="apps-title">Demonstration</h3>
+  <h3 class="apps-title">Learn more</h3>
   <p>
-    Want to try the product?
-    <%= link_to "Launch the demo instance", 'https://projects.aikku.eu', class:'link', target: '_blank' %>.
+    To find out more, please consult us.
   </p>
 
   <h3 class="apps-title">Development</h3>
@@ -129,4 +128,29 @@
     Need a new feature or want to install Aikku PROJECTS?
     <%= link_to 'Check out our service offerings', '/en/services', class: 'link' %>.
   </p>
+
+  <section id="contact" class="text-center pt-24">
+    <h2 class="apps-title">Contact us</h2>
+    <p class="text-2xl lg:px-48">
+      Our team is dedicated to providing you with solutions perfectly tailored to your needs, along with personalized support and technical assistance available whenever required.
+    </p>
+    <div class="flex flex-wrap items-center gap-8 mt-24">
+      <div class="flex flex-col mx-auto mb-12">
+        <%= form_tag(contact_path) do %>
+          <div class="flex flex-col gap-2">
+            <%= hidden_field_tag :objet, "[Aikku PROJECTS] Demonstration request" %>
+            <%= hidden_field_tag :contenu, "" %>
+            <div class="form-control">
+              <label class="input-group">
+                <span class="text-black">Email</span>
+                <%= email_field_tag :email, nil, class: 'input input-bordered w-full', required: true %>
+              </label>
+            </div>
+            <%= recaptcha_tags unless Rails.env.development? %>
+            <button class="btn btn-success sm:text-xl max-w-full" data-turbo="false">Ask for a demonstration</button>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </section>
 </div>

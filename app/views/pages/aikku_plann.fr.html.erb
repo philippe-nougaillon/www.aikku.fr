@@ -442,7 +442,7 @@
               <%= email_field_tag :email, nil, class: 'input input-bordered w-full', required: true %>
             </label>
           </div>
-          <%= recaptcha_tags unless %w[localhost 127.0.0.1].include?(request.host) %>
+          <%= recaptcha_tags unless Rails.env.development? %>
           <button class="btn btn-success sm:text-xl max-w-full" data-turbo="false">Demander une démonstration</button>
         </div>
       <% end %>
@@ -461,13 +461,13 @@
   <h3 class="text-2xl font-black my-4">Développement</h3>
   <p>
     Ce projet est développé et maintenu par 
-    <%= link_to 'AIKKU SAS', root_path, class:'link' %>
+    <%= link_to 'AIKKU SAS', root_path, class:'link' %>.
   </p>
 
   <h3 class="text-2xl font-black my-4">Support et services</h3>
   <p>
     Vous souhaitez une nouvelle fonctionnalité ou l'installer ?
-    <%= link_to 'Consultez notre offre de services', '/services', class:'link' %>
+    <%= link_to 'Consultez notre offre de services', '/services', class:'link' %>.
   </p>
 </section>
 
