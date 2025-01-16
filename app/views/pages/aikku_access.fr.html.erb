@@ -7,7 +7,7 @@
   </h2>
 </section>
 
-<div class="px-8">
+<div class="text-center">
   <div id="carousel" class="carousel min-w-16 sm:w-3/4 mx-auto shadow-lg">
     <div id="slide1" class="carousel-item relative w-full">
       <%= image_tag "aikku_access/table.png" %>
@@ -34,61 +34,61 @@
       <a href="#slide5" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">5</a> 
     </div>
   </div>
-
-  <p class="text-xl mt-12">
-		Vous êtes une entreprise de service avec des équipes sur le terrain (ex: BTP, SAV, Installation, Maintenance, etc.) et
-		vous cherchez une méthode de gestion des interventions ou de field service management (FSM) ?
-		<br><br>
-		Aikku ACCESS est un gestionnaire d'informations NO-CODE qui vous permet de créer  
-		des collections d'objets métiers (ex: Clients, Interventions, Technicien, Frais, Projets, etc.), 
-		de les lier (Clients <==> Interventions <==> Techniciens <==> Frais) 
-		et de les partager en ligne avec vos collaborateurs.
-	</p>
-
-  <p class="mt-5">
-    Pour en savoir plus, veuillez consulter
-    <%= link_to "le guide d'utilisation", "https://access.aikku.eu/a_propos", class: 'link', target: '_blank' %>.
-  </p>
-
-  <h3 class="apps-title">En savoir plus</h3>
-  <p>
-    Pour en savoir plus, veuillez nous consulter.
-  </p>
-
-  <h3 class="apps-title">Développement</h3>
-  <p>
-    Aikku ACCESS est développé et maintenu par 
-    <%= link_to 'AIKKU SAS', root_path, class:'link' %>.
-  </p>
-
-  <h3 class="apps-title">Support et services</h3>
-  <p>
-    Vous souhaitez une nouvelle fonctionnalité ou installer Aikku ACCESS ?
-    <%= link_to 'Consultez notre offre de services', '/services', class:'link' %>.
-  </p>
-
-  <section id="contact" class="text-center pt-24">
-    <h2 class="apps-title">Contactez-nous</h2>
-    <p class="text-2xl lg:px-48">
-      Notre équipe s'engage à vous proposer des solutions parfaitement adaptées à vos besoins, un accompagnement humain et un support technique disponible en cas de besoin.
-    </p>
-    <div class="flex flex-wrap items-center gap-8 mt-24">
-      <div class="flex flex-col mx-auto mb-12">
-        <%= form_tag(contact_path) do %>
-          <div class="flex flex-col gap-2">
-            <%= hidden_field_tag :objet, "[Aikku ACCESS] Demande de démonstration" %>
-            <%= hidden_field_tag :contenu, "" %>
-            <div class="form-control">
-              <label class="input-group">
-                <span class="text-black">Email</span>
-                <%= email_field_tag :email, nil, class: 'input input-bordered w-full', required: true %>
-              </label>
-            </div>
-            <%= recaptcha_tags unless Rails.env.development? %>
-            <button class="btn btn-success sm:text-xl max-w-full" data-turbo="false">Demander une démonstration</button>
-          </div>
-        <% end %>
-      </div>
-    </div>
-  </section>
 </div>
+
+<p class="text-xl mt-12">
+  Vous êtes une entreprise de service avec des équipes sur le terrain (ex: BTP, SAV, Installation, Maintenance, etc.) et
+  vous cherchez une méthode de gestion des interventions ou de field service management (FSM) ?
+  <br><br>
+  Aikku ACCESS est un gestionnaire d'informations NO-CODE qui vous permet de créer  
+  des collections d'objets métiers (ex: Clients, Interventions, Technicien, Frais, Projets, etc.), 
+  de les lier (Clients <==> Interventions <==> Techniciens <==> Frais) 
+  et de les partager en ligne avec vos collaborateurs.
+</p>
+
+<p class="mt-5">
+  Pour en savoir plus, veuillez consulter
+  <%= link_to "le guide d'utilisation", "https://access.aikku.eu/a_propos", class: 'link', target: '_blank' %>.
+</p>
+
+<h3 class="apps-title">En savoir plus</h3>
+<p>
+  Pour en savoir plus, veuillez nous consulter.
+</p>
+
+<h3 class="apps-title">Développement</h3>
+<p>
+  Aikku ACCESS est développé et maintenu par 
+  <%= link_to 'AIKKU SAS', root_path, class:'link' %>.
+</p>
+
+<h3 class="apps-title">Support et services</h3>
+<p>
+  Vous souhaitez une nouvelle fonctionnalité ou installer Aikku ACCESS ?
+  <%= link_to 'Consultez notre offre de services', '/services', class:'link' %>.
+</p>
+
+<section id="contact" class="text-center pt-24">
+  <h2 class="apps-title">Contactez-nous</h2>
+  <p class="text-2xl lg:px-48">
+    Notre équipe s'engage à vous proposer des solutions parfaitement adaptées à vos besoins, un accompagnement humain et un support technique disponible en cas de besoin.
+  </p>
+  <div class="flex flex-wrap items-center gap-8 mt-24">
+    <div class="flex flex-col mx-auto mb-12">
+      <%= form_tag(contact_path) do %>
+        <div class="flex flex-col gap-2">
+          <%= hidden_field_tag :objet, "[Aikku ACCESS] Demande de démonstration" %>
+          <%= hidden_field_tag :contenu, "" %>
+          <div class="form-control">
+            <label class="input-group">
+              <span class="text-black">Email</span>
+              <%= email_field_tag :email, nil, class: 'input input-bordered w-full', required: true %>
+            </label>
+          </div>
+          <%= recaptcha_tags unless Rails.env.development? %>
+          <button class="btn btn-success sm:text-xl max-w-full" data-turbo="false">Demander une démonstration</button>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>
