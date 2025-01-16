@@ -8,3 +8,42 @@
 %>
 
 <%= render partial: 'pages/logiciels' %>
+
+<section id="outils" class="flex flex-col justify-center text-center min-h-screen mx-4 gap-4 lg:gap-24">
+  <h2 class="text-4xl lg:text-5xl font-black text-accent my-24">
+    Nos outils et domaines d'expertises
+  </h2>
+  <div class="flex flex-wrap justify-around gap-2">
+    
+    <div class="w-full sm:w-1/2 lg:w-1/3 sm:px-5">
+      <%= image_tag 'logos/RoR.svg', class: 'h-44 mx-auto' %>
+      <h3 class="font-black text-accent text-2xl mt-7 mb-4">Ruby on Rails</h3>
+      <p>
+        Ruby on Rails (RoR) est un framework de développement web open-source basé sur le langage de programmation Ruby.
+        <br>
+        <br>
+        Utilisé par des sites célèbres comme Airbnb, Shopify, GitHub, Twitch, SoudCloud, Coinbase, Heroku...
+      </p>
+    </div>
+
+    <div class="w-full sm:w-1/2 lg:w-1/3 sm:px-5">
+      <%= image_tag 'logos/agile.svg', class: 'h-44 mx-auto' %>
+      <h3 class="font-black text-accent text-2xl mt-7 mb-4">Agile</h3>
+      <p>
+        Type particulier de développement logiciel qui se caractérise par sa forme simple, répétitive et la moins bureaucratique possible. 
+        <br><br>
+        Les avantages de cette procédure sont les grandes économies de coûts et de temps par rapport aux méthodes de programmation classiques.
+      </p>
+    </div>
+
+    <div class="w-full sm:w-1/2 lg:w-1/3 sm:px-5 mt-8">
+      <%= image_tag "Vertex-AI.jpg", class: 'h-44 mx-auto' %>
+      <h3 class="font-black text-accent text-2xl my-8">IA et machine learning</h3>
+      <p>
+        Nous utilisons les modèles Gemini 1.5, les modèles multimodaux les plus récents et les plus avancés de Vertex AI. 
+      </p>
+    </div>
+
+  </div>
+
+</section>

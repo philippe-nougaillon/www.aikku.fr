@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" data-theme="winter">
+<html lang="fr" data-theme="lofi">
   <head>
     <%= display_meta_tags site: "#{ @sitename }", separator: '-', reverse: true %>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -28,12 +28,7 @@
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
   </head>
 
-  <body class="flex flex-col justify-between min-h-screen" style="background-image: linear-gradient(
-      105deg,
-      hsl(240deg 100% 98%) 59%,
-      hsl(254deg 100% 97%) 98%,
-      hsl(268deg 100% 97%) 100%);">
-
+  <body class="flex flex-col justify-between min-h-screen">
     <%= render partial: "partials/navbar" %>
     <%= render partial: "partials/notification" %>
     <main class="mb-auto">
@@ -42,22 +37,3 @@
     <%= render partial: "partials/footer" %>
   </body>
 </html>
-
-<script>
-function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    }
-  }
-}
-window.addEventListener("scroll", reveal);
-
-// To check the scroll position on page load
-reveal();
-
-</script>
