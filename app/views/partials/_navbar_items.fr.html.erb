@@ -1,17 +1,11 @@
 <%= navbar_item 'accueil', root_path, 'Accueil' %>
-<%= navbar_item 'qui_sommes_nous', qui_sommes_nous_path, 'Qui sommes-nous ?' %>
 <% navbar_item 'nos_clients', nos_clients_path, 'Clients' %>
 <% navbar_item 'services', services_path, 'Services' %>
-<%= navbar_item 'logiciels', logiciels_path, 'Nos logiciels' %>
+<%= navbar_item 'logiciels', logiciels_path, 'Solutions' %>
+<%= navbar_item 'qui_sommes_nous', qui_sommes_nous_path, 'À propos' %>
 <li>
   <%= link_to contact_path, 'data-turbo': false, class: 'flex gap-4' do %>
     <span class="flex-1 whitespace-nowrap">Contact</span>
-  <% end %>
-</li>
-
-<li>
-  <%= link_to "https://www.linkedin.com/company/aikku-sas", target: "_blank" do %>
-    <i class="fa-brands fa-linkedin"></i>
   <% end %>
 </li>
 

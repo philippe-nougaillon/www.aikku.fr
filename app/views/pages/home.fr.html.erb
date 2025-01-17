@@ -15,12 +15,13 @@
 </div>
 
 <section id="who" class="w-full text-center text-4xl lg:text-5xl py-24">
-  Nous avons développé plusieurs logiciels,
+  Nous avons développé plusieurs logiciels
   <br>
-  en assurons la maintenance et l'évolution
+  et nous en assurons la maintenance et l'évolution
 </section>
+
 <section id="aikku_plann" class="w-full text-center bg-secondary text-secondary-content py-24">
-  <h2 class="text-5xl font-black">Organisme de formation ?</h2>
+  <h2 class="text-5xl">Vous êtes un <b>organisme de formation</b> ?</h2>
   <p class="text-2xl my-8">
     Gérez toutes vos formations et vos salles avec une solution simple, abordable et personnalisable
   </p>
@@ -29,7 +30,7 @@
 </section>
 
 <section id="aikku_coopcom" class="w-full text-center py-24">
-  <h2 class="text-5xl font-black">Communauté de communes</h2>
+  <h2 class="text-5xl">Vous êtes une <b>communauté de communes</b> ?</h2>
   <p class="text-2xl my-8">
     Gérez facilement la coopération et la mutualisation des services et ressources de votre intercommunalité
   </p>
@@ -38,9 +39,9 @@
 </section>
 
 <section id="aikku_access" class="w-full text-center bg-secondary text-secondary-content py-24">
-  <h2 class="text-5xl font-black">DSI</h2>
+  <h2 class="text-5xl">Vous êtes <b>DSI / Data Scientist</b> ?</h2>
   <p class="text-2xl my-8">
-    Vos données métier, en ligne et en mobilité
+    Gérez vos données métier, en ligne et en mobilité
   </p>
   <%= image_tag "dsi.webp", width: "650px", class: 'mx-auto' %>
   <%= link_to 'En savoir plus...', aikku_access_path, class: 'text-white btn lg:btn-lg btn-outline mt-12' %>
@@ -48,40 +49,18 @@
 
 
 <section id="clients" class="flex flex-col justify-center min-h-screen">
-  <h2 class="text-center text-4xl lg:text-5xl font-black text-accent mt-24 mb-12">
-    Ils nous ont fait confiance : pourquoi pas vous ?
+  <h2 class="text-center text-4xl lg:text-5xl font-black text-accent mt-24 mb-24">
+    Ils nous font confiance
   </h2>
-  <div class="flex flex-wrap justify-around items-center gap-16 mb-16">
-    <div class="w-64 rounded">
-      <%= link_to nos_clients_path(anchor: 2) do %>
-        <%= image_tag "logos/2.png", class:"mx-auto" %>
-      <% end %>
-    </div>
+  <div class="flex flex-wrap justify-center items-center gap-32 mb-16">
     <div class="w-64 rounded">
       <%= link_to nos_clients_path(anchor: 1) do %>
         <%= image_tag "logos/1.png", class:"mx-auto" %>
       <% end %>
     </div>
     <div class="w-64 rounded">
-      <%= link_to nos_clients_path(anchor: 4) do %>
-        <%= image_tag "logos/4.png", class:"mx-auto" %>
-      <% end %>
-    </div>
-  </div>
-  <div class="flex flex-wrap justify-around items-center gap-16">
-    <div class="w-64 rounded">
-      <%= link_to nos_clients_path(anchor: 9) do %>
-        <%= image_tag "logos/9.png", class:"mx-auto" %>
-      <% end %>
-    </div>
-    <div class="w-64 rounded">
       <%= link_to nos_clients_path(anchor: 8) do %>
         <%= image_tag "logos/8.png", class:"mx-auto" %>
-      <% end %>
-    </div>
-    <div class="w-64 rounded">
-      <%= link_to nos_clients_path(anchor: 5) do %>
-        <%= image_tag "logos/5.png", class:"mx-auto" %>
       <% end %>
     </div>
   </div>
