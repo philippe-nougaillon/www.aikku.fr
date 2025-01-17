@@ -1,18 +1,10 @@
 <%= form_tag do %>
-  <section class="mx-auto px-4 md:w-1/2 ">
-    <div class="card shadow-lg bg-white mt-4">
+  <section class="mx-auto px-4 md:w-1/2 mb-24">
+    <div class="card shadow bg-white mt-4">
       <div class="card-body px-4 lg:px-8 pt-4">
-        <h1 class="font-black text-5xl lg:text-6xl text-center text-accent mb-8 italic">
-          <%= title "Contact" %>
+        <h1 class="font-black text-4xl lg:text-5xl text-center text-accent mb-8 italic">
+          <%= title "Vous souhaitez une démo ? <br> Contactez-nous !".html_safe %>
         </h1>
-        <p>
-          <%= description "<b>Vous avez une question, une remarque ou un projet à nous soumettre ?</b>".html_safe %>
-          <br><br>
-          Remplissez ce formulaire et nous vous recontacterons dès que possible.
-          <br>
-          Vous pouvez aussi nous contacter directement sur contact @ aikku .eu
-        </p>
-        <hr class="mb-6">
         <div>
           <%= label_tag :objet, "Objet" %>
           <%= text_field_tag :objet, params[:objet], class:"input input-sm input-bordered w-full", required: true %>

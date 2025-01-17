@@ -7,7 +7,7 @@
   </h2>
 </section>
 
-<div class="px-8">
+<div class="mx-4 lg:mx-24 mb-24">
   <p class= "text-xl font-black">
     L'objectif de cette application est de dématérialiser et de gérer le flux de travail d'un service technique et ainsi d'améliorer significativement l'efficacité des processus internes.
   </p>
@@ -55,7 +55,9 @@
   <h3 class="apps-title">Support et services</h3>
   <p>
     Vous souhaitez une nouvelle fonctionnalité ou installer TALEA ?
-    <%= link_to 'Consultez notre offre de services', '/services', class:'link' %>
+    <%= link_to 'Consultez notre offre de services', contact_path, class:'link' %>
   </p>
 
 </div>
+
+<%= render partial: 'partials/contact' %>

@@ -7,110 +7,116 @@
   </h2>
 </section>
 
-<div id="carousel" class="carousel min-w-16 sm:w-3/4 mx-auto shadow-lg">
-  <div id="slide1" class="carousel-item relative w-full">
-    <%= image_tag "prestofacto/compte.png" %>
-  </div> 
-  <div id="slide2" class="carousel-item relative w-full">
-    <%= image_tag "prestofacto/enfant_form.png" %>
-  </div> 
-  <div id="slide3" class="carousel-item relative w-full">
-    <%= image_tag "prestofacto/réservations.png" %>
+<% if false %>
+  <div id="carousel" class="carousel min-w-16 sm:w-3/4 mx-auto shadow-lg">
+    <div id="slide1" class="carousel-item relative w-full">
+      <%= image_tag "prestofacto/compte.png" %>
+    </div> 
+    <div id="slide2" class="carousel-item relative w-full">
+      <%= image_tag "prestofacto/enfant_form.png" %>
+    </div> 
+    <div id="slide3" class="carousel-item relative w-full">
+      <%= image_tag "prestofacto/réservations.png" %>
+    </div>
+    <div id="slide4" class="carousel-item relative w-full">
+      <%= image_tag "prestofacto/absences.png" %>
+    </div>
+    <div id="slide5" class="carousel-item relative w-full">
+      <%= image_tag "prestofacto/pointages.png" %>
+    </div>
+    <div id="slide6" class="carousel-item relative w-full">
+      <%= image_tag "prestofacto/prestations.png" %>
+    </div>
+    <div id="slide7" class="carousel-item relative w-full">
+      <%= image_tag "prestofacto/factures.png" %>
+    </div>
+    <div id="slide8" class="carousel-item relative w-full">
+      <%= image_tag "prestofacto/paiements.png" %>
+    </div>
+    <div id="slide9" class="carousel-item relative w-full">
+      <%= image_tag "prestofacto/organisation.png" %>
+    </div>
+    <div id="slide10" class="carousel-item relative w-full">
+      <%= image_tag "prestofacto/prestations_et_tarifs.png" %>
+    </div>
+    <div id="slide11" class="carousel-item relative w-full">
+      <%= image_tag "prestofacto/messages.png" %>
+    </div>
+    <div id="slide12" class="carousel-item relative w-full">
+      <%= image_tag "prestofacto/mail_logs.png" %>
+    </div>
+    <div id="slide13" class="carousel-item relative w-full">
+      <%= image_tag "prestofacto/portail_parent.png" %>
+    </div>
   </div>
-  <div id="slide4" class="carousel-item relative w-full">
-    <%= image_tag "prestofacto/absences.png" %>
+  <div data-controller="carousel-paginate">
+    <div class="flex flex-wrap justify-center w-full gap-2 mt-4">
+      <a href="#slide1" class="btn btn-accent hover:btn-accent btn-xs carousel-page" data-action="click->carousel-paginate#activate">1</a> 
+      <a href="#slide2" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">2</a> 
+      <a href="#slide3" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">3</a> 
+      <a href="#slide4" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">4</a> 
+      <a href="#slide5" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">5</a> 
+      <a href="#slide6" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">6</a> 
+      <a href="#slide7" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">7</a> 
+      <a href="#slide8" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">8</a> 
+      <a href="#slide9" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">9</a> 
+      <a href="#slide10" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">10</a> 
+      <a href="#slide11" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">11</a> 
+      <a href="#slide12" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">12</a> 
+      <a href="#slide13" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">13</a> 
+    </div>
   </div>
-  <div id="slide5" class="carousel-item relative w-full">
-    <%= image_tag "prestofacto/pointages.png" %>
+<% end %>
+
+<div class="mx-4 lg:mx-24 mb-24">
+  <div>
+    <p class="text-2xl font-black mb-8">
+      PrestoFacto aide les petites organisations dans la gestion 
+      et la facturation de leurs prestations journalières (repas, garderie, activités périscolaires, hébergement à la nuitée, colonie de vacances, etc.)
+    </p>
+
+    <p class="text-xl mb-4">
+      Cette application web permet à une organisation (mairie, association, école, centre de loisirs...) 
+      de gérer les comptes de ses familles, les réservations et absences des enfants et la facturation 
+      des prestations consommées. Les prestations et les tarifs sont entièrement paramétrables et illimités.
+    </p>
+    
+    <p class="mb-8">
+      Historique : en 2020, après plus de 10 ans de bons et loyaux services, openCantine fait sa mue, a changé de nom, s'est professionnalisé pour devenir PrestoFacto.
+      <br> 
+      Ce projet était au départ conçu pour donner un petit coup de main à une mairie qui gérait péniblement sa cantine sur Excel. 
+      Mais la publication du code en open-source et la mise à disposition gratuite de la plateforme a permis à plus de 50 mairies ou associations de facturer plus de 400 000 repas
+      <br>
+      openCantine était adapté aux petites structures et a toujours quelques fervents utilisateurs, mais les structures plus importantes ne pouvaient s'en contenter,
+      c'est pourquoi j'ai réécrit un autre logiciel, PrestoFacto, plus souple et adaptable, qui conviendra à des organisations de plus grande taille et multi-structures.
+    </p>
+
+    <p>
+      Pour en savoir plus, veuillez consulter
+      <%= link_to "le guide d'utilisation", "https://www.prestofacto.fr/guide", class: 'link', target: '_blank' %>.
+    </p>
+
   </div>
-  <div id="slide6" class="carousel-item relative w-full">
-    <%= image_tag "prestofacto/prestations.png" %>
-  </div>
-  <div id="slide7" class="carousel-item relative w-full">
-    <%= image_tag "prestofacto/factures.png" %>
-  </div>
-  <div id="slide8" class="carousel-item relative w-full">
-    <%= image_tag "prestofacto/paiements.png" %>
-  </div>
-  <div id="slide9" class="carousel-item relative w-full">
-    <%= image_tag "prestofacto/organisation.png" %>
-  </div>
-  <div id="slide10" class="carousel-item relative w-full">
-    <%= image_tag "prestofacto/prestations_et_tarifs.png" %>
-  </div>
-  <div id="slide11" class="carousel-item relative w-full">
-    <%= image_tag "prestofacto/messages.png" %>
-  </div>
-  <div id="slide12" class="carousel-item relative w-full">
-    <%= image_tag "prestofacto/mail_logs.png" %>
-  </div>
-  <div id="slide13" class="carousel-item relative w-full">
-    <%= image_tag "prestofacto/portail_parent.png" %>
+
+  <div>
+    <h3 class="apps-title">Démonstration</h3>
+    <p>
+      Envie de tester l'application ?
+      <%= link_to "Lancer l'instance de démonstration", 'https://www.prestofacto.fr/users/sign_up', class:'link', target: '_blank' %>
+    </p>
+
+    <h3 class="apps-title">Développement</h3>
+    <p>
+      PrestoFacto est développé et maintenu par 
+      <%= link_to 'AIKKU SAS', root_path, class:'link' %>
+    </p>
+
+    <h3 class="apps-title">Support et services</h3>
+    <p>
+      Vous souhaitez une nouvelle fonctionnalité ou installer PrestoFacto ?
+      <%= link_to 'Consultez notre offre de services', contact_path, class:'link' %>
+    </p>
   </div>
 </div>
-<div data-controller="carousel-paginate">
-  <div class="flex flex-wrap justify-center w-full gap-2 mt-4">
-    <a href="#slide1" class="btn btn-accent hover:btn-accent btn-xs carousel-page" data-action="click->carousel-paginate#activate">1</a> 
-    <a href="#slide2" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">2</a> 
-    <a href="#slide3" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">3</a> 
-    <a href="#slide4" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">4</a> 
-    <a href="#slide5" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">5</a> 
-    <a href="#slide6" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">6</a> 
-    <a href="#slide7" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">7</a> 
-    <a href="#slide8" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">8</a> 
-    <a href="#slide9" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">9</a> 
-    <a href="#slide10" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">10</a> 
-    <a href="#slide11" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">11</a> 
-    <a href="#slide12" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">12</a> 
-    <a href="#slide13" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">13</a> 
-  </div>
-</div>
 
-<div class="p-8">
-  <p class="text-2xl font-black mb-8">
-    PrestoFacto aide les petites organisations dans la gestion 
-    et la facturation de leurs prestations journalières (repas, garderie, activités périscolaires, hébergement à la nuitée, colonie de vacances, etc.)
-  </p>
-
-  <p class="text-xl mb-4">
-    Cette application web permet à une organisation (mairie, association, école, centre de loisirs...) 
-    de gérer les comptes de ses familles, les réservations et absences des enfants et la facturation 
-    des prestations consommées. Les prestations et les tarifs sont entièrement paramétrables et illimités.
-  </p>
-  
-  <p class="mb-8">
-    Historique : en 2020, après plus de 10 ans de bons et loyaux services, openCantine fait sa mue, a changé de nom, s'est professionnalisé pour devenir PrestoFacto.
-    <br> 
-    Ce projet était au départ conçu pour donner un petit coup de main à une mairie qui gérait péniblement sa cantine sur Excel. 
-    Mais la publication du code en open-source et la mise à disposition gratuite de la plateforme a permis à plus de 50 mairies ou associations de facturer plus de 400 000 repas
-    <br>
-    openCantine était adapté aux petites structures et a toujours quelques fervents utilisateurs, mais les structures plus importantes ne pouvaient s'en contenter,
-    c'est pourquoi j'ai réécrit un autre logiciel, PrestoFacto, plus souple et adaptable, qui conviendra à des organisations de plus grande taille et multi-structures.
-  </p>
-
-  <p>
-    Pour en savoir plus, veuillez consulter
-    <%= link_to "le guide d'utilisation", "https://www.prestofacto.fr/guide", class: 'link', target: '_blank' %>.
-  </p>
-
-</div>
-
-<div class="px-8">
-  <h3 class="apps-title">Démonstration</h3>
-  <p>
-    Envie de tester l'application ?
-    <%= link_to "Lancer l'instance de démonstration", 'https://www.prestofacto.fr/users/sign_up', class:'link', target: '_blank' %>
-  </p>
-
-  <h3 class="apps-title">Développement</h3>
-  <p>
-    PrestoFacto est développé et maintenu par 
-    <%= link_to 'AIKKU SAS', root_path, class:'link' %>
-  </p>
-
-  <h3 class="apps-title">Support et services</h3>
-  <p>
-    Vous souhaitez une nouvelle fonctionnalité ou installer PrestoFacto ?
-    <%= link_to 'Consultez notre offre de services', '/services', class:'link' %>
-  </p>
-</div>
+<%= render partial: 'partials/contact' %>

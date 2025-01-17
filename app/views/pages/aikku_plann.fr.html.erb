@@ -72,8 +72,8 @@
   <% end %>
 
   <div class="hidden lg:flex flex-wrap justify-center gap-4 mt-24">
-    <%= link_to "Vous êtes gestionnaire de formation", aikku_plann_path(anchor: "bref"), class: 'btn btn-accent sm:btn-lg max-w-full' %>
-    <%= link_to "Vous êtes administrateur", aikku_plann_path(anchor: "details_fonctionnalites"), class: 'btn btn-secondary sm:btn-lg max-w-full' %>
+    <%= link_to "Vous êtes gestionnaire de formation", aikku_plann_path(anchor: "bref"), class: 'btn btn-accent btn-outline sm:btn-lg max-w-full' %>
+    <%= link_to "Vous êtes administrateur", aikku_plann_path(anchor: "details_fonctionnalites"), class: 'btn btn-secondary btn-outline sm:btn-lg max-w-full' %>
   </div>
 </section>
 
@@ -396,63 +396,7 @@
 
 <% end %>
 
-<section id="contact" class="text-center pt-24">
-  <h2 class="apps-title">Contactez-nous</h2>
-  <p class="text-2xl lg:px-48">
-    Notre équipe s'engage à vous proposer des solutions parfaitement adaptées à vos besoins, un accompagnement humain et un support technique disponible en cas de besoin.
-  </p>
-  <div class="flex flex-wrap items-center gap-8 mt-24">
-    <% if false %>
-      <div class="flex flex-1 flex-wrap lg:flex-nowrap gap-8 justify-center">
-        <div class="flex flex-col items-center">
-          <!-- Ajouter ring de daisyUI (avatar)-->
-            <%= image_tag "partners/philippe.webp",
-              class: "mask mask-squircle object-contain h-48 w-96 mx-auto opacity-70 mb-6"
-            %>
-          <h4 class="font-bold text-2xl">
-            Philippe
-          </h4>
-          <h5 class="italic text-xl">
-            Product Manager
-            <br>
-            Développeur Senior
-            <br>
-            Ruby on Rails
-          </h5>
-        </div>
-        <div class="flex flex-col items-center">
-          <%= image_tag "partners/pierre-emmanuel.webp",
-            class: "mask mask-squircle object-contain h-48 w-96 mx-auto opacity-70 mb-6"
-          %>
-          <h4 class="font-bold text-2xl">
-            Pierre-Emmanuel
-          </h4>
-          <h5 class="italic text-xl">
-            Développeur Ruby on Rails
-          </h5>
-        </div>
-      </div>
-    <% end %>
-    <div class="flex flex-col mx-auto mb-12">
-      <%= form_tag(contact_path) do %>
-        <div class="flex flex-col gap-2">
-          <%= hidden_field_tag :objet, "[Aikku PLANN] Demande de démonstration" %>
-          <%= hidden_field_tag :contenu, "" %>
-          <div class="form-control">
-            <label class="input-group">
-              <span class="text-black">Email</span>
-              <%= email_field_tag :email, nil, class: 'input input-bordered w-full', required: true %>
-            </label>
-          </div>
-          <%= recaptcha_tags unless Rails.env.development? %>
-          <button class="btn btn-success sm:text-xl max-w-full" data-turbo="false">Demander une démonstration</button>
-        </div>
-      <% end %>
-    </div>
-  </div>
-</section>
-
-<section id="offres" class="bg-secondary text-secondary-content py-24">
+<section id="offres" class="py-24">
   <h2 class="apps-title text-content mb-4">
     En savoir plus
   </h2>
@@ -469,9 +413,11 @@
   <h3 class="text-2xl font-black my-4">Support et services</h3>
   <p>
     Vous souhaitez une nouvelle fonctionnalité ou l'installer ?
-    <%= link_to 'Consultez notre offre de services', '/services', class:'link' %>.
+    <%= link_to 'Consultez notre offre de services', contact_path, class:'link' %>.
   </p>
 </section>
+
+<%= render partial:'partials/contact' %>
 
 <!--
 <%= link_to aikku_plann_path, id: 'fab', class:"hidden lg:flex fixed bottom-4 right-4 bg-accent w-12 h-12 text-white rounded-full items-center z-50" do %>
