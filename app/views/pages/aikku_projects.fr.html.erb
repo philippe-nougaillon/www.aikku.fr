@@ -28,50 +28,52 @@
   </div>
 </section>
 
-<div class="text-center">
-  <div id="carousel" class="carousel min-w-16 sm:w-3/4 mx-auto shadow-lg">
-    <div id="slide1" class="carousel-item relative w-full">
-      <%= image_tag "camino/projets.png" %>
-    </div> 
-    <div id="slide2" class="carousel-item relative w-full">
-      <%= image_tag "camino/projet.png" %>
-    </div> 
-    <div id="slide3" class="carousel-item relative w-full">
-      <%= image_tag "camino/todolist.png" %>
+<% if false %>
+  <div class="text-center">
+    <div id="carousel" class="carousel min-w-16 sm:w-3/4 mx-auto shadow-lg">
+      <div id="slide1" class="carousel-item relative w-full">
+        <%= image_tag "camino/projets.png" %>
+      </div> 
+      <div id="slide2" class="carousel-item relative w-full">
+        <%= image_tag "camino/projet.png" %>
+      </div> 
+      <div id="slide3" class="carousel-item relative w-full">
+        <%= image_tag "camino/todolist.png" %>
+      </div>
+      <div id="slide4" class="carousel-item relative w-full">
+        <%= image_tag "camino/todo.png" %>
+      </div>
+      <div id="slide5" class="carousel-item relative w-full">
+        <%= image_tag "camino/agenda.png" %>
+      </div>
+      <div id="slide6" class="carousel-item relative w-full">
+        <%= image_tag "camino/documents.png" %>
+      </div>
+      <div id="slide7" class="carousel-item relative w-full">
+        <%= image_tag "camino/tables.png" %>
+      </div>
+      <div id="slide8" class="carousel-item relative w-full">
+        <%= image_tag "camino/dashboard.png" %>
+      </div>
+      <div id="slide9" class="carousel-item relative w-full">
+        <%= image_tag "camino/user.png" %>
+      </div>
     </div>
-    <div id="slide4" class="carousel-item relative w-full">
-      <%= image_tag "camino/todo.png" %>
-    </div>
-    <div id="slide5" class="carousel-item relative w-full">
-      <%= image_tag "camino/agenda.png" %>
-    </div>
-    <div id="slide6" class="carousel-item relative w-full">
-      <%= image_tag "camino/documents.png" %>
-    </div>
-    <div id="slide7" class="carousel-item relative w-full">
-      <%= image_tag "camino/tables.png" %>
-    </div>
-    <div id="slide8" class="carousel-item relative w-full">
-      <%= image_tag "camino/dashboard.png" %>
-    </div>
-    <div id="slide9" class="carousel-item relative w-full">
-      <%= image_tag "camino/user.png" %>
+    <div data-controller="carousel-paginate">
+      <div class="flex flex-wrap justify-center w-full gap-2 mt-4">
+        <a href="#slide1" class="btn btn-accent hover:btn-accent btn-xs carousel-page" data-action="click->carousel-paginate#activate">1</a> 
+        <a href="#slide2" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">2</a> 
+        <a href="#slide3" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">3</a> 
+        <a href="#slide4" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">4</a> 
+        <a href="#slide5" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">5</a> 
+        <a href="#slide6" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">6</a> 
+        <a href="#slide7" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">7</a> 
+        <a href="#slide8" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">8</a> 
+        <a href="#slide9" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">9</a> 
+      </div>
     </div>
   </div>
-  <div data-controller="carousel-paginate">
-    <div class="flex flex-wrap justify-center w-full gap-2 mt-4">
-      <a href="#slide1" class="btn btn-accent hover:btn-accent btn-xs carousel-page" data-action="click->carousel-paginate#activate">1</a> 
-      <a href="#slide2" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">2</a> 
-      <a href="#slide3" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">3</a> 
-      <a href="#slide4" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">4</a> 
-      <a href="#slide5" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">5</a> 
-      <a href="#slide6" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">6</a> 
-      <a href="#slide7" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">7</a> 
-      <a href="#slide8" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">8</a> 
-      <a href="#slide9" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">9</a> 
-    </div>
-  </div>
-</div>
+<% end %>
 
 <div class="px-8 mt-12">
   <div id="camino" class="text-xl">

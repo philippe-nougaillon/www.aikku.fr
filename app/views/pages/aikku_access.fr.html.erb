@@ -7,34 +7,36 @@
   </h2>
 </section>
 
-<div class="text-center">
-  <div id="carousel" class="carousel min-w-16 sm:w-3/4 mx-auto shadow-lg">
-    <div id="slide1" class="carousel-item relative w-full">
-      <%= image_tag "aikku_access/table.png" %>
-    </div> 
-    <div id="slide2" class="carousel-item relative w-full">
-      <%= image_tag "aikku_access/calendar.png" %>
+<% if false %>
+  <div class="text-center">
+    <div id="carousel" class="carousel min-w-16 sm:w-3/4 mx-auto shadow-lg">
+      <div id="slide1" class="carousel-item relative w-full">
+        <%= image_tag "aikku_access/table.png" %>
+      </div> 
+      <div id="slide2" class="carousel-item relative w-full">
+        <%= image_tag "aikku_access/calendar.png" %>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <%= image_tag "aikku_access/objets.png" %>
+      </div>
+      <div id="slide4" class="carousel-item relative w-full">
+        <%= image_tag "aikku_access/attributs.png" %>
+      </div>
+      <div id="slide5" class="carousel-item relative w-full">
+        <%= image_tag "aikku_access/filtres.png" %>
+      </div>
     </div>
-    <div id="slide3" class="carousel-item relative w-full">
-      <%= image_tag "aikku_access/objets.png" %>
-    </div>
-    <div id="slide4" class="carousel-item relative w-full">
-      <%= image_tag "aikku_access/attributs.png" %>
-    </div>
-    <div id="slide5" class="carousel-item relative w-full">
-      <%= image_tag "aikku_access/filtres.png" %>
+    <div data-controller="carousel-paginate">
+      <div class="flex flex-wrap justify-center w-full gap-2 mt-4">
+        <a href="#slide1" class="btn btn-accent hover:btn-accent btn-xs carousel-page" data-action="click->carousel-paginate#activate">1</a> 
+        <a href="#slide2" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">2</a> 
+        <a href="#slide3" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">3</a> 
+        <a href="#slide4" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">4</a> 
+        <a href="#slide5" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">5</a> 
+      </div>
     </div>
   </div>
-  <div data-controller="carousel-paginate">
-    <div class="flex flex-wrap justify-center w-full gap-2 mt-4">
-      <a href="#slide1" class="btn btn-accent hover:btn-accent btn-xs carousel-page" data-action="click->carousel-paginate#activate">1</a> 
-      <a href="#slide2" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">2</a> 
-      <a href="#slide3" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">3</a> 
-      <a href="#slide4" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">4</a> 
-      <a href="#slide5" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">5</a> 
-    </div>
-  </div>
-</div>
+<% end %>
 
 <p class="text-xl mt-12">
   Vous êtes une entreprise de service avec des équipes sur le terrain (ex: BTP, SAV, Installation, Maintenance, etc.) et
