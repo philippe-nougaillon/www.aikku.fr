@@ -1,4 +1,4 @@
-<%= navbar_item 'accueil', root_path, 'Accueil' %>
+<%= navbar_item 'home', root_path, 'Accueil' %>
 <% navbar_item 'nos_clients', nos_clients_path, 'Clients' %>
 <% navbar_item 'services', services_path, 'Services' %>
 <%= navbar_item 'logiciels', logiciels_path, 'Solutions' %>
@@ -9,8 +9,10 @@
   <% end %>
 </li>
 
-<li>
-  <%= link_to url_for(request.params.merge(locale: 'en')), class: 'text-black-50', title: "Changer de langue / Switch language" do %>
-    <i class="fa-solid fa-globe"></i> FR
-  <% end %>
-</li>
+<% if false %>
+  <li>
+    <%= link_to url_for(request.params.merge(locale: 'en')), class: 'text-black-50', title: "Changer de langue / Switch language" do %>
+      <i class="fa-solid fa-globe"></i> FR
+    <% end %>
+  </li>
+<% end %>
