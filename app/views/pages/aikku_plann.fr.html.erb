@@ -111,7 +111,7 @@
 
 <section id="responsive" class="flex flex-col md:flex-row flex-wrap items-center gap-16 mt-24">
   <div class="flex-1 card w-full sm:w-full">
-    <%= image_tag "misc/planning-responsive.png", class:"shadow rounded-2xl" %>
+    <%= image_tag "misc/planning-responsive.png", class:"shadow rounded-2xl", alt: 'Logiciel sur différents écrans' %>
   </div>
   <div class="flex-1">
     <p class="text-2xl text-secondary font-light">
@@ -128,11 +128,10 @@
       Un flux .ics leur permet de le synchroniser avec l'application d'agenda de leur choix.
     </p>
     <div class="flex gap-8 mt-12">
-      <%= image_tag "logos/Gmail.svg", width: "50px" %>
-      <%= image_tag "logos/Outlook.svg", width: "50px" %>
-      <%= image_tag "logos/MacOSCalendar.webp", width: "50px" %>
-      <%= image_tag "logos/GoogleCalendar.svg", width: "50px" %>
-
+      <%= image_tag "logos/Gmail.svg", width: "50px", alt: 'Logo Gmail' %>
+      <%= image_tag "logos/Outlook.svg", width: "50px", alt: 'Logo Outlook' %>
+      <%= image_tag "logos/MacOSCalendar.webp", width: "50px", alt: 'Logo calendrier Apple' %>
+      <%= image_tag "logos/GoogleCalendar.svg", width: "50px", alt: 'Logo Google Agenda / Google Calendar' %>
     </div>
   </div>
 </section>
@@ -228,10 +227,10 @@
   </p>
   <div class="flex flex-col md:flex-row items-center justify-center gap-8">
   <div class="flex-1">
-    <%= image_tag "misc/amphi_iae.jpg", width: "650px" %>
+    <%= image_tag "misc/amphi_iae.jpg", width: "650px", alt: "Amphithéâtre IAE PARIS" %>
   </div>
   <div class="flex-1">
-    <%= image_tag "projets/planning iae-paris/logo.png", class:"mx-auto mb-8" %>
+    <%= image_tag "projets/planning iae-paris/logo.png", class:"mx-auto mb-8", alt: 'Logo IAE PARIS' %>
     <blockquote>
       <p class="text-lg">
         <i class="fa-solid fa-quote-left mr-2" style="color: #000000;"></i>
@@ -239,7 +238,7 @@
         <i class="fa-solid fa-quote-right ml-2" style="color: #000000;"></i>
       </p>
       <div class="flex items-center jutify-center md:items-start md:justify-start flex-wrap md:flex-nowrap rounded-full bg-base-100 py-2 md:pr-4 w-full md:w-fit mx-auto mt-4">
-        <%= image_tag "https://www.iae-paris.com/sites/default/files/styles/360x265/public/2022-05/Eynaud.jpg?itok=Kp7pAjfj", class:"mask mask-circle h-24 mx-auto hidden md:block" %>
+        <%= image_tag "https://www.iae-paris.com/sites/default/files/styles/360x265/public/2022-05/Eynaud.jpg?itok=Kp7pAjfj", class:"mask mask-circle h-24 mx-auto hidden md:block", alt: 'Philippe Eynaud' %>
         <div class="flex flex-col">
           <p class="font-black">Philippe Eynaud</p>
           <p>
@@ -342,8 +341,8 @@
       <%= link_to "Voir la page GitHub du projet ➡", "https://github.com/philippe-nougaillon/IAE_Planning/", class: "link link-primary text-xl", target: '_blank' %>
     </div>
     <div class="flex-1 mx-auto md:w-2/3">
-      <%= image_tag "logos/adullact.png", class:"mb-24" %>
-      <%= image_tag "logos/framalibre.webp" %>
+      <%= image_tag "logos/adullact.png", class:"mb-24", alt: 'Logo Adullact' %>
+      <%= image_tag "logos/framalibre.webp", alt: 'Logo Framalibre' %>
     </div>
   </section>
 

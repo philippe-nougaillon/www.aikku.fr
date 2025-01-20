@@ -25,7 +25,7 @@
   <p class="text-2xl my-8">
     Gérez toutes vos formations et vos salles avec une solution simple, abordable et personnalisable
   </p>
-  <%= image_tag "misc/students.jpg", width: "650px", class: 'mx-auto rounded' %>
+  <%= image_tag "misc/students.jpg", width: "650px", class: 'mx-auto rounded', alt: 'Étudiants' %>
   <%= link_to 'En savoir plus...', aikku_plann_path, class: 'text-white btn lg:btn-lg btn-outline mt-12' %>
 </section>
 
@@ -34,7 +34,7 @@
   <p class="text-2xl my-8">
     Gérez facilement la coopération et la mutualisation des services et ressources de votre intercommunalité
   </p>
-  <%= image_tag "misc/communauté-communes.jpg", width: "650px", class: 'mx-auto rounded shadow-xl' %>
+  <%= image_tag "misc/communauté-communes.jpg", width: "650px", class: 'mx-auto rounded shadow-xl', alt: 'Village' %>
   <%= link_to 'En savoir plus...', 'https://www.coopcom.fr', class: 'btn lg:btn-lg btn-outline btn-white mt-12' %>
 </section>
 
@@ -43,7 +43,7 @@
   <p class="text-2xl my-8">
     Gérez vos données métier, en ligne et en mobilité
   </p>
-  <%= image_tag "misc/dsi.webp", width: "650px", class: 'mx-auto rounded' %>
+  <%= image_tag "misc/dsi.webp", width: "650px", class: 'mx-auto rounded', alt: 'DSI / Data Scientist qui travaille' %>
   <%= link_to 'En savoir plus...', aikku_access_path, class: 'text-white btn lg:btn-lg btn-outline mt-12' %>
 </section>
 
@@ -54,14 +54,10 @@
   </h2>
   <div class="flex flex-wrap justify-center items-center gap-32 mb-16">
     <div class="w-64 rounded">
-      <%= link_to nos_clients_path(anchor: 1) do %>
-        <%= image_tag "logos/1.png", class:"mx-auto" %>
-      <% end %>
+      <%= image_tag "logos/1.png", class:"mx-auto", alt: 'Logo IAE Paris-Sorbonne' %>
     </div>
     <div class="w-64 rounded">
-      <%= link_to nos_clients_path(anchor: 8) do %>
-        <%= image_tag "logos/8.png", class:"mx-auto" %>
-      <% end %>
+      <%= image_tag "logos/8.png", class:"mx-auto", alt: 'Logo GROHE' %>
     </div>
   </div>
   <div class="flex justify-center">

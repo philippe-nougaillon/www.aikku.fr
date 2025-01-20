@@ -1,6 +1,6 @@
 <div class="hero mt-12 mb-24">
   <div class="hero-content flex-col lg:flex-row-reverse gap-8">
-    <%= image_tag 'team-working.webp', class: 'max-w-xs sm:max-w-lg rounded shadow-xl' %>
+    <%= image_tag 'team-working.webp', class: 'max-w-xs sm:max-w-lg rounded shadow-xl', alt: 'Check entre collègues' %>
 
     <div class="flex-1">
       <h1 class="text-4xl lg:text-5xl text-center lg:text-left font-black text-accent my-6 italic">
@@ -46,10 +46,8 @@
         
   <section class="flex flex-col justify-center min-h-screen mb-48">
     <div class="flex flex-col mt-24 gap-12">
-                <div class="flex flex-wrap sm:flex-nowrap gap-8 reveal">
-        <%= image_tag "partners/Sebastien.png", 
-            class: "mask mask-hexagon-2 object-contain h-48 w-96 mx-auto grayscale opacity-70"
-        %>
+      <div class="flex flex-wrap sm:flex-nowrap gap-8 reveal">
+        <%= image_tag 'partners/Sebastien.png', class: 'mask mask-hexagon-2 object-contain h-48 w-96 mx-auto grayscale opacity-70', alt: 'Sébastien POURCHAIRE' %>
         <div>
           <h4 class="font-black text-2xl text-accent">
             Sébastien POURCHAIRE
@@ -98,15 +96,11 @@
           </p>
           
         </div>
-        <%= image_tag "partners/philippe.webp",
-            class: "mask mask-hexagon-2 object-contain h-48 w-96 mx-auto grayscale opacity-70"
-        %>
+        <%= image_tag 'partners/philippe.webp', class: 'mask mask-hexagon-2 object-contain h-48 w-96 mx-auto grayscale opacity-70', alt: 'Philippe NOUGAILLON' %>
       </div>
 
       <div class="flex flex-wrap sm:flex-nowrap gap-8 reveal">
-        <%= image_tag "partners/pierre-emmanuel.webp", 
-            class: "mask mask-hexagon-2 object-contain h-48 w-96 mx-auto grayscale opacity-70"
-        %>
+        <%= image_tag 'partners/pierre-emmanuel.webp', class: 'mask mask-hexagon-2 object-contain h-48 w-96 mx-auto grayscale opacity-70', alt: 'Pierre-Emmanuel DACQUET' %>
         <div>
           <h4 class="font-black text-2xl text-accent">
             Pierre-Emmanuel DACQUET

@@ -13,7 +13,7 @@
       </p>
     </div>
     <div class="lg:w-64 card shadow-lg hover:shadow-xl p-8">
-      <%= image_tag "logos/#{@client.id}.png" %>
+      <%= image_tag "logos/#{@client.id}.png", alt: "Logo #{@client.name}"  %>
     </div>
   </div>
 <% end %>
