@@ -42,14 +42,14 @@
         <%= recaptcha_tags unless %w[localhost 127.0.0.1].include?(request.host) %>
         <p>*Champs requis</p>
         <div class="inline">
-          <%= check_box_tag :accept, nil, false, id: 'accept-checkbox' %>
+          <%= check_box_tag :accept, nil, false %>
           <%= label_tag :accept, "J'accepte explicitement l'utilisation de mon téléphone et/ou de mon adresse mail à l'usage exclusif d'un contact sur un sujet relatif aux services proposés par AIKKU" %>
         </div>
         <p>
           This site is protected by reCAPTCHA and the Google 
-          <%= link_to 'Privacy Policy', 'https://policies.google.com/privacy', class: 'text-info hover:underline' %>
+          <%= link_to 'Privacy Policy', 'https://policies.google.com/privacy', class: 'text-info hover:underline', target: '_blank' %>
           and 
-          <%= link_to 'Terms of Service', 'https://policies.google.com/terms', class: 'text-info hover:underline' %>
+          <%= link_to 'Terms of Service', 'https://policies.google.com/terms', class: 'text-info hover:underline', target: '_blank' %>
           apply.
         </p>
         <%= submit_tag "Envoyer", class: "btn btn-primary btn-outline", 'data-turbo': false, disabled: true, id: 'submit-button' %>
@@ -60,7 +60,7 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    const checkbox = document.getElementById('accept-checkbox');
+    const checkbox = document.getElementById('accept');
     const submitButton = document.getElementById('submit-button');
 
     checkbox.addEventListener('change', function() {
