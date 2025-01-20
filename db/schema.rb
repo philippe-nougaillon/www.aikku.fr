@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_11_06_152410) do
+ActiveRecord::Schema[7.1].define(version: 2025_01_17_151004) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -29,6 +29,11 @@ ActiveRecord::Schema[7.1].define(version: 2024_11_06_152410) do
     t.text "contenu"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "nom"
+    t.string "prénom"
+    t.string "structure"
+    t.string "mobile"
+    t.string "fonction"
   end
 
   create_table "pg_search_documents", force: :cascade do |t|
