@@ -6,7 +6,7 @@ module ApplicationHelper
         <li>
           <%= link_to '#{url_for(path)}',
                       class: 'flex gap-4 #{if is_active
-                                             'underline underline-offset-8 text-info font-black' end} #{classes}' do %>
+                                             'underline underline-offset-8 text-sky-400 font-black' end} #{classes}' do %>
               <span class="flex-1 whitespace-nowrap">#{label || controller_name.humanize}</span>
           <% end %>
         </li>
