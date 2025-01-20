@@ -5,32 +5,32 @@
         <h1 class="font-black text-4xl lg:text-5xl text-center text-accent mb-8 italic">
           <%= title "Vous souhaitez une démo ? <br> Contactez-nous !".html_safe %>
         </h1>
-        <div class="flex gap-4">
-          <div class="flex-1">
+        <div class="flex flex-wrap gap-4">
+          <div class="w-full lg:flex-1">
             <%= label_tag :nom, "Nom *" %>
             <%= text_field_tag :nom, params[:nom], class:"input input-sm input-bordered w-full", required: true %>
           </div>
-          <div class="flex-1">
+          <div class="w-full lg:flex-1">
             <%= label_tag :prénom, "Prénom *" %>
             <%= text_field_tag :prénom, params[:prénom], class:"input input-sm input-bordered w-full", required: true %>
           </div>
         </div>
-        <div class="flex gap-4">
-          <div class="flex-1">
+        <div class="flex flex-wrap gap-4">
+          <div class="w-full lg:flex-1">
             <%= label_tag :email, "Email *" %>
             <%= email_field_tag :email, params[:email], class:"input input-sm input-bordered w-full", required: true %>
           </div>
-          <div class="flex-1">
+          <div class="w-full lg:flex-1">
             <%= label_tag :mobile, "Téléphone" %>
             <%= text_field_tag :mobile, params[:mobile], class:"input input-sm input-bordered w-full" %>
           </div>
         </div>
-        <div class="flex gap-4">
-          <div class="flex-1">
+        <div class="flex flex-wrap gap-4">
+          <div class="w-full lg:flex-1">
             <%= label_tag :structure, "Structure *" %>
             <%= text_field_tag :structure, params[:structure], class:"input input-sm input-bordered w-full", required: true %>
           </div>
-          <div class="flex-1">
+          <div class="w-full lg:flex-1">
             <%= label_tag :fonction, "Fonction *" %>
             <%= text_field_tag :fonction, params[:fonction], class:"input input-sm input-bordered w-full", required: true %>
           </div>
@@ -41,7 +41,7 @@
         </div>
         <%= recaptcha_tags unless %w[localhost 127.0.0.1].include?(request.host) %>
         <p>*Champs requis</p>
-        <div class="inline">
+        <div class="inline mb-4">
           <%= check_box_tag :accept, nil, false %>
           <%= label_tag :accept, "J'accepte explicitement l'utilisation de mon téléphone et/ou de mon adresse mail à l'usage exclusif d'un contact sur un sujet relatif aux services proposés par AIKKU" %>
         </div>
