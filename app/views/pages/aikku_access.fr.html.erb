@@ -7,49 +7,80 @@
   </h2>
 </section>
 
-<% if false %>
-  <div class="text-center">
-    <div id="carousel" class="carousel min-w-16 sm:w-3/4 mx-auto shadow-lg">
-      <div id="slide1" class="carousel-item relative w-full">
-        <%= image_tag "aikku_access/table.png" %>
-      </div> 
-      <div id="slide2" class="carousel-item relative w-full">
-        <%= image_tag "aikku_access/calendar.png" %>
-      </div>
-      <div id="slide3" class="carousel-item relative w-full">
-        <%= image_tag "aikku_access/objets.png" %>
-      </div>
-      <div id="slide4" class="carousel-item relative w-full">
-        <%= image_tag "aikku_access/attributs.png" %>
-      </div>
-      <div id="slide5" class="carousel-item relative w-full">
-        <%= image_tag "aikku_access/filtres.png" %>
-      </div>
-    </div>
-    <div data-controller="carousel-paginate">
-      <div class="flex flex-wrap justify-center w-full gap-2 mt-4">
-        <a href="#slide1" class="btn btn-accent hover:btn-accent btn-xs carousel-page" data-action="click->carousel-paginate#activate">1</a> 
-        <a href="#slide2" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">2</a> 
-        <a href="#slide3" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">3</a> 
-        <a href="#slide4" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">4</a> 
-        <a href="#slide5" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">5</a> 
-      </div>
-    </div>
-  </div>
-<% end %>
-
 <div class="mx-4 lg:mx-24 mb-24">
   <p class="text-xl my-12">
-    Vous êtes une entreprise de service avec des équipes sur le terrain (ex: BTP, SAV, Installation, Maintenance, etc.) et
-    vous cherchez une méthode de gestion des interventions ou de field service management (FSM) ?
-    <br><br>
     Aikku ACCESS est un gestionnaire d'informations NO-CODE qui vous permet de créer  
     des collections d'objets métiers (ex: Clients, Interventions, Technicien, Frais, Projets, etc.), 
-    de les lier (Clients <==> Interventions <==> Techniciens <==> Frais) 
-    et de les partager en ligne avec vos collaborateurs.
+    de les lier (Clients <-> Interventions <-> Techniciens <-> Frais) 
+    et de les partager en ligne avec vos collaborateurs
+    <br><br>
+    <b>Assistant (IA) :</b> Posez une question à l'Assistant, basée sur les données de vos collections d'objets.
   </p>
 
+  <h3 class="text-3xl my-8">Pour qui et pour quel usage ?</h3>
 
+  <p class="text-2xl my-4">Data Management</p>
+  <p>
+    <b>Vous êtes à la recherche d'un outil simple pour gérer vos dossiers, documents, rapport, et vos informations collectées sur le terrain ?</b>
+    <br><br>
+    Aikku ACCESS a été conçu pour être utilisable sur un smartphone afin de collecter les données au plus près de leur origine et quelle que soit leur nature (Texte, Chiffre, Photo, PDF, etc.). Des données de contexte, comme l'état de la météo, la position GPS, peuvent être acquises automatiquement. Un outil de génération de Graphiques vous permet de visualiser les informations sous la forme d'une courbe ou d'un histogramme.
+  </p>
+
+  <p class="text-2xl my-4">Field Service Management (FSM)</p>
+  <p>
+    <b>Vous êtes une entreprise de service avec des équipes sur le terrain et vous cherchez une méthode de gestion de vos interventions (ex: BTP, SAV, Installation, Maintenance) ?</b>
+    <br><br>
+    Aikku ACCESS est un gestionnaire d'informations NO-CODE qui vous permet de créer des collections d'objets métiers (ex: Clients, Interventions, Technicien, Frais, Projets, etc.), de les lier (Clients <=> Interventions <=> Techniciens <=> Frais) et de les partager en ligne avec vos collaborateurs, en toute sécurité.
+  </p>
+
+  <p class="text-2xl my-4">Project Management</p>
+  <p>
+    <b>Vous êtes responsable d'une équipe et du bon déroulement d'un programme de projets ?</b>
+    <br><br>
+    Aikku ACCESS vous permet de créé rapidement, et sans faire une ligne de code, un outil de suivi de l'état de chaque projet, d'être notifié quand un changement d'état important est enregistré, et de voir vos dates d'échéances dans une vue 'Calendrier' ou dans votre agenda personnel (Google Calendar/Outlook/etc.).
+  </p>
+
+</div>
+
+<div class="text-center">
+  <div id="carousel" class="carousel min-w-16 sm:w-3/4 mx-auto shadow-lg">
+    <div id="slide1" class="carousel-item relative w-full">
+      <%= image_tag "aikku_access/accueil.png" %>
+    </div> 
+    <div id="slide2" class="carousel-item relative w-full">
+      <%= image_tag "aikku_access/objets.png" %>
+    </div> 
+    <div id="slide3" class="carousel-item relative w-full">
+      <%= image_tag "aikku_access/attributs.png" %>
+    </div>
+    <div id="slide4" class="carousel-item relative w-full">
+      <%= image_tag "aikku_access/table.png" %>
+    </div>
+    <div id="slide5" class="carousel-item relative w-full">
+      <%= image_tag "aikku_access/filtres.png" %>
+    </div>
+    <div id="slide6" class="carousel-item relative w-full">
+      <%= image_tag "aikku_access/calendar.png" %>
+    </div>
+    <div id="slide7" class="carousel-item relative w-full">
+      <%= image_tag "aikku_access/statistiques.png" %>
+    </div>
+  </div>
+
+  <div data-controller="carousel-paginate" data-turbo="false">
+    <div class="flex flex-wrap justify-center w-full gap-2 mt-4">
+      <a href="#slide1" class="btn btn-accent hover:btn-accent btn-xs carousel-page" data-action="click->carousel-paginate#activate">1</a> 
+      <a href="#slide2" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">2</a> 
+      <a href="#slide3" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">3</a> 
+      <a href="#slide4" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">4</a> 
+      <a href="#slide5" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">5</a> 
+      <a href="#slide6" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">6</a> 
+      <a href="#slide7" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">7</a> 
+    </div>
+  </div>
+</div>
+
+<div class="mx-4 lg:mx-24 my-24">
   <h3 class="apps-title">En savoir plus</h3>
   <p>
     Pour en savoir plus, veuillez consulter
