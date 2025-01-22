@@ -1,6 +1,4 @@
 <%= navbar_item 'home', root_path, 'Accueil' %>
-<% navbar_item 'nos_clients', nos_clients_path, 'Clients' %>
-<% navbar_item 'services', services_path, 'Services' %>
 <li>
   <%= link_to logiciels_path, class: "flex gap-4 #{'underline underline-offset-8 text-purple-800 font-black' if ['logiciels', 'aikku_plann', 'aikku_coopcom', 'aikku_access', 'aikku_sign', 'aikku_projects', 'prestofacto', 'talea'].include?(params[:action])}" do %>
     <span class="flex-1 whitespace-nowrap">Solutions</span>
