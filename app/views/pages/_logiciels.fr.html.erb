@@ -30,6 +30,9 @@
               cette application assure la gestion complète et collaborative des processus de planification des cours, 
               salles, formations, intervenants, étudiants, etc.
             </p>
+            <div class="card-actions">
+              <%= button_to 'En savoir plus', aikku_plann_path, method: :get, class: 'btn btn-info btn-sm' %>
+            </div>
           </div>
         </div>
       <% end %>
@@ -48,6 +51,9 @@
               <br><br>
               <b>Assistant (IA) :</b> Posez une question à l'Assistant, basée sur les données de vos collections d'objets.
             </p>
+            <div class="card-actions">
+              <%= button_to 'En savoir plus', aikku_access_path, method: :get, class: 'btn btn-info btn-sm' %>
+            </div>
           </div>
         </div>
       <% end %>
@@ -72,6 +78,9 @@
               Les données collectées peuvent être traitées par une IA pour faire de la détection d'anomalies
               (ex: fausses signatures, usages inhabituels, etc.).
             </p>
+            <div class="card-actions">
+              <%= button_to 'En savoir plus', aikku_sign_path, method: :get, class: 'btn btn-info btn-sm' %>
+            </div>
           </div>
         </div>
       <% end %>
@@ -94,6 +103,10 @@
                 <li>Assignez aux participants les choses à faire, fixez des échéances</li>
                 <li>Suivez l'activité des participants en vous abonnant aux notifications (travaux terminés, nouveaux commentaires, ajout/modification...)</li>
               </ul>
+            </p>
+            <div class="card-actions">
+              <%= button_to 'En savoir plus', aikku_projects_path, method: :get, class: 'btn btn-info btn-sm' %>
+            </div>
           </div>
         </div>
       <% end %>
@@ -111,6 +124,9 @@
               <br><br>
               Aide les petites organisations dans la gestion et la facturation de leurs prestations (repas, garderie, activités périscolaires, nuitée d'hébergement, colonie de vacances, etc.).
             </p>
+            <div class="card-actions">
+              <%= button_to 'En savoir plus', prestofacto_path, method: :get, class: 'btn btn-info btn-sm' %>
+            </div>
           </div>
         </div>
       <% end %>
@@ -126,6 +142,9 @@
               <br><br><br>
               L'objectif de cette application est de dématérialiser et de gérer le flux de travail d'un service technique
             </p>
+            <div class="card-actions">
+              <%= button_to 'En savoir plus', talea_path, method: :get, class: 'btn btn-info btn-sm' %>
+            </div>
           </div>
         </div>
       <% end %>
