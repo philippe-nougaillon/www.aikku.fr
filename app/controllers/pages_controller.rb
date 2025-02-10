@@ -67,7 +67,7 @@ class PagesController < ApplicationController
 
   def services; end
 
-  def logiciels; end
+  # def logiciels; end
 
   def prestofacto; end
 
