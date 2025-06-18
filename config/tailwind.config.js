@@ -22,7 +22,7 @@ module.exports = {
         aikku: {
           "primary": "#7030a0",
           "secondary": "#46b1e1",
-          "accent": "#37cdbe",
+          "accent": "#6161b9",
           "neutral": "#3d4451",
           "base-100": "#ffffff",
 

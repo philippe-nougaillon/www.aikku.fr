@@ -4,40 +4,31 @@
   )
 %>
 
-<div class="hero min-h-screen top-0 -mt-12" style="background-image: url(<%= asset_path('background.webp') %>)">
-  <div class="hero-overlay bg-opacity-60"></div>
+<div class="hero min-h-screen top-0" style="background-color:rgb(31, 31, 61)">
+  <div class="hero-overlay"></div>
   <div class="hero-content text-center text-neutral-content flex-col p-2 sm:p-4">
-    <div class="mb-12">
-      <p class="mb-5 text-2xl">Notre ambition</p>
-      <h1 class="mb-5 text-4xl lg:text-5xl font-black">
-        <%= description "Traduire les besoins clients en une solution simple, robuste, pérenne et parfaitement adaptée." %>
-      </h1>
-    </div>
-    <div data-theme="aikku">
-      <%= link_to "En savoir plus", root_path(anchor: "who"), class: 'btn btn-primary text-white sm:btn-lg max-w-full' %>
-    </div>
+    <h1 class="mb-5 text-4xl lg:text-5xl font-black">
+      <%# description "Le digital au service de vos besoins" %>
+      Le <span class="text-gradient">digital</span> au service de vos besoins
+    </h1>
+    <p class="text-xl lg:text-2xl text-primary-content">
+      Aïkku traduit les besoins clients en une solution simple, robuste, pérenne et parfaitement adaptée.
+      Découvrez nos logiciels adaptés aux le compte d'entités publiques, privées, et aux établissement de l'enseignement supérieur
+    </p>
+    <%= link_to 'En savoir plus...', root_path(anchor: 'aikku_plann'), class: 'btn lg:btn-lg btn-accent text-gradient hover:!text-white hover:border-none mt-12 shadow-lg' %>
   </div>
 </div>
 
-<section id="who" class="w-full text-center py-24">
-  <p class="text-3xl lg:text-4xl">
-    Nous avons développé plusieurs logiciels
-    pour le compte d'entités publiques, privées, 
-    et d'un établissement de l'enseignement supérieur
-  </p>
-  <%= link_to 'En savoir plus...', root_path(anchor: 'aikku_plann'), class: 'btn lg:btn-lg btn-outline mt-12' %>
-</section>
-
-<section id="aikku_plann" class="w-full text-center bg-secondary text-secondary-content py-24">
+<section id="aikku_plann" class="w-full text-center text-secondary-content py-24" style="background-color: #5681c9">
   <h2 class="text-5xl">Vous êtes un <b>organisme de formation</b> ?</h2>
   <p class="text-2xl my-8">
     Gérez toutes vos formations et vos salles avec une solution simple, abordable et personnalisable
   </p>
   <%= image_tag "misc/students.jpg", width: "650px", class: 'mx-auto rounded', alt: 'Étudiants' %>
-  <%= link_to 'En savoir plus...', aikku_plann_path, class: 'text-white btn lg:btn-lg btn-outline mt-12' %>
+  <%= link_to 'En savoir plus...', aikku_plann_path, class: 'btn lg:btn-lg btn-accent btn-outline !text-black border-primary hover:!text-white hover:border-none mt-12 shadow-lg' %>
 </section>
 
-<section id="aikku_coopcom" class="w-full text-center py-24">
+<section id="aikku_coopcom" class="w-full text-center py-24" style="background-color: #6161b9">
   <h2 class="text-5xl">Vous êtes une <b>communauté de communes, un EPCI</b> ?</h2>
   <p class="text-2xl my-8">
     Gérez facilement la coopération et la mutualisation des services et ressources de votre intercommunalité
@@ -46,7 +37,8 @@
   <%= link_to 'En savoir plus...', 'https://www.coopcom.fr', class: 'btn lg:btn-lg btn-outline btn-white mt-12' %>
 </section>
 
-<section id="aikku_access" class="w-full text-center bg-secondary text-secondary-content py-24">
+<section id="aikku_access" class="w-full text-center text-secondary-content py-24" style="
+">
   <h2 class="text-5xl">Vous êtes <b>DSI / Data Scientist</b> ?</h2>
   <p class="text-2xl my-8">
     Gérez vos données métier, en ligne et en mobilité

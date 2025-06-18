@@ -22,6 +22,18 @@ body{
   font-family: 'Montserrat', sans-serif;
 }
 
+:root {
+	--color_gradient_blue--end: #51c7fd;
+	--color_gradient_purple--end: #b24dff;
+}
+
+.text-gradient {
+	background-image: linear-gradient(to right, var(--color_gradient_blue--end), var(--color_gradient_purple--end)) !important;
+	-webkit-text-fill-color: transparent !important;
+	-webkit-background-clip: text !important;
+	background-clip: text !important; 
+}
+
 /* .reveal{
   position: relative;
   transform: translateY(75px);
