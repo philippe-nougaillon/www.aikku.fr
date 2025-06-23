@@ -34,6 +34,13 @@ body{
 	background-clip: text !important; 
 }
 
+.text-gradient-reverse{
+	background-image: linear-gradient(to right, var(--color_gradient_purple--end), var(--color_gradient_blue--end)) !important;
+	-webkit-text-fill-color: transparent !important;
+	-webkit-background-clip: text !important;
+	background-clip: text !important;
+}
+
 /* .reveal{
   position: relative;
   transform: translateY(75px);

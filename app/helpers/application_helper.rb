@@ -5,8 +5,7 @@ module ApplicationHelper
     render(inline: %(
         <li>
           <%= link_to '#{url_for(path)}',
-                      class: '#{if is_active
-                                  'underline underline-offset-8 text-purple-800 font-black' end} #{classes}' do %>
+                      class: '#{'underline underline-offset-8 text-info font-black' if is_active} #{classes}' do %>
               <span class="whitespace-nowrap">#{label || controller_name.humanize}</span>
           <% end %>
         </li>

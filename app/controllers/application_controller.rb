@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   before_action :set_locale
 
   def set_layout_variables
-    @sitename = 'Aikku >> Ai for you'
+    @sitename = 'Aïkku >> AI for you'
   end
 
   def set_locale
