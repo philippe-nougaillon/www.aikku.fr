@@ -25,7 +25,7 @@ gem 'turbo-rails'
 gem 'stimulus-rails'
 
 # Use Tailwind CSS [https://github.com/rails/tailwindcss-rails]
-gem 'tailwindcss-rails'
+gem 'tailwindcss-rails', '~> 3.3.1'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
@@ -81,28 +81,27 @@ gem 'acts-as-taggable-on'
 gem 'seed_dump'
 
 # SitemapGenerator is a framework-agnostic XML Sitemap generator written in Ruby with automatic Rails integration. It supports Video, News, Image, Mobile, PageMap and Alternate Links sitemap extensions and includes Rake tasks for managing your sitemaps, as well as many other great features.
-gem "sitemap_generator"
+gem 'sitemap_generator'
 
-gem 'redcarpet'
 gem 'coderay'
-gem "view_component"
+gem 'redcarpet'
+gem 'view_component'
 
 # gem "sidekiq", "~> 6.5"
 
-gem "active_decorator"
+gem 'active_decorator'
 
-gem "recaptcha"
+gem 'recaptcha'
 
 # a Ruby memcache client.
 gem 'dalli'
-gem "pg_search"
-
+gem 'pg_search'
 
 # A web server agnostic rack middleware for defining and applying rewrite rules. In many cases you can get away with Rack::Rewrite instead of writing Apache mod_rewrite rules.
-gem "rack-rewrite"
+gem 'rack-rewrite'
 
-gem "canonical-rails"
+gem 'canonical-rails'
 
-gem "meta-tags"
+gem 'meta-tags'
 
-gem "mailgun-ruby"
+gem 'mailgun-ruby'
