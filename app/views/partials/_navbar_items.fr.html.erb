@@ -15,11 +15,12 @@
     </ul>
   </details>
   <% if false %>
-    <%= link_to logiciels_path, class: "#{'underline underline-offset-8 text-purple-800 font-black' if ['logiciels', 'aikku_plann', 'aikku_coopcom', 'aikku_access', 'aikku_sign', 'aikku_projects', 'prestofacto', 'talea'].include?(params[:action])}" do %>
+    <%= link_to services_path, class: "#{'underline underline-offset-8 text-purple-800 font-black' if ['aikku_plann', 'aikku_coopcom', 'aikku_access', 'aikku_sign', 'aikku_projects', 'prestofacto', 'talea'].include?(params[:action])}" do %>
       <span class="whitespace-nowrap">Solutions</span>
     <% end %>
   <% end %>
 </li>
+<%= navbar_item 'services', services_path, 'Nos services' %>
 <%= navbar_item 'qui_sommes_nous', qui_sommes_nous_path, 'À propos' %>
 <li>
   <%= link_to contact_path, 'data-turbo': false, class: "#{'underline underline-offset-8 text-purple-800 font-black' if params[:action] == 'contact'}" do %>
