@@ -13,7 +13,7 @@
 
   <div class="my-5">
     <%= form.label :title %>
-    <%= form.text_field :title, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.text_field :title, class: "block shadow rounded-md border border-gray-200 outline-hidden px-3 py-2 mt-2 w-full" %>
   </div>
 
   <div class="my-5">
@@ -23,14 +23,14 @@
 
   <div class="my-5">
     <%= form.label :date %>
-    <%= form.date_field :date, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.date_field :date, class: "block shadow rounded-md border border-gray-200 outline-hidden px-3 py-2 mt-2 w-full" %>
   </div>
 
   <%= form.text_field :tag_list, value: post.tag_list.join(', '), label: 'Tags' %>
 
   <div class="my-5">
     <%= form.label :content %>
-    <%= form.text_area :content, rows: 40, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.text_area :content, rows: 40, class: "block shadow rounded-md border border-gray-200 outline-hidden px-3 py-2 mt-2 w-full" %>
   </div>
 
   <div class="inline">
