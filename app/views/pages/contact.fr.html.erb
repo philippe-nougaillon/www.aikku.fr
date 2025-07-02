@@ -1,5 +1,5 @@
 <%= form_tag do %>
-  <section class="mx-auto px-4 md:w-1/2 mb-24">
+  <section class="mx-auto px-4 md:w-1/2 mb-24" data-controller="contact">
     <div class="card shadow bg-white mt-4">
       <div class="card-body px-4 lg:px-8 pt-4">
         <h1 class="font-black text-4xl lg:text-5xl text-center text-accent mb-8 italic">
@@ -7,12 +7,12 @@
         </h1>
         <div class="flex flex-wrap gap-4">
           <div class="w-full lg:flex-1">
-            <%= label_tag :nom, "Nom *" %>
-            <%= text_field_tag :nom, params[:nom], class:"input input-sm input-bordered w-full", required: true %>
+            <%= label_tag :nom, "Nom" %>
+            <%= text_field_tag :nom, params[:nom], class:"input input-sm input-bordered w-full" %>
           </div>
           <div class="w-full lg:flex-1">
-            <%= label_tag :prénom, "Prénom *" %>
-            <%= text_field_tag :prénom, params[:prénom], class:"input input-sm input-bordered w-full", required: true %>
+            <%= label_tag :prénom, "Prénom" %>
+            <%= text_field_tag :prénom, params[:prénom], class:"input input-sm input-bordered w-full" %>
           </div>
         </div>
         <div class="flex flex-wrap gap-4">
@@ -27,12 +27,12 @@
         </div>
         <div class="flex flex-wrap gap-4">
           <div class="w-full lg:flex-1">
-            <%= label_tag :structure, "Structure *" %>
-            <%= text_field_tag :structure, params[:structure], class:"input input-sm input-bordered w-full", required: true %>
+            <%= label_tag :structure, "Structure" %>
+            <%= text_field_tag :structure, params[:structure], class:"input input-sm input-bordered w-full" %>
           </div>
           <div class="w-full lg:flex-1">
-            <%= label_tag :fonction, "Fonction *" %>
-            <%= text_field_tag :fonction, params[:fonction], class:"input input-sm input-bordered w-full", required: true %>
+            <%= label_tag :fonction, "Fonction" %>
+            <%= text_field_tag :fonction, params[:fonction], class:"input input-sm input-bordered w-full" %>
           </div>
         </div>
         <div>
@@ -42,7 +42,7 @@
         <%= recaptcha_tags unless %w[localhost 127.0.0.1].include?(request.host) %>
         <p>*Champs requis</p>
         <div class="inline mb-4" data-turbo="false">
-          <%= check_box_tag :accept, nil, false, class: 'hover:cursor-pointer' %>
+          <%= check_box_tag :accept, nil, false, class: 'hover:cursor-pointer', 'data-action':"change->contact#disable_button_send" %>
           <%= label_tag :accept, "J'accepte explicitement l'utilisation de mon téléphone et/ou de mon adresse mail à l'usage exclusif d'un contact sur un sujet relatif aux services proposés par AIKKU", class: 'hover:cursor-pointer' %>
         </div>
         <p>
@@ -57,14 +57,3 @@
     </div>
   </section>
 <% end %>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const checkbox = document.getElementById('accept');
-    const submitButton = document.getElementById('submit-button');
-
-    checkbox.addEventListener('change', function() {
-      submitButton.disabled = !checkbox.checked;
-    });
-  });
-</script>
