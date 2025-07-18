@@ -1,11 +1,5 @@
 @import 'tailwindcss';
 
-@import '../../assets/stylesheets/actiontext.css' layer(utilities);
-
-@plugin '@tailwindcss/forms';
-@plugin '@tailwindcss/aspect-ratio';
-@plugin '@tailwindcss/typography';
-@plugin '@tailwindcss/container-queries';
 @plugin "daisyui";
 @plugin "daisyui/theme" {
   name: "aikku";
