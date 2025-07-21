@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
-@plugin "daisyui";
-@plugin "daisyui/theme" {
+@plugin "./daisyui.js";
+@plugin "./daisyui-theme.js" {
   name: "aikku";
   default: true;
   --color-base-100: #FAFAFA;
