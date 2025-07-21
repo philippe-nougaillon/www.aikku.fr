@@ -5,9 +5,13 @@
   name: "aikku";
   default: true;
   --color-base-100: #FAFAFA;
-  --color-primary: #50B9DF;
-  --color-secondary: #6A219C;
   --color-base-content: #1E1B18;
+  --color-primary: #7030a0;
+  --color-secondary: #46b1e1;
+  --color-neutral: #3d4451;
+  --color-accent: #6161b9;
+  --color-info: #1f1f3d;
+  --radius-field: 0rem;
 }
 @source "../../../public/*.html";
 @source "../../../app/helpers/**/*.rb";
