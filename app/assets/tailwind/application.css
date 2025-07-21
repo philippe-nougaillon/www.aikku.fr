@@ -1,0 +1,71 @@
+@import 'tailwindcss';
+
+@plugin "./daisyui.js"{
+  themes: lofi --default;
+}
+@plugin "./daisyui-theme.js" {
+  name: "aikku";
+  default: true;
+  --color-base-100: #FAFAFA;
+  --color-base-content: #1E1B18;
+  --color-primary: #7030a0;
+  --color-secondary: #46b1e1;
+  --color-secondary-content: #000000;
+  --color-neutral: #3d4451;
+  --color-success: #00A96E;
+  --color-accent: #6161b9;
+  --color-info: #1f1f3d;
+  --radius-field: 0rem;
+}
+@source "../../../public/*.html";
+@source "../../../app/helpers/**/*.rb";
+@source "../../../app/javascript/**/*.js";
+@source "../../../app/views/**/*";
+
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@layer components {
+  input[required], select[required] {
+    @apply border-red-400;
+    &:valid{
+      @apply border-green-400;
+    }
+  }
+
+  h2.apps-title {
+    @apply !text-4xl !font-black my-4
+  }
+
+  h3.apps-title {
+    @apply !text-2xl !font-black my-4 text-accent
+  }
+
+  #guide_planning ul {
+    @apply pl-4
+  }
+
+  .section {
+    @apply px-4 py-8 lg:p-24
+  }
+
+  main section {
+    @apply px-4 py-8 lg:px-24
+  }
+}

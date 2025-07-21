@@ -1,16 +1,16 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.3.1'
+ruby '3.4.4'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem 'rails', '~> 7.1.3'
+gem 'rails', '~> 8.0'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 
 # Use postgresql as the database for Active Record
-gem 'pg', '~> 1.1'
+gem 'pg'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma'
@@ -25,7 +25,7 @@ gem 'turbo-rails'
 gem 'stimulus-rails'
 
 # Use Tailwind CSS [https://github.com/rails/tailwindcss-rails]
-gem 'tailwindcss-rails'
+gem 'tailwindcss-rails', '~> 4.1'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
@@ -81,28 +81,27 @@ gem 'acts-as-taggable-on'
 gem 'seed_dump'
 
 # SitemapGenerator is a framework-agnostic XML Sitemap generator written in Ruby with automatic Rails integration. It supports Video, News, Image, Mobile, PageMap and Alternate Links sitemap extensions and includes Rake tasks for managing your sitemaps, as well as many other great features.
-gem "sitemap_generator", "~> 6.2"
+gem 'sitemap_generator'
 
-gem 'redcarpet'
 gem 'coderay'
-gem "view_component", "~> 2.59"
+gem 'redcarpet'
+gem 'view_component'
 
 # gem "sidekiq", "~> 6.5"
 
-gem "active_decorator", "~> 1.4"
+gem 'active_decorator'
 
-gem "recaptcha"
+gem 'recaptcha'
 
 # a Ruby memcache client.
 gem 'dalli'
-gem "pg_search", "~> 2.3"
-
+gem 'pg_search'
 
 # A web server agnostic rack middleware for defining and applying rewrite rules. In many cases you can get away with Rack::Rewrite instead of writing Apache mod_rewrite rules.
-gem "rack-rewrite", "~> 1.5"
+gem 'rack-rewrite'
 
-gem "canonical-rails", "~> 0.2.14"
+gem 'canonical-rails'
 
-gem "meta-tags", "~> 2.18"
+gem 'meta-tags'
 
-gem "mailgun-ruby", "~> 1.2"
+gem 'mailgun-ruby'
