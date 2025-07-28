@@ -1,5 +1,5 @@
 <section class="text-center">
-  <h1 class="font-black text-5xl lg:text-6xl text-purple-800 mb-6 pt-8 italic">
+  <h1 class="font-black text-5xl lg:text-6xl text-secondary mb-6 pt-8 italic">
     <%= title "Aikku ACCESS" %>
   </h1>
   <h2 class="text-lg xl:text-2xl px-6">
@@ -97,22 +97,25 @@
     <%= link_to "le guide d'utilisation", "https://access.aikku.eu/a_propos", class: 'link', target: '_blank' %>.
   </p>
 
-  <h3 class="apps-title">Compte de démonstration</h3>
+  <h3 class="apps-title">Démonstration</h3>
   <p>
-    Tester l'application en 
-    <%= link_to "mode Invité", "https://access.aikku.eu/fr/users/1/connect_guest_user", class: 'link', target: '_blank' %>.
+    Tester l'application sur notre site de démonstration.
+    <br>
+    <%= link_to "Se connecter en mode Invité", "https://access.aikku.eu/fr/users/1/connect_guest_user", class: 'link', target: '_blank' %>.
   </p>
 
   <h3 class="apps-title">Développement</h3>
   <p>
-    Aikku ACCESS est développé et maintenu par 
-    <%= link_to 'AIKKU SAS', root_path, class:'link' %>.
+    Ce projet est développé et maintenu en France, par nous-mêmes.
+    <br>
+    Le code source est publié sous licence libre sur
+    <%= link_to 'GitHub', "https://github.com/philippe-nougaillon/crystal-data7", class: 'link', target: '_blank' %>.
   </p>
 
   <h3 class="apps-title">Support et services</h3>
   <p>
     Vous souhaitez une nouvelle fonctionnalité ou installer Aikku ACCESS ?
-    <%= link_to 'Consultez notre offre de services', contact_path, class:'link' %>.
+    <%= link_to 'Consultez notre offre de services', services_path, class:'link' %>.
   </p>
 </div>
 

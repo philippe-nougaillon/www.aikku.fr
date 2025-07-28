@@ -1,59 +1,48 @@
 <%= form_tag do %>
-  <section class="mx-auto px-4 md:w-1/2 mb-24" data-controller="contact">
-    <div class="card shadow bg-white mt-4">
-      <div class="card-body px-4 lg:px-8 pt-4">
-        <h1 class="font-black text-4xl lg:text-5xl text-center text-accent mb-8 italic">
-          <%= title "Vous souhaitez une démo ? <br> Contactez-nous !".html_safe %>
-        </h1>
-        <div class="flex flex-wrap gap-4">
-          <div class="w-full lg:flex-1">
-            <%= label_tag :nom, "Nom" %>
-            <%= text_field_tag :nom, params[:nom], class:"input input-sm input-bordered w-full" %>
-          </div>
-          <div class="w-full lg:flex-1">
-            <%= label_tag :prénom, "Prénom" %>
-            <%= text_field_tag :prénom, params[:prénom], class:"input input-sm input-bordered w-full" %>
-          </div>
-        </div>
-        <div class="flex flex-wrap gap-4">
-          <div class="w-full lg:flex-1">
-            <%= label_tag :email, "Email *" %>
-            <%= email_field_tag :email, params[:email], class:"input input-sm input-bordered w-full", required: true %>
-          </div>
-          <div class="w-full lg:flex-1">
-            <%= label_tag :mobile, "Téléphone" %>
-            <%= text_field_tag :mobile, params[:mobile], class:"input input-sm input-bordered w-full" %>
-          </div>
-        </div>
-        <div class="flex flex-wrap gap-4">
-          <div class="w-full lg:flex-1">
-            <%= label_tag :structure, "Structure" %>
-            <%= text_field_tag :structure, params[:structure], class:"input input-sm input-bordered w-full" %>
-          </div>
-          <div class="w-full lg:flex-1">
-            <%= label_tag :fonction, "Fonction" %>
-            <%= text_field_tag :fonction, params[:fonction], class:"input input-sm input-bordered w-full" %>
-          </div>
-        </div>
-        <div>
-          <%= label_tag :contenu, "Message *" %>
-          <%= text_area_tag :contenu, params[:contenu], class:"textarea textarea-bordered w-full", rows: 5, required: true %>
-        </div>
-        <%= recaptcha_tags unless %w[localhost 127.0.0.1].include?(request.host) %>
-        <p>*Champs requis</p>
-        <div class="inline mb-4" data-turbo="false">
-          <%= check_box_tag :accept, nil, false, class: 'hover:cursor-pointer', 'data-action':"change->contact#disable_button_send" %>
-          <%= label_tag :accept, "J'accepte explicitement l'utilisation de mon téléphone et/ou de mon adresse mail à l'usage exclusif d'un contact sur un sujet relatif aux services proposés par AIKKU", class: 'hover:cursor-pointer' %>
-        </div>
-        <p>
-          This site is protected by reCAPTCHA and the Google 
-          <%= link_to 'Privacy Policy', 'https://policies.google.com/privacy', class: 'text-info hover:underline', target: '_blank' %>
-          and 
-          <%= link_to 'Terms of Service', 'https://policies.google.com/terms', class: 'text-info hover:underline', target: '_blank' %>
-          apply.
-        </p>
-        <%= submit_tag "Envoyer", class: "btn btn-primary btn-outline", 'data-turbo': false, disabled: true, id: 'submit-button' %>
+  <section class="flex flex-wrap gap-8 lg:justify-around items-center my-8 lg:my-24" data-controller="contact">
+    <div>
+      <h1 class="font-black text-4xl lg:text-5xl text-secondary mb-8 lg:mb-16 italic">
+        <%= title "Nous contacter".html_safe %>
+      </h1>
+      <p class="opacity-50 mt-4">
+        AIKKU (SAS)
+        <br>  
+        Tour Ariane - La Défense 
+        <br>
+        5, Place de la Pyramide
+        <br>
+        92800 PUTEAUX
+        <br>
+        FRANCE
+      </p>
+      <div class="flex gap-4 mt-8">
+        <%= mail_to "contact@aikku.eu" do %>
+          <i class="fa-solid fa-envelope fa-2xl"></i>
+        <% end %>
+        <%= link_to "https://www.linkedin.com/company/aikku-sas", target: "_blank" do %>
+          <i class="fa-brands fa-linkedin fa-2xl"></i>
+        <% end %>
       </div>
+    </div>
+    <div>
+      <p class="mb-4">
+        Laissez-nous un message, nous vous répondrons dans les meilleurs délais.
+      </p>
+      <%= email_field_tag :email, params[:email], class:"input input-bordered w-full", required: true, placeholder: "Entrez une adresse email valide" %>
+      <%= text_field_tag :structure, params[:structure], class:"input input-bordered w-full mt-4", required: true, placeholder: 'Entrez votre nom d\'entreprise' %>
+      <%= text_area_tag :contenu, params[:contenu], class:"textarea textarea-bordered w-full mt-4", rows: 4, required: true, placeholder: "Votre message" %>
+      <div class="flex flex-wrap items-center gap-2 mt-4">
+        <%# recaptcha_tags unless %w[localhost 127.0.0.1].include?(request.host) %>
+        <%= recaptcha_tags %>
+      </div>
+      <!--
+      <div class="inline mb-4" data-turbo="false">
+        <%# check_box_tag :accept, nil, false, class: 'hover:cursor-pointer', 'data-action':"change->contact#disable_button_send" %>
+        <%# label_tag :accept, "J'accepte explicitement l'utilisation de mon téléphone et/ou de mon adresse mail à l'usage exclusif d'un contact sur un sujet relatif aux services proposés par AIKKU", class: 'hover:cursor-pointer' %>
+      </div>
+      <%# submit_tag "Envoyer", class: "btn btn-primary btn-outline", 'data-turbo': false, disabled: true, id: 'submit-button' %>
+      -->
+      <%= submit_tag "Envoyer", class: "btn btn-primary btn-outline w-full btn-lg mt-4", 'data-turbo': false %>
     </div>
   </section>
 <% end %>

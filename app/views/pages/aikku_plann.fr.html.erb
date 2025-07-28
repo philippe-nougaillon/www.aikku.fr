@@ -1,5 +1,5 @@
 <section class="text-center mb-16">
-  <h1 class="font-black text-6xl text-purple-800 mb-12 pt-8 italic">
+  <h1 class="font-black text-6xl text-secondary mb-12 pt-8 italic">
     <%= title "Aikku PLANN " %>
   </h1>
   <h2 class="text-3xl lg:text-4xl mb-12 font-black leading-10!">
@@ -396,23 +396,33 @@
 <% end %>
 
 <section id="offres" class="py-24">
-  <h2 class="apps-title text-content mb-4">
+  <h3 class="apps-title text-content mb-4">
     En savoir plus
   </h2>
   <p>
-    Pour en savoir plus, veuillez nous consulter.
+    Pour en savoir plus, veuillez 
+    <%= link_to 'nous contacter', contact_path, class: 'link' %>.
   </p>
 
-  <h3 class="text-2xl font-black my-4">Développement</h3>
+  <h3 class="apps-title">Démonstration</h3>
   <p>
-    Ce projet est développé et maintenu par 
-    <%= link_to 'AIKKU SAS', root_path, class:'link' %>.
+    Tester l'application sur notre 
+    <%= link_to "site de démonstration", "https://plann.aikku.eu", class: 'link', target: '_blank' %>.
   </p>
 
-  <h3 class="text-2xl font-black my-4">Support et services</h3>
+  <h3 class="apps-title">Développement</h3>
+  <p>
+    Ce projet est développé et maintenu en France, par nous-mêmes.
+    <br>
+    Le code source est publié sous licence libre sur
+    <%= link_to 'GitHub', "https://github.com/philippe-nougaillon/Planning_IAE", class: 'link', target: '_blank' %>.
+  </p>
+
+
+  <h3 class="apps-title">Support et services</h3>
   <p>
     Vous souhaitez une nouvelle fonctionnalité ou l'installer ?
-    <%= link_to 'Consultez notre offre de services', contact_path, class:'link' %>.
+    <%= link_to 'Consultez notre offre de services', services_path, class:'link' %>.
   </p>
 </section>
 

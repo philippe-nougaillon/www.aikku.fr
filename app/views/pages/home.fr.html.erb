@@ -17,11 +17,11 @@
 </div>
 
 <section class="w-full text-secondary-content py-24">
-  <h2 class="text-4xl lg:text-5xl text-center font-black">
+  <h2 class="text-3xl lg:text-5xl text-center font-black mb-12">
     Notre devise : <span class="text-gradient-reverse">AI for You</span>
   </h2>
         
-  <p class="text-xl mt-12 mb-3">
+  <p class="text-xl mb-3">
     Découvrez la <b>plateforme Aïkku</b> et nos logiciels développés pour le compte d'entités publiques, privées ou établissement de l'enseignement supérieur.
   </p>
 
@@ -36,17 +36,17 @@
 </section>
 
 <section id="secteurs" class="w-full text-white py-24 bg-info">
-  <h2 class="text-4xl lg:text-5xl text-center font-black mb-24">Nos secteurs clés</h2>
+  <h2 class="text-3xl lg:text-5xl text-center font-black mb-24">Nos <span class="text-gradient">secteurs clés</span></h2>
   <div class="flex flex-wrap gap-4 justify-around">
     <div class="card bg-white w-96 shadow-xl" style="background-color: #5681c9">
       <figure>
         <%= image_tag "misc/students.jpg", class: 'object-cover h-48 w-full', alt: 'Étudiants' %>
       </figure>
       <div class="card-body">
-        <h2 class="card-title">Formation supérieure</h2>
-        <p class="text-justify">Gérez toutes vos formations et vos salles avec une solution simple, abordable et personnalisable</p>
-        <div class="card-actions justify-end">
-          <%= link_to 'En savoir plus', aikku_plann_path, class: 'btn btn-sm shadow-lg' %>
+        <h2 class="card-title mb-4">Formation supérieure</h2>
+        <p>Gérez toutes vos formations et vos salles avec une solution simple, abordable et personnalisable</p>
+        <div class="card-actions">
+          <%= link_to 'En savoir plus', aikku_plann_path, class: 'btn btn-sm shadow-lg mt-4' %>
         </div>
       </div>
     </div>
@@ -56,10 +56,10 @@
         <%= image_tag "misc/communauté-communes.jpg", class: 'object-cover h-48 w-full', alt: 'Village' %>
       </figure>
       <div class="card-body">
-        <h2 class="card-title">Collectivité locale</h2>
-        <p class="text-justify">Gérez facilement la coopération et la mutualisation des services et ressources de votre intercommunalité (EPCI)</p>
-        <div class="card-actions justify-end">
-          <%= link_to 'En savoir plus', 'https://www.coopcom.fr', class: 'btn btn-sm shadow-lg' %>
+        <h2 class="card-title mb-4">Collectivité locale</h2>
+        <p>Gérez facilement la coopération et la mutualisation des services et ressources de votre intercommunalité (EPCI)</p>
+        <div class="card-actions">
+          <%= link_to 'En savoir plus', 'https://www.coopcom.fr', class: 'btn btn-sm shadow-lg mt-4' %>
         </div>
       </div>
     </div>
@@ -69,10 +69,10 @@
         <%= image_tag "misc/dsi.jpg", class:"object-cover h-48 w-full", alt: 'DSI / Data Scientist qui travaille' %>
       </figure>
       <div class="card-body">
-        <h2 class="card-title">Analyste de données <br>Data Analyst</h2>
-        <p class="text-justify">Interface No Code avec IA intégrée (ChatGPT) pour gérez vos données métier, en ligne et en mobilité</p>
-        <div class="card-actions justify-end">
-          <%= link_to 'En savoir plus', aikku_access_path, class: 'btn btn-sm shadow-lg' %>
+        <h2 class="card-title mb-4">Analyste de données</h2>
+        <p>Interface No Code avec IA intégrée (ChatGPT) pour gérez vos données métier, en ligne et en mobilité</p>
+        <div class="card-actions">
+          <%= link_to 'En savoir plus', aikku_access_path, class: 'btn btn-sm shadow-lg mt-4' %>
         </div>
       </div>
     </div>
@@ -80,9 +80,11 @@
 </section>
 
 <section id="expérience" class="w-full text-center py-24">
-  <h2 class="text-5xl font-black">Notre expérience</h2>
-  <p class="text-2xl my-8">
-    Aïkku est une société récente mais <b>ses fondateurs travaillent ensemble depuis plus de 20 ans</b>, sur de nombreux projets validés dans le secteur de la santé, pour des clients tels que Sanofi (eCRF), L’Oréal (ePRO), PPRS Research (CDMS), AirJin (IoT)
+  <h2 class="text-3xl lg:text-5xl font-black mb-12">Une expérience de plus de 20 ans</h2>
+  <p class="text-2xl mb-8">
+    Aïkku est une société récente, mais ses fondateurs travaillent ensemble depuis plus de 20 ans.
+    <br>
+    Ensemble, ils ont construits de nombreux projets validés, dans le secteur de la santé, pour des clients tels que <b>Sanofi</b> (eCRF), <b>L’Oréal</b> (ePRO), <b>PPRS Research</b> (CDMS), <b>AirJin</b> (IoT)
   </p>
 </section>
 <!--
@@ -116,18 +118,18 @@
 -->
 
 
-<section id="clients" class="flex flex-col justify-center min-h-screen bg-info">
-  <h2 class="text-center text-4xl lg:text-5xl font-black text-gradient mt-24 mb-24">
-    Ils nous font confiance
+<section id="clients" class="flex flex-col justify-center min-h-screen">
+  <h2 class="text-center text-4xl lg:text-5xl font-black mb-24">
+    Ils nous font <span class="text-gradient">confiance</span>
   </h2>
   <div class="flex flex-wrap justify-center items-center gap-32 mb-16">
-    <div class="w-64 h-64 bg-slate-200 rounded flex items-center">
-      <%= image_tag "logos/1.png", class:"mx-auto bg-slate-200 p-8 rounded", alt: 'Logo IAE Paris-Sorbonne' %>
+    <div class="w-64 h-64 rounded flex items-center">
+      <%= image_tag "logos/1.png", class:"mx-auto p-8", alt: 'Logo IAE Paris-Sorbonne' %>
     </div>
-    <div class="w-64 h-64 flex items-center">
+    <div class="w-64 h-64 bg-info rounded flex items-center">
       <%= image_tag "logos/logo-infogene.svg", class:"mx-auto p-8 rounded", alt: 'Logo Infogene' %>
     </div>
-    <div class="w-64 h-64 bg-slate-200 rounded flex items-center">
+    <div class="w-64 h-64 rounded flex items-center">
       <%= image_tag "logos/8.png", class:"mx-auto p-8", alt: 'Logo GROHE' %>
     </div>
   </div>
