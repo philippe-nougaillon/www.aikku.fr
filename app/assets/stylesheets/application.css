@@ -113,3 +113,7 @@ body{
     border-color: hsl(var(--p)/var(--tw-border-opacity));
 	}
 }
+
+.menu a, .menu summary {
+  background-color: transparent;
+}

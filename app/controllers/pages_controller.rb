@@ -24,15 +24,15 @@ class PagesController < ApplicationController
   def contact; end
 
   def contact_submit
-    if verify_recaptcha || Rails.env.development?
+    # if verify_recaptcha || Rails.env.development?
       message = Message.create(email: params[:email], objet: params[:objet], contenu: params[:contenu],
                                nom: params[:nom], prénom: params[:prénom], structure: params[:structure], fonction: params[:fonction], mobile: params[:mobile])
       ContactMailer.submitted(message).deliver_now
       redirect_to root_path, notice: t('contact.message_sent')
-    else
-      flash[:alert] = t('contact.recaptcha_problem')
-      render 'contact'
-    end
+    # else
+    #   flash[:alert] = t('contact.recaptcha_problem')
+    #   render 'contact'
+    # end
   end
 
   def qui_sommes_nous; end
