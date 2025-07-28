@@ -5,15 +5,14 @@
 %>
 
 
-<div class="flex flex-col py-12 lg:py-36 bg-info top-0 h-full text-center text-neutral-content p-2 sm:p-4">
-  <h1 class="mb-12 text-4xl lg:text-6xl font-black">
+<div class="top-0 text-center text-neutral-content p-2 sm:p-4 py-12 lg:py-36" style="background-image: url(<%= asset_path('background.webp') %>); background-position: center;">
+  <h1 class="mb-12 text-4xl lg:text-6xl font-black text-shadow-lg/30">
     <%# description "Le digital au service de vos besoins" %>
-    Le <span class="text-gradient">digital</span> au service de vos besoins
+    Le <span class="text-gradient text-shadow-none">digital</span> au service de vos besoins
   </h1>
-  <p class="text-xl lg:text-2xl text-primary-content font-black">
+  <p class="text-xl lg:text-2xl text-primary-content font-black text-shadow-lg/30">
     AÏKKU traduit les besoins clients en une solution simple, robuste, pérenne et parfaitement adaptée
   </p>
-  <%= video_tag 'background-video.mp4', autoplay: true %>
   <%# link_to 'En savoir plus...', root_path(anchor: 'aikku_plann'), class: 'btn lg:btn-lg btn-accent text-gradient hover:text-white! mt-12 shadow-lg' %>
 </div>
 
@@ -82,7 +81,7 @@
 
 <section id="expérience" class="w-full text-center pt-24">
   <h2 class="text-3xl lg:text-5xl font-black mb-12">Une expérience de plus de 20 ans</h2>
-  <p class="text-2xl">
+  <p class="lg:text-2xl">
     Aïkku est une société récente, mais ses fondateurs travaillent ensemble depuis plus de 20 ans.
     <br>
     Ensemble, ils ont construits de nombreux projets validés, dans le secteur de la santé, pour des clients tels que <b>Sanofi</b> (eCRF), <b>L’Oréal</b> (ePRO), <b>PPRS Research</b> (CDMS), <b>AirJin</b> (IoT)
@@ -120,7 +119,7 @@
 
 
 <section id="clients" class="flex flex-col justify-center min-h-screen">
-  <h2 class="text-center text-4xl lg:text-5xl font-black mb-24">
+  <h2 class="text-center text-3xl lg:text-5xl font-black mb-24">
     Ils nous font <span class="text-gradient">confiance</span>
   </h2>
   <div class="flex flex-wrap justify-center items-center gap-32 mb-16">
