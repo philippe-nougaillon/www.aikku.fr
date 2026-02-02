@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/commonlit/canonical-rails.git
+  revision: 97bcb28b910b08ce4dc0169eae55a8cd3d4f26ff
+  branch: bump-rails-8-1
+  specs:
+    canonical-rails (0.2.17)
+      actionview (>= 4.1, < 8.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -339,6 +347,7 @@ DEPENDENCIES
   active_decorator
   acts-as-taggable-on
   bootsnap
+  canonical-rails!
   coderay
   dalli
   debug

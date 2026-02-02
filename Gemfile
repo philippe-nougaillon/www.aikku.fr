@@ -100,7 +100,7 @@ gem 'pg_search'
 # A web server agnostic rack middleware for defining and applying rewrite rules. In many cases you can get away with Rack::Rewrite instead of writing Apache mod_rewrite rules.
 gem 'rack-rewrite'
 
-# gem 'canonical-rails'
+gem 'canonical-rails', github: 'commonlit/canonical-rails', branch: 'bump-rails-8-1'
 
 gem 'meta-tags'
 
