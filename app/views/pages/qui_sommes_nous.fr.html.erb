@@ -26,7 +26,7 @@
   <section class="flex flex-col justify-center min-h-screen mb-48">
     <div class="flex flex-col mt-24 gap-12">
       <div class="flex flex-wrap sm:flex-nowrap gap-8">
-        <%= image_tag 'partners/Pierre-Emmanuel.webp', class: 'mask mask-circle object-contain h-48 w-96 mx-auto grayscale opacity-70', alt: 'Pierre-Emmanuel DACQUET' %>
+        <%= image_tag 'partners/pierre-emmanuel.webp', class: 'mask mask-circle object-contain h-48 w-96 mx-auto grayscale opacity-70', alt: 'Pierre-Emmanuel DACQUET' %>
         <div>
           <h4 class="font-black text-2xl text-accent">
             Pierre-Emmanuel DACQUET
@@ -48,9 +48,32 @@
       <div class="flex flex-col-reverse sm:flex-row flex-wrap sm:flex-nowrap gap-8">
         <div>
           <h4 class="sm:text-right font-black text-2xl text-accent">
-            Alexandre MEUNIER
+            Daniela ISAZA HURTADO
           </h4>
           <h5 class="sm:text-right italic text-xl">
+            Aka Dani
+          </h5>
+          <p class="text-justify mt-4">
+          Après plusieurs expériences professionnelles, Dani s’est orientée vers l’informatique,
+          où elle a trouvé sa vocation. Elle a suivi une formation d’un an chez Ada Tech School,
+          avant de rejoindre AIKKU grâce à l’accompagnement de Philippe NOUGAILLON. Investie et en constante progression, 
+          Daniela accorde une attention particulière
+          à la qualité des solutions et à l’expérience utilisateur.
+          <%= link_to "https://www.linkedin.com/in/danielais/" do %>
+              <i class="fa-brands fa-linkedin"></i>
+            <% end %>
+          </p>
+        </div>
+        <%= image_tag 'partners/daniela.webp', class: 'mask mask-circle object-contain h-48 w-96 mx-auto grayscale opacity-70', alt: 'Alexandre MEUNIER' %>
+      </div>
+
+      <div class="flex flex-col-reverse sm:flex-row flex-wrap sm:flex-nowrap gap-8">
+      <%= image_tag 'partners/alexandre.webp', class: 'mask mask-circle object-contain h-48 w-96 mx-auto grayscale opacity-70', alt: 'Alexandre MEUNIER' %>
+        <div>
+          <h4 class="sm:text-left font-black text-2xl text-accent">
+            Alexandre MEUNIER
+          </h4>
+          <h5 class="sm:text-left italic text-xl">
             Aka Alex
           </h5>
           <p class="text-justify mt-4">
@@ -70,39 +93,39 @@
           </p>
           
         </div>
-        <%= image_tag 'partners/Alexandre.webp', class: 'mask mask-circle object-contain h-48 w-96 mx-auto grayscale opacity-70', alt: 'Alexandre MEUNIER' %>
       </div>
 
       <div class="flex flex-col-reverse sm:flex-row flex-wrap sm:flex-nowrap gap-8">
+      <div>
+      <h4 class="sm:text-right font-black text-2xl text-accent">
+      Philippe NOUGAILLON
+      </h4>
+      <h5 class="sm:text-right italic text-xl">
+      Aka Phil
+      </h5>
+      <p class="text-justify mt-4">
+      Entrepreneur, Développeur et Consultant, passionné d'informatique Open-Source, 
+      avec une expérience de plus de 30 ans, Phil est adepte des approches 'XP / RAD / AGILE / LEAN / SCRUM'. 
+      Phil a mené à bien plus de 50 projets (développement, transformation digitale, rénovation de système d'information)
+      et développé 3 applications open-source, tout en continuant à former P-E. 
+      À l'écoute et force de proposition, Phil aime répondre au mieux aux besoins client en livrant (dans les temps) des solutions économiques et adaptées. 
+      Et comme il a maintenant plein d'histoires à raconter, Phil s'est engagé dans la formation et le mentorat de jeunes Développeurs et Product Managers (WebSchoolFactory / OpenClassrooms / Simplon).  
+      <%= link_to "https://www.linkedin.com/in/philnoug/" do %>
+        <i class="fa-brands fa-linkedin"></i>
+        <% end %>
+        </p>
+        
+        </div>
         <%= image_tag 'partners/philippe.webp', class: 'mask mask-circle object-contain h-48 w-96 mx-auto grayscale opacity-70', alt: 'Philippe NOUGAILLON' %>
+      </div>
+
+      <div class="flex flex-col-reverse sm:flex-row flex-wrap sm:flex-nowrap gap-8">
+      <%= image_tag 'partners/serena.webp', class: 'mask mask-circle object-contain h-48 w-96 mx-auto grayscale opacity-70', alt: 'Alexandre MEUNIER' %>
         <div>
           <h4 class="sm:text-left font-black text-2xl text-accent">
-            Philippe NOUGAILLON
-          </h4>
-          <h5 class="sm:text-left italic text-xl">
-            Aka Phil
-          </h5>
-          <p class="text-justify mt-4">
-            Entrepreneur, Développeur et Consultant, passionné d'informatique Open-Source, 
-            avec une expérience de plus de 30 ans, Phil est adepte des approches 'XP / RAD / AGILE / LEAN / SCRUM'. 
-            Phil a mené à bien plus de 50 projets (développement, transformation digitale, rénovation de système d'information)
-            et développé 3 applications open-source, tout en continuant à former P-E. 
-            À l'écoute et force de proposition, Phil aime répondre au mieux aux besoins client en livrant (dans les temps) des solutions économiques et adaptées. 
-            Et comme il a maintenant plein d'histoires à raconter, Phil s'est engagé dans la formation et le mentorat de jeunes Développeurs et Product Managers (WebSchoolFactory / OpenClassrooms / Simplon).  
-            <%= link_to "https://www.linkedin.com/in/philnoug/" do %>
-              <i class="fa-brands fa-linkedin"></i>
-            <% end %>
-          </p>
-          
-        </div>
-      </div>
-
-      <div class="flex flex-col-reverse sm:flex-row flex-wrap sm:flex-nowrap gap-8">
-        <div>
-          <h4 class="sm:text-right font-black text-2xl text-accent">
             Serena PINALI
           </h4>
-          <h5 class="sm:text-right italic text-xl">
+          <h5 class="sm:text-left italic text-xl">
             Aka Nuna
           </h5>
           <p class="text-justify mt-4">
@@ -116,23 +139,21 @@
           </p>
           
         </div>
-        <%= image_tag 'partners/Serena.webp', class: 'mask mask-circle object-contain h-48 w-96 mx-auto grayscale opacity-70', alt: 'Alexandre MEUNIER' %>
       </div>
 
       <div class="flex flex-col-reverse sm:flex-row flex-wrap sm:flex-nowrap gap-8">
-        <%= image_tag 'partners/Sebastien.webp', class: 'mask mask-circle object-contain h-48 w-96 mx-auto grayscale opacity-70', alt: 'Sébastien POURCHAIRE' %>
-        <div>
-          <h4 class="sm:text-left font-black text-2xl text-accent">
-            Sébastien POURCHAIRE
-          </h4>
-          <h5 class="sm:text-left italic text-xl">
-            Aka Seb
-          </h5>
-          <p class="text-justify mt-4">
-            Avec plus de 25 d'expérience dans les systèmes d’informations pour la santé,
-            Seb a à cœur d’innover afin d'améliorer les méthodes de travail
-            et la productivité par la digitalisation. Pour Seb, une entreprise
-            est avant tout une entreprise d’homme et le succès du déploiement
+      <div>
+      <h4 class="sm:text-right font-black text-2xl text-accent">
+      Sébastien POURCHAIRE
+      </h4>
+      <h5 class="sm:text-right italic text-xl">
+      Aka Seb
+      </h5>
+      <p class="text-justify mt-4">
+      Avec plus de 25 d'expérience dans les systèmes d’informations pour la santé,
+      Seb a à cœur d’innover afin d'améliorer les méthodes de travail
+      et la productivité par la digitalisation. Pour Seb, une entreprise
+      est avant tout une entreprise d’homme et le succès du déploiement
             d’un système d’information passe par un solide accompagnement de l’utilisateur final,
             une formation complète et un support sans faille.
             Seb est convaincu de la nécessité de standardiser les données
@@ -143,32 +164,13 @@
             et de leur donner des outils qui leur permettront d'avoir un avantage concurrentiel puissant.
             <%= link_to "https://www.linkedin.com/in/pourchaire" do %>
               <i class="fa-brands fa-linkedin"></i>
-            <% end %>
-          </p>
-        </div>
+              <% end %>
+              </p>
+              </div>
+              <%= image_tag 'partners/sebastien.webp', class: 'mask mask-circle object-contain h-48 w-96 mx-auto grayscale opacity-70', alt: 'Sébastien POURCHAIRE' %>
       </div>
 
-       <div class="flex flex-col-reverse sm:flex-row flex-wrap sm:flex-nowrap gap-8">
-        <div>
-          <h4 class="sm:text-right font-black text-2xl text-accent">
-            Daniela ISAZA HURTADO
-          </h4>
-          <h5 class="sm:text-right italic text-xl">
-            Aka Dani
-          </h5>
-          <p class="text-justify mt-4">
-          Après plusieurs expériences professionnelles, Dani s’est orientée vers l’informatique,
-          où elle a trouvé sa vocation. Elle a suivi une formation d’un an chez Ada Tech School,
-          avant de rejoindre AIKKU grâce à l’accompagnement de Philippe NOUGAILLON. Investie et en constante progression, 
-          Daniela accorde une attention particulière
-          à la qualité des solutions et à l’expérience utilisateur.
-          <%= link_to "https://www.linkedin.com/in/danielais/" do %>
-              <i class="fa-brands fa-linkedin"></i>
-            <% end %>
-          </p>
-        </div>
-        <%= image_tag 'partners/Daniela.webp', class: 'mask mask-circle object-contain h-48 w-96 mx-auto grayscale opacity-70', alt: 'Alexandre MEUNIER' %>
-      </div>
+       
 
     </div>
   </section>
@@ -337,4 +339,3 @@
   </div>
 </section>
 
-<%= render partial: 'partials/contact' %>

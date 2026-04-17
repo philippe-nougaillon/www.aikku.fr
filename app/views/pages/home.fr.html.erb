@@ -5,40 +5,58 @@
 %>
 
 
-<div class="top-0 text-center text-neutral-content p-2 sm:p-4 py-12 lg:py-36" style="background-image: url(<%= asset_path('background.webp') %>); background-position: center;">
-  <h1 class="mb-12 text-4xl lg:text-6xl font-black text-shadow-lg/30">
-    <%# description "Le digital au service de vos besoins" %>
-    Le <span class="text-gradient text-shadow-none">digital</span> au service de vos besoins
-  </h1>
-  <p class="text-xl lg:text-2xl text-primary-content font-black text-shadow-lg/30">
-    AÏKKU traduit les besoins clients en une solution logicielle simple, robuste, pérenne et parfaitement adaptée
-  </p>
-  <%# link_to 'En savoir plus...', root_path(anchor: 'aikku_plann'), class: 'btn lg:btn-lg btn-accent text-gradient hover:text-white! mt-12 shadow-lg' %>
+<div class="relative text-center w-full min-h-[200px] md:min-h-[300px] text-neutral-content p-10 lg:p-20  bg-cover bg-center"
+     style="background-image: url(<%= asset_path('background.webp') %>)">
+  <div class="absolute inset-0 bg-black/50"></div>
+  <div class="relative z-10 ">
+    <h1 class="text-4xl lg:text-6xl font-black">
+      Le <span class="text-gradient">digital</span> au service de vos besoins
+    </h1>
+
+    <p class="text-xl p-6 hidden md:block md:text-center lg:text-2xl text-primary-content font-black">
+      AÏKKU traduit les besoins clients en une solution logicielle simple, robuste et adaptée
+    </p>
+  </div>
 </div>
 
-<section class="w-full text-secondary-content py-24">
+
+<section class="w-full text-secondary-content py-20 px-10 md:p-20 text-justify">
   <h2 class="text-3xl lg:text-5xl text-center font-black mb-12">
     Notre devise : <span class="text-gradient-reverse">AI for You</span>
   </h2>
         
-  <p class="text-xl mb-3">
+ <p class="text-xl mb-3">
     Découvrez la <b>plateforme Aïkku</b> et nos logiciels développés pour le compte d'entités publiques, privées ou établissement de l'enseignement supérieur.
   </p>
 
-  <p>
-    La transformation digitale et/ou l’implémentation d’une nouvelle plateforme s’accompagne souvent d’une évolution du processus métier.
-    Les données et les documents étant disponibles pour l’ensemble des collaborateurs au même instant, et ce quelque soit la distance, transforment les méthodes de travail. 
-    Ajouter la puissance d’une Intelligence Artificielle, qui permet une optimisation maximale du processus métier, 
-    avec soit un gain en rapidité, ou en qualité, ou en ressources et voire même les trois à la fois. 
-    Il est important de concevoir et de paramétrer l’application et le choix de l’IA avec les équipes métier afin d’être adapté à l’entreprise et au métier.
-  </p>
-  <%= link_to 'En savoir plus...', services_path, class: 'btn lg:btn-lg btn-gradient hover:text-white! mt-12 shadow-lg h-min' %>
-</section>
-
-<section id="secteurs" class="w-full text-white py-24 bg-info">
-  <h2 class="text-3xl lg:text-5xl text-center font-black mb-24">Nos <span class="text-gradient">secteurs clés</span></h2>
+<p class="hidden md:block">
+  La transformation digitale s’accompagne d’une évolution des processus métier. 
+  L’accès instantané aux données, où que l’on soit, transforme les méthodes de travail. 
+  L’intégration de l’Intelligence Artificielle permet d’optimiser ces processus en gagnant en rapidité, qualité et efficacité. 
+  Pour être pertinente, sa mise en place doit être pensée avec les équipes métier.
+</p>
+  <div class="flex justify-center">
+  <%= link_to 'En savoir plus...', services_path, class: 'btn text-lg lg:btn-sm btn-gradient hover:text-white! mt-12 shadow-lg h-min' %>
+</div>
+  </section>
+  
+<div class:bg-info; overflow:hidden;">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none"
+       style="display:block; width:100%; height:60px;">
+    <path d="
+      M0,60
+      Q300,0 600,30
+      Q900,60 1200,30
+      L1200,60
+      L0,60
+      Z
+    " fill="#1f1f3d"/>
+  </svg>
+</div>
+<section id="secteurs" class="w-full text-white px-10 py-20 md:p-20 bg-info">
+  <h2 class="text-3xl lg:text-5xl text-center font-black mb-12">Nos <span class="text-gradient">secteurs clés</span></h2>
   <div class="flex flex-wrap gap-4 justify-around">
-    <div class="card bg-white w-96 shadow-xl">
+    <div class="card bg-white w-96 shadow-xl       ²">
       <figure>
         <%= image_tag "misc/students.jpg", class: 'object-cover h-48 w-full', alt: 'Étudiants' %>
       </figure>
@@ -78,51 +96,35 @@
     </div>
   </div>
 </section>
+<div style="overflow:hidden;">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none"
+       style="display:block; width:100%; height:60px;">
+    <path d="
+      M0,0
+      Q300,60 600,30
+      Q900,0 1200,30
+      L1200,0
+      L0,0
+      Z
+    " fill="#1f1f3d"/>
+  </svg>
+</div>
 
-<section id="expérience" class="w-full text-center pt-24">
-  <h2 class="text-3xl lg:text-5xl font-black mb-12">Une expérience de plus de 20 ans</h2>
-  <p class="lg:text-2xl">
+<section id="expérience" class="w-full  px-10 py-20 md:p-20">
+  <h2 class="text-3xl text-center lg:text-5xl font-black mb-12">Une expérience de plus de 20 ans</h2>
+  <p class="lg:text-2xl text-justify md:text-center">
     Aïkku est une société récente, mais ses fondateurs travaillent ensemble depuis plus de 20 ans.
     <br>
     Ensemble, ils ont construits de nombreux projets validés, dans le secteur de la santé, pour des clients tels que <b>Sanofi</b> (eCRF), <b>L’Oréal</b> (ePRO), <b>PPRS Research</b> (CDMS), <b>AirJin</b> (IoT)
   </p>
 </section>
-<!--
-<section id="aikku_plann" class="w-full text-center text-white py-24" style="background-color: #5681c9">
-  <h2 class="text-5xl">Vous êtes un <b>organisme de formation</b> ?</h2>
-  <p class="text-2xl my-8">
-    Gérez toutes vos formations et vos salles avec une solution simple, abordable et personnalisable
-  </p>
-  <%= image_tag "misc/students.jpg", width: "650px", class: 'mx-auto rounded', alt: 'Étudiants' %>
-  <%= link_to 'En savoir plus...', aikku_plann_path, class: 'btn lg:btn-lg btn-accent btn-outline text-black! border-primary hover:text-white! mt-12 shadow-lg' %>
-</section>
-
-<section id="aikku_coopcom" class="w-full text-center text-white py-24" style="background-color: #6161b9">
-  <h2 class="text-5xl">Vous êtes une <b>communauté de communes, un EPCI</b> ?</h2>
-  <p class="text-2xl my-8">
-    Gérez facilement la coopération et la mutualisation des services et ressources de votre intercommunalité
-  </p>
-  <%= image_tag "misc/communauté-communes.jpg", width: "650px", class: 'mx-auto rounded shadow-xl', alt: 'Village' %>
-  <%= link_to 'En savoir plus...', 'https://demo.coopcomm.fr', class: 'btn lg:btn-lg btn-outline btn-white mt-12' %>
-</section>
-
-<section id="aikku_access" class="w-full text-center text-gradient py-24" style="">
-  <h2 class="text-5xl">Vous êtes <b>DSI / Data Scientist</b> ?</h2>
-  <p class="text-2xl my-8">
-    Gérez vos données métier, en ligne et en mobilité
-  </p>
-  <%= image_tag "misc/dsi.jpg", width: "650px", class: 'mx-auto rounded', alt: 'DSI / Data Scientist qui travaille' %>
-  <%= link_to 'En savoir plus...', aikku_access_path, class: 'text-white btn lg:btn-lg btn-outline mt-12' %>
-</section>
-
--->
 
 
-<section id="clients" class="flex flex-col justify-center min-h-screen">
-  <h2 class="text-center text-3xl lg:text-5xl font-black mb-24">
+<section id="clients" class="flex flex-col justify-center p-15 ">
+  <h2 class="text-center text-3xl lg:text-5xl font-black mb-12 ">
     Ils nous font <span class="text-gradient">confiance</span>
   </h2>
-  <div class="flex flex-wrap justify-center items-center gap-32 mb-16">
+  <div class="flex flex-wrap justify-center items-center gap-8 ">
     <div class="w-64 h-64 rounded flex items-center">
       <%= image_tag "logos/1.png", class:"mx-auto p-8", alt: 'Logo IAE Paris-Sorbonne' %>
     </div>
@@ -132,10 +134,11 @@
     <div class="w-64 h-64 rounded flex items-center">
       <%= image_tag "logos/8.png", class:"mx-auto p-8", alt: 'Logo GROHE' %>
     </div>
-  </div>
-  <div class="flex justify-center">
-    <% link_to 'En savoir plus', nos_clients_path, class: 'btn lg:btn-lg btn-outline btn-primary mx-auto mt-12' %>
-  </div>
+     <div class="w-64 h-64 rounded flex items-center">
+      <%= image_tag "logos/madmoselle.jpg", class:"mx-auto p-8", alt: 'Logo Mad & Moselle' %>
+    </div>
+  </div> 
 </section>
 
-<%= render partial: 'partials/contact' %>
+
+

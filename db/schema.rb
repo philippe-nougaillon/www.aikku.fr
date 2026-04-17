@@ -10,71 +10,71 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2025_01_17_151004) do
+ActiveRecord::Schema[8.1].define(version: 2025_01_17_151004) do
   # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+  enable_extension "pg_catalog.plpgsql"
 
   create_table "clients", force: :cascade do |t|
-    t.string "name"
-    t.text "description"
     t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.text "description"
     t.text "description_en"
+    t.string "name"
     t.integer "poids", default: 0
+    t.datetime "updated_at", null: false
   end
 
   create_table "messages", force: :cascade do |t|
-    t.string "email"
-    t.string "objet"
     t.text "contenu"
     t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string "email"
+    t.string "fonction"
+    t.string "mobile"
     t.string "nom"
+    t.string "objet"
     t.string "prénom"
     t.string "structure"
-    t.string "mobile"
-    t.string "fonction"
+    t.datetime "updated_at", null: false
   end
 
   create_table "pg_search_documents", force: :cascade do |t|
     t.text "content"
-    t.string "searchable_type"
-    t.bigint "searchable_id"
     t.datetime "created_at", null: false
+    t.bigint "searchable_id"
+    t.string "searchable_type"
     t.datetime "updated_at", null: false
     t.index ["searchable_type", "searchable_id"], name: "index_pg_search_documents_on_searchable"
   end
 
   create_table "posts", force: :cascade do |t|
-    t.string "title"
     t.text "content"
     t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.datetime "date"
     t.boolean "published", default: false
+    t.string "title"
+    t.datetime "updated_at", null: false
   end
 
   create_table "projets", force: :cascade do |t|
-    t.string "nom"
-    t.string "url"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.text "contenu"
-    t.integer "poids"
-    t.integer "commit", default: 0
-    t.integer "deploy", default: 0
     t.integer "coffee", default: 0
+    t.integer "commit", default: 0
+    t.text "contenu"
+    t.datetime "created_at", null: false
+    t.integer "deploy", default: 0
     t.string "github"
+    t.string "nom"
+    t.integer "poids"
+    t.datetime "updated_at", null: false
+    t.string "url"
   end
 
   create_table "taggings", force: :cascade do |t|
-    t.bigint "tag_id"
-    t.string "taggable_type"
-    t.bigint "taggable_id"
-    t.string "tagger_type"
-    t.bigint "tagger_id"
     t.string "context", limit: 128
     t.datetime "created_at", precision: nil
+    t.bigint "tag_id"
+    t.bigint "taggable_id"
+    t.string "taggable_type"
+    t.bigint "tagger_id"
+    t.string "tagger_type"
     t.string "tenant", limit: 128
     t.index ["context"], name: "index_taggings_on_context"
     t.index ["tag_id", "taggable_id", "taggable_type", "context", "tagger_id", "tagger_type"], name: "taggings_idx", unique: true
@@ -91,20 +91,20 @@ ActiveRecord::Schema[7.1].define(version: 2025_01_17_151004) do
   end
 
   create_table "tags", force: :cascade do |t|
-    t.string "name"
     t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string "name"
     t.integer "taggings_count", default: 0
+    t.datetime "updated_at", null: false
     t.index ["name"], name: "index_tags_on_name", unique: true
   end
 
   create_table "users", force: :cascade do |t|
+    t.datetime "created_at", null: false
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
-    t.string "reset_password_token"
-    t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.datetime "created_at", null: false
+    t.datetime "reset_password_sent_at"
+    t.string "reset_password_token"
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true

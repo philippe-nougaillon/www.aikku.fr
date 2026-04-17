@@ -14,11 +14,7 @@
       </li>
     </ul>
   </details>
-  <!--
-    <%= link_to services_path, class: "#{'underline underline-offset-8 text-primary font-black' if ['aikku_plann', 'aikku_coopcom', 'aikku_access', 'aikku_sign', 'aikku_projects', 'prestofacto', 'talea'].include?(params[:action])}" do %>
-      <span class="whitespace-nowrap">Solutions</span>
-    <% end %>
-  -->
+  
 </li>
 <%= navbar_item 'services', services_path, 'Nos services' %>
 <%= navbar_item 'qui_sommes_nous', qui_sommes_nous_path, 'À propos' %>
@@ -28,10 +24,3 @@
   <% end %>
 </li>
 
-<!--
-  <li>
-    <%= link_to url_for(request.params.merge(locale: 'en')), class: 'text-black-50', title: "Changer de langue / Switch language" do %>
-      <i class="fa-solid fa-globe"></i> FR
-    <% end %>
-  </li>
--->

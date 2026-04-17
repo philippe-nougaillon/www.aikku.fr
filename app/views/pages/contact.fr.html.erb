@@ -31,18 +31,7 @@
       <%= email_field_tag :email, params[:email], class:"input input-bordered w-full", required: true, placeholder: "Entrez une adresse email valide" %>
       <%= text_field_tag :structure, params[:structure], class:"input input-bordered w-full mt-4", required: true, placeholder: 'Entrez votre nom d\'entreprise' %>
       <%= text_area_tag :contenu, params[:contenu], class:"textarea textarea-bordered w-full mt-4", rows: 4, required: true, placeholder: "Votre message" %>
-      <!--
-      <div class="flex flex-wrap items-center gap-2 mt-4">
-        <%# recaptcha_tags unless %w[localhost 127.0.0.1].include?(request.host) %>
-      </div>
-      -->
-      <!--
-      <div class="inline mb-4" data-turbo="false">
-        <%# check_box_tag :accept, nil, false, class: 'hover:cursor-pointer', 'data-action':"change->contact#disable_button_send" %>
-        <%# label_tag :accept, "J'accepte explicitement l'utilisation de mon téléphone et/ou de mon adresse mail à l'usage exclusif d'un contact sur un sujet relatif aux services proposés par AIKKU", class: 'hover:cursor-pointer' %>
-      </div>
-      <%# submit_tag "Envoyer", class: "btn btn-primary btn-outline", 'data-turbo': false, disabled: true, id: 'submit-button' %>
-      -->
+    
       <%= submit_tag "Envoyer", class: "btn btn-primary btn-outline w-full btn-lg mt-4", 'data-turbo': false %>
     </div>
   </section>

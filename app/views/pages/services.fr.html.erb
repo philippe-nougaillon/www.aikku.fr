@@ -1,76 +1,90 @@
-<section class="pt-0">
-  <div class="flex flex-col px-2 py-12 lg:py-36 bg-info top-0 h-full text-center text-neutral-content -mx-4 lg:-mx-24">
-    <h1 class="mb-12 text-4xl lg:text-6xl font-black">
-      <%= title "Transformez vos <span class='text-gradient'>idées en réalités</span>".html_safe %>
+<section class="p-0 ">
+    
+<div>
+  <div class="relative text-center w-full min-h-[200px] md:min-h-[300px] text-neutral-content p-10 lg:p-20  bg-cover bg-center"
+     style="background-image: url(<%= asset_path('backgroundservices.jpg') %>)">
+  <div class="absolute inset-0 bg-black/70"></div>
+  <div class="relative z-10 ">
+    <h1 class="text-4xl lg:text-6xl font-black">
+      <%= title "Vos idées méritent <span class='text-gradient'>de devenir réelles</span>".html_safe %>
     </h1>
-    <p class="text-xl lg:text-2xl text-primary-content font-black">
-      (<%= description "mais tout commence par une bonne discussion !" %>)
+
+    <p class="text-xl p-6 md:text-center lg:text-2xl text-primary-content font-black">
+      <%= description "et tout commence par une conversation !" %>
     </p>
   </div>
+</div>
 
-  <h2 class="text-4xl lg:text-5xl font-black text-accent text-center mt-24">
+<section class="p-0 ">
+  <h2 class="text-4xl lg:text-5xl font-black text-accent text-center mt-20 ">
     Nos services
   </h2>
-  <div class="flex flex-wrap justify-center">
-    <div class="w-full sm:w-1/2 lg:w-1/4 mt-20 text-center sm:px-3">
-      <i class="fa-brands fa-sketch fa-2xl text-accent"></i>
-      <h3 class="font-black text-accent text-2xl mt-7 mb-4">Développement</h3>
-      <p class="mt-7">Nous développons sur Ruby on Rails depuis 2008. Nous serions ravis de vous aider.</p>
+  <div class="flex flex-col md:flex-row justify-center mx-8 md:mx-20 mt-16 gap-8">
+    <div class=" md:text-center">
+      <h3 class=" text-left md:text-center font-black text-accent text-2xl mb-4">Développement    
+      <i class=" fa-brands fa-sketch fa-lg text-accent "></i></h3> 
+      <p class="mt-7 text-justify md:text-center"> Nous développons des applications Ruby on Rails depuis 2008 et adoptons progressivement React pour des interfaces plus dynamiques.
+   </p>
     </div>
-    <div class="w-full sm:w-1/2 lg:w-1/4 mt-20 text-center sm:px-3">
-      <i class="fa-solid fa-desktop fa-2xl text-accent"></i>
-      <h3 class="font-black text-accent text-2xl mt-7 mb-4">UX/UI Design</h3>
-      <p class="mt-7">Nous concevons des expériences utilisateur réfléchies et pouvons construire des prototypes fonctionnels.</p>
+    <div class=" md:text-center">
+      <h3 class=" text-right  md:text-center font-black text-accent text-2xl  mb-4">Maintenance
+            <i class="fa-solid fa-wrench fa-lg text-accent"></i></h3>
+      <p class="mt-7 text-justify md:text-center"> Nous assurons la maintenance de votre application Rails, en garantissant des mises à jour régulières et la correction des bugs.</p>
     </div>
-    <div class="w-full sm:w-1/2 lg:w-1/4 mt-20 text-center sm:px-3">
-      <i class="fa-solid fa-wrench fa-2xl text-accent"></i>
-      <h3 class="font-black text-accent text-2xl mt-7 mb-4">Maintenance</h3>
-      <p class="mt-7">Nous garderons votre application Rails à jour avec les fonctionnalités en cours et les corrections de bogues.</p>
+    <div class="  md:text-center ">
+      <h3 class=" text-left md:text-center font-black text-accent text-2xl  mb-4  ">Intégration
+            <i class="fa-solid fa-gears fa-lg text-accent "></i></h3>
+      <p class="mt-7 text-justify md:text-center">Besoin d'automatiser ou de connecter différents systèmes ? Nous vous accompagnons dans l'intégration de vos outils.</p>
     </div>
-    <div class="w-full sm:w-1/2 lg:w-1/4 mt-20 text-center sm:px-3">
-      <i class="fa-solid fa-gears fa-2xl text-accent"></i>
-      <h3 class="font-black text-accent text-2xl mt-7 mb-4">Intégration</h3>
-      <p class="mt-7">Besoin d'automatiser quelque chose, un échange entre deux systèmes ? Nous pouvons probablement vous aider !</p>
+     <div class="">
+      <h3 class=" text-right md:text-center font-black text-accent text-2xl  mb-4">UX/UI Design
+            <i class="fa-solid fa-desktop fa-lg text-accent"></i></h3>
+      <p class="mt-7 text-justify md:text-center"> Nous concevons des expériences utilisateur intuitives et créons des prototypes fonctionnels adaptés à vos besoins.
+  </p>
     </div>
-  </div>
+  
+    </div>
+<section/>
 
-  <div class="divider my-24"></div>
+  <div class="divider divider-accent my-10 mx-8 md:my-15 md:mx-20 "></div>
 
-  <section id="outils" class="flex flex-col justify-center text-center mx-4 gap-4 lg:gap-24 mb-24">
-    <h2 class="text-4xl lg:text-5xl font-black text-accent">
+<section class="p-0 ">
+    <h2 class="text-4xl lg:text-5xl font-black text-accent text-center">
       Nos outils et domaines d'expertises
     </h2>
-    <div class="flex flex-wrap justify-around">
 
-      <div class="w-full sm:w-1/2 lg:w-1/3 sm:px-5">
-        <%= image_tag 'logos/rails_logo.png', class: 'h-44 mx-auto', alt: 'Logo Ruby on Rails' %>
-        <h3 class="font-black text-accent text-2xl mt-7 mb-4">Ruby on Rails</h3>
-        <p>
-          Ruby on Rails (RoR) est un framework de développement web open-source basé sur le langage de programmation Ruby.
+  <div class="flex flex-col md:flex-row text-justify  md:mx-20 mt-16 gap-6">
+      <div class="flex flex-col items-center md:mx-4">
+        <%= image_tag 'logos/rails_logo.png', class: 'h-50 w-50', alt: 'Logo Ruby on Rails' %>
+        <h3 class=" text-center font-black text-accent text-2xl mt-2 mb-4">Ruby on Rails</h3>
+     <p class="  px-4 ">
+          Ruby on Rails (RoR) est un framework web open-source basé sur le langage Ruby, reconnu pour sa rapidité de développement et sa fiabilité.
+       <br>
           <br>
-          <br>
-          Utilisé par des sites célèbres comme Airbnb, Shopify, GitHub, Twitch, SoudCloud, Coinbase, Heroku...
-        </p>
+         Utilisé par des entreprises de renom telles que Airbnb, Shopify, GitHub, Twitch, SoundCloud, Coinbase ou encore Heroku.
+     </p>
       </div>
 
-      <div class="w-full sm:w-1/2 lg:w-1/3 sm:px-5">
-        <%= image_tag 'logos/agile.svg', class: 'h-44 mx-auto', alt: 'Symbole méthode agile' %>
-        <h3 class="font-black text-accent text-2xl mt-7 mb-4">Agile</h3>
-        <p>
-          Type particulier de développement logiciel qui se caractérise par sa forme simple, répétitive et la moins bureaucratique possible.
-          <br><br>
-          Les avantages de cette procédure sont les grandes économies de coûts et de temps par rapport aux méthodes de programmation classiques.
-        </p>
+
+      <div class="flex flex-col items-center md:mx-4">
+        <%= image_tag 'logos/agile.svg', class: 'h-50 w-50', alt: 'Symbole méthode agile' %>
+        <h3 class="font-black text-accent text-center text-2xl mt-2 mb-4">Agile</h3>
+     <p class="  px-4 ">
+         Cette approche est une méthode de gestion de projet flexible et itérative, centrée sur la collaboration et l’amélioration continue.
+      <br><br>
+          Elle permet de réduire les délais de développement, d’optimiser les coûts et de s’adapter rapidement aux évolutions des besoins.
+     </p>
       </div>
 
-      <div class="w-full sm:w-1/2 lg:w-1/3 sm:px-5">
-        <%= image_tag "Vertex-AI.jpg", class: 'h-44 mx-auto', alt: 'Logo Vertex AI' %>
-        <h3 class="font-black text-accent text-2xl my-7 mb-4">IA et machine learning</h3>
-        <p>
-          Nous utilisons les modèles Gemini 1.5, les modèles multimodaux les plus récents et les plus avancés de Vertex AI.
-          <br><br>
-          Nous sommes capables d’intégrer l’IA dont vous avez besoin, dans un processus metier au sein de la plateforme ou comme middleware.
-        </p>
+      <div class="flex flex-col items-center md:mx-4">
+        <%= image_tag "logos/mistral.png", class: 'h-50 w-50', alt: 'Mistral' %>
+        <h3 class="font-black text-accent text-center text-2xl mt-2 mb-4">IA et machine learning</h3>
+     <p class="  px-4 ">
+         Nous intégrons des solutions d’intelligence artificielle adaptées à vos besoins, que ce soit au cœur de votre plateforme ou via des services externes.
+      <br>
+        <br>
+        Nous travaillons notamment avec des modèles avancés tels que Mistral et Gemini pour créer des solutions performantes et innovantes.
+   </p>
       </div>
 
     </div>
