@@ -1,266 +1,298 @@
-<section class="text-center mb-16">
+<section class="text-center ">
   <h1 class="font-black text-6xl text-secondary mb-12 pt-8 italic">
-    <%= title "Aikku PLANN " %>
+    <%= title "Gérez vos cours et vos salles. Sans complications " %>
   </h1>
-  <h2 class="text-3xl lg:text-4xl mb-12 font-black leading-10!">
-    <%= description "Gérez toutes vos formations et vos salles avec
-    <br> une solution simple, abordable et personnalisable".html_safe %>
-  </h2>
   <h3 class="text-lg lg:text-2xl">
-    Développé en collaboration avec IAE Paris-Sorbonne, Aikku PLANN est un logiciel de planification d'emplois du temps et de gestion de salles de cours.
-    Il est adapté aux besoins
-    <span class="font-black">
-      des universités, écoles de commerce et instituts de formation spécialisés.
-    </span>
+    Développé en collaboration avec IAE Paris-Sorbonne,
+    <span class="font-black">Aikku PLANN</span>
+    est un logiciel de planification d'emplois du temps et de gestion de salles de cours.
+    Il est adapté aux besoins des universités, écoles de commerce et instituts de formation spécialisés.
   </h3>
 
-  <div class=" lg:flex flex-wrap  justify-center gap-4 mt-12" data-theme="aikku">
-<%= link_to "Vous êtes gestionnaire de formation", aikku_plann_path(anchor: "bref"), class: "btn sm:btn-lg max-w-full text-black/60 rounded-lg  bg-[#51c7fd] hover:bg-[#2aa6e9]" %>    
-<%= link_to "Vous êtes administrateur", aikku_plann_path(anchor: "details_fonctionnalites"), class: 'btn btn-primary rounded-lg sm:btn-lg max-w-full text-white' %>
+  <div class=" flex flex-col md:flex-row justify-center gap-2 m-10 md:mt-12" data-theme="aikku">
+    <%= link_to "Vous êtes gestionnaire de formation", aikku_plann_path(anchor: "bref"), class: "btn text-white btn-lg max-w-full rounded-lg bg-[#51c7fd] hover:bg-[#7030a0]" %>    
+    <%= link_to "Vous êtes administrateur", aikku_plann_path(anchor: "details_fonctionnalites"), class: "btn text-white btn-lg max-w-full rounded-lg bg-[#7030a0] hover:bg-[#51c7fd]" %>
   </div>
 </section>
 
-<section id="bref" class="w-full text-center bg-info text-white py-12">
-  <h2 class="apps-title">
-    Un outil puissant. Des fonctionnalités pour gagner en efficacité
-  </h2>
-  <div class="flex flex-col sm:flex-row flex-wrap justify-around gap-16 mt-12">
-    <div class="flex flex-col flex-1">
-      <p class="text-2xl font-black mb-6">
-        Planifiez rapidement les cours
-      </p>
-      <p>
-        Choisissez la formation, le(s) intervenant(s) et la salle de cours (parmi les salles disponibles proposées automatiquement) : votre cours est créé en quelques clics et intégré au planning.
-      </p>
-    </div>
-    <div class="flex flex-col flex-1">
-      <p class="text-2xl font-black mb-6">
-        Gérez l'occupation de vos salles
-      </p>
-      <p>
-        Visualisez tous les créneaux disponibles dans votre établissement. Pilotez le taux d'occupation des salles de cours, d'un seul coup d'œil.
-      </p>
-    </div>
-    <div class="flex flex-col flex-1">
-      <p class="text-2xl font-black mb-6">
-        Communiquez facilement
-      </p>
-      <p>
-        Notifiez les étudiants et les intervenants, par email ou sms, en cas de modification ou d'annulation d'un cours. 
-        Bénéficiez aussi d’un Workflow d’invitation pour la gestion des propositions de créneaux horaires, et d’un Workflow de validation des dossiers CEV.
-      </p>
-    </div>
+
+<section>
+ <div class="flex flex-col md:flex-row border-t border-b border-gray-300">
+
+  <div class="flex-1 text-center py-7 px-4 border-b md:border-b-0 md:border-r border-gray-300">
+    <p class="text-4xl font-medium text-accent">500+</p>
+    <p class="text-sm text-gray-400 mt-1">Formations gérées</p>
   </div>
+
+  <div class="flex-1 text-center py-7 px-4 border-b md:border-b-0 md:border-r border-gray-300">
+    <p class="text-4xl font-medium text-accent">900</p>
+    <p class="text-sm text-gray-400 mt-1">Intervenants</p>
+  </div>
+
+  <div class="flex-1 text-center py-7 px-4 border-b md:border-b-0 md:border-r border-gray-300">
+    <p class="text-4xl font-medium text-accent">60 000</p>
+    <p class="text-sm text-gray-400 mt-1">Cours planifiés</p>
+  </div>
+
+  <div class="flex-1 text-center py-7 px-4">
+    <p class="text-4xl font-medium text-accent">Depuis 2017</p>
+    <p class="text-sm text-gray-400 mt-1">25 gestionnaires</p>
+  </div>
+
+</div>
 </section>
 
-<section id="responsive" class="flex flex-col md:flex-row flex-wrap items-center gap-16 mt-24">
-  <div class="flex-1 card w-full sm:w-full">
+
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path d="
+      M0,60
+      Q300,0 600,30
+      Q900,60 1200,30
+      L1200,60
+      L0,60
+      Z
+    " fill="#1f1f3d"/>
+  </svg>
+</div>
+<section id="fonctionnalités" class="w-full text-center bg-info text-white p-20">
+
+  <h2 class="text-4xl lg:text-5xl text-center font-black mb-12">
+  Tout ce dont vous avez besoin <span class="text-gradient">
+  au même endroit</span></h2>
+  <h2 class="text-center text-accent font-bold text-xl">FONCTIONNALITES PRINCIPALES</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 mt-16">
+
+    <div class="flex flex-col p-4">
+      <h3 class="text-2xl font-black my-4 text-left underline underline-offset-12">
+      <i class="fa-regular fa-calendar-days fa-lg mr-6"></i>
+      Planification des cours
+      </h3>
+      <p class="text-justify">
+      Créez ou modifiez pour un ensemble de cours et/ou pour une session, en quelques clics.Le logiciel sélectionne automatiquement une salle disponible.
+      </p>
+    </div>
+
+    <div class="flex flex-col p-4">
+      <h3 class="text-2xl font-black my-4  text-left  underline underline-offset-12">      
+        <i class="fa-solid fa-chalkboard fa-lg mr-6"></i>
+        Occupation des salles</h3>
+        <p class="text-justify">Visualisez les créneaux horaires libres, par jour, 
+        semaine et salle. Gérez la capacité de vos salles et de votre établissement. 
+        Alertes dès qu'une salle atteint sa capacité.</p>
+     </div>
+     
+    <div class="flex flex-col p-4">
+      <h3 class="text-2xl font-black my-4  text-left  underline underline-offset-12 ">
+      <i class="fa-solid fa-chalkboard-teacher fa-lg mr-6"></i>      
+        Intervenants et étudiants</h3>
+        <p class="text-justify">Centralisez toutes les informations pour chaque intervenant. 
+        Valorisez le temps de cours effectif des intervenant vacataires 
+        pour une facturation facilitée. Notifiez aux étudiants par e-mail 
+        ou SMS en cas de modification de cours.</p>
+    </div>
+     
+    <div class=" flex flex-col p-4">
+        <h3 class="text-2xl font-black my-4  text-left  underline underline-offset-12 ">
+        <i class="fa-solid fa-briefcase fa-lg mr-6"></i>
+        Formations</h3>
+        <p class="text-justify">Repérez chaque formation dans le planning grâce à son code couleur. 
+        Accédez à la liste des intervenants. Pilotez plus facilement le volume 
+        horaire des UE : heures réalisées, cours planifiés et restant à créer.</p>
+      </div>
+
+    <div class="flex flex-col p-4">
+         <h3 class="text-2xl font-black my-4  text-left   underline underline-offset-12"> 
+         <i class="fa-solid fa-download fa-lg mr-6"></i>     
+          Import et export de données</h3>
+        <p class="text-justify">Importez de grands volumes de données aux formats Excel (XLS) et CSV : 
+        cours, formations, étudiants… Toutes les données peuvent être exportées au format XLS. </p>
+      </div>
+    
+    <div class="flex flex-col p-4">
+        <h3 class="text-2xl font-black my-4  text-left  underline underline-offset-12"> 
+         <i class="fa-solid fa-file-signature fa-lg mr-6"></i>
+          Suivi des présences</h3>
+        <p class="text-justify">Grâce à l'integration d'Edusign, signé numériquement directement 
+        depuis le smartphone ou ordinateur de l'étudiant au début de chaque séance.</p>
+      </div>
+     
+  </div>
+</section>
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path d="
+      M0,0
+      Q300,60 600,30
+      Q900,0 1200,30
+      L1200,0
+      L0,0
+      Z
+    " fill="#1f1f3d"/>
+  </svg>
+</div>
+
+<section id="responsive" class="flex flex-col p-20 md:flex-row items-center gap-16">
+  <div class="flex-1 card w-full ">
     <%= image_tag "misc/planning-responsive.png", class:"shadow rounded-2xl", alt: 'Logiciel sur différents écrans' %>
   </div>
   <div class="flex-1">
-    <p class="text-2xl text-secondary font-light">
+    <h3 class="text-2xl text-accent font-bold mb-4  text-center md:text-left">
       Une information toujours disponible
-    </p>
-    <p class="text-4xl font-black my-4">
-      Un planning accessible partout,
-      <br>sur tous les supports
-    </p>
-    <p class="text-xl">
-      L'application est optimisée pour s'afficher sur toutes les tailles d'écrans.
-      <br><br>Diffusez le planning du jour sur les panneaux lumineux de votre établissement : la progression des cours est mise à jour en temps réel, pour une information plus claire et lisible.
-      <br><br>Vos étudiants et intervenants peuvent consulter le planning sur téléphones, ordinateurs ou tablettes, 24 h / 24 et 7 jours sur 7.
-      Un flux .ics leur permet de le synchroniser avec l'application d'agenda de leur choix.
-    </p>
-    <div class="flex gap-8 mt-12">
-      <%= image_tag "logos/Gmail.svg", width: "50px", alt: 'Logo Gmail' %>
-      <%= image_tag "logos/Outlook.svg", width: "50px", alt: 'Logo Outlook' %>
-      <%= image_tag "logos/MacOSCalendar.webp", width: "50px", alt: 'Logo calendrier Apple' %>
-      <%= image_tag "logos/GoogleCalendar.svg", width: "50px", alt: 'Logo Google Agenda / Google Calendar' %>
-    </div>
-  </div>
-</section>
-
-<section id="fonctionnalités" class="w-full text-center bg-info text-white mt-24 pt-24">
-  <h2 class="apps-title">Un logiciel complet, adapté à chaque rôle dans votre établissement</h2>
-  <div class="flex flex-col w-full gap-16 mt-24">
-    <div class="flex-1 flex flex-col md:flex-row flex-wrap justify-around gap-16">
-      <div class="flex flex-col flex-1">
-        <i class="fa-regular fa-calendar-days fa-2xl mb-4"></i>
-        <p class="text-2xl font-black my-4"><b>Planning de cours</b></p>
-        <p class="font-thin!">
-          Créez ou modifiez un cours : le logiciel recherche automatiquement une salle disponible. Gagnez du temps avec la recherche avancée. Effectuez des modifications en masse pour un ensemble de cours, en quelques clics.
-        </p>
-      </div>
-      <div class="flex flex-col flex-1">
-        <i class="fa-solid fa-chalkboard fa-2xl mb-4"></i>
-        <p class="text-2xl font-black my-4">Salles de cours</p>
-        <p>
-          Visualisez les créneaux horaires libres, par jour, semaine et salle. Gérez la capacité de vos salles et de votre établissement. Vous êtes alerté quand la capacité maximum par salle est atteinte.
-        </p>
-      </div>
-      <div class="flex flex-col flex-1">
-      <i class="fa-solid fa-briefcase fa-2xl mb-4"></i>
-        <p class="text-2xl font-black my-4">Formations</p>
-        <p>
-          Repérez chaque formation dans le planning grâce à son code couleur. Accédez à la liste des intervenants. Pilotez plus facilement le volume horaire des UE : heures réalisées, cours planifiés et restant à créer.
-        </p>
-      </div>
-    </div>
-    <div class="flex-1 flex flex-col md:flex-row flex-wrap justify-around gap-16 lg:gap-8">
-      <div class="flex flex-col flex-1">
-        <i class="fa-solid fa-chalkboard-teacher fa-2xl mb-4"></i>
-        <p class="text-2xl font-black my-4">Intervenants</p>
-        <p>
-          Centralisez toutes les informations pour chaque intervenant. Visualisez leurs états de services selon leur statut. Valorisez le temps de cours effectif des intervenants vacataires pour une facturation facilitée.
-        </p>
-      </div>
-      <div class="flex flex-col flex-1">
-        <i class="fa-solid fa-graduation-cap fa-2xl mb-4"></i>
-        <p class="text-2xl font-black my-4">Etudiants</p>
-        <p>
-          Accédez à la liste des étudiants d'une formation et informez-les par email ou sms en cas de modification de leur emploi du temps.
-        </p>
-      </div>
-      <div class="flex flex-col flex-1">
-        <i class="fa-solid fa-download fa-2xl mb-4"></i>
-        <p class="text-2xl font-black my-4">Import et export de données</p>
-        <p>
-          Importez de grands volumes de données aux formats Excel (XLS) et CSV : cours, formations, étudiants… Toutes les données peuvent être exportées au format XLS.
-        </p>
-      </div>
-    </div>
-    
-    <div class="flex-1 flex flex-col md:flex-row flex-wrap justify-around gap-16 lg:gap-8">
-      <div class="flex flex-col flex-1">
-      </div>
-      <div class="flex flex-col flex-1 items-center">
-        <i class="fa-solid fa-file-signature fa-2xl mb-4"></i>
-        <p class="text-2xl font-black my-4">Emargements</p>
-        <p>
-          Grâce à l'intégration d'Edusign, simplifiez-vous la gestion des émargements des présences étudiants par la numérisation de la collecte des signatures, qui signe directement sur son smartphone ou son PC au début de chaque session.
-        </p>
-        <%= image_tag "https://edusign.com/fr/wp-content/uploads/sites/2/2023/07/Calque_1-5.png", width: "200", class: 'mt-4' %>
-      </div>
-      <div class="flex flex-col flex-1">
-        <p class="text-2xl font-black my-4"></p>
-        <p>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="mt-8">
-    <p class="text-2xl text-center mt-24 mb-12">
-      Vous souhaitez découvrir toutes les fonctionnalités ?
-      <%= link_to "Contactez-nous", contact_path, class: 'link' %>.
-      <br>
-      Besoin d'une fonctionnalité sur-mesure ? Nous la développons !
-    </p>
-  </div>
-</section>
-
-<section id="confiance" class="text-center py-24">
-  <h2 class="apps-title ">Ils nous font confiance</h2>
-  <p class="text-2xl my-12">
-    Plus de <strong class="font-black">500</strong> formations, <strong class="font-black">1000</strong> intervenants et <strong class="font-black">70 000</strong> cours gérés depuis <strong class="font-black">2017</strong>
+    </h3>
+    <h2 class="text-4xl font-black mb-20 text-center md:text-left">
+      Le planning accessible sur n'importe quel appareil
+    </h2>
+    <p class="text-xl text-justify">
+     L'application s'adapte parfaitement à toutes les tailles d'écran. Affichez le planning du jour sur les écrans numériques de votre établissement, mis à jour en temps réel.
     <br>
-    par <strong class="font-black">25</strong> gestionnaires de formations
-  </p>
-  <div class="flex flex-col md:flex-row items-center justify-center gap-8">
-  <div class="flex-1">
-    <%= image_tag "misc/amphi_iae.jpg", width: "650px", alt: "Amphithéâtre IAE PARIS" %>
+    <br>
+    Étudiants et intervenants consultent le planning depuis leur téléphone, ordinateur ou tablette, 24 h/24. En un clic, abonnez votre agenda (Google, Outlook ou Apple) à votre planning pour que vos cours et interventions se mettent à jour automatiquement. </p>
   </div>
-  <div class="flex-1">
-    <%= image_tag "projets/planning iae-paris/logo.png", class:"mx-auto mb-8", alt: 'Logo IAE PARIS' %>
-    <blockquote>
-      <p class="text-lg">
-        <i class="fa-solid fa-quote-left mr-2" style="color: #000000;"></i>
-        Philippe Nougaillon propose des solutions pérennes, fiables et fait primer dans sa vision du développement la simplicité de la solution. Partisan de l'innovation frugale, il fournit à ses clients des solutions originales, robustes et parfaitement adaptées. Il a le sens de l'écoute et sait faire preuve d'une grande pédagogie dans les démarches agiles.
-        <i class="fa-solid fa-quote-right ml-2" style="color: #000000;"></i>
-      </p>
-      <div class="flex items-center jutify-center md:items-start md:justify-start flex-wrap md:flex-nowrap rounded-full bg-base-100 py-2 md:pr-4 w-full md:w-fit mx-auto mt-4">
-        <%= image_tag 'misc/Eynaud.jpg', class:"mask mask-circle h-24 mx-auto hidden md:block", alt: 'Philippe Eynaud' %>
-        <div class="flex flex-col">
-          <p class="font-black">Philippe Eynaud</p>
-          <p>
-            Professeur en sciences de gestion à l'IAE de Paris
-            <br>
-            <%= link_to "'Le management du système d'information dans sa complexité'", 
-                      "https://www.amazon.fr/management-syst%C3%A8me-dinformation-dans-complexit%C3%A9/dp/1784055026/ref=sr_1_5?qid=1687595735", class: "link", target: '_blank' %> (2018) ISTE Editions
-          </p>
+</section>
+
+
+<section id="confiance" class="text-center px-20 pb-20 pt-0">
+  <h2 class="text-accent text-center md:text-left mb-6 font-extrabold text-2xl">ILS NOUS FONT CONFIANCE</h2>
+   <div class="bg-white shadow-xl rounded-2xl p-8 flex flex-col ">
+        <i class="fa-solid fa-quote-left text-2xl mb-4 text-left text-accent"></i>
+        <p class="text-gray-700 text-justify leading-relaxed">
+        Philippe Nougaillon propose des solutions pérennes, 
+        fiables et fait primer dans sa vision du développement
+         la simplicité de la solution. Partisan de l'innovation frugale,
+        il fournit à ses clients des solutions originales, robustes 
+        et parfaitement adaptées. Il a le sens de l'écoute et sait 
+        faire preuve d'une grande pédagogie dans les démarches agiles.</p>
+      <div class="mt-8 border-t pt-6 flex flex-col md:flex-row items-center gap-4">
+        <div class="text-left">
+        <%= link_to "https://www.linkedin.com/in/philippe-eynaud-3a3ab835/", class: 'flex items-center gap-1.5 font-medium' do %>
+        <i class="fa-brands fa-linkedin "></i> Philippe EYNAUD
+        <% end %>
+        <p class="text-justify"> Professeur en sciences de gestion à l'IAE de Paris, 
+        Université Paris 1 Panthéon-Sorbonne.
+        <br>
+        Auteur de <%= link_to "Dictionnaire d'une autre gestion", 
+        "https://www.editions-eres.com/ouvrage/5545/dictionnaire-dune-autre-gestion", 
+        class: "italic link", target: '_blank' %>, (2026), érés Editions.  
+        </p>
         </div>
+         <%= image_tag "projets/planning iae-paris/Logo_iae.png", 
+         class:"mx-auto h-15 w-65 flex items-center", 
+          alt: 'Logo IAE PARIS' %>
       </div>
-    </blockquote>
   </div>
 </section>
 
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path d="
+      M0,60
+      Q300,0 600,30
+      Q900,60 1200,30
+      L1200,60
+      L0,60
+      Z
+    " fill="#1f1f3d"/>
+  </svg>
+</div>
 <section id="details_fonctionnalites" class="bg-info text-white mx-auto w-full text-center pt-24">
-  <h2 class="apps-title text-center mb-12!">
-    Une solution fiable et durable.
-    <br>
-    Des fonctionnalités administrateur avancées
-  </h2>
-  <div class="flex flex-col w-full gap-16 mt-24">
-    <div class="flex-1 flex flex-col md:flex-row flex-wrap justify-around gap-16">
-      <div class="flex flex-col flex-1">
-        <i class="fa-solid fa-triangle-exclamation fa-2xl mb-4"></i>
-        <p class="text-2xl font-black my-4"><b>Prévention des anomalies</b></p>
-        <p>
-          Un algorithme de vérification des contraintes (capacité, intervenant libre, jours de fermeture…) prévient les erreurs de planning. Un pictogramme alerte l'utilisateur en cas d'anomalie de saisie.
+    
+ <h2 class="text-3xl lg:text-5xl text-center font-black mb-12">
+  Fonctionnalités avancées <span class="text-gradient"> d'administration</span></h2>
+  <h2 class="text-center text-accent font-bold text-xl">POUR LES ADMINISTRATEURS</h2>
+
+
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mx-8 my-16 md:mt-16">
+    
+      <div class="flex flex-col p-6 bg-white  rounded-xl">
+       <h3 class="text-2xl font-black my-4 text-center text-accent  ">
+        <i class="fa-solid fa-triangle-exclamation fa-lg mr-2"></i>
+         Prévention des anomalies</h3>
+         <p class="text-justify text-gray-600">
+         Un algorithme de vérification des contraintes 
+         (capacité, disponibilité, jours de fermeture) 
+         prévient les erreurs de planification. Un pictogramme 
+         alerte l'utilisateur en cas d'anomalie de saisie.
         </p>
       </div>
-      <div id="details_fonctionnalites" class="flex flex-col flex-1">
-        <i class="fa-solid fa-calendar-check fa-2xl mb-4"></i>
-        <p class="text-2xl font-black my-4">Plans d'activité</p>
-        <p>
-          Simplifiez la prévision de vos plans d'activité avec la fonctionnalité Nouvelle Saison. Réservez en masse les créneaux horaires de chaque formation pour une année scolaire complète.
+
+      <div class="flex flex-col p-6 bg-white  rounded-xl">
+       <h3 class="text-2xl font-black my-4 text-center text-accent  ">
+        <i class="fa-solid fa-calendar-check fa-lg mr-2"></i>
+        Plans d'activité</h3>
+         <p class="text-justify text-gray-600">
+          Réservez des créneaux pour chaque formation en masse sur 
+          toute une année universitaire avec la fonctionnalité Nouvelle
+          Saison.
         </p>
       </div>
-      <div class="flex flex-col flex-1">
-        <i class="fa-solid fa-gears fa-2xl mb-4"></i>
-        <p class="text-2xl font-black my-4">Workflows intelligents</p>
-        <p>
-          Centralisez et automatisez la gestion des dossiers de candidature des nouveaux intervenants, et le processus de propositions de créneaux horaires.
+
+      <div class="flex flex-col p-6 bg-white  rounded-xl">
+       <h3 class="text-2xl font-black my-4 text-center text-accent  ">
+        <i class="fa-solid fa-gears fa-lg mr-2"></i>
+        Flux de travail intelligents</h3>
+         <p class="text-justify text-gray-600">
+          Centralisez et automatisez la gestion des dossiers de 
+          candidature des nouveaux intervenants et le processus de 
+          propositions de créneaux horaires.
         </p>
       </div>
-    </div>
-    <div class="flex-1 flex flex-col md:flex-row flex-wrap justify-around gap-16 lg:gap-8">
-      <div class="flex flex-col flex-1">
-        <i class="fa-solid fa-tools fa-2xl mb-4"></i>
-        <p class="text-2xl font-black my-4">Outils d'administration</p>
-        <p>
-          Gérez les accès de vos utilisateurs via leurs comptes, avec 7 rôles possibles. Configurez les plages horaires de cours par bâtiment et les jours de fermeture de l'établissement.
+
+      <div class="flex flex-col p-6 bg-white  rounded-xl">
+       <h3 class="text-2xl font-black my-4 text-center text-accent  ">
+        <i class="fa-solid fa-tools fa-lg mr-2"></i>
+        Outils d'administration</h3>
+         <p class="text-justify text-gray-600">
+          Gérez les accès utilisateurs avec sept rôles possibles. 
+          Configurez les créneaux par bâtiment et les jours de fermeture.</p>
+      </div>
+
+      <div class="flex flex-col p-6 bg-white  rounded-xl">
+       <h3 class="text-2xl font-black my-4 text-center text-accent  ">
+        <i class="fa-solid fa-search fa-lg mr-2"></i>
+        Journal d'audit</h3>
+         <p class="text-justify text-gray-600">
+          Retracez toutes les modifications effectuées par chaque utilisateur 
+          dans les données de l'application, grâce à l'historique des 
+          modifications (Audit Trail).
         </p>
       </div>
-      <div class="flex flex-col flex-1">
-        <i class="fa-solid fa-search fa-2xl mb-4"></i>
-        <p class="text-2xl font-black my-4">Audit Trail</p>
-        <p>
-          Retracez, si besoin, chaque modification réalisée par chaque utilisateur dans les données de l'application, grâce à l'historique des modifications (Audit Trail).
-        </p>
-      </div>
-      <div class="flex flex-col flex-1">
-        <i class="fa-solid fa-envelope-open fa-2xl mb-4"></i>
-        <p class="text-2xl font-black my-4">Mail Log</p>
-        <p>
+
+      <div class="flex flex-col p-6 bg-white  rounded-xl">
+       <h3 class="text-2xl font-black my-4 text-center text-accent  ">
+        <i class="fa-solid fa-envelope-open fa-lg mr-2"></i>
+        Journal des e-mails</h3>
+         <p class="text-justify text-gray-600">
           Accédez à l'historique des envois de notification aux étudiants et aux intervenants.
-          Identifiez plus facilement les adresses erronées et les notifications non lues.
-        </p>
+          Identifiez les adresses incorrectes et les notifications non lues.</p>
       </div>
-    </div>
+
   </div>
 
-  <div class="mt-8">
-    <p class="text-2xl text-center mt-24 mb-12">
-      Vous souhaitez découvrir toutes les fonctionnalités ?
-      <%= link_to "Contactez-nous", aikku_plann_path(anchor: 'contact'), class: 'link' %>.
-      <br>
-      Besoin d'une fonctionnalité sur-mesure ? Nous la développons !
-    </p>
-  </div>
+  
 </section> 
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path d="
+      M0,0
+      Q300,60 600,30
+      Q900,0 1200,30
+      L1200,0
+      L0,0
+      Z
+    " fill="#1f1f3d"/>
+  </svg>
+</div>
+
+
+
+
+
+
 
 <% if false %>
-  <!--
   <section id="légal" class="flex flex-col md:flex-row flex-wrap gap-16 lg:p-24 items-center">
     <div class="flex-auto md:w-1/3">
       <p class="text-2xl text-secondary mb-4">Transparence, coûts, collaboration</p>
@@ -286,120 +318,57 @@
     </div>
   </section>
 
-  <section id="offres" class="bg-secondary text-secondary-content py-24">
-    <h2 class="apps-title text-content text-center mb-12">
-      Plus qu'un logiciel, un service
-    </h2>
-    <h3 class="text-center text-2xl font-black mb-12">
-      Découvrez notre offre d'hébergement, maintenance et amélioration continue
-    </h3>
-    <div class="flex flex-col md:flex-row flex-wrap gap-16 justify-center">
-      <div class="card flex-1 bg-base-100 text-base-content">
-        <div class="card-body items-center text-center">
-          <div class="flex gap-2">
-            <p class="flex-1 card-title">
-              Offre libre (open source)
-            </p>
-            <div class="badge badge-info badge-lg"><b>Gratuit</b></div>
-          </div>
-          <hr>
-          <ul class="text-left">
-            <li class="font-black"><span class="text-success text-2xl mr-4"><b><i class="fa-solid fa-check"></i></b></span>Déployez gratuitement l'application Ruby (v3) depuis le GitHub</li>
-            <li class="font-black"><span class="text-success text-2xl mr-4"><b><i class="fa-solid fa-check"></i></b></span>Hébergez le projet sur votre propre infrastructure</li>
-            <li class="font-black"><span class="text-success text-2xl mr-4"><b><i class="fa-solid fa-check"></i></b></span>Vos équipes IT se chargent de la maintenance</li>
-            <li class="font-black"><span class="text-success text-2xl mr-4"><b><i class="fa-solid fa-check"></i></b></span>Vous profitez gratuitement des dernières mises à jour</li>
-            <li class="font-black"><span class="text-success text-2xl mr-4"><b><i class="fa-solid fa-check"></i></b></span>Nombre d'utilisateurs illimité</li>
-          </ul>
-        </div>
-      </div>
-      <div class="card flex-1 bg-base-100 text-base-content">
-        <div class="card-body items-center text-center">
-          <div class="flex gap-2">
-            <p class="flex-1 card-title">
-              Offre PRO
-            </p>
-            <div class="badge badge-info badge-lg"><b>750€ TTC / Mois</b></div>
-          </div>
-          <hr>
-          <ul class="text-left">
-            <li class="font-black"><span class="text-success text-2xl mr-4"><b><i class="fa-solid fa-check"></i></b></span>Nous assurons le déploiement de votre outil (v5)</li>
-            <li class="font-black"><span class="text-success text-2xl mr-4"><b><i class="fa-solid fa-check"></i></b></span>Nous importons vos utilisateurs, cours et données existantes</li>
-            <li class="font-black"><span class="text-success text-2xl mr-4"><b><i class="fa-solid fa-check"></i></b></span>Nous assurons accompagnement et maintenance 24 h / 24, 7 j / 7</li>
-            <li class="font-black"><span class="text-success text-2xl mr-4"><b><i class="fa-solid fa-check"></i></b></span>Nous développons vos fonctionnalités sur-mesure</li>
-            <li class="font-black"><span class="text-success text-2xl mr-4"><b><i class="fa-solid fa-check"></i></b></span>Nombre d'utilisateurs illimité</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  -->
+ 
 <% end %>
 
-<section id="video" class="text-center py-24 mx-auto">
-  <h2 class="apps-title ">AIKKU Plann en vidéo</h2>
-  <%= video_tag 'Aikku Plann-VF2.mp4', controls: true, class: 'w-full lg:px-24 mt-12', preload: 'none', poster: "Aikku_logo.png" %>
+      <section id="video" class="text-center p-20 mx-auto">
+        <h2 class="text-center text-accent font-extrabold text-5xl">AIKKU Plann en vidéo</h2>
+        <%= video_tag 'Aikku Plann-VF2.mp4', controls: true, class: 'w-full lg:px-24 mt-12', preload: 'none', poster: "Aikku_logo.png" %>
+      </section>
 </section>
 
-<section id="offres" class="py-24">
-  <h3 class="apps-title text-content mb-4">
-    En savoir plus
+<section id="bg-info text-white mx-auto w-full text-center pt-24">
+
+ <h2 class="text-3xl lg:text-5xl text-center font-black mb-12">
+    Envie de voir <span class="text-gradient">Aikku PLANN</span> en action ?
   </h2>
-  <p>
-    Pour en savoir plus, veuillez 
-    <%= link_to 'nous contacter', contact_path, class: 'link' %>.
+         <p class="text-justify text-gray-600">
+    Notre équipe vous propose des solutions adaptées à vos besoins,
+    avec un accompagnement personnalisé et une assistance technique à tout moment.
   </p>
-
-  <h3 class="apps-title">Démonstration</h3>
-  <p>
-    Tester l'application sur notre 
-    <%= link_to "site de démonstration", "https://plann.aikku.eu", class: 'link', target: '_blank' %>.
-  </p>
-
-  <h3 class="apps-title">Développement</h3>
-  <p>
-    Ce projet est développé et maintenu en France, par nous-mêmes.
-    <br>
-    Le code source est publié sous licence libre sur
-    <%= link_to 'GitHub', "https://github.com/philippe-nougaillon/Planning_IAE", class: 'link', target: '_blank' %>.
-  </p>
-
-
-  <h3 class="apps-title">Support et services</h3>
-  <p>
-    Vous souhaitez une nouvelle fonctionnalité ou l'installer ?
-    <%= link_to 'Consultez notre offre de services', services_path, class:'link' %>.
-  </p>
+  <%= link_to "Voir la démonstration →", "https://plann.aikku.eu",
+        target: "_blank",
+        class: "inline-block bg-white text-purple-700 font-medium text-sm px-7 py-3 rounded-xl" %>
 </section>
 
+<section class="grid grid-cols-1 md:grid-cols-2 gap-4 px-6 mb-16">
+
+  <div class="border border-gray-100 rounded-2xl p-6">
+    <p class="text-xs font-medium text-purple-600 uppercase tracking-widest mb-2">Développement</p>
+    <h3 class="text-base font-medium text-gray-900 mb-2">Code source ouvert</h3>
+    <p class="text-sm text-gray-400 leading-relaxed">
+      Ce projet est développé et maintenu en France, par nous-mêmes.
+      Le code source est publié sous licence libre sur
+      <%= link_to 'GitHub', "https://github.com/philippe-nougaillon/Planning_IAE",
+            target: "_blank", class: "text-purple-600 underline underline-offset-2" %>.
+    </p>
+  </div>
+
+  <div class="border border-gray-100 rounded-2xl p-6">
+    <p class="text-xs font-medium text-purple-600 uppercase tracking-widest mb-2">Support et services</p>
+    <h3 class="text-base font-medium text-gray-900 mb-2">Besoin d'une fonctionnalité ?</h3>
+    <p class="text-sm text-gray-400 leading-relaxed">
+      Vous souhaitez une nouvelle fonctionnalité ou l'installer ?
+      <%= link_to 'Consultez notre offre de services →', services_path,
+            class: "text-purple-600 underline underline-offset-2" %>.
+    </p>
+  </div>
+
+</section>
 
 <% if false %>
-<!--
-<%= link_to aikku_plann_path, id: 'fab', class:"hidden lg:flex fixed bottom-4 right-4 bg-accent w-12 h-12 text-white rounded-full items-center z-50" do %>
-  <i class="fa-solid fa-chevron-up fa mx-auto"></i>
+
+
 <% end %>
 
-<script>
-  // Sélectionnez l'élément que vous souhaitez afficher au scroll
-  var elementToAppear = document.getElementById("fab");
-  elementToAppear.style.display = "none";
 
-  // Définissez la hauteur à partir de laquelle l'élément doit apparaître
-  var heightToAppear = 1400; // par exemple, 300 pixels
-
-  // Ajoutez un gestionnaire d'événement scroll à la fenêtre
-  window.addEventListener("scroll", function() {
-      // Récupérez la position actuelle de défilement
-      var scrollPosition = window.scrollY || window.pageYOffset;
-
-      // Vérifiez si la position de défilement est supérieure ou égale à la hauteur de déclenchement
-      if (scrollPosition >= heightToAppear) {
-          // Modifiez le style de l'élément pour le rendre visible
-          elementToAppear.style.display = "flex";
-      } else {
-          // Si la position de défilement est inférieure à la hauteur de déclenchement, masquez l'élément
-          elementToAppear.style.display = "none";
-      }
-  });
-</script>
--->
-<% end %>

@@ -1,4 +1,6 @@
-require 'active_support/core_ext/integer/time'
+# frozen_string_literal: true
+
+require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
@@ -16,7 +18,7 @@ Rails.application.configure do
   config.action_controller.perform_caching = true
 
   # Cache assets for far-future expiry since they are all digest stamped.
-  config.public_file_server.headers = { 'cache-control' => "public, max-age=#{1.year.to_i}" }
+  config.public_file_server.headers = {"cache-control" => "public, max-age=#{1.year.to_i}"}
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.asset_host = "http://assets.example.com"
@@ -31,30 +33,30 @@ Rails.application.configure do
   config.force_ssl = true
 
   # Skip http-to-https redirect for the default health check endpoint.
-  config.ssl_options = { hsts: { preload: true } }
+  config.ssl_options = {hsts: {preload: true}}
 
   # Log to STDOUT with the current request id as a default log tag.
   config.log_tags = [:request_id]
-  config.logger   = ActiveSupport::TaggedLogging.logger(STDOUT)
+  config.logger = ActiveSupport::TaggedLogging.logger($stdout)
 
   # Change to "debug" to log everything (including potentially personally-identifiable information!)
-  config.log_level = ENV.fetch('RAILS_LOG_LEVEL', 'info')
+  config.log_level = ENV.fetch("RAILS_LOG_LEVEL", "info")
 
   # Prevent health checks from clogging up the logs.
-  config.silence_healthcheck_path = '/up'
+  config.silence_healthcheck_path = "/up"
 
   # Don't log any deprecations.
   config.active_support.report_deprecations = false
 
   # Replace the default in-process memory cache store with a durable alternative.
   config.cache_store = :mem_cache_store,
-                       (ENV['MEMCACHIER_SERVERS'] || '').split(','),
-                       { username: ENV['MEMCACHIER_USERNAME'],
-                         password: ENV['MEMCACHIER_PASSWORD'],
-                         failover: true,
-                         socket_timeout: 1.5,
-                         socket_failure_delay: 0.2,
-                         down_retry_delay: 60 }
+    (ENV["MEMCACHIER_SERVERS"] || "").split(","),
+    {username: ENV["MEMCACHIER_USERNAME"],
+     password: ENV["MEMCACHIER_PASSWORD"],
+     failover: true,
+     socket_timeout: 1.5,
+     socket_failure_delay: 0.2,
+     down_retry_delay: 60}
 
   # Replace the default in-process and non-durable queuing backend for Active Job.
   # config.active_job.queue_adapter = :sidekiq
@@ -64,7 +66,7 @@ Rails.application.configure do
   # config.action_mailer.raise_delivery_errors = false
 
   # Set host to be used by links generated in mailer templates.
-  config.action_mailer.default_url_options = { host: 'example.com' }
+  config.action_mailer.default_url_options = {host: "example.com"}
 
   # Specify outgoing SMTP server. Remember to add smtp/* credentials via rails credentials:edit.
   # config.action_mailer.smtp_settings = {
@@ -96,10 +98,10 @@ Rails.application.configure do
 
   ActionMailer::Base.delivery_method = :mailgun
   config.action_mailer.mailgun_settings = {
-    api_key: ENV['MAILGUN_API_KEY'],
-    domain: ENV['MAILGUN_DOMAIN'],
-    api_host: 'api.eu.mailgun.net' # Uncomment this line for EU region domains
+    api_key: ENV["MAILGUN_API_KEY"],
+    domain: ENV["MAILGUN_DOMAIN"],
+    api_host: "api.eu.mailgun.net" # Uncomment this line for EU region domains
   }
 
-  config.action_mailer.default_url_options = { host: 'www.aikku.eu', protocol: 'https' }
+  config.action_mailer.default_url_options = {host: "www.aikku.eu", protocol: "https"}
 end

@@ -1,5 +1,8 @@
+# frozen_string_literal: true
+
 class Client < ApplicationRecord
   include PgSearch::Model
+
   multisearchable against: %i[name description]
   acts_as_taggable_on :tags
 

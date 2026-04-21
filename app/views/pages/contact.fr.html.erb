@@ -1,38 +1,62 @@
+
+
 <%= form_tag do %>
-  <section class="flex flex-wrap gap-8 lg:justify-around items-center my-8 lg:my-24" data-controller="contact">
-    <div>
-      <h1 class="font-black text-4xl lg:text-5xl text-secondary mb-8 lg:mb-16 italic">
-        <%= title "Nous contacter".html_safe %>
-      </h1>
-      <p class="opacity-50 mt-4">
-        AIKKU (SAS)
-        <br>  
-        Tour Ariane - La Défense 
-        <br>
-        5, Place de la Pyramide
-        <br>
-        92800 PUTEAUX
-        <br>
-        FRANCE
-      </p>
-      <div class="flex gap-4 mt-8">
-        <%= mail_to "contact@aikku.eu" do %>
-          <i class="fa-solid fa-envelope fa-2xl"></i>
-        <% end %>
-        <%= link_to "https://www.linkedin.com/company/aikku-sas", target: "_blank" do %>
-          <i class="fa-brands fa-linkedin fa-2xl"></i>
-        <% end %>
+
+<div class="relative text-center w-full min-h-[200px] md:min-h-[300px] text-neutral-content p-10 lg:p-20  bg-cover bg-center"
+     style="background-image: url(<%= asset_path('contact.jpg') %>)">
+  <div class="absolute inset-0 bg-black/50"></div>
+  <div class="relative z-10 reveal delay-1 ">
+    <h1 class="pt-6 md:pt-0 text-4xl lg:text-6xl font-black">
+      Nous <span class="text-gradient">contacter</span> 
+    </h1>
+  </div>
+</div>
+
+ 
+
+  <div class="flex flex-col md:flex-row gap-12 p-20 reveal delay-2">
+
+      <div class=" p-8 flex flex-col items-center text-center">
+        <h2 class="font-bold text-xl mb-4">      Un projet ? Une question ? Parlons-en.
+</h2>
+
+        <p class="text-gray-600 leading-relaxed">
+          Venez prendre un cafe ou un the à l'agence, nous serons ravis de vous accuellir à l'adresse suivante :    
+          <br><br>AIKKU (SAS)<br>
+          Tour Ariane - La Défense<br>
+          5, Place de la Pyramide<br>
+          92800 Puteaux – France
+        </p>
+
+        <div class="flex gap-6 mt-6">
+          <%= mail_to "contact@aikku.eu", class:"hover:scale-110 transition" do %>
+            <i class="fa-solid fa-envelope text-2xl"></i>
+          <% end %>
+
+          <%= link_to "https://www.linkedin.com/company/aikku-sas", target: "_blank", class:"hover:scale-110 transition" do %>
+            <i class="fa-brands fa-linkedin text-2xl"></i>
+          <% end %>
+        </div>
+      </div>
+
+
+    <div class="bg-white p-10 rounded-2xl shadow-lg">
+      <h2 class="font-bold text-2xl mb-6">
+        Envoyez-nous un message
+      </h2>
+       <%= email_field_tag :email, params[:email], class:"input input-bordered rounded-lg w-full", required: true, placeholder: "Entrez une adresse email valide" %>
+      <%= text_field_tag :structure, params[:structure], class:"input input-bordered rounded-lg w-full mt-4", required: true, placeholder: 'Entrez votre nom d\'entreprise' %>
+      <%= text_area_tag :contenu, params[:contenu], class:"textarea textarea-bordered rounded-lg w-full mt-4", rows: 4, required: true, placeholder: "Votre message" %>
+      
+      <div class="flex justify-center">
+        <%= button_tag "Envoyer le message",
+  type: "submit",
+          class: "btn text-lg btn-gradient  hover:text-white mt-12 shadow-lg ",
+          'data-turbo': false %>
+          </div>
       </div>
     </div>
-    <div>
-      <p class="mb-4">
-        Laissez-nous un message, nous vous répondrons dans les meilleurs délais.
-      </p>
-      <%= email_field_tag :email, params[:email], class:"input input-bordered w-full", required: true, placeholder: "Entrez une adresse email valide" %>
-      <%= text_field_tag :structure, params[:structure], class:"input input-bordered w-full mt-4", required: true, placeholder: 'Entrez votre nom d\'entreprise' %>
-      <%= text_area_tag :contenu, params[:contenu], class:"textarea textarea-bordered w-full mt-4", rows: 4, required: true, placeholder: "Votre message" %>
-    
-      <%= submit_tag "Envoyer", class: "btn btn-primary btn-outline w-full btn-lg mt-4", 'data-turbo': false %>
-    </div>
-  </section>
+
+  </div>
+</section>
 <% end %>

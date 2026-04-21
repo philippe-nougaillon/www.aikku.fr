@@ -1,32 +1,224 @@
-<div class="hero mt-12 mb-24">
-  <div class="hero-content flex-col lg:flex-row-reverse">
-    <%= image_tag 'team-working.webp', class: 'max-w-xs sm:max-w-lg rounded shadow-xl', alt: 'Check entre collègues' %>
+<div>
+  <div class="relative text-center w-full min-h-[200px] md:min-h-[300px] text-neutral-content p-10 lg:p-20  bg-cover bg-center"
+     style="background-image: url(<%= asset_path('team-working.webp') %>)">
+  <div class="absolute inset-0 bg-black/70"></div>
+  <div class="relative z-10 reveal delay-1">
+    <h1 class="text-4xl lg:text-6xl font-black">
+      <%= title "Qui sommes-<span class='text-gradient'>nous ?</span>".html_safe %>
+    </h1>
 
-    <div class="flex-1">
-      <h1 class="text-4xl lg:text-5xl text-center lg:text-left font-black text-secondary my-6 italic">
-        <%= title "Qui sommes-nous ?" %>
-      </h1>
-      <h2 class="text-2xl">
-        <%= description "Aikku est une entreprise de conseil en transformation numérique des organisations et
-        développement de plateformes évolutives, basée à Paris La Défense." %>
-      </h2>
-    </div>
+    <p class="text-xl p-6 md:text-center lg:text-2xl text-primary-content font-black">
+      <%= description "Aikku accompagne la transformation numérique et développe des plateformes évolutives" %>
+    </p>
   </div>
 </div>
 
-<div class="lg:mt-48">
-  <h2 class="text-4xl lg:text-5xl text-center font-black text-accent">
-    L'équipe
-  </h2>
 
-  <h3 class="text-2xl lg:text-3xl text-center font-black text-accent my-6">
-    Une SQUAD pour un service à 360°
-  </h3>
-        
-  <section class="flex flex-col justify-center min-h-screen mb-48">
-    <div class="flex flex-col mt-24 gap-12">
+
+<section class="py-16 px-8 md:p-20 reveal delay-2">
+  <h2 class="text-4xl lg:text-5xl font-black text-accent text-center mb-16">
+    Notre histoire & vision
+  </h2>
+  <div class="grid grid-cols-1 md:grid-cols-[1fr_280px] gap-10 items-start">
+    <div class="text-lg leading-relaxed space-y-5">
+      <p class="text-justify">Aikku, fondée en octobre 2024 par Philippe Nougallon et Sébastien Pourchaire — forts de plus de 30 ans d'expérience chacun — aux côtés de Pierre-Emmanuel Dacquet, est née d'un constat de terrain : dans de nombreuses organisations, les outils ne suivent plus les usages.
+      <br><br>Des processus fragmentés, des solutions dispersées, une complexité croissante pour les équipes ce qui semblait être un problème ponctuel s'est révélé être un enjeu structurel. 
+       C'est cette réalité qui a conduit à créer Aikku, avec une conviction centrale :</p>
+      <blockquote class="border-l-2 border-accent text-justify md:text-left pl-5 italic font-medium">
+        La technologie doit s'adapter aux organisations et non l'inverse.
+      </blockquote>
+       <p class="text-justify">Notre ambition est de concevoir des plateformes évolutives, pensées pour durer, qui aident à mieux planifier, coordonner et suivre l'activité  en co-construction avec les utilisateurs.
+      <br><br> Chaque solution développée poursuit un objectif simple : simplifier l'existant, gagner en efficacité et offrir une expérience fluide à ceux qui l'utilisent au quotidien.
+      Notre devise est 'DU CLIENT AU CODE - DU CODE AU CLIENT !'</p>
+      </div>
+
+    <div class="sticky top-6 rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+      <p class="text-xs font-semibold uppercase tracking-widest text-accent mb-4">
+        Une expertise éprouvée
+      </p>
+      <ul class="divide-y divide-gray-100 space-y-0">
+        <li class="py-4 first:pt-0">
+          <p class="text-xs font-medium text-accent/70 uppercase tracking-wider mb-1">Secteurs</p>
+          <p class="text-sm font-medium">Public & enseignement supérieur</p>
+        </li>
+        <li class="py-4">
+          <p class="text-xs font-medium text-accent/70 uppercase tracking-wider mb-1">2010 — SNCF / TGV Lab</p>
+          <p class="text-sm font-medium mb-1">2ᵉ place au concours d'innovation</p>
+          <p class="text-xs text-gray-500 leading-relaxed">Application mobile d'aide à la circulation de l'information à bord des trains.</p>
+        </li>
+        <li class="py-4 pb-0">
+          <p class="text-xs font-medium text-accent/70 uppercase tracking-wider mb-1">2015 — VINCI / ETF</p>
+          <p class="text-sm font-medium mb-1">Prix de l'innovation Île-de-France</p>
+          <p class="text-xs text-gray-500 leading-relaxed">Solution de suivi de maintenance ferroviaire (AEMMS).</p>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path d="
+      M0,60
+      Q300,0 600,30
+      Q900,60 1200,30
+      L1200,60
+      L0,60
+      Z
+    " fill="#1f1f3d"/>
+  </svg>
+</div>
+<section id="secteurs" class="w-full text-white px-10 py-20 md:p-20 bg-info">
+    <h2 class="text-3xl lg:text-5xl text-center font-black mb-12"> Notre <span class="text-gradient">équipe</span></h2>
+
+
+  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-16">
+
+    <div class="bg-white h-full border border-gray-100 rounded-xl p-7 flex flex-col gap-4">
+      <div class="flex items-center gap-4">
+        <%= image_tag 'partners/pierre-emmanuel.jpg',
+          class: 'w-30 h-30 rounded-full object-cover grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300 shrink-0',
+          alt: 'Pierre-Emmanuel DACQUET' %>
+        <div>
+          <h4 class="font-bold text-base text-accent leading-tight">Pierre-Emmanuel Dacquet</h4>
+          <p class="italic text-sm text-gray-400">Aka P-E</p>
+          <p class="text-xs text-gray-400 mt-1">Développeur & innovation digitale</p>
+        </div>
+      </div>
+      <p class="text-sm text-justify leading-relaxed text-gray-600 border-t border-gray-100 pt-4">
+    Formé à la Tech&Code Factory et à la WebSchool Factory, P-E représente une nouvelle génération de talents du numérique, combinant conception, développement et innovation digitale. En alternance dès ses débuts, il a été accompagné par Philippe NOUGAILLON sur des projets concrets. Il conçoit des solutions centrées utilisateur, avec une forte culture de l’innovation et de la performance pour améliorer l’efficacité des entreprises.      </p>
+  <div class="mt-auto flex justify-end border-t border-gray-100 pt-3">        <%= link_to "https://www.linkedin.com/in/pierre-emmanuel-dacquet", class: 'flex items-center gap-1.5 text-xs font-medium text-accent' do %>
+          <i class="fa-brands fa-linkedin text-base"></i> LinkedIn
+        <% end %>
+      </div>
+    </div>
+
+    <div class="bg-white border border-gray-100 rounded-xl p-7 flex flex-col gap-4">
+      <div class="flex items-center gap-4">
+        <%= image_tag 'partners/daniela.webp',
+          class: 'w-30 h-30 rounded-full object-cover grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300 shrink-0',
+          alt: 'Daniela ISAZA HURTADO' %>
+        <div>
+          <h4 class="font-bold text-base text-accent leading-tight">Daniela Isaza Hurtado</h4>
+          <p class="italic text-sm text-gray-400">Aka Dani</p>
+          <p class="text-xs text-gray-400 mt-1">Développeuse & expérience utilisateur</p>
+        </div>
+      </div>
+      <p class="text-sm text-justify leading-relaxed text-gray-600 border-t border-gray-100 pt-4">
+        Après plusieurs expériences professionnelles, Dani s'est orientée vers l'informatique, où elle a trouvé sa vocation. Elle a suivi une formation d'un an chez Ada Tech School, avant de rejoindre AIKKU grâce à l'accompagnement de Philippe NOUGAILLON. Investie et en constante progression, Daniela accorde une attention particulière à la qualité des solutions et à l'expérience utilisateur.
+      </p>
+  <div class="mt-auto flex justify-end border-t border-gray-100 pt-3">        <%= link_to "https://www.linkedin.com/in/danielais/", class: 'flex items-center gap-1.5 text-xs font-medium text-accent' do %>
+          <i class="fa-brands fa-linkedin text-base"></i> LinkedIn
+        <% end %>
+      </div>
+    </div>
+
+    <div class="bg-white border border-gray-100 rounded-xl p-7 flex flex-col gap-4">
+      <div class="flex items-center gap-4">
+        <%= image_tag 'partners/alexandre.jpg',
+          class: ' w-30 h-30 rounded-full object-cover grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300 shrink-0',
+          alt: 'Alexandre MEUNIER' %>
+        <div>
+          <h4 class="font-bold text-base text-accent leading-tight">Alexandre Meunier</h4>
+          <p class="italic text-sm text-gray-400">Aka Alex</p>
+          <p class="text-xs text-gray-400 mt-1">Ingénieur back-end — alternant CNAM</p>
+        </div>
+      </div>
+      <p class="text-sm text-justify leading-relaxed text-gray-600 border-t border-gray-100 pt-4">
+  Alex prépare un diplôme d’ingénieur en informatique et systèmes d’information au CNAM. En alternance pendant 3 ans, il se spécialise en développement logiciel, avec un intérêt marqué pour le back-end, l’architecture et l’optimisation des systèmes. Rigoureux et curieux, il privilégie la compréhension approfondie et la conception de solutions performantes et accessibles.      </p>
+  <div class="mt-auto flex justify-end border-t border-gray-100 pt-3">
+        <%= link_to "https://www.linkedin.com/in/alexandre-meunier-0366b9287/", class: 'flex items-center gap-1.5 text-xs font-medium text-accent' do %>
+          <i class="fa-brands fa-linkedin text-base"></i> LinkedIn
+        <% end %>
+      </div>
+    </div>
+
+    <div class="bg-white border border-gray-100 rounded-xl p-7 flex flex-col gap-4">
+      <div class="flex items-center gap-4">
+        <%= image_tag 'partners/philippe.webp',
+          class: 'w-30 h-30 rounded-full object-cover grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300 shrink-0',
+          alt: 'Philippe NOUGAILLON' %>
+        <div>
+          <h4 class="font-bold text-base text-accent leading-tight">Philippe Nougaillon</h4>
+          <p class="italic text-sm text-gray-400">Aka Phil</p>
+          <p class="text-xs text-gray-400 mt-1">Entrepreneur, développeur & mentor — 30+ ans</p>
+        </div>
+      </div>
+      <p class="text-sm text-justify leading-relaxed text-gray-600 border-t border-gray-100 pt-4">
+  Phil est entrepreneur, développeur, consultant et passionné d'informatique Open-Source avec plus de 30 ans d’expérience. Expert des approches XP / RAD / AGILE / LEAN / SCRU, il a mené plus de 50 projets et développé plusieurs applications open-source. Il intervient aussi comme mentor et formateur, en accompagnant de jeunes développeurs et product managers.      </p>
+  <div class="mt-auto flex justify-end border-t border-gray-100 pt-3">
+        <%= link_to "https://www.linkedin.com/in/philnoug/", class: 'flex items-center gap-1.5 text-xs font-medium text-accent' do %>
+          <i class="fa-brands fa-linkedin text-base"></i> LinkedIn
+        <% end %>
+      </div>
+    </div>
+
+    <div class="bg-white border border-gray-100 rounded-xl p-7 flex flex-col gap-4">
+      <div class="flex items-center gap-4">
+        <%= image_tag 'partners/serena2.jpg',
+          class: 'w-30 h-30 rounded-full object-cover grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300 shrink-0',
+          alt: 'Serena PINALI' %>
+        <div>
+          <h4 class="font-bold text-base text-accent leading-tight">Serena Pinali</h4>
+          <p class="italic text-sm text-gray-400">Aka Nuna</p>
+          <p class="text-xs text-gray-400 mt-1">Product Manager & communication</p>
+        </div>
+      </div>
+      <p class="text-sm text-justify leading-relaxed text-gray-600 border-t border-gray-100 pt-4">
+        Avec une formation diplômante de Product Manager (titre RNCP niv 7) et une solide expérience dans le community management et la formation, Serena a pour mission au sein d'AIKKU de gérer des projets numériques, ainsi que les aspects marketing, communication et la relation avec le client et nos développeurs. Serena est joviale, agile et persévérante et a pour volonté de toujours s'améliorer.
+      </p>
+  <div class="mt-auto flex justify-end border-t border-gray-100 pt-3">
+        <%= link_to "https://www.linkedin.com/in/serena-pinali", class: 'flex items-center gap-1.5 text-xs font-medium text-accent' do %>
+          <i class="fa-brands fa-linkedin text-base"></i> LinkedIn
+        <% end %>
+      </div>
+    </div>
+
+    <div class="bg-white border border-gray-100 rounded-xl p-7 flex flex-col gap-4">
+      <div class="flex items-center gap-4">
+        <%= image_tag 'partners/sebastien2.jpg',
+          class: 'w-30 h-30 rounded-full object-cover grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300 shrink-0',
+          alt: 'Sébastien POURCHAIRE' %>
+        <div>
+          <h4 class="font-bold text-base text-accent leading-tight">Sébastien Pourchaire</h4>
+          <p class="italic text-sm text-gray-400">Aka Seb</p>
+          <p class="text-xs text-gray-400 mt-1">Expert SI santé — 30+ ans</p>
+        </div>
+      </div>
+      <p class="text-sm text-justify leading-relaxed text-gray-600 border-t border-gray-100 pt-4">
+  Seb possède plus de 30 ans d’expérience dans les systèmes d’information de santé. Il se concentre sur la digitalisation, la standardisation des données et l’accompagnement des utilisateurs. Convaincu que la réussite passe par la formation et le support, il développe avec Aikku des solutions visant à optimiser les ressources et la performance des entreprises.      </p>
+  <div class="mt-auto flex justify-end border-t border-gray-100 pt-3">
+        <%= link_to "https://www.linkedin.com/in/pourchaire", class: 'flex items-center gap-1.5 text-xs font-medium text-accent' do %>
+          <i class="fa-brands fa-linkedin text-base"></i> LinkedIn
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path d="
+      M0,0
+      Q300,60 600,30
+      Q900,0 1200,30
+      L1200,0
+      L0,0
+      Z
+    " fill="#1f1f3d"/>
+  </svg>
+</div>
+
+<!--
+<div>
+  <h2 class="text-4xl lg:text-5xl font-black text-accent text-center mb-16">
+    L'équipe
+  </h2>    
+  <div class="flex flex-col md:flex-row justify-center mx-8 md:mx-20 mt-16 gap-8">
+    <div class="flex flex-col  gap-12">
       <div class="flex flex-wrap sm:flex-nowrap gap-8">
-        <%= image_tag 'partners/pierre-emmanuel.webp', class: 'mask mask-circle object-contain h-48 w-96 mx-auto grayscale opacity-70', alt: 'Pierre-Emmanuel DACQUET' %>
+        <%= image_tag 'partners/pierre-emmanuel.webp', class: 'mask mask-circle object-contain h-48 w-96 mx-auto grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300', alt: 'Pierre-Emmanuel DACQUET' %>
         <div>
           <h4 class="font-black text-2xl text-accent">
             Pierre-Emmanuel DACQUET
@@ -64,11 +256,11 @@
             <% end %>
           </p>
         </div>
-        <%= image_tag 'partners/daniela.webp', class: 'mask mask-circle object-contain h-48 w-96 mx-auto grayscale opacity-70', alt: 'Alexandre MEUNIER' %>
+        <%= image_tag 'partners/daniela.webp', class: 'mask mask-circle object-contain h-48 w-96 mx-auto grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300', alt: 'Daniela ISAZA HURTADO' %>
       </div>
 
       <div class="flex flex-col-reverse sm:flex-row flex-wrap sm:flex-nowrap gap-8">
-      <%= image_tag 'partners/alexandre.webp', class: 'mask mask-circle object-contain h-48 w-96 mx-auto grayscale opacity-70', alt: 'Alexandre MEUNIER' %>
+      <%= image_tag 'partners/alexandre.webp',class: 'mask mask-circle object-contain h-48 w-96 mx-auto grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300', alt: 'Alexandre MEUNIER' %>
         <div>
           <h4 class="sm:text-left font-black text-2xl text-accent">
             Alexandre MEUNIER
@@ -116,11 +308,11 @@
         </p>
         
         </div>
-        <%= image_tag 'partners/philippe.webp', class: 'mask mask-circle object-contain h-48 w-96 mx-auto grayscale opacity-70', alt: 'Philippe NOUGAILLON' %>
+        <%= image_tag 'partners/philippe.webp', class: 'mask mask-circle object-contain h-48 w-96 mx-auto grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300', alt: 'Philippe NOUGAILLON' %>
       </div>
 
       <div class="flex flex-col-reverse sm:flex-row flex-wrap sm:flex-nowrap gap-8">
-      <%= image_tag 'partners/serena.webp', class: 'mask mask-circle object-contain h-48 w-96 mx-auto grayscale opacity-70', alt: 'Alexandre MEUNIER' %>
+      <%= image_tag 'partners/serena.webp', class: 'mask mask-circle object-contain h-48 w-96 mx-auto grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300', alt: 'Alexandre MEUNIER' %>
         <div>
           <h4 class="sm:text-left font-black text-2xl text-accent">
             Serena PINALI
@@ -167,7 +359,7 @@
               <% end %>
               </p>
               </div>
-              <%= image_tag 'partners/sebastien.webp', class: 'mask mask-circle object-contain h-48 w-96 mx-auto grayscale opacity-70', alt: 'Sébastien POURCHAIRE' %>
+              <%= image_tag 'partners/sebastien.webp', class: 'mask mask-circle object-contain h-48 w-96 mx-auto grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300', alt: 'Sébastien POURCHAIRE' %>
       </div>
 
        
@@ -175,167 +367,91 @@
     </div>
   </section>
 </div>
+-->
 
-<section class="text-xl bg-info text-white py-24">
-  <h2 class="text-4xl lg:text-5xl text-center font-black mb-12">
-    Récompenses
-  </h2>
-  <strong>2010 - Concours Smartphones SNCF/TGV Lab</strong>
-  <p>
-    Direction d’un projet de développement d’une application mobile BlackBerry qui améliore la qualité de l’information
-    transmise par les chefs de bord durant les trajets. 
-    Pendant quatre semaines, sur les lignes TGV Paris-Lyon et Paris-Nantes, 14 chefs de bord ont testé sept applications
-    avec les smartphones associés. Nous avons atteint la seconde place du podium.
-    Développement sponsorisé par RiM (Research in Motion).
-  </p>
-  <div class="mt-6">
-    <strong>2015 - Prix de l’Innovation VINCI/ETF</strong>
-    <br>Catégorie Management, région Île de France.
-    <br>Conception et réalisation d’une application de suivi de la maintenance ferroviaire (AEMMS).
-  </div>
-</section>
+
 
 <section id="avis" class="min-h-screen my-24">
   <h2 class="text-center text-4xl lg:text-5xl font-black text-accent mb-12">
     Témoignages de nos clients
   </h2>
-  <div>
-    <div class="mx-auto mt-12 p-8 pb-12 bg-white shadow rounded-lg">
-      <div>
-        <i class="fa-solid fa-quote-left fa-2xl mb-8" style="color: #000000;"></i>
+  <div class="flex flex-col  justify-center gap-16">
+
+    <div class="bg-white shadow-md rounded-2xl p-8">
+        <i class="fa-solid fa-quote-left text-2xl mb-4 text-accent opacity-70"></i>
+          <p class="text-gray-700 text-justify leading-relaxed">
+        J’ai eu l’occasion de collaborer avec Philippe de l’équipe Aikku sur de nombreux projets, dont un projet européen. 
+        Il fait preuve d’un grand professionnalisme, alliant écoute, compréhension et créativité.
+        <br><br>
+        Il excelle dans la traduction des besoins en solutions agiles, robustes et durables. 
+        Toujours à l’affût des technologies, notamment open-source, il propose des solutions simples, efficaces et adaptées.
+        Accessible et pédagogue, il accompagne avec rigueur et propose des approches innovantes et pérennes. 
+        Je le recommande sans réserve.</p>
+              <div class="mt-8 border-t pt-6">
+      <%= link_to "https://www.linkedin.com/in/philippe-eynaud-3a3ab835/", class: 'flex items-center gap-1.5 font-medium' do %>
+      <i class="fa-brands fa-linkedin "></i> Philippe EYNAUD
+        <% end %>
+          <p> Professeur en sciences de gestion à l'IAE de Paris, Université Paris 1 Panthéon-Sorbonne
         <br>
-        <cite>
-          J'ai eu l'occasion de collaborer avec Philippe de l'équipe Aikku sur de nombreux projets (dont un projet européen). Philippe a toujours su faire preuve d'un grand professionnalisme. Il allie les qualités d'écoute, de compréhension et de créativité. 
-          Il maîtrise parfaitement l'art de la traduction des besoins clients en solutions agiles, robustes et durables.
-          C'est un développeur hors pair et il est toujours à l'affût des technologies prometteuses, et notamment des solutions libres. 
-          D'une grande modestie, il est très accessible et sait faire preuve de beaucoup de pédagogie.
-          C’est un professionnel de haut niveau qui sait se mettre au diapason des besoins exprimés. Il propose des solutions pérennes, fiables et fait primer dans sa vision du développement la simplicité de la solution. 
-          Partisan de l’innovation frugale, il fournit à ses clients des solutions originales, robustes et parfaitement adaptées. Il a le sens de l’écoute et sait faire preuve d’une grande pédagogie dans les démarches agiles. Il a une expertise étendue sur des secteurs variés. Je le connais principalement pour l’accompagnement fourni dans le cadre de systèmes d’information pédagogiques. Je le recommande sans réserve.
-        </cite>
-      </div>
-      <div class="mt-10">
-        <%= link_to "Philippe Eynaud", "https://www.linkedin.com/in/philippe-eynaud-3a3ab835/", class:"font-black" %>
-        <p>
-          Professeur en sciences de gestion à l'IAE de Paris, Université Paris 1 Panthéon-Sorbonne
-        </p>
-        <p>
           Auteur de 
-          <%= link_to "'Le management du système d’information dans sa complexité'", 
-                      "https://www.amazon.fr/management-syst%C3%A8me-dinformation-dans-complexit%C3%A9/dp/1784055026/ref=sr_1_5?qid=1687595735", class: "link", target: '_blank' %>, (2018), ISTE Editions.  
+          <%= link_to "Dictionnaire d'une autre gestion", 
+                      "https://www.editions-eres.com/ouvrage/5545/dictionnaire-dune-autre-gestion", class: "italic link", target: '_blank' %>, (2026), érés Editions.  
         </p>
       </div>
     </div>
 
-    <div class="flex flex-wrap lg:flex-nowrap justify-center gap-16 mt-12">
-      <div class="flex flex-wrap lg:flex-nowrap justify-center gap-16">
-        <div class="flex flex-col justify-between p-8 pb-12 gap-8 bg-white shadow rounded-lg">
-          <div>
-            <i class="fa-solid fa-quote-left fa-2xl mb-8" style="color: #000000;"></i>
-            <br>
-            <cite>
-              Philippe, de l'équipe Aikku est quelqu'un de très pédagogue qui m'a beaucoup appris. 
-              Il m'a permis de gagner en confiance, en cas de difficultés,
-              en cas de difficultés, il prenait le temps de m'expliquer et de m'aider à formuler une solution par moi-même. 
-              C'est aussi quelqu'un de très impliqué dans son travail, très à jour sur les dernières technologies.
-            </cite>
-          </div>
-          <div>
-            <%= link_to "Alexandre Cukier", "https://www.linkedin.com/in/alexandre-cukier/", class:"hover:underline font-black", target: '_blank' %>
-            <p>
-              Software Developer @ Ridge
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex flex-col justify-between p-8 pb-12 gap-8 bg-white shadow rounded-lg">
-        <div>
-          <i class="fa-solid fa-quote-left fa-2xl mb-8" style="color: #000000;"></i>
-          <br>
-          <cite>
-            Fiable, ultra compétent, engagé et persévérant, l'équipe Aikku délivre ses projets en temps et en heure avec une qualité que je n'ai jamais vu ailleurs.
-          </cite>
-        </div>
-        <div>
-          <%= link_to "Adeline M.", "https://www.linkedin.com/in/ameilhoc/", class:"hover:underline font-black", target: '_blank' %>
-          <p>
-            CEO @ AIRJIN
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="mx-auto mt-12 p-8 pb-12 bg-white shadow rounded-lg">
-      <div>
-        <i class="fa-solid fa-quote-left fa-2xl mb-8" style="color: #000000;"></i>
-        <br>
-        <cite>
-          J'ai eu le grand plaisir de travailler avec l'équipe Aikku sur la mise en place de l'outil Planning-IAE à l'IAE Paris-Sorbonne et sur le développement de fonctionnalités avancées. 
-          Quelle chance! L'équipe Aikku incarne "l'orientation utilisateur" que j'enseigne à mes étudiants ;-) 
-          Il est profondément à l'écoute et est capable de traduire les besoins des utilisateurs en caractéristiques techniques de façon très efficace et pédagogique, dans le souci constant que l'outil soit au service de l'utilisateur et non pas le contraire, et dans une approche de co-construction. 
-          Philippe, de l'équipe Aikku, est à la fois fiable et réactif, posé et sympathique. 
-          Une collaboration parfaite, très agréable et particulièrement performante en termes de process, de résultats et de qualité de la relation humaine. 
-          Grâce à lui, l'institution dispose d'un outil très vite devenu central dans son fonctionnement, que les enseignants, les administratifs et les étudiants se sont naturellement approprié, et en même temps suffisamment agile pour s'adapter à l'évolution des besoins au fil des années. 
-          Je recommande sans réserve et j'espère avoir encore l'occasion de collaborer avec eux.
-        </cite>
-      </div>
-      <div class="mt-10">
-        <%= link_to "Marie-Eve Laporte", "https://www.linkedin.com/in/marieevelaporte/", class:"hover:underline font-black", target: '_blank' %>
-        <p>
-          Professor, "Innovation Management & Future of Healthcare" research chair
+    <div class="bg-white shadow-md rounded-2xl p-8">
+        <i class="fa-solid fa-quote-left text-2xl mb-4 text-accent opacity-70"></i>
+          <p class="text-gray-700 text-justify leading-relaxed">
+         J’ai eu le plaisir de travailler avec l’équipe Aikku sur le déploiement de l’outil Planning-IAE.
+        Quelle chance! L'équipe Aikku incarne `l'orientation utilisateur` que j'enseigne à mes étudiants ! 
+        À l’écoute, ils traduisent efficacement les besoins utilisateurs en solutions concrètes, dans une logique de co-construction. 
+        Philippe est fiable, réactif et très agréable dans la collaboration.
+        Le résultat : un outil central, adopté rapidement et capable d’évoluer avec les besoins. 
+        Une collaboration fluide et performante que je recommande vivement.</p>
+              <div class="mt-8 border-t pt-6">
+                <%= link_to "https://www.linkedin.com/in/marieevelaporte/", class: 'flex items-center gap-1.5 font-medium' do %>
+  <i class="fa-brands fa-linkedin "></i> Marie-Eve LAPORTE
+  <% end %>
+          <p> Professor, "Innovation Management & Future of Healthcare" research chair
         </p>
       </div>
     </div> 
 
-    <div class="flex flex-wrap lg:flex-nowrap justify-center gap-16 mt-12">
-      <div class="flex flex-col justify-between p-8 pb-12 gap-8 bg-white shadow rounded-lg">
-        <div>
-          <i class="fa-solid fa-quote-left fa-2xl mb-8" style="color: #000000;"></i>
-          <br>
-          <cite>
-            Philippe, de l'équipe Aikku, est un développeur compétent et passionné par son métier, il a créé notre application de suivi de portefeuille en Ruby on rails il y a plusieurs années et en a assuré la maintenance et les évolutions par la suite. C’est un plaisir de travailler avec lui, je le recommande.
-          </cite>
-        </div>
-        <div>
-          <%= link_to "Léa Gheerardyn", "https://www.linkedin.com/in/l%C3%A9a-gheerardyn-26417869/", class:"font-black" %>
-          <p>
-            Chef de projet SI @ Scopelec
+  <div class="flex flex-col md:flex-row gap-8 ">
+    <div class="bg-white shadow-md rounded-2xl p-8 flex flex-col ">
+        <i class="fa-solid fa-quote-left text-2xl mb-4 text-accent opacity-70"></i>
+          <p class="text-gray-700 text-justify leading-relaxed">
+          L'équipe Aikku a été à notre écoute et a parfaitement répondu à notre besoin -
+            Je recommande.
           </p>
+      <div class="mt-8 border-t pt-6">
+         <%= link_to "https://www.linkedin.com/in/christophe-pallandre/", class: 'flex items-center gap-1.5 font-medium' do %>
+          <i class="fa-brands fa-linkedin "></i> Christophe PALLANDRE
+        <% end %>
+            <p> DAF @ Grohe France</p>
         </div>
       </div>
 
-      <div class="flex flex-col justify-between p-8 pb-12 gap-8 bg-white shadow rounded-lg">
-        <div>
-          <i class="fa-solid fa-quote-left fa-2xl mb-8" style="color: #000000;"></i>
-          <br>
-          <cite>
-            L'équipe Aikku a été à notre écoute et a parfaitement répondu à notre besoin -
-            Je recommande.
-          </cite>
+    <div class="bg-white shadow-md rounded-2xl p-8 flex flex-col ">
+        <i class="fa-solid fa-quote-left text-2xl mb-4 text-accent opacity-70"></i>
+          <p class="text-gray-700 text-justify leading-relaxed">
+              Philippe est très pédagogue et m’a beaucoup appris. 
+      Il m’a aidé à gagner en confiance en prenant le temps de m’accompagner dans la résolution des problèmes.
+      Très impliqué et à jour sur les dernières technologies, c’est un professionnel sérieux et engagé.</p>
+      <div class="mt-8 border-t pt-6">
+            <%= link_to "https://www.linkedin.com/in/alexandre-cukier/", class: 'flex items-center gap-1.5 font-medium' do %>
+        <i class="fa-brands fa-linkedin "></i> Alexandre CUKIER
+           <% end %>
+          <p> Software Developer @ Ridge
+            </p>
+          </div>
         </div>
-        <div>
-          <%= link_to "Christophe Pallandre", "https://www.linkedin.com/in/christophe-pallandre/", class:"font-black" %>
-          <p>
-            DAF @ Grohe France
-          </p>
-        </div>
+
       </div>
-      <div class="flex flex-col justify-between p-8 pb-12 gap-8 bg-white shadow rounded-lg">
-        <div>
-          <i class="fa-solid fa-quote-left fa-2xl mb-8" style="color: #000000;"></i>
-          <br>
-          <cite>
-            À l'écoute, réactif et compétent. Même sur un secteur d'activité pas habituel, l'équipe Aikku propose et trouve des solutions adaptées.
-          </cite>
-        </div>
-        <div>
-          <%= link_to "Clément Hallé", "https://www.linkedin.com/in/cl%C3%A9ment-hall%C3%A9-780949137/", class:"font-black" %>
-          <p>
-            CEO @ Le T-shirt français
-          </p>
-        </div>
-      </div>
+      
     </div>
+
   </div>
 </section>
 

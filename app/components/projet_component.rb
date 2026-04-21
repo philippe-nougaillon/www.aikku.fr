@@ -5,5 +5,4 @@ class ProjetComponent < ViewComponent::Base
     @projet = projet
     @user_signed_in = user_signed_in
   end
-
 end

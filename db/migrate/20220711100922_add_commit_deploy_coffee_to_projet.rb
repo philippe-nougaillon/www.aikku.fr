@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AddCommitDeployCoffeeToProjet < ActiveRecord::Migration[7.0]
   def change
     add_column :projets, :commit, :integer, default: 0

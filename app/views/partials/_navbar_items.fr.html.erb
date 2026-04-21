@@ -7,7 +7,7 @@
         <%= link_to "Vous êtes un organisme de formation ?", aikku_plann_path, class: "hover:underline hover:underline-offset-8 hover:text-primary hover:font-black lg:whitespace-nowrap #{'underline underline-offset-8 text-primary font-black' if params[:action] == 'aikku_plann' }" %>
       </li>
       <li>
-        <%= link_to "Vous êtes une communauté de communes, un EPCI ?", "https://www.coopcomm.fr", class: "hover:underline hover:underline-offset-8 hover:text-primary hover:font-black lg:whitespace-nowrap #{'underline underline-offset-8 text-primary font-black' if params[:action] == 'talea' }" %>
+        <%= link_to "Vous êtes une communauté de communes, un EPCI ?", aikku_coopcomm_path, class: "hover:underline hover:underline-offset-8 hover:text-primary hover:font-black lg:whitespace-nowrap #{'underline underline-offset-8 text-primary font-black' if params[:action] == 'aikku_coopcomm' }" %>
       </li>
       <li>
         <%= link_to "Vous êtes DSI / Data Scientist ?", aikku_access_path, class: "hover:underline hover:underline-offset-8 hover:text-primary hover:font-black lg:whitespace-nowrap #{'underline underline-offset-8 text-primary font-black' if params[:action] == 'aikku_access' }" %>

@@ -1,7 +1,10 @@
+# frozen_string_literal: true
+
 class PagesController < ApplicationController
   skip_before_action :authenticate_user!
 
-  def home; end
+  def home
+  end
 
   # def portfolio
   #   @projets = Projet.all
@@ -21,21 +24,23 @@ class PagesController < ApplicationController
   #   @projets = @projets.includes(:tags)
   # end
 
-  def contact; end
+  def contact
+  end
 
   def contact_submit
     # if verify_recaptcha || Rails.env.development?
-      message = Message.create(email: params[:email], objet: params[:objet], contenu: params[:contenu],
-                               nom: params[:nom], prénom: params[:prénom], structure: params[:structure], fonction: params[:fonction], mobile: params[:mobile])
-      ContactMailer.submitted(message).deliver_now
-      redirect_to root_path, notice: t('contact.message_sent')
+    message = Message.create(:email => params[:email], :objet => params[:objet], :contenu => params[:contenu],
+      :nom => params[:nom], :prénom => params[:prénom], :structure => params[:structure], :fonction => params[:fonction], :mobile => params[:mobile])
+    ContactMailer.submitted(message).deliver_now
+    redirect_to root_path, notice: t("contact.message_sent")
     # else
     #   flash[:alert] = t('contact.recaptcha_problem')
     #   render 'contact'
     # end
   end
 
-  def qui_sommes_nous; end
+  def qui_sommes_nous
+  end
 
   # def blog
   #   @posts = Post.where(published: true)
@@ -65,13 +70,17 @@ class PagesController < ApplicationController
     end
   end
 
-  def services; end
+  def services
+  end
 
   # def logiciels; end
 
-  def prestofacto; end
+  def prestofacto
+  end
 
-  def guide_planning; end
+  def guide_planning
+  end
 
-  def mentions_légales; end
+  def mentions_légales
+  end
 end

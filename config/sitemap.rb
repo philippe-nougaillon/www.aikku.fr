@@ -1,9 +1,12 @@
+# frozen_string_literal: true
+
 # Set the host name for URL creation
-SitemapGenerator::Sitemap.default_host = 'https://www.aikku.eu/'
+SitemapGenerator::Sitemap.default_host = "https://www.aikku.eu/"
 
 SitemapGenerator::Sitemap.create do
   add aikku_access_path
   add aikku_plann_path
+  add aikku_coopcomm_path
   # add aikku_projects_path
   # add aikku_sign_path
 
