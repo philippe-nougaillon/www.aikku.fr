@@ -1,4 +1,4 @@
-<section class="text-center ">
+<section class="text-center reveal delay-1">
   <h1 class="font-black text-6xl text-secondary mb-12 pt-8 italic">
     <%= title "Gérez vos cours et vos salles. Sans complications " %>
   </h1>
@@ -10,36 +10,36 @@
   </h3>
 
   <div class=" flex flex-col md:flex-row justify-center gap-2 m-10 md:mt-12" data-theme="aikku">
-    <%= link_to "Vous êtes gestionnaire de formation", aikku_plann_path(anchor: "bref"), class: "btn text-white btn-lg max-w-full rounded-lg bg-[#51c7fd] hover:bg-[#7030a0]" %>    
+    <%= link_to "Vous êtes gestionnaire de formation", aikku_plann_path(anchor: "fonctionnalités"), class: "btn text-white btn-lg max-w-full rounded-lg bg-[#51c7fd] hover:bg-[#7030a0]" %>    
     <%= link_to "Vous êtes administrateur", aikku_plann_path(anchor: "details_fonctionnalites"), class: "btn text-white btn-lg max-w-full rounded-lg bg-[#7030a0] hover:bg-[#51c7fd]" %>
   </div>
 </section>
 
 
 <section>
- <div class="flex flex-col md:flex-row border-t border-b border-gray-300">
+  <div class="flex flex-col md:flex-row border-t border-b border-gray-300 reveal delay-2">
 
-  <div class="flex-1 text-center py-7 px-4 border-b md:border-b-0 md:border-r border-gray-300">
-    <p class="text-4xl font-medium text-accent">500+</p>
-    <p class="text-sm text-gray-400 mt-1">Formations gérées</p>
+    <div class="flex-1 text-center py-7 px-4 border-b md:border-b-0 md:border-r border-gray-300">
+      <p class="text-4xl font-medium text-accent">500+</p>
+      <p class="text-sm text-gray-400 mt-1">Formations gérées</p>
+    </div>
+
+    <div class="flex-1 text-center py-7 px-4 border-b md:border-b-0 md:border-r border-gray-300">
+      <p class="text-4xl font-medium text-accent">900</p>
+      <p class="text-sm text-gray-400 mt-1">Intervenants</p>
+    </div>
+
+    <div class="flex-1 text-center py-7 px-4 border-b md:border-b-0 md:border-r border-gray-300">
+      <p class="text-4xl font-medium text-accent">60 000</p>
+      <p class="text-sm text-gray-400 mt-1">Cours planifiés</p>
+    </div>
+
+    <div class="flex-1 text-center py-7 px-4">
+      <p class="text-4xl font-medium text-accent">Depuis 2017</p>
+      <p class="text-sm text-gray-400 mt-1">25 gestionnaires</p>
+    </div>
+
   </div>
-
-  <div class="flex-1 text-center py-7 px-4 border-b md:border-b-0 md:border-r border-gray-300">
-    <p class="text-4xl font-medium text-accent">900</p>
-    <p class="text-sm text-gray-400 mt-1">Intervenants</p>
-  </div>
-
-  <div class="flex-1 text-center py-7 px-4 border-b md:border-b-0 md:border-r border-gray-300">
-    <p class="text-4xl font-medium text-accent">60 000</p>
-    <p class="text-sm text-gray-400 mt-1">Cours planifiés</p>
-  </div>
-
-  <div class="flex-1 text-center py-7 px-4">
-    <p class="text-4xl font-medium text-accent">Depuis 2017</p>
-    <p class="text-sm text-gray-400 mt-1">25 gestionnaires</p>
-  </div>
-
-</div>
 </section>
 
 
@@ -70,7 +70,9 @@
       Planification des cours
       </h3>
       <p class="text-justify">
-      Créez ou modifiez pour un ensemble de cours et/ou pour une session, en quelques clics.Le logiciel sélectionne automatiquement une salle disponible.
+      Créez ou modifiez pour un ensemble de cours et/ou pour une session,
+       en quelques clics. Le logiciel sélectionne automatiquement 
+       une salle disponible.
       </p>
     </div>
 
@@ -114,9 +116,8 @@
         <h3 class="text-2xl font-black my-4  text-left  underline underline-offset-12"> 
          <i class="fa-solid fa-file-signature fa-lg mr-6"></i>
           Suivi des présences</h3>
-        <p class="text-justify">Grâce à l'integration d'Edusign, signé numériquement directement 
-        depuis le smartphone ou ordinateur de l'étudiant au début de chaque séance.</p>
-      </div>
+        <p class="text-justify">Grâce à l'intégration d'Edusign, signez numériquement directement
+      depuis le smartphone ou l'ordinateur de l'étudiant au début de chaque séance. </div>
      
   </div>
 </section>
@@ -164,8 +165,8 @@
         il fournit à ses clients des solutions originales, robustes 
         et parfaitement adaptées. Il a le sens de l'écoute et sait 
         faire preuve d'une grande pédagogie dans les démarches agiles.</p>
-      <div class="mt-8 border-t pt-6 flex flex-col md:flex-row items-center gap-4">
-        <div class="text-left">
+      <div class="mt-8 border-t pt-6 flex flex-col md:flex-row justify-between items-center">
+        <div >
         <%= link_to "https://www.linkedin.com/in/philippe-eynaud-3a3ab835/", class: 'flex items-center gap-1.5 font-medium' do %>
         <i class="fa-brands fa-linkedin "></i> Philippe EYNAUD
         <% end %>
@@ -178,7 +179,7 @@
         </p>
         </div>
          <%= image_tag "projets/planning iae-paris/Logo_iae.png", 
-         class:"mx-auto h-15 w-65 flex items-center", 
+         class:" h-12 w-auto mt-4 md:mt-0", 
           alt: 'Logo IAE PARIS' %>
       </div>
   </div>
@@ -327,40 +328,40 @@
       </section>
 </section>
 
-<section id="bg-info text-white mx-auto w-full text-center pt-24">
-
- <h2 class="text-3xl lg:text-5xl text-center font-black mb-12">
+<section class=" text-center rounded-full bg-info text-white p-18 m-6">
+    <h2 class="text-3xl lg:text-5xl text-center font-black mb-12">
     Envie de voir <span class="text-gradient">Aikku PLANN</span> en action ?
-  </h2>
-         <p class="text-justify text-gray-600">
+    </h2>
+    <p class="text-center text-white">
     Notre équipe vous propose des solutions adaptées à vos besoins,
-    avec un accompagnement personnalisé et une assistance technique à tout moment.
-  </p>
-  <%= link_to "Voir la démonstration →", "https://plann.aikku.eu",
-        target: "_blank",
-        class: "inline-block bg-white text-purple-700 font-medium text-sm px-7 py-3 rounded-xl" %>
+    avec un accompagnement personnalisé et une assistance technique 
+    à tout moment.</p>
+   <%= link_to "Voir la démonstration →", "https://plann.aikku.eu",
+    target: "_blank",
+    class: "btn btn-gradient shadow-sm shadow-white/40 mt-6 h-min" %>
 </section>
 
 <section class="grid grid-cols-1 md:grid-cols-2 gap-4 px-6 mb-16">
 
-  <div class="border border-gray-100 rounded-2xl p-6">
-    <p class="text-xs font-medium text-purple-600 uppercase tracking-widest mb-2">Développement</p>
+  <div class="border border-gray-300 rounded-2xl p-6">
+    <p class="text-xs font-bold text-accent uppercase  mb-2">Développement</p>
     <h3 class="text-base font-medium text-gray-900 mb-2">Code source ouvert</h3>
     <p class="text-sm text-gray-400 leading-relaxed">
       Ce projet est développé et maintenu en France, par nous-mêmes.
       Le code source est publié sous licence libre sur
       <%= link_to 'GitHub', "https://github.com/philippe-nougaillon/Planning_IAE",
-            target: "_blank", class: "text-purple-600 underline underline-offset-2" %>.
-    </p>
+      target: "_blank", 
+      class: "text-accent hover:underline underline-offset-2" %>.
+      </p>
   </div>
 
-  <div class="border border-gray-100 rounded-2xl p-6">
-    <p class="text-xs font-medium text-purple-600 uppercase tracking-widest mb-2">Support et services</p>
+  <div class="border border-gray-300 rounded-2xl p-6">
+    <p class="text-xs font-bold text-accent uppercase  mb-2">Support et services</p>
     <h3 class="text-base font-medium text-gray-900 mb-2">Besoin d'une fonctionnalité ?</h3>
     <p class="text-sm text-gray-400 leading-relaxed">
       Vous souhaitez une nouvelle fonctionnalité ou l'installer ?
       <%= link_to 'Consultez notre offre de services →', services_path,
-            class: "text-purple-600 underline underline-offset-2" %>.
+        class: "text-accent hover:underline underline-offset-2" %>.
     </p>
   </div>
 
@@ -372,3 +373,44 @@
 <% end %>
 
 
+
+
+
+
+
+
+
+<!--
+<section id="bref" class="w-full text-center bg-info text-white py-12">
+  <h2 class="apps-title">
+    Un outil puissant. Des fonctionnalités pour gagner en efficacité
+  </h2>
+  <div class="flex flex-row md:flex-col   justify-around gap-16 mt-12">
+    <div class="flex flex-col flex-1">
+      <p class="text-2xl font-black mb-6">
+        Planifiez rapidement les cours
+      </p>
+      <p>
+        Choisissez la formation, le(s) intervenant(s) et la salle de cours (parmi les salles disponibles proposées automatiquement) : votre cours est créé en quelques clics et intégré au planning.
+      </p>
+    </div>
+    <div class="flex flex-col flex-1">
+      <p class="text-2xl font-black mb-6">
+        Gérez l'occupation de vos salles
+      </p>
+      <p>
+        Visualisez tous les créneaux disponibles dans votre établissement. Pilotez le taux d'occupation des salles de cours, d'un seul coup d'œil.
+      </p>
+    </div>
+    <div class="flex flex-col flex-1">
+      <p class="text-2xl font-black mb-6">
+        Communiquez facilement
+      </p>
+      <p>
+        Notifiez les étudiants et les intervenants, par email ou sms, en cas de modification ou d'annulation d'un cours. 
+        Bénéficiez aussi d’un Workflow d’invitation pour la gestion des propositions de créneaux horaires, et d’un Workflow de validation des dossiers CEV.
+      </p>
+    </div>
+  </div>
+</section>
+-->

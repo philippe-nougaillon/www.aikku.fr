@@ -1,53 +1,242 @@
-<section class="text-center">
-  <h1 class="font-black text-5xl lg:text-6xl text-secondary mb-6 pt-8 italic">
-    <%= title "Aikku ACCESS" %>
+<section class="text-center reveal delay-1">
+  <h1 class="font-black text-6xl text-secondary mb-12 pt-8 italic">
+    <%= title "Vos données métier, partout avec vous." %>
   </h1>
-  <h2 class="text-lg xl:text-2xl px-6">
-    <%= description "Vos données métier, en ligne et en mobilité" %>
-  </h2>
+  <h3 class="text-lg lg:text-2xl">
+  <span class="font-black">Aikku ACCESS</span> est un  gestionnaire d'informations NO-CODE
+   qui permet de structurer 
+  vos données métiers. Vous pouvez créer des collections 
+  personnalisées (clients, interventions, techniciens, frais, 
+  etc.), établir des liens entre elles pour refléter vos processus réels,
+  et partager ces informations en ligne avec vos équipes pour un 
+  travail collaboratif fluide.
+  </h3>
+
+  <div class=" flex flex-col md:flex-row justify-center gap-2 m-10 md:mt-12" data-theme="aikku">
+    <%= link_to "Voir la démonstration →",
+          "https://access.aikku.eu/fr/users/1/connect_guest_user",
+          target: "_blank",
+          class: "btn text-white btn-lg max-w-full rounded-lg bg-[#51c7fd] hover:bg-[#7030a0]" %>     
+          <%= link_to "Guide d'utilisation",
+          "https://access.aikku.eu/a_propos",
+          target: "_blank",
+          class: "btn text-white btn-lg max-w-full rounded-lg bg-[#7030a0] hover:bg-[#51c7fd]" %>
+    </div>
 </section>
 
-<div class="mx-4 lg:mx-24 mb-24">
-  <p class="text-xl my-12">
-    Aikku ACCESS est un gestionnaire d'informations NO-CODE qui vous permet de créer  
-    des collections d'objets métiers (ex: Clients, Interventions, Technicien, Frais, Projets, etc.), 
-    de les lier (Clients <-> Interventions <-> Techniciens <-> Frais) 
-    et de les partager en ligne avec vos collaborateurs
-    <br><br>
-    <b>Assistant (IA) :</b> Posez une question à l'Assistant, basée sur les données de vos collections d'objets. 
-    <br>
-    Ex : "<i>Génère-moi les 3 prochaines interventions à prévoir !</i>"  
-  </p>
 
-  <h3 class="text-3xl my-8">Pour qui et pour quel usage ?</h3>
 
-  <p class="text-2xl my-4">Data Management</p>
-  <p>
-    <b>Vous êtes à la recherche d'un outil simple pour gérer vos dossiers, documents, rapport, et vos informations collectées sur le terrain ?</b>
-    <br><br>
-    Aikku ACCESS a été conçu pour être utilisable sur un smartphone afin de collecter les données au plus près de leur origine et quelle que soit leur nature (Texte, Chiffre, Photo, PDF, etc.). 
-    Des données de contexte, comme l'état de la météo, la position GPS, peuvent être acquises automatiquement. 
-    Un outil de génération de Graphiques vous permet de visualiser les informations sous la forme d'une courbe ou d'un histogramme.
-  </p>
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path d="
+      M0,60
+      Q300,0 600,30
+      Q900,60 1200,30
+      L1200,60
+      L0,60
+      Z
+    " fill="#1f1f3d"/>
+  </svg>
+</div>
+<section class="bg-info text-white mx-auto w-full text-center pt-24">
+  
+  <h2 class="text-accent font-bold text-xl mb-4">
+    Pour qui et pour quels usages ?
+  </h2>
+  <h2 class="text-3xl lg:text-5xl font-black mb-12">
+    Trois <span class="text-gradient">cas d’usage clés</span>
+  </h2>
 
-  <p class="text-2xl my-4">Field Service Management (FSM)</p>
-  <p>
-    <b>Vous êtes une entreprise de service avec des équipes sur le terrain et vous cherchez une méthode de gestion de vos interventions (ex: BTP, SAV, Installation, Maintenance) ?</b>
-    <br><br>
-    Aikku ACCESS est un gestionnaire d'informations NO-CODE qui vous permet de créer des collections d'objets métiers (ex: Clients, Interventions, Technicien, Frais, Projets, etc.), 
-    de les lier (Clients <=> Interventions <=> Techniciens <=> Frais) et de les partager en ligne avec vos collaborateurs, en toute sécurité.
-  </p>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mx-8 mt-16 mb-10 md:mt-16">
 
-  <p class="text-2xl my-4">Project Management</p>
-  <p>
-    <b>Vous êtes responsable d'une équipe et du bon déroulement d'un programme de projets ?</b>
-    <br><br>
-    Aikku ACCESS vous permet de créer rapidement, et sans faire une ligne de code, un outil de suivi de l'état de chaque projet, 
-    d'être notifié quand un changement d'état important est enregistré, et de voir vos dates d'échéances dans une vue 'Calendrier' 
-    ou dans votre agenda personnel (Google Calendar/Outlook/etc.).
-  </p>
+    <div class="flex flex-col p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition">
+      <h3 class="text-2xl font-black my-4 text-center text-accent">
+        <i class="fa-solid fa-database fa-lg mr-2"></i>
+        Gestion des données</h3>
+    <p class="text-gray-700 text-center leading-relaxed">
+        Centralisez et gérez toutes vos données terrain depuis votre smartphone.
+        Photos, PDF, GPS et données météo sont collectés automatiquement,
+        sans effort.
+      </p>
+    </div>
+
+    <div class="flex flex-col p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition">
+      <h3 class="text-2xl font-black my-4 text-center text-accent">
+        <i class="fa-solid fa-wrench fa-lg mr-2"></i>
+        Gestion des opérations terrain</h3>
+    <p class="text-gray-700 text-center leading-relaxed">
+        Créez et structurez vos objets métiers (clients, interventions, techniciens, frais),
+        reliez-les entre eux et partagez-les facilement avec vos équipes.
+      </p>
+    </div>
+
+    <div class="flex flex-col p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition">
+      <h3 class="text-2xl font-black my-4 text-center text-accent">
+        <i class="fa-regular fa-calendar-days fa-lg mr-2"></i>
+        Gestion de projet</h3>
+    <p class="text-gray-700 text-center leading-relaxed">
+        Suivez l’avancement de vos projets en temps réel,
+        recevez des alertes sur les changements importants et
+        visualisez vos échéances via une vue calendrier claire.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="bg-white shadow-xl rounded-2xl p-8 flex flex-col mx-8 mb-16 md:mt-16">
+      <h3 class="text-2xl font-black my-4 text-center text-accent">
+      <i class="fa-solid fa-brain fa-lg mr-2"></i>
+      Assistant IA intégré </h2>
+    <p class="text-gray-700 text-center leading-relaxed">
+      Posez vos questions directement sur vos données et obtenez des réponses actionnables instantanément.
+      <em>Exemple : « Génère les 3 prochaines interventions prioritaires. »</em>
+    </p>
+  </div>
+
+</section>
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path d="
+      M0,0
+      Q300,60 600,30
+      Q900,0 1200,30
+      L1200,0
+      L0,0
+      Z
+    " fill="#1f1f3d"/>
+  </svg>
 </div>
 
+
+<section class="w-full py-24 px-6 lg:px-20 bg-slate-50">
+
+  <div class="text-center mb-16">
+    <h2 class="text-accent font-bold text-xl">
+      FONCTIONNALITÉS PRINCIPALES </h2>
+    <h3 class="text-3xl lg:text-5xl font-black mt-4">
+      Une plateforme, <span class="text-gradient">toutes vos opérations</span>
+    </h3>
+  </div>
+
+  <div class="grid lg:grid-cols-2 gap-10 items-center">
+
+    <div class="space-y-8">
+
+      <div class="flex gap-4 rounded-xl p-4 border border-gray/30">
+        <i class="fa-solid fa-list fa-lg text-accent mt-3"></i>
+        <div>
+          <h3 class="text-xl font-black">Collections d’objets</h3>
+          <p class="text-gray-600">
+            Créez vos propres structures de données sans code :
+            texte, nombres, photos, PDF…
+          </p>
+        </div>
+      </div>
+
+      <div class="flex gap-4 rounded-xl p-4 border border-gray/30">
+        <i class="fa-solid fa-link fa-lg text-accent mt-3"></i>
+        <div>
+          <h3 class="text-xl font-black">Relations entre données</h3>
+          <p class="text-gray-600">
+            Connectez vos entités : Clients, Interventions,
+            Techniciens et Frais.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex gap-4 rounded-xl p-4 border border-gray/30">
+        <i class="fa-solid fa-users fa-lg text-accent mt-3"></i>
+        <div>
+          <h3 class="text-xl font-black">Collaboration en temps réel</h3>
+          <p class="text-gray-600">
+            Partagez et synchronisez vos données avec vos équipes,
+            sur tous les appareils.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex gap-4 rounded-xl p-4 border border-gray/30">
+        <i class="fa-solid fa-chart-bar fa-lg text-accent mt-3"></i>
+        <div>
+          <h3 class="text-xl font-black">Visualisation & analytics</h3>
+          <p class="text-gray-600">
+            Transformez vos données en graphiques clairs
+            pour une meilleure prise de décision.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex gap-4 rounded-xl p-4 border border-gray/30">
+        <i class="fa-solid fa-location-dot fa-lg text-accent mt-3"></i>
+        <div>
+          <h3 class="text-xl font-black">Données terrain automatiques</h3>
+          <p class="text-gray-600">
+            GPS, météo et contexte collectés automatiquement
+            lors des interventions.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex gap-4 rounded-xl p-4 border border-gray/30">
+        <i class="fa-regular fa-calendar fa-lg text-accent mt-3"></i>
+        <div>
+          <h3 class="text-xl font-black">Vue calendrier</h3>
+          <p class="text-gray-600">
+            Planifiez et suivez vos échéances avec synchronisation
+            Google, Outlook et Apple.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="carousel" class="w-full carousel min-w-16 sm:w-3/4 mx-auto shadow-lg rounded-xl" data-turbo="false">
+      <div id="slide1" class="carousel-item relative w-full">
+        <%= image_tag "aikku_access/Aikku Access page login.png" %>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide5" class="btn btn-circle btn-primary">❮</a>
+          <a href="#slide2" class="btn btn-circle btn-primary">❯</a>
+        </div>
+      </div> 
+      <div id="slide2" class="carousel-item relative w-full">
+        <%= image_tag "aikku_access/Aikku Access page Objets.png" %>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide1" class="btn btn-circle btn-primary">❮</a>
+          <a href="#slide3" class="btn btn-circle btn-primary">❯</a>
+        </div>
+      </div> 
+      <div id="slide3" class="carousel-item relative w-full">
+        <%= image_tag "aikku_access/Aikku Access page Data.png" %>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide2" class="btn btn-circle btn-primary">❮</a>
+          <a href="#slide4" class="btn btn-circle btn-primary">❯</a>
+        </div>
+      </div>
+      <div id="slide4" class="carousel-item relative w-full">
+        <%= image_tag "aikku_access/Aikku Access page Dashboard.png" %>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide3" class="btn btn-circle btn-primary">❮</a>
+          <a href="#slide5" class="btn btn-circle btn-primary">❯</a>
+        </div>
+      </div>
+      <div id="slide5" class="carousel-item relative w-full">
+        <%= image_tag "aikku_access/Aikku Access page AI.png" %>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide4" class="btn btn-circle btn-primary">❮</a>
+          <a href="#slide1" class="btn btn-circle btn-primary">❯</a>
+        </div>
+      </div>
+    </div>
+</div>
+
+  </div>
+
+</section>
+
+
+
+
+<!--
 <section class="w-full bg-slate-100 text-secondary-content py-24">
   <div class="text-center">
     <div id="carousel" class="carousel min-w-16 sm:w-3/4 mx-auto shadow-lg" data-turbo="false">
@@ -89,8 +278,91 @@
     </div>
   </div>
 </section>
+<section  class="w-full text-center  p-20">
 
-<div class="mx-4 lg:mx-24 my-24">
+ 
+  <h2 class="text-center text-accent font-bold text-xl">FONCTIONNALITES PRINCIPALES</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 mt-16">
+
+    <div class="flex flex-col p-4">
+        <h3 class="text-2xl font-black my-4 text-left ">
+       <i class="fa-solid fa-list fa-lg mr-6"></i>
+       Collections d'objets </h3>
+      <p class="text-justify">
+       Créez vos propres types d'objets métiers sans écrire une ligne de code.
+        Texte, chiffre, photo, PDF…
+      </p>
+    </div>
+
+    <div class="flex flex-col p-4">
+        <h3 class="text-2xl font-black my-4 text-left ">
+      <i class="fa-solid fa-link fa-lg mr-6"></i>
+      Liaisons entre objets</h3>
+      <p class="text-justify">
+        Liez vos collections entre elles :
+        Clients ↔ Interventions ↔ Techniciens ↔ Frais.
+      </p>
+    </div>
+
+    <div class="flex flex-col p-4">
+        <h3 class="text-2xl font-black my-4 text-left ">
+      <i class="fa-solid fa-users fa-lg mr-6"></i>
+      Partage en ligne</h3>
+      <p class="text-justify">
+        Partagez vos données avec vos collaborateurs en toute sécurité,
+        depuis n'importe quel appareil.
+      </p>
+    </div>
+
+    <div class="flex flex-col p-4">
+        <h3 class="text-2xl font-black my-4 text-left ">
+        <i class="fa-solid fa-chart-bar fa-lg mr-6"></i>
+        Graphiques</h3>
+        <p class="text-justify">
+        Visualisez vos données sous forme de courbes ou d'histogrammes
+        en quelques clics.
+        </p>
+    </div>
+
+    <div class="flex flex-col p-4">
+        <h3 class="text-2xl font-black my-4 text-left ">
+        <i class="fa-solid fa-location-dot fa-lg mr-6"></i>
+        Données contextuelles</h3>
+        <p class="text-justify">
+        Position GPS et météo acquises automatiquement lors de la collecte
+        sur le terrain.
+      </p>
+    </div>
+
+    <div class="flex flex-col p-4">
+        <h3 class="text-2xl font-black my-4 text-left ">
+        <i class="fa-regular fa-calendar fa-lg mr-6"></i>
+       Vue Calendrier</h3>
+        <p class="text-justify">
+        Visualisez vos échéances et synchronisez avec Google Calendar,
+        Outlook ou Apple Calendar.
+      </p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="mx-4 lg:mx-24 my-24">
   <h3 class="apps-title">En savoir plus</h3>
   <p>
     Pour en savoir plus, veuillez consulter
@@ -118,4 +390,5 @@
     <%= link_to 'Consultez notre offre de services', services_path, class:'link' %>.
   </p>
 </div>
+-->
 
