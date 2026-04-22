@@ -36,7 +36,10 @@
   Pour être pertinente, sa mise en place doit être pensée avec les équipes métier.
 </p>
   <div class="flex justify-center">
-  <%= link_to 'En savoir plus...', services_path, class: 'btn text-lg lg:btn-sm btn-gradient hover:text-white! mt-12 shadow-lg h-min' %>
+  <%= link_to 'En savoir plus...', services_path, 
+  class: 'btn text-lg lg:btn-sm btn-gradient hover:text-white! mt-12 shadow-lg h-min transition-transform hover:scale-105' %>
+
+    
 </div>
   </section>
   
@@ -55,10 +58,10 @@
 <section id="secteurs" class="w-full text-white px-10 py-20 md:p-20 bg-info">
   <h2 class="text-3xl lg:text-5xl text-center font-black mb-12">Nos <span class="text-gradient">secteurs clés</span></h2>
   <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-16">
-    <div class="bg-white h-full border border-gray-100 rounded-xl p-6 flex flex-col gap-4">
-      <figure>
-        <%= image_tag "misc/students.jpg", class: 'object-cover h-48 w-full', alt: 'Étudiants' %>
-      </figure>
+    <div class="bg-white h-full border border-gray-100 rounded-xl overflow-hidden flex flex-col">
+     <figure>
+      <%= image_tag "misc/students.jpg", class: "w-full h-48 object-cover", alt: "Étudiants" %>
+       </figure>
       <div class="card-body text-black">
         <h2 class="card-title mb-4">Formation supérieure</h2>
         <p>Gérez toutes vos formations et vos salles avec une solution simple, abordable et personnalisable</p>
@@ -68,9 +71,9 @@
       </div>
     </div>
 
-    <div class="bg-white h-full border border-gray-100 rounded-xl p-6 flex flex-col gap-4">
+  <div class="bg-white h-full border border-gray-100 rounded-xl overflow-hidden flex flex-col">
       <figure>
-        <%= image_tag "misc/communauté-communes.jpg", class: 'object-cover h-48 w-full', alt: 'Village' %>
+        <%= image_tag "misc/communauté-communes.jpg", class: "w-full h-48 object-cover", alt: 'Village' %>
       </figure>
       <div class="card-body text-black">
         <h2 class="card-title mb-4">Collectivité locale</h2>
@@ -81,13 +84,13 @@
       </div>
     </div>
 
-    <div class="bg-white h-full border border-gray-100 rounded-xl p-6 flex flex-col gap-4">
+    <div class="bg-white h-full border border-gray-100 rounded-xl overflow-hidden flex flex-col">
       <figure>
-        <%= image_tag "misc/dsi.jpg", class:"object-cover h-48 w-full", alt: 'DSI / Data Scientist qui travaille' %>
+        <%= image_tag "misc/dsi.jpg", class: "w-full h-48 object-cover", alt: 'DSI / Data Scientist qui travaille' %>
       </figure>
       <div class="card-body text-black">
-        <h2 class="card-title mb-4">Analyste de données</h2>
-        <p>Interface No Code avec IA intégrée (ChatGPT) pour gérez vos données métier, en ligne et en mobilité</p>
+        <h2 class="card-title mb-4">DSI </h2>
+        <p>Interface No Code avec IA intégrée pour gérez vos données métier, en ligne et en mobilité</p>
         <div class="card-actions">
           <%= link_to 'En savoir plus', aikku_access_path, class: 'btn btn-sm btn-gradient shadow mt-4 h-min' %>
         </div>
@@ -110,9 +113,11 @@
 
 <section id="expérience" class="px-10 py-20 md:p-20">
   <h2 class="text-3xl text-center lg:text-5xl font-black mb-12">Une expérience de plus de 20 ans</h2>
-  <p class="lg:text-2xl text-justify md:text-center">
+  <p class="lg:text-2xl text-center">
     Aïkku est une société récente, mais ses fondateurs travaillent ensemble depuis plus de 20 ans.
-    Ensemble, ils ont construits de nombreux projets validés, dans le secteur de la santé, pour des clients tels que <b>Sanofi</b> (eCRF), <b>L’Oréal</b> (ePRO), <b>PPRS Research</b> (CDMS), <b>AirJin</b> (IoT)
+    <br>
+    Ensemble, ils ont construits de nombreux projets validés, dans le secteur de la santé, 
+    <br>pour des clients tels que <b>Sanofi</b> (eCRF), <b>L’Oréal</b> (ePRO), <b>PPRS Research</b> (CDMS), <b>AirJin</b> (IoT)
   </p>
 </section>
 
@@ -129,10 +134,10 @@
       <%= image_tag "logos/logo-infogene.svg", class:"mx-auto p-8 rounded", alt: 'Logo Infogene' %>
     </div>
     <div class="w-64 h-64 rounded flex items-center">
+     <%= image_tag "logos/madmoselle.jpg", class:"mx-auto p-8", alt: 'Logo Mad & Moselle' %>
+   </div>
+    <div class="w-64 h-64 rounded flex items-center">
       <%= image_tag "logos/8.png", class:"mx-auto p-8", alt: 'Logo GROHE' %>
-    </div>
-     <div class="w-64 h-64 rounded flex items-center">
-      <%= image_tag "logos/madmoselle.jpg", class:"mx-auto p-8", alt: 'Logo Mad & Moselle' %>
     </div>
   </div> 
 </section>

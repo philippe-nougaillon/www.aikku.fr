@@ -24,14 +24,14 @@
           Navigation
         </p>
 
-        <%= link_to 'Accueil', root_path, class: 'text-white block text-sm hover:text-primary mb-2' %>
-        <%= link_to 'Nos services', services_path, class: 'text-white block text-sm hover:text-primary mb-2' %>
-        <%= link_to 'À propos', qui_sommes_nous_path, class: 'text-white block text-sm hover:text-primary mb-2' %>
-        <%= link_to 'Contact', contact_path, class: 'text-white block text-sm hover:text-primary mb-1' %>
+        <%= link_to 'Accueil', root_path, class: 'text-white block text-sm hover:text-secondary mb-2' %>
+        <%= link_to 'Nos services', services_path, class: 'text-white block text-sm hover:text-secondary mb-2' %>
+        <%= link_to 'À propos', qui_sommes_nous_path, class: 'text-white block text-sm hover:text-secondary mb-2' %>
+        <%= link_to 'Contact', contact_path, class: 'text-white block text-sm hover:text-secondary mb-1' %>
 
         <%= link_to 'https://www.linkedin.com/company/aikku-sas',
             target: '_blank',
-            class: 'inline-flex items-center gap-2 rounded-lg text-sm hover:text-primary' do %>
+            class: 'inline-flex items-center gap-2 rounded-lg text-sm hover:text-secondary' do %>
           LinkedIn <i class="fa-brands fa-linkedin"></i>
         <% end %>
       </div>
@@ -68,7 +68,8 @@
       <hr class="my-3 mx-8 border-white/10 m">
 
       <p class="opacity-50 mt-4">
-        SAS au capital de 42.000 € - SIREN : 934 780 735<br>
+        SAS au capital de 42.000 € <br> 
+        SIREN : 934 780 735<br>
         R.C.S. Nanterre
       </p>
 
@@ -83,7 +84,7 @@
   <div class="flex flex-col md:flex-row justify-between px-6 md:px-8 pb-6 text-xs text-gray-200 gap-2">
 
     <span class="text-center md:text-right">
-      Copyright © 2025 <%= @sitename %> — Tous droits réservés —
+      Copyright © 2026 <%= @sitename %> — Tous droits réservés —
       <%= link_to 'Mentions Légales', mentions_legales_path, class: 'hover:underline' %>
     </span>
 

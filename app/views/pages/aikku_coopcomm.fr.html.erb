@@ -1,18 +1,26 @@
-<section class="text-center reveal delay-1">
-  <h1 class="font-black text-6xl text-secondary mb-12 pt-8 italic">  
+<section class="text-center reveal delay-1 mb-14">
+  <h1 class="font-black text-6xl text-secondary mb-12 pt-8 italic">
     <%= title "Mutualisez mieux, dépensez moins !" %>
   </h1>
-  <h3 class="text-lg lg:text-2xl">
-  
-  <span class="font-black">Aikku CoopComm</span>
-  est une plateforme de mutualisation intercommunale qui est conçue pour 
-  répondre aux besoins des communautés de communes,
-  des syndicats intercommunaux et des collectivités territoriales,
-  et les accompagne dans l’optimisation et la mutualisation
-  de leurs ressources humaines, investissements et moyens techniques dans un seul outil.
+
+    <h3 class="text-lg lg:text-2xl m-24 ">
+    <span class="font-black ">Aikku CoopComm</span>
+    est une plateforme de mutualisation intercommunale conçue pour 
+    répondre aux besoins des communautés de communes,
+    des syndicats intercommunaux et des collectivités territoriales.
+    Elle les accompagne dans l’optimisation et la mutualisation
+    de leurs ressources humaines, investissements et moyens techniques dans un seul outil.
   </h3>
 
+  <div class="flex flex-col md:flex-row justify-center gap-4 m-10 md:mt-12">
+    <%= link_to "Voir la démonstration →",
+        "https://demo.coopcomm.fr/",
+        target: "_blank",
+        class: "btn btn-inverse shadow-lg  px-8 py-4 text-white font-bold rounded-full transition-transform hover:scale-105" 
+    %>
+  </div>
 </section>
+
 
 
 
@@ -167,23 +175,70 @@ Une solution complète pour optimiser la gestion de votre intercommunalité    <
 
 
 
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path d="M0,60 Q300,0 600,30 Q900,60 1200,30 L1200,60 L0,60 Z" fill="#1f1f3d"/>
+  </svg>
+</div>
+<section class="text-center bg-info text-white px-8 py-16 w-full ">
 
-
-
-
-
-
-<section class="bg-info text-white mx-auto w-full text-center pt-24">
-
-  <h2 class="text-3xl lg:text-5xl text-center font-black mb-6 text-white">
-    Envie de voir <span class="text-[#51c7fd]">CoopComm</span> en action ?
+  <h2 class="text-3xl lg:text-5xl font-black mb-6">
+    Envie de voir <span class="text-gradient">Aikku COOPCOM</span> en action ?
   </h2>
-  <p class="text-center text-gray-300 max-w-xl mx-auto mb-8 leading-relaxed">
+
+  <p class="max-w-xl mx-auto mb-8 leading-relaxed">
     Notre équipe vous propose des solutions adaptées à vos besoins,
-    avec un accompagnement personnalisé et une assistance technique à tout moment.
+    avec un accompagnement personnalisé et une assistance technique.
   </p>
-  <%= link_to "Réserver une démo personnalisée →", "#contact",
-        class: "inline-block bg-[#e91e8c] hover:bg-[#c2185b] text-white font-bold px-10 py-4 rounded-full text-base" %>
+
+  <%= link_to "Voir la démonstration →", "https://demo.coopcomm.fr/",
+        target: "_blank",
+        class: "btn btn-gradient shadow-sm shadow-white/40 mt-6 h-min transition-transform hover:scale-105" %>
+          
 </section>
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path d="M0,0 Q300,60 600,30 Q900,0 1200,30 L1200,0 L0,0 Z" fill="#1f1f3d"/>
+  </svg>
+</div>
 
+<section class="grid grid-cols-1 md:grid-cols-2 gap-8 px-6 md:px-20 mb-20">
 
+  <div class="group border border-gray-200 rounded-3xl p-8 bg-white shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+    <div class="flex items-start gap-4">
+      <div class="bg-blue-50 p-3 rounded-xl text-accent group-hover:bg-accent group-hover:text-white transition-colors">
+        <i class="fa-brands fa-github fa-2xl"></i>
+      </div>
+      <div>
+        <p class="text-xs font-bold text-accent uppercase tracking-widest mb-1">Développement</p>
+        <h3 class="text-xl font-black  mb-3">Code source ouvert</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">
+          Développé en France et publié en toute transparence sur 
+          <%= link_to "GitHub",
+            "https://github.com/philippe-nougaillon/coopcomm",
+            target: "_blank",
+            class: "font-bold text-accent hover:text-secondary underline decoration-2 underline-offset-4" %>.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="group border border-gray-200 rounded-3xl p-8 bg-white shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+    <div class="flex items-start gap-4">
+      <div class="bg-blue-50 p-3 rounded-xl text-accent group-hover:bg-accent group-hover:text-white transition-colors">
+        <i class="fa-solid fa-rocket fa-2xl"></i>
+      </div>
+      <div>
+        <p class="text-xs font-bold text-accent uppercase tracking-widest mb-1">Support & Services</p>
+        <h3 class="text-xl font-black  mb-3">Besoin d'une fonctionnalité ?</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">
+          Notre équipe est à votre écoute pour des besoins spécifiques. 
+          <span class="block mt-2 font-semibold text-accent cursor-pointer hover:underline">
+            Consultez notre offre de services personnalisés →
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+</section>

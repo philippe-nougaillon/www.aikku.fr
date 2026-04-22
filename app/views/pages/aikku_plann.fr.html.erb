@@ -1,7 +1,8 @@
-<section class="text-center reveal delay-1">
-  <h1 class="font-black text-6xl text-secondary mb-12 pt-8 italic">
-    <%= title "Gérez vos cours et vos salles. Sans complications " %>
+<section class="text-center reveal delay-1 md:m-10">
+  <h1 class="font-black text-5xl md:text-6xl text-secondary mb-12 pt-8 italic">
+    <%= title "Gérez vos cours et vos salles. Sans complications" %>
   </h1>
+
   <h3 class="text-lg lg:text-2xl">
     Développé en collaboration avec IAE Paris-Sorbonne,
     <span class="font-black">Aikku PLANN</span>
@@ -9,7 +10,6 @@
     Il est adapté aux besoins des universités, écoles de commerce et instituts de formation spécialisés.
   </h3>
 </section>
-
 
 <section>
   <div class="flex flex-col md:flex-row border-t border-b border-gray-300 reveal delay-2">
@@ -37,375 +37,250 @@
   </div>
 </section>
 
-
 <div class="footer-wave">
   <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
-    <path d="
-      M0,60
-      Q300,0 600,30
-      Q900,60 1200,30
-      L1200,60
-      L0,60
-      Z
-    " fill="#1f1f3d"/>
+    <path d="M0,60 Q300,0 600,30 Q900,60 1200,30 L1200,60 L0,60 Z" fill="#1f1f3d"/>
   </svg>
 </div>
 <section id="fonctionnalités" class="w-full text-center bg-info text-white p-20">
 
-  <h2 class="text-4xl lg:text-5xl text-center font-black mb-12">
-  Tout ce dont vous avez besoin <span class="text-gradient">
-  au même endroit</span></h2>
-  <h2 class="text-center text-accent font-bold text-xl">FONCTIONNALITES PRINCIPALES</h2>
+  <h2 class="text-4xl lg:text-5xl font-black mb-12">
+    Tout ce dont vous avez besoin <span class="text-gradient">au même endroit</span>
+  </h2>
+
+  <h2 class="text-secondary font-bold text-xl">
+    FONCTIONNALITÉS PRINCIPALES
+  </h2>
 
   <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 mt-16">
 
-    <div class="flex flex-col p-4">
-      <h3 class="text-2xl font-black my-4 text-left underline underline-offset-12">
-      <i class="fa-regular fa-calendar-days fa-lg mr-6"></i>
-      Planification des cours
+    <div class="flex flex-col p-4 text-left">
+      <h3 class="text-xl font-black my-4 underline underline-offset-8 text-white">
+        <i class="fa-regular fa-calendar-days fa-lg mr-4 text-[#51c7fd]"></i>
+        Planification des cours
       </h3>
-      <p class="text-justify">
+      <p class="text-gray-300">
       Créez ou modifiez pour un ensemble de cours et/ou pour une session,
-       en quelques clics. Le logiciel sélectionne automatiquement 
-       une salle disponible.
-      </p>
+       en quelques clics. Le logiciel sélectionne automatiquement une 
+       salle disponible.       </p>
     </div>
 
-    <div class="flex flex-col p-4">
-      <h3 class="text-2xl font-black my-4  text-left  underline underline-offset-12">      
-        <i class="fa-solid fa-chalkboard fa-lg mr-6"></i>
-        Occupation des salles</h3>
-        <p class="text-justify">Visualisez les créneaux horaires libres, par jour, 
-        semaine et salle. Gérez la capacité de vos salles et de votre établissement. 
-        Alertes dès qu'une salle atteint sa capacité.</p>
-     </div>
-     
-    <div class="flex flex-col p-4">
-      <h3 class="text-2xl font-black my-4  text-left  underline underline-offset-12 ">
-      <i class="fa-solid fa-chalkboard-teacher fa-lg mr-6"></i>      
-        Intervenants et étudiants</h3>
-        <p class="text-justify">Centralisez toutes les informations pour chaque intervenant. 
-        Valorisez le temps de cours effectif des intervenant vacataires 
-        pour une facturation facilitée. Notifiez aux étudiants par e-mail 
-        ou SMS en cas de modification de cours.</p>
+    <div class="flex flex-col p-4 text-left">
+      <h3 class="text-xl font-black my-4 underline underline-offset-8 text-white">
+        <i class="fa-solid fa-chalkboard fa-lg mr-4 text-[#51c7fd]"></i>
+        Occupation des salles
+      </h3>
+      <p class="text-gray-300">
+      Visualisez les créneaux horaires libres, par jour, semaine et salle. 
+      Gérez la capacité de vos salles et de votre établissement. 
+      Alertes dès qu'une salle atteint sa capacité.      </p>
     </div>
-     
-    <div class=" flex flex-col p-4">
-        <h3 class="text-2xl font-black my-4  text-left  underline underline-offset-12 ">
-        <i class="fa-solid fa-briefcase fa-lg mr-6"></i>
-        Formations</h3>
-        <p class="text-justify">Repérez chaque formation dans le planning grâce à son code couleur. 
-        Accédez à la liste des intervenants. Pilotez plus facilement le volume 
-        horaire des UE : heures réalisées, cours planifiés et restant à créer.</p>
+
+    <div class="flex flex-col p-4 text-left">
+      <h3 class="text-xl font-black my-4 underline underline-offset-8 text-white">
+        <i class="fa-solid fa-chalkboard-teacher fa-lg mr-4 text-[#51c7fd]"></i>
+        Intervenants et étudiants
+      </h3>
+      <p class="text-gray-300">
+    Centralisez toutes les informations pour chaque intervenant. 
+    Valorisez le temps de cours effectif des intervenant vacataires
+     pour une facturation facilitée. Notifiez aux étudiants par e-mail
+      ou SMS en cas de modification de cours      </p>
+    </div>
+
+    <div class="flex flex-col p-4 text-left">
+      <h3 class="text-xl font-black my-4 underline underline-offset-8 text-white">
+        <i class="fa-solid fa-briefcase fa-lg mr-4 text-[#51c7fd]"></i>
+        Formations
+      </h3>
+      <p class="text-gray-300">
+    Repérez chaque formation dans le planning grâce à son code couleur.
+     Accédez à la liste des intervenants. Pilotez plus facilement le
+      volume horaire des UE : heures réalisées, cours planifiés et 
+      restant à créer.    
       </div>
 
-    <div class="flex flex-col p-4">
-         <h3 class="text-2xl font-black my-4  text-left   underline underline-offset-12"> 
-         <i class="fa-solid fa-download fa-lg mr-6"></i>     
-          Import et export de données</h3>
-        <p class="text-justify">Importez de grands volumes de données aux formats Excel (XLS) et CSV : 
-        cours, formations, étudiants… Toutes les données peuvent être exportées au format XLS. </p>
-      </div>
-    
-    <div class="flex flex-col p-4">
-        <h3 class="text-2xl font-black my-4  text-left  underline underline-offset-12"> 
-         <i class="fa-solid fa-file-signature fa-lg mr-6"></i>
-          Suivi des présences</h3>
-        <p class="text-justify">Grâce à l'intégration d'Edusign, signez numériquement directement
-      depuis le smartphone ou l'ordinateur de l'étudiant au début de chaque séance. </div>
-     
+    <div class="flex flex-col p-4 text-left">
+      <h3 class="text-xl font-black my-4 underline underline-offset-8 text-white">
+        <i class="fa-solid fa-download fa-lg mr-4 text-[#51c7fd]"></i>
+        Import et export
+      </h3>
+      <p class="text-gray-300">
+      Importez de grands volumes de données aux formats Excel 
+      (XLS) et CSV : cours, formations, étudiants… Toutes les 
+      données peuvent être exportées au format XLS.       </p>
+    </div>
+
+    <div class="flex flex-col p-4 text-left">
+      <h3 class="text-xl font-black my-4 underline underline-offset-8 text-white">
+        <i class="fa-solid fa-file-signature fa-lg mr-4 text-[#51c7fd]"></i>
+        Suivi des présences
+      </h3>
+      <p class="text-gray-300">
+      Grâce à l'intégration d'Edusign, signez numériquement 
+      directement depuis le smartphone ou l'ordinateur de 
+      l'étudiant au début de chaque séance.       </p>
+    </div>
+
   </div>
 </section>
 <div class="footer-wave">
   <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
-    <path d="
-      M0,0
-      Q300,60 600,30
-      Q900,0 1200,30
-      L1200,0
-      L0,0
-      Z
-    " fill="#1f1f3d"/>
+    <path d="M0,0 Q300,60 600,30 Q900,0 1200,30 L1200,0 L0,0 Z" fill="#1f1f3d"/>
   </svg>
 </div>
+
 
 <section id="responsive" class="flex flex-col p-20 md:flex-row items-center gap-16">
-  <div class="flex-1 card w-full ">
-    <%= image_tag "misc/planning-responsive.png", class:"shadow rounded-2xl", alt: 'Logiciel sur différents écrans' %>
-  </div>
+
   <div class="flex-1">
-    <h3 class="text-2xl text-accent font-bold mb-4  text-center md:text-left">
+    <%= image_tag "misc/planning-responsive.png", class:"shadow rounded-2xl", alt: "Logiciel sur différents écrans" %>
+  </div>
+
+  <div class="flex-1">
+    <h3 class="text-2xl text-accent font-bold mb-4 text-center md:text-left">
       Une information toujours disponible
     </h3>
-    <h2 class="text-4xl font-black mb-20 text-center md:text-left">
+
+    <h2 class="text-4xl font-black mb-10 text-center md:text-left">
       Le planning accessible sur n'importe quel appareil
     </h2>
+
     <p class="text-xl text-justify">
-     L'application s'adapte parfaitement à toutes les tailles d'écran. Affichez le planning du jour sur les écrans numériques de votre établissement, mis à jour en temps réel.
-    <br>
-    <br>
-    Étudiants et intervenants consultent le planning depuis leur téléphone, ordinateur ou tablette, 24 h/24. En un clic, abonnez votre agenda (Google, Outlook ou Apple) à votre planning pour que vos cours et interventions se mettent à jour automatiquement. </p>
+      L'application s'adapte parfaitement à toutes les tailles 
+      d'écran. Affichez le planning du jour sur les écrans 
+      numériques de votre établissement, mis à jour en temps réel.       
+      <br><br>
+        Étudiants et intervenants consultent le planning depuis leur téléphone,
+      ordinateur ou tablette, 24 h/24. En un clic, abonnez votre agenda 
+      (Google, Outlook ou Apple) à votre planning pour que vos cours 
+      et interventions se mettent à jour automatiquement.     </p>
   </div>
+
 </section>
 
+<section class="px-6 md:px-20 pb-20 pt-10">
+  <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+    
+    <div id="confiance" class="flex-1">
+      <h2 class="text-accent text-left mb-6 font-extrabold text-2xl uppercase tracking-wider">
+        Ils nous font confiance
+      </h2>
 
-<section id="confiance" class="text-center px-20 pb-20 pt-0">
-  <h2 class="text-accent text-center md:text-left mb-6 font-extrabold text-2xl">ILS NOUS FONT CONFIANCE</h2>
-   <div class="bg-white shadow-xl rounded-2xl p-8 flex flex-col ">
+      <div class="bg-white shadow-xl rounded-2xl p-8 flex flex-col border border-gray-100">
         <i class="fa-solid fa-quote-left text-2xl mb-4 text-left text-accent"></i>
-        <p class="text-gray-700 text-justify leading-relaxed">
-        Philippe Nougaillon propose des solutions pérennes, 
-        fiables et fait primer dans sa vision du développement
-         la simplicité de la solution. Partisan de l'innovation frugale,
-        il fournit à ses clients des solutions originales, robustes 
-        et parfaitement adaptées. Il a le sens de l'écoute et sait 
-        faire preuve d'une grande pédagogie dans les démarches agiles.</p>
-      <div class="mt-8 border-t pt-6 flex flex-col md:flex-row justify-between items-center">
-        <div >
-        <%= link_to "https://www.linkedin.com/in/philippe-eynaud-3a3ab835/", class: 'flex items-center gap-1.5 font-medium' do %>
-        <i class="fa-brands fa-linkedin "></i> Philippe EYNAUD
-        <% end %>
-        <p class="text-justify"> Professeur en sciences de gestion à l'IAE de Paris, 
-        Université Paris 1 Panthéon-Sorbonne.
-        <br>
-        Auteur de <%= link_to "Dictionnaire d'une autre gestion", 
-        "https://www.editions-eres.com/ouvrage/5545/dictionnaire-dune-autre-gestion", 
-        class: "italic link", target: '_blank' %>, (2026), érés Editions.  
+        <p class="text-gray-700 text-justify leading-relaxed text-sm md:text-base">
+          Philippe Nougaillon propose des solutions pérennes, fiables 
+          et fait primer dans sa vision du développement la simplicité
+           de la solution. Partisan de l'innovation frugale, il 
+           fournit à ses clients des solutions originales, robustes 
+           et parfaitement adaptées. Il a le sens de l'écoute et sait 
+           faire preuve d'une grande pédagogie dans les démarches 
+           agiles.
         </p>
+
+        <div class="mt-8 border-t pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+          <div>
+            <%= link_to "https://www.linkedin.com/in/philippe-eynaud-3a3ab835/", class: "flex items-center gap-1.5 font-medium text-accent " do %>
+              <i class="fa-brands fa-linkedin"></i> Philippe EYNAUD
+            <% end %>
+            <p class="text-xs text-gray-500 mt-1">
+              Professeur en sciences de gestion à l'IAE de Paris.
+            <br>
+              Auteur de
+              <%= link_to "Le management du système d’information dans sa complexité", 
+                          "https://www.amazon.fr/management-syst%C3%A8me-dinformation-dans-complexit%C3%A9/dp/1784055026/ref=sr_1_5?qid=1687595735", class: "link italic no-underline", target: '_blank' %>. (2018) ISTE Editions.  
+            </p></div>
+          <%= image_tag "projets/planning iae-paris/Logo_iae.png", class: "h-10 w-auto opacity-80", alt: "Logo IAE PARIS" %>
         </div>
-         <%= image_tag "projets/planning iae-paris/Logo_iae.png", 
-         class:" h-12 w-auto mt-4 md:mt-0", 
-          alt: 'Logo IAE PARIS' %>
       </div>
+    </div>
+
+    <div id="video" class="flex-1 w-full">
+      <div class="text-center lg:text-left">
+        <h2 class="text-3xl font-black text-accent mb-8">Aikku PLANN en video</h2>
+      </div>
+
+      <div class="relative group">
+        <div class="absolute -inset-1  rounded-2xl blur opacity-25  duration-1000"></div>
+        
+        <%= video_tag 'Aikku Plann-VF2.mp4',
+              controls: true,
+              class: 'relative w-full rounded-2xl shadow-2xl ',
+              preload: 'none',
+              poster: "Aikku_logo.png" %>
+      </div>
+    </div>
+
   </div>
 </section>
 
+
 <div class="footer-wave">
   <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
-    <path d="
-      M0,60
-      Q300,0 600,30
-      Q900,60 1200,30
-      L1200,60
-      L0,60
-      Z
-    " fill="#1f1f3d"/>
+    <path d="M0,60 Q300,0 600,30 Q900,60 1200,30 L1200,60 L0,60 Z" fill="#1f1f3d"/>
   </svg>
 </div>
-<section id="details_fonctionnalites" class="bg-info text-white mx-auto w-full text-center pt-24">
-    
- <h2 class="text-3xl lg:text-5xl text-center font-black mb-12">
-  Fonctionnalités avancées <span class="text-gradient"> d'administration</span></h2>
-  <h2 class="text-center text-accent font-bold text-xl">POUR LES ADMINISTRATEURS</h2>
+<section class="text-center bg-info text-white px-8 py-16 w-full ">
 
-
-
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mx-8 my-16 md:mt-16">
-    
-      <div class="flex flex-col p-6 bg-white  rounded-xl">
-       <h3 class="text-2xl font-black my-4 text-center text-accent  ">
-        <i class="fa-solid fa-triangle-exclamation fa-lg mr-2"></i>
-         Prévention des anomalies</h3>
-         <p class="text-justify text-gray-600">
-         Un algorithme de vérification des contraintes 
-         (capacité, disponibilité, jours de fermeture) 
-         prévient les erreurs de planification. Un pictogramme 
-         alerte l'utilisateur en cas d'anomalie de saisie.
-        </p>
-      </div>
-
-      <div class="flex flex-col p-6 bg-white  rounded-xl">
-       <h3 class="text-2xl font-black my-4 text-center text-accent  ">
-        <i class="fa-solid fa-calendar-check fa-lg mr-2"></i>
-        Plans d'activité</h3>
-         <p class="text-justify text-gray-600">
-          Réservez des créneaux pour chaque formation en masse sur 
-          toute une année universitaire avec la fonctionnalité Nouvelle
-          Saison.
-        </p>
-      </div>
-
-      <div class="flex flex-col p-6 bg-white  rounded-xl">
-       <h3 class="text-2xl font-black my-4 text-center text-accent  ">
-        <i class="fa-solid fa-gears fa-lg mr-2"></i>
-        Flux de travail intelligents</h3>
-         <p class="text-justify text-gray-600">
-          Centralisez et automatisez la gestion des dossiers de 
-          candidature des nouveaux intervenants et le processus de 
-          propositions de créneaux horaires.
-        </p>
-      </div>
-
-      <div class="flex flex-col p-6 bg-white  rounded-xl">
-       <h3 class="text-2xl font-black my-4 text-center text-accent  ">
-        <i class="fa-solid fa-tools fa-lg mr-2"></i>
-        Outils d'administration</h3>
-         <p class="text-justify text-gray-600">
-          Gérez les accès utilisateurs avec sept rôles possibles. 
-          Configurez les créneaux par bâtiment et les jours de fermeture.</p>
-      </div>
-
-      <div class="flex flex-col p-6 bg-white  rounded-xl">
-       <h3 class="text-2xl font-black my-4 text-center text-accent  ">
-        <i class="fa-solid fa-search fa-lg mr-2"></i>
-        Journal d'audit</h3>
-         <p class="text-justify text-gray-600">
-          Retracez toutes les modifications effectuées par chaque utilisateur 
-          dans les données de l'application, grâce à l'historique des 
-          modifications (Audit Trail).
-        </p>
-      </div>
-
-      <div class="flex flex-col p-6 bg-white  rounded-xl">
-       <h3 class="text-2xl font-black my-4 text-center text-accent  ">
-        <i class="fa-solid fa-envelope-open fa-lg mr-2"></i>
-        Journal des e-mails</h3>
-         <p class="text-justify text-gray-600">
-          Accédez à l'historique des envois de notification aux étudiants et aux intervenants.
-          Identifiez les adresses incorrectes et les notifications non lues.</p>
-      </div>
-
-  </div>
-
-  
-</section> 
-<div class="footer-wave">
-  <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
-    <path d="
-      M0,0
-      Q300,60 600,30
-      Q900,0 1200,30
-      L1200,0
-      L0,0
-      Z
-    " fill="#1f1f3d"/>
-  </svg>
-</div>
-
-
-
-
-
-
-
-<% if false %>
-  <section id="légal" class="flex flex-col md:flex-row flex-wrap gap-16 lg:p-24 items-center">
-    <div class="flex-auto md:w-1/3">
-      <p class="text-2xl text-secondary mb-4">Transparence, coûts, collaboration</p>
-      <p class="text-4xl font-black mb-12">Un logiciel libre, open-source et français</p>
-      <p class="text-xl mb-12">
-        Avec Aikku PLANN, vous bénéficiez de toute la puissance de l'open-source. Vous faites le choix d'une solution personnalisable, tout en conservant un contrôle total sur votre système de planification et vos coûts.
-        <br><br>
-        Sur demande, notre équipe de développeurs conçoit des fonctionnalités adaptées à vos besoins spécifiques, en respectant vos exigences et votre budget.
-        <br><br>
-        Vous souhaitez vous concentrez sur votre cœur de métier : nous pouvons prendre en charge l'hébergement et la maintenance de l'application.
-      </p>
-      <div>
-        <p class="mb-12">
-          <i class="fa-solid fa-scale-balanced fa-xl mr-4"></i>
-          GNU General Public License v3.0
-        </p>
-      </div>
-      <%= link_to "Voir la page GitHub du projet ➡", "https://github.com/philippe-nougaillon/IAE_Planning/", class: "link link-primary text-xl", target: '_blank' %>
-    </div>
-    <div class="flex-1 mx-auto md:w-2/3">
-      <%= image_tag "logos/adullact.png", class:"mb-24", alt: 'Logo Adullact' %>
-      <%= image_tag "logos/framalibre.webp", alt: 'Logo Framalibre' %>
-    </div>
-  </section>
-
- 
-<% end %>
-
-      <section id="video" class="text-center p-20 mx-auto">
-        <h2 class="text-center text-accent font-extrabold text-5xl">AIKKU Plann en vidéo</h2>
-        <%= video_tag 'Aikku Plann-VF2.mp4', controls: true, class: 'w-full lg:px-24 mt-12', preload: 'none', poster: "Aikku_logo.png" %>
-      </section>
-</section>
-
-<section class=" text-center rounded-full bg-info text-white p-18 m-6">
-    <h2 class="text-3xl lg:text-5xl text-center font-black mb-12">
+  <h2 class="text-3xl lg:text-5xl font-black mb-6">
     Envie de voir <span class="text-gradient">Aikku PLANN</span> en action ?
-    </h2>
-    <p class="text-center text-white">
-    Notre équipe vous propose des solutions adaptées à vos besoins,
-    avec un accompagnement personnalisé et une assistance technique 
-    à tout moment.</p>
-   <%= link_to "Voir la démonstration →", "https://plann.aikku.eu",
-    target: "_blank",
-    class: "btn btn-gradient shadow-sm shadow-white/40 mt-6 h-min" %>
-</section>
-
-<section class="grid grid-cols-1 md:grid-cols-2 gap-4 px-6 mb-16">
-
-  <div class="border border-gray-300 rounded-2xl p-6">
-    <p class="text-xs font-bold text-accent uppercase  mb-2">Développement</p>
-    <h3 class="text-base font-medium text-gray-900 mb-2">Code source ouvert</h3>
-    <p class="text-sm text-gray-400 leading-relaxed">
-      Ce projet est développé et maintenu en France, par nous-mêmes.
-      Le code source est publié sous licence libre sur
-      <%= link_to 'GitHub', "https://github.com/philippe-nougaillon/Planning_IAE",
-      target: "_blank", 
-      class: "text-accent hover:underline underline-offset-2" %>.
-      </p>
-  </div>
-
-  <div class="border border-gray-300 rounded-2xl p-6">
-    <p class="text-xs font-bold text-accent uppercase  mb-2">Support et services</p>
-    <h3 class="text-base font-medium text-gray-900 mb-2">Besoin d'une fonctionnalité ?</h3>
-    <p class="text-sm text-gray-400 leading-relaxed">
-      Vous souhaitez une nouvelle fonctionnalité ou l'installer ?
-      <%= link_to 'Consultez notre offre de services →', services_path,
-        class: "text-accent hover:underline underline-offset-2" %>.
-    </p>
-  </div>
-
-</section>
-
-<% if false %>
-
-
-<% end %>
-
-
-
-
-
-
-
-
-
-<!--
-<section id="bref" class="w-full text-center bg-info text-white py-12">
-  <h2 class="apps-title">
-    Un outil puissant. Des fonctionnalités pour gagner en efficacité
   </h2>
-  <div class="flex flex-row md:flex-col   justify-around gap-16 mt-12">
-    <div class="flex flex-col flex-1">
-      <p class="text-2xl font-black mb-6">
-        Planifiez rapidement les cours
-      </p>
-      <p>
-        Choisissez la formation, le(s) intervenant(s) et la salle de cours (parmi les salles disponibles proposées automatiquement) : votre cours est créé en quelques clics et intégré au planning.
-      </p>
-    </div>
-    <div class="flex flex-col flex-1">
-      <p class="text-2xl font-black mb-6">
-        Gérez l'occupation de vos salles
-      </p>
-      <p>
-        Visualisez tous les créneaux disponibles dans votre établissement. Pilotez le taux d'occupation des salles de cours, d'un seul coup d'œil.
-      </p>
-    </div>
-    <div class="flex flex-col flex-1">
-      <p class="text-2xl font-black mb-6">
-        Communiquez facilement
-      </p>
-      <p>
-        Notifiez les étudiants et les intervenants, par email ou sms, en cas de modification ou d'annulation d'un cours. 
-        Bénéficiez aussi d’un Workflow d’invitation pour la gestion des propositions de créneaux horaires, et d’un Workflow de validation des dossiers CEV.
-      </p>
+
+  <p class="max-w-xl mx-auto mb-8 leading-relaxed">
+    Notre équipe vous propose des solutions adaptées à vos besoins,
+    avec un accompagnement personnalisé et une assistance technique.
+  </p>
+
+  <%= link_to "Voir la démonstration →", "https://plann.aikku.eu",
+        target: "_blank",
+        class: "btn btn-gradient shadow-sm shadow-white/40 mt-6 h-min transition-transform hover:scale-105" %>
+          
+</section>
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path d="M0,0 Q300,60 600,30 Q900,0 1200,30 L1200,0 L0,0 Z" fill="#1f1f3d"/>
+  </svg>
+</div>
+
+
+<section class="grid grid-cols-1 md:grid-cols-2 gap-8 px-6 md:px-20 mb-20">
+
+  <div class="group border border-gray-200 rounded-3xl p-8 bg-white shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+    <div class="flex items-start gap-4">
+      <div class="bg-blue-50 p-3 rounded-xl text-accent group-hover:bg-accent group-hover:text-white transition-colors">
+        <i class="fa-brands fa-github fa-2xl"></i>
+      </div>
+      <div>
+        <p class="text-xs font-bold text-accent uppercase tracking-widest mb-1">Développement</p>
+        <h3 class="text-xl font-black  mb-3">Code source ouvert</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">
+          Développé en France et publié en toute transparence sur 
+          <%= link_to "GitHub",
+            "https://github.com/philippe-nougaillon/Planning_IAE",
+            target: "_blank",
+            class: "font-bold text-accent hover:text-secondary underline decoration-2 underline-offset-4" %>.
+        </p>
+      </div>
     </div>
   </div>
+
+  <div class="group border border-gray-200 rounded-3xl p-8 bg-white shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+    <div class="flex items-start gap-4">
+      <div class="bg-blue-50 p-3 rounded-xl text-accent group-hover:bg-accent group-hover:text-white transition-colors">
+        <i class="fa-solid fa-rocket fa-2xl"></i>
+      </div>
+      <div>
+        <p class="text-xs font-bold text-accent uppercase tracking-widest mb-1">Support & Services</p>
+        <h3 class="text-xl font-black  mb-3">Besoin d'une fonctionnalité ?</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">
+          Notre équipe est à votre écoute pour des besoins spécifiques. 
+          <span class="block mt-2 font-semibold text-accent cursor-pointer hover:underline">
+            Consultez notre offre de services personnalisés →
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+
 </section>
--->
