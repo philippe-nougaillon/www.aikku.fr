@@ -1,5 +1,5 @@
-<section class="text-center reveal delay-1 mb-14">
-  <h1 class="font-black text-6xl text-secondary mb-12 pt-8 italic">
+<section class="text-center reveal delay-1 m-14">
+  <h1 class="font-black text-6xl text-secondary mb-18 pt-8 italic">
     <%= title "Mutualisez mieux, dépensez moins !" %>
   </h1>
 
@@ -12,17 +12,8 @@
     de leurs ressources humaines, investissements et moyens techniques dans un seul outil.
   </h3>
 
-  <div class="flex flex-col md:flex-row justify-center gap-4 m-10 md:mt-12">
-    <%= link_to "Voir la démonstration →",
-        "https://demo.coopcomm.fr/",
-        target: "_blank",
-        class: "btn btn-inverse shadow-lg  px-8 py-4 text-white font-bold rounded-full transition-transform hover:scale-105" 
-    %>
-  </div>
+
 </section>
-
-
-
 
 
 
@@ -183,7 +174,7 @@ Une solution complète pour optimiser la gestion de votre intercommunalité    <
 <section class="text-center bg-info text-white px-8 py-16 w-full ">
 
   <h2 class="text-3xl lg:text-5xl font-black mb-6">
-    Envie de voir <span class="text-gradient">Aikku COOPCOM</span> en action ?
+    Envie de voir <span class="text-gradient">Aikku COOPCOMM</span> en action ?
   </h2>
 
   <p class="max-w-xl mx-auto mb-8 leading-relaxed">
@@ -232,13 +223,17 @@ Une solution complète pour optimiser la gestion de votre intercommunalité    <
         <p class="text-xs font-bold text-accent uppercase tracking-widest mb-1">Support & Services</p>
         <h3 class="text-xl font-black  mb-3">Besoin d'une fonctionnalité ?</h3>
         <p class="text-sm text-gray-500 leading-relaxed">
-          Notre équipe est à votre écoute pour des besoins spécifiques. 
+          Notre équipe est à votre écoute pour des besoins spécifiques.
+        <%= link_to services_path, class: "block mt-2 font-semibold text-accent hover:text-secondary transition-colors group/link" do %>
+          Consultez notre offre de services personnalisés →
           <span class="block mt-2 font-semibold text-accent cursor-pointer hover:underline">
-            Consultez notre offre de services personnalisés →
           </span>
+                  <% end %>
+
         </p>
       </div>
     </div>
   </div>
 
 </section>
+

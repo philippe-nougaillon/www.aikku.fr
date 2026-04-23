@@ -12,7 +12,7 @@ SitemapGenerator::Sitemap.create do
 
   add qui_sommes_nous_path
   # add logiciels_path
-  # add services_path
+  add services_path
   # add nos_clients_path
   add contact_path
   add mentions_legales_path
