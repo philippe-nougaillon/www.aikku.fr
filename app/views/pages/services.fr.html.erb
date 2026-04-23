@@ -22,10 +22,10 @@
     
     <div class="flex-1 w-full md:text-center">
       <div class="flex flex-col items-center">
-        <h3 class="text-justify font-black text-accent text-2xl min-h-[4rem] flex items-center justify-center gap-2">
+      <h3 class="text-justify font-black text-accent text-2xl min-h-[4rem] flex items-center justify-center gap-2">
+        <i class="fa-brands fa-sketch fa-lg text-accent"></i>
           Développement    
-          <i class="fa-brands fa-sketch fa-lg text-accent"></i>
-        </h3> 
+      </h3> 
         
         <p class="mt-4 text-justify md:text-center text-gray-700">
           Nous développons des applications Ruby on Rails depuis 2008 et adoptons progressivement React pour des interfaces plus dynamiques.
@@ -36,8 +36,8 @@
     <div class="flex-1 w-full md:text-center">
       <div class="flex flex-col items-center">
         <h3 class="text-justify font-black text-accent text-2xl min-h-[4rem] flex items-center justify-center gap-2">
+        <i class="fa-solid fa-wrench fa-lg text-accent"></i>
           Maintenance
-          <i class="fa-solid fa-wrench fa-lg text-accent"></i>
         </h3>
         <p class="mt-4 text-justify md:text-center text-gray-700">
           Nous assurons la maintenance de votre application Rails, en garantissant des mises à jour régulières et la correction des bugs.
@@ -48,8 +48,8 @@
      <div class="flex-1 w-full md:text-center">
       <div class="flex flex-col items-center">
         <h3 class="text-justify font-black text-accent text-2xl min-h-[4rem] flex items-center justify-center gap-2">
+        <i class="fa-solid fa-gears fa-lg text-accent"></i>
           Intégration
-          <i class="fa-solid fa-gears fa-lg text-accent"></i>
         </h3>
         <p class="mt-4 text-justify md:text-center text-gray-700">
       Besoin d'automatiser ou de connecter différents systèmes ? Nous vous accompagnons dans l'intégration de vos outils.        </p>
@@ -60,8 +60,8 @@
     <div class="flex-1 w-full md:text-center">
       <div class="flex flex-col items-center">
         <h3 class="text-justify font-black text-accent text-2xl min-h-[4rem] flex items-center justify-center gap-2">
-          UX/UI Design          
         <i class="fa-solid fa-desktop  fa-lg text-accent"></i>
+          UX/UI Design          
         </h3>
         <p class="mt-4 text-justify md:text-center text-gray-700">
           Nous concevons des expériences utilisateur intuitives et créons des prototypes fonctionnels adaptés à vos besoins.       </div>
@@ -86,7 +86,7 @@
 <section id="secteurs" class="w-full  px-10 py-20 md:p-20 bg-info">
  
       <h2 class="text-3xl lg:text-5xl text-center text-white font-black mb-12">
-      Nos outils <span class="text-gradient">et domaines d'expertises</span></h2>
+      Nos outils et<span class="text-gradient"> domaines d'expertises</span></h2>
 
   <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-16">
 
@@ -141,15 +141,80 @@
 </div>
 
 
+<section class="px-6 md:px-20 pb-20 pt-10">
+ <h2 class="text-accent text-left mb-6 font-extrabold text-2xl uppercase tracking-wider">
+        Ils nous font confiance
+      </h2>
+  <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+    
+    <div id="confiance" class="flex-1">
+     
+      <div class="bg-white shadow-xl rounded-2xl p-8 flex flex-col border border-gray-100">
+        <i class="fa-solid fa-quote-left text-2xl mb-4 text-left text-accent"></i>
+        <p class="text-gray-700 text-justify leading-relaxed text-sm md:text-base">
+          Philippe Nougaillon propose des solutions pérennes, fiables 
+          et fait primer dans sa vision du développement la simplicité
+           de la solution. Partisan de l'innovation frugale, il 
+           fournit à ses clients des solutions originales, robustes 
+           et parfaitement adaptées. Il a le sens de l'écoute et sait 
+           faire preuve d'une grande pédagogie dans les démarches 
+           agiles.
+        </p>
+        <div class="mt-8 border-t pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+          <div>
+            <%= link_to "https://www.linkedin.com/in/philippe-eynaud-3a3ab835/", class: "flex items-center gap-1.5 font-medium text-accent " do %>
+              <i class="fa-brands fa-linkedin"></i> Philippe EYNAUD
+            <% end %>
+            <p class="text-xs text-gray-500 mt-1">
+              Professeur en sciences de gestion à l'IAE de Paris.
+            <br>
+              Auteur de
+              <%= link_to "'Le management du système d’information dans sa complexité'", 
+                          "https://www.amazon.fr/management-syst%C3%A8me-dinformation-dans-complexit%C3%A9/dp/1784055026/ref=sr_1_5?qid=1687595735", 
+                          class: "link italic no-underline", target: '_blank' %>. (2018) ISTE Editions.  
+            </p></div>
+          <%= image_tag "projets/planning iae-paris/Logo_iae.png", class: "h-10 w-auto opacity-80", alt: "Logo IAE PARIS" %>
+        </div>
+      </div>
+    </div>
 
+
+    <div id="confiance2" class="flex-1">
+
+     <div class="bg-white shadow-xl rounded-2xl p-8 flex flex-col border border-gray-100">
+        <i class="fa-solid fa-quote-left text-2xl mb-4 text-left text-accent"></i>
+        <p class="text-gray-700 text-justify leading-relaxed text-sm md:text-base">
+          J’ai eu le plaisir de travailler avec l’équipe Aikku sur le déploiement de l’outil Planning-IAE.
+          Quelle chance! L'équipe Aikku incarne "l'orientation utilisateur" que j'enseigne à mes étudiants ! 
+          À l’écoute, ils traduisent efficacement les besoins utilisateurs en solutions concrètes, dans une logique de co-construction. 
+         Une collaboration fluide et performante que je recommande vivement.
+        </p>
+        <div class="mt-8 border-t pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+          <div>
+            <%= link_to "https://www.linkedin.com/in/marieevelaporte/",class: "flex items-center gap-1.5 font-medium text-accent " do %>
+                  <i class="fa-brands fa-linkedin"></i> Marie-Eve LAPORTE
+            <% end %>
+            <p class="text-xs text-gray-500 mt-1">
+              Professeure, 'Innovation Management & Future of Healthcare' research chair
+            </p>
+          </div>
+                    <%= image_tag "projets/planning iae-paris/Logo_iae.png", class: "h-10 w-auto opacity-80", alt: "Logo IAE PARIS" %>
+
+        </div>
+      </div> 
+     </div> 
+
+  </div>
+</section>
 <section class="p-0 mb-20 ">
 
-  <div class="text-center max-w-3xl mx-auto mb-20 px-4">
+  <div class="text-center  mx-auto mb-20 px-4">
     <h2 class="font-black text-4xl lg:text-5xl text-accent mt-20">
       Notre processus de développement
     </h2>
     <p class="mt-6 text-gray-600 text-lg">
-      Nous vous accompagnons à chaque étape, de l’idée au déploiement, avec une approche centrée utilisateur.
+      Nous vous accompagnons à chaque étape, de l’idée au déploiement, 
+      <br> avec une approche centrée sur l'utilisateur.
     </p>
   </div>
 
