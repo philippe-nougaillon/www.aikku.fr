@@ -11,14 +11,9 @@
     " fill="#1f1f3d"/>
   </svg>
 </div>
-
 <footer class="bg-info text-gray-200">
-
   <div class="grid grid-cols-1 md:grid-cols-2 p-2 md:px-8 md:pb-8 gap-6">
-
-
-  <div class=" md:pl-10 flex flex-col justify-between items-center text-center">
-
+    <div class=" md:pl-10 flex flex-col justify-between items-center text-center">
       <div class="mb-6 mt-4 md:m-0">
         <%= link_to 'Accueil', root_path, class: 'text-white block text-sm hover:text-secondary mb-2' %>
         <%= link_to 'Aikku PLANN',  aikku_plann_path, class: 'text-white block text-sm hover:text-secondary mb-2' %>
@@ -27,9 +22,9 @@
         <%= link_to 'Nos services', services_path, class: 'text-white block text-sm hover:text-secondary mb-2', title: 'test' %>
         <%= link_to 'À propos', qui_sommes_nous_path, class: 'text-white block text-sm hover:text-secondary mb-2' %>
         <div class="flex flex-row gap-4 items-center justify-center" >
-          <%= link_to 'Nous contacter  ', contact_path, 
+          <%= link_to 'Nous contacter', contact_path, 
             class: 'text-white block text-sm hover:text-secondary' %>
-            |
+            -
           <%= link_to 'https://www.linkedin.com/company/aikku-sas',
             target: '_blank',
             class: 'inline-flex items-center justify-center gap-2 rounded-lg text-sm hover:text-secondary' do %>
@@ -37,63 +32,41 @@
           <% end %>
         </div>
       </div>
-
       <div class="flex flex-col gap-4 items-center text-white border-t mx-8 md:mx-0 border-white/10 p-4 ">
-
         Vous souhaitez en savoir plus ou nous demander une démo ?
-
-           <%= link_to 'Contactez-nous →', contact_path, class:"btn btn-gradient shadow-sm shadow-white/40 w-44 h-10" %>
+        <%= link_to 'Contactez-nous →', contact_path, class:"btn btn-gradient shadow-sm shadow-white/40 w-44 h-10" %>
       </div>
-
     </div>
-    
     <div class=" md:pl-10 my-4 md:m-0 md:border-l border-white/10 text-center">
-
       <span class="text-3xl font-black text-gradient">
         <%= @sitename %>
       </span>
-
       <p class="opacity-50 mt-4 text-base">
         Aïkku - La Défense<br>
         5 Place de la Pyramide<br>
         92800 PUTEAUX
       </p>
-
       <hr class="my-3 mx-8 border-white/10 ">
-
       <p class="opacity-50 mt-4">
         Aïkku - Montfermeil<br>
         112 Allée de Notre Dame des Anges<br>
         93370 MONTFERMEIL
       </p>
-
       <hr class="my-3 mx-8 border-white/10 ">
-
       <p class="opacity-50 mt-4">
-        SAS au capital de 42.000 € <br> 
+        SAS au capital de 42.000 € <br>
         SIREN : 934 780 735<br>
         R.C.S. Nanterre
       </p>
-
     </div>
-
-
-    
-
-
   </div>
-
   <div class="flex flex-col md:flex-row justify-between px-6 md:px-8 pb-6 text-xs text-gray-200 gap-2">
-
     <span class="text-center md:text-right">
       Copyright © 2026 <%= @sitename %> — Tous droits réservés —
       <%= link_to 'Mentions Légales', mentions_legales_path, class: 'hover:underline' %>
     </span>
-
     <span class="text-center md:text-right">
       Made with ♥ by Aïkku
     </span>
-
   </div>
-
 </footer>

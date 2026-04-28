@@ -1,64 +1,53 @@
-
-
 <%= form_tag do %>
-
-<div class="relative text-center w-full min-h-[200px] md:min-h-[300px] text-neutral-content p-10 lg:p-20  bg-cover bg-center"
+  <div class="relative text-center w-full min-h-[200px] md:min-h-[300px] text-neutral-content p-10 lg:p-20  bg-cover bg-center"
      style="background-image: url(<%= asset_path('contact.jpg') %>)">
-  <div class="absolute inset-0 bg-black/50"></div>
-  <div class="relative z-10 reveal delay-1 ">
-    <h1 class="pt-6 md:pt-0 text-4xl lg:text-6xl font-black">
-      Nous <span class="text-gradient">contacter</span> 
-    </h1>
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative z-10 reveal delay-1 ">
+      <h1 class="pt-6 md:pt-0 text-4xl lg:text-6xl font-black">
+        Nous <span class="text-gradient">contacter</span>
+      </h1>
+    </div>
   </div>
-</div>
-
- 
-
   <div class="flex flex-col md:flex-row gap-12 p-20 reveal delay-2">
-
-      <div class=" p-8 flex flex-col flex-1 items-center text-center">
-        <h2 class="font-bold text-2xl text-accent mb-6">
-          Un projet ? Une question ? Parlons-en.
-        </h2>
-
-        <p class="text-gray-600 leading-relaxed">
-          Venez prendre un cafe ou un the à l'agence,
-          <br> nous serons ravis de vous accuellir à l'adresse suivante :    
-          <br><br>Aïkku (SAS)<br>
-          Tour Ariane - La Défense<br>
-          5, Place de la Pyramide<br>
-          92800 Puteaux – France
-        </p>
-
-        <div class="flex gap-6 mt-6">
-          <%= mail_to "contact@aikku.eu", class:"hover:scale-110 transition" do %>
-            <i class="fa-solid fa-envelope text-2xl"></i>
-          <% end %>
-
-          <%= link_to "https://www.linkedin.com/company/aikku-sas", target: "_blank", class:"hover:scale-110 transition" do %>
-            <i class="fa-brands fa-linkedin text-2xl"></i>
-          <% end %>
-        </div>
+    <div class=" p-8 flex flex-col flex-1 items-center text-center">
+      <h2 class="font-bold text-2xl text-accent mb-6">
+        Un projet ? Une question ? Parlons-en.
+      </h2>
+      <p class="text-gray-600 leading-relaxed">
+        Venez prendre un cafe ou un the à l'agence,
+        <br>
+         nous serons ravis de vous accuellir à l'adresse suivante :    
+        <br>
+        <br>
+        Aïkku (SAS)<br>
+        Tour Ariane - La Défense<br>
+        5, Place de la Pyramide<br>
+        92800 Puteaux – France
+      </p>
+      <div class="flex gap-6 mt-6">
+        <%= mail_to "contact@aikku.eu", class:"hover:scale-110 transition" do %>
+          <i class="fa-solid fa-envelope text-2xl"></i>
+        <% end %>
+        <%= link_to "https://www.linkedin.com/company/aikku-sas", target: "_blank", class:"hover:scale-110 transition" do %>
+          <i class="fa-brands fa-linkedin text-2xl"></i>
+        <% end %>
       </div>
-
-
+    </div>
     <div class="bg-white flex-1 p-10 rounded-2xl shadow-lg">
       <h2 class="font-bold text-2xl text-accent mb-6">
         Envoyez-nous un message
       </h2>
-       <%= email_field_tag :email, params[:email], class:"input input-bordered rounded-lg w-full", required: true, placeholder: "Entrez une adresse email valide" %>
+      <%= email_field_tag :email, params[:email], class:"input input-bordered rounded-lg w-full", required: true, placeholder: "Entrez une adresse email valide" %>
       <%= text_field_tag :structure, params[:structure], class:"input input-bordered rounded-lg w-full mt-4", required: true, placeholder: 'Entrez votre nom d\'entreprise' %>
       <%= text_area_tag :contenu, params[:contenu], class:"textarea textarea-bordered rounded-lg w-full mt-4", rows: 4, required: true, placeholder: "Votre message" %>
-      
       <div class="flex justify-center">
         <%= button_tag "Envoyer le message",
           type: "submit",
           class: "btn text-lg btn-gradient  hover:text-white mt-12 shadow-lg ",
           'data-turbo': false %>
-          </div>
       </div>
     </div>
-
   </div>
+</div>
 </section>
 <% end %>
