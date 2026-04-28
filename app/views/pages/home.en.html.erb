@@ -3,99 +3,154 @@
     title: "Welcome"
   )
 %>
-
-<div class="hero min-h-screen top-0 -mt-12" style="background-image: url(<%= asset_path('background.webp') %>)">
-  <div class="hero-overlay bg-opacity-60"></div>
-  <div class="hero-content text-center text-neutral-content flex-col p-2 sm:p-4">
-    <p class="mb-5 text-2xl">Our ambition</p>
-    <h1 class="mb-5 text-4xl lg:text-5xl font-black">
-      <%= description "Transform customer needs into a simple, robust, sustainable and perfectly suitable solution." %>
+<div class="relative text-center w-full min-h-[200px] md:min-h-[300px] text-neutral-content p-10 lg:p-20  bg-cover bg-center"
+     style="background-image: url(<%= asset_path('background.webp') %>)">
+  <div class="absolute inset-0 bg-black/50"></div>
+  <div class="relative z-10 reveal delay-1 ">
+    <h1 class="pt-6 md:pt-0 text-4xl lg:text-6xl font-black">
+      Digital <span class="text-gradient">solutions</span> serving your needs
     </h1>
+    <p class="text-xl p-6 hidden md:block md:text-center lg:text-2xl text-primary-content font-black">
+      AÏKKU translates customer needs into simple, robust, and tailored software solutions
+    </p>
   </div>
 </div>
 
-<section id="outils" class="flex flex-col justify-center text-center min-h-screen mx-4 gap-4 lg:gap-24">
-  <h2 class="text-4xl lg:text-5xl font-black text-accent my-24">
-    Our tools and areas of expertise
+<section class="w-full text-secondary-content py-20 px-10 md:p-20 text-justify reveal delay-2">
+  <h2 class="text-3xl lg:text-5xl text-center font-black mb-12">
+    Our motto : <span class="text-gradient-reverse">AI for You</span>
   </h2>
-  <div class="flex flex-wrap justify-around gap-2">
-    
-    <div class="w-full sm:w-1/2 lg:w-1/3 sm:px-5">
-      <%= image_tag 'logos/RoR.svg', class: 'h-44 mx-auto' %>
-      <h3 class="font-black text-accent text-2xl mt-7 mb-4">Ruby on Rails</h3>
-      <p>
-        Ruby on Rails (RoR) is an open-source web development framework based on the Ruby programming language.
-        <br>
-        <br>
-        Used by famous sites like Airbnb, Shopify, GitHub, Twitch, SoudCloud, Coinbase, Heroku...
-      </p>
-    </div>
-
-    <div class="w-full sm:w-1/2 lg:w-1/3 sm:px-5">
-      <%= image_tag 'logos/agile.svg', class: 'h-44 mx-auto' %>
-      <h3 class="font-black text-accent text-2xl mt-7 mb-4">Agile</h3>
-      <p>
-        Particular type of software development which is characterized by its simple, repetitive and least bureaucratic form.
-        <br><br>
-        The advantages of this procedure are the major cost and time savings compared to conventional programming methods.
-      </p>
-    </div>
-
-    <div class="w-full sm:w-1/2 lg:w-1/3 sm:px-5 mt-8">
-      <%= image_tag "Vertex-AI.jpg", class: 'h-44 mx-auto' %>
-      <h3 class="font-black text-accent text-2xl my-8">AI and machine learning</h3>
-      <p>
-        We use the Gemini 1.5 models, the most recent and most advanced multimodal models of Vertex AI.
-      </p>
-    </div>
-
+  <p class="text-xl mb-3">
+    Discover the <b>Aïkku platform</b> and our software solutions developed for public institutions, private organizations, and higher education establishments.
+  </p>
+  <p class="hidden md:block">
+    Digital transformation goes hand in hand with the evolution of business processes. 
+    Instant access to data, from anywhere, is transforming the way we work. 
+    The integration of Artificial Intelligence helps optimize these processes, improving speed, quality, and efficiency. 
+    For it to be truly effective, its implementation must be designed in collaboration with operational teams.
+  </p>
+  <div class="flex justify-center">
+    <%= link_to 'Learn more...', services_path, 
+  class: 'btn text-lg lg:btn-sm btn-gradient hover:text-white! mt-12 shadow-lg h-min transition-transform hover:scale-105' %>
   </div>
-
 </section>
 
-<section id="logiciels" class="p-0 lg:mt-12">
-  <%= render partial: 'pages/logiciels' %>
-<section>
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path d="
+      M0,60
+      Q300,0 600,30
+      Q900,60 1200,30
+      L1200,60
+      L0,60
+      Z
+    " fill="#1f1f3d"/>
+  </svg>
+</div>
 
-<section id="clients" class="flex flex-col justify-center min-h-screen">
-  <h2 class="text-center text-4xl lg:text-5xl font-black text-accent mt-24 mb-12">
-    They trust us:
+<section id="secteurs" class="w-full text-white px-10 py-20 md:p-20 bg-info">
+  <h2 class="text-3xl lg:text-5xl text-center font-black mb-12">Our <span class="text-gradient">key sectors</span></h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-16">
+
+    <div class="bg-white h-full border border-gray-100 rounded-xl overflow-hidden flex flex-col">
+      <figure>
+        <%= image_tag "misc/students.jpg", class: "w-full h-48 object-cover", alt: "Students" %>
+      </figure>
+      <div class="card-body text-black">
+        <h2 class="card-title mb-4">Higher education</h2>
+        <p>Manage all your training programs and classrooms with a simple, affordable, and customizable solution</p>
+        <div class="card-actions">
+          <%= link_to 'Learn more about Aikku PLANN', aikku_plann_path, 
+          class: 'btn btn-sm btn-gradient w-full shadow mt-4 h-min' %>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white h-full border border-gray-100 rounded-xl overflow-hidden flex flex-col">
+      <figure>
+        <%= image_tag "misc/communauté-communes.jpg", class: "w-full h-48 object-cover", alt: 'Local community' %>
+      </figure>
+      <div class="card-body text-black">
+        <h2 class="card-title mb-4">Local authorities</h2>
+        <p>Effortlessly manage cooperation and resource sharing within your inter-municipal structure (EPCI)</p>
+        <div class="card-actions">
+          <%= link_to 'Learn more about Aikku COOPCOMM', aikku_coopcomm_path, 
+          class: 'btn btn-sm btn-gradient w-full shadow mt-4 h-min' %>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white h-full border border-gray-100 rounded-xl overflow-hidden flex flex-col">
+      <figure>
+        <%= image_tag "misc/dsi.jpg", class: "w-full h-48 object-cover", alt: 'IT department / Data scientist working' %>
+      </figure>
+      <div class="card-body text-black">
+        <h2 class="card-title mb-4">IT Departments</h2>
+        <p>Manage your business data online and on the go with your no-code tool enhanced with integrated AI</p>
+        <div class="card-actions">
+          <%= link_to 'Learn more about Aikku ACCESS', aikku_access_path, 
+          class: 'btn btn-sm btn-gradient w-full shadow mt-4 h-min' %>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path d="
+      M0,0
+      Q300,60 600,30
+      Q900,0 1200,30
+      L1200,0
+      L0,0
+      Z
+    " fill="#1f1f3d"/>
+  </svg>
+</div>
+
+<section id="expérience" class="px-10 py-20 md:p-20">
+  <h2 class="text-3xl text-center lg:text-5xl font-black mb-12">Over 20 years of experience</h2>
+  <p class="lg:text-2xl text-center">
+    Aïkku is a young company, but its founders have been working together for over 20 years.
+    <br>
+    Together, they have delivered numerous validated projects in the healthcare sector,
+    <br>
+    for clients such as <b>Sanofi</b> (eCRF), <b>L’Oréal</b> (ePRO), <b>PPRS Research</b> (CDMS), <b>AirJin</b> (IoT)
+  </p>
+</section>
+
+<section id="clients" class="flex flex-col justify-center p-15 ">
+  <h2 class="text-center text-3xl lg:text-5xl font-black mb-12 ">
+    They trust <span class="text-gradient">us</span>
   </h2>
-  <div class="flex flex-wrap justify-around items-center gap-16 mb-16">
-    <div class="w-64 rounded">
-      <%= link_to nos_clients_path(anchor: 2) do %>
-        <%= image_tag "logos/2.png", class:"mx-auto" %>
+
+  <div class="flex flex-wrap justify-center items-center gap-8 ">
+
+    <div class="w-64 h-64 rounded flex items-center">
+      <%= link_to "https://www.iae-paris.com", target: "_blank" do %>
+        <%= image_tag "logos/1.png", class:"mx-auto p-8", alt: 'IAE Paris-Sorbonne logo' %>
       <% end %>
     </div>
-    <div class="w-64 rounded">
-      <%= link_to nos_clients_path(anchor: 1) do %>
-        <%= image_tag "logos/1.png", class:"mx-auto" %>
+
+    <div class="w-64 h-64 rounded flex items-center">
+      <%= link_to "https://www.madmoselle.com", target: "_blank" do %>
+        <%= image_tag "logos/madmoselle.jpg", class:"mx-auto p-8", alt: 'Mad & Moselle logo' %>
       <% end %>
     </div>
-    <div class="w-64 rounded">
-      <%= link_to nos_clients_path(anchor: 4) do %>
-        <%= image_tag "logos/4.png", class:"mx-auto" %>
+
+    <div class="w-64 h-64 rounded flex items-center">
+      <%= link_to "https://www.grohe.com", target: "_blank" do %>
+        <%= image_tag "logos/8.png", class:"mx-auto p-8", alt: 'GROHE logo' %>
       <% end %>
     </div>
-  </div>
-  <div class="flex flex-wrap justify-around items-center gap-16">
-    <div class="w-64 rounded">
-      <%= link_to nos_clients_path(anchor: 9) do %>
-        <%= image_tag "logos/9.png", class:"mx-auto" %>
+
+    <div class="w-64 h-64 rounded flex items-center">
+      <%= link_to "https://www.infogene.fr", target: "_blank" do %>
+        <%= image_tag "logos/infogene.webp", class:"mx-auto p-8 rounded", alt: 'Infogene logo' %>
       <% end %>
     </div>
-    <div class="w-64 rounded">
-      <%= link_to nos_clients_path(anchor: 8) do %>
-        <%= image_tag "logos/8.png", class:"mx-auto" %>
-      <% end %>
-    </div>
-    <div class="w-64 rounded">
-      <%= link_to nos_clients_path(anchor: 5) do %>
-        <%= image_tag "logos/5.png", class:"mx-auto" %>
-      <% end %>
-    </div>
-  </div>
-  <div class="flex justify-center">
-    <%= link_to 'Learn more', nos_clients_path, class: 'btn lg:btn-lg btn-outline btn-primary mx-auto mt-12' %>
+
   </div>
 </section>

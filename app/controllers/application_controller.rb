@@ -10,8 +10,7 @@ class ApplicationController < ActionController::Base
   end
 
   def set_locale
-    # I18n.locale = params[:locale] || request.env['HTTP_ACCEPT_LANGUAGE'].scan(/^[a-z]{2}/).first || I18n.default_locale
-    I18n.locale = I18n.default_locale
+    I18n.locale = params[:locale] || I18n.default_locale
   end
 
   def default_url_options

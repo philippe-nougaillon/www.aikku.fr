@@ -1,473 +1,269 @@
-<section class="text-center mb-16">
-  <h1 class="font-black text-6xl text-accent mb-12 pt-8 italic">
-    <%= title "Aikku PLANN" %>
+<section class="text-center reveal delay-1 md:m-10">
+  <h1 class="font-black text-5xl md:text-6xl text-secondary mb-12 pt-8 italic">
+    <%= title "Manage your courses and classrooms. Without complexity" %>
   </h1>
-  <h2 class="text-3xl lg:text-4xl mb-12 font-black leading-10!">
-    <%= description "Manage all your training sessions and classrooms with
-    <br> a simple, affordable, and customizable solution".html_safe %>
-  </h2>
   <h3 class="text-lg lg:text-2xl">
-    Developed in collaboration with IAE Paris-Sorbonne, Aïkku PLANN is a scheduling and classroom management software.
-    It is tailored to the needs of
-    <span class="font-black">
-      universities, business schools, and specialized training institutes.
-    </span>
+    Developed in collaboration with IAE Paris-Sorbonne,
+    <span class="font-black">Aïkku PLANN</span>
+    is a scheduling and classroom management software.
+    It is tailored to the needs of universities, business schools, and specialized training institutes.
   </h3>
-
-  <div class="carousel min-w-16 sm:w-3/4 mx-auto mt-24 shadow-lg">
-    <div id="slide1" class="carousel-item relative w-full">
-      <%= image_tag "projets/planning iae-paris/screen_0.png", alt:"List of upcoming lessons" %>
-    </div> 
-    <div id="slide2" class="carousel-item relative w-full">
-      <img src="/Images/guide/salles1.png" alt="Occupation of rooms (day)">
-    </div> 
-    <div id="slide3" class="carousel-item relative w-full">
-      <img src="/Images/guide/salles2.png" alt="Occupation of rooms (week)">
+</section>
+<section>
+  <div class="flex flex-col md:flex-row border-t border-b border-gray-300 reveal delay-2">
+    <div class="flex-1 text-center py-7 px-4 border-b md:border-b-0 md:border-r border-gray-300">
+      <p class="text-4xl font-medium text-accent">500+</p>
+      <p class="text-sm text-gray-400 mt-1">Programs managed</p>
     </div>
-    <div id="slide4" class="carousel-item relative w-full">
-      <img src="/Images/guide/cours3.png" alt="Occupation rooms in detail (week)">
+    <div class="flex-1 text-center py-7 px-4 border-b md:border-b-0 md:border-r border-gray-300">
+      <p class="text-4xl font-medium text-accent">900</p>
+      <p class="text-sm text-gray-400 mt-1">Instructors</p>
     </div>
-    <div id="slide5" class="carousel-item relative w-full">
-      <img src="/Images/guide/afficheur.png" alt="Planning on display 1/2">
+    <div class="flex-1 text-center py-7 px-4 border-b md:border-b-0 md:border-r border-gray-300">
+      <p class="text-4xl font-medium text-accent">60 000</p>
+      <p class="text-sm text-gray-400 mt-1">Scheduled classes</p>
     </div>
-    <div id="slide6" class="carousel-item relative w-full">
-      <img src="/Images/guide/cours_new.png" alt="Room reservation form">
+    <div class="flex-1 text-center py-7 px-4">
+      <p class="text-4xl font-medium text-accent">Since 2017</p>
+      <p class="text-sm text-gray-400 mt-1">25 administrators</p>
     </div>
-    <div id="slide7" class="carousel-item relative w-full">
-      <img src="/Images/guide/reservation-saison.png" alt="Reservation of time slots for a season">
-    </div>
-    <div id="slide8" class="carousel-item relative w-full">
-      <img src="/Images/guide/formation.png" alt="A formation in detail">
-    </div>
-    <div id="slide9" class="carousel-item relative w-full">
-      <img src="/Images/guide/intervenant.png" alt="A detailed speaker">
-    </div>
-    <div id="slide10" class="carousel-item relative w-full">
-      <img src="/Images/guide/a_booker.png" alt="List of lessons 'in Booker'">
-    </div>
-    <div id="slide11" class="carousel-item relative w-full">
-      <img src="/Images/guide/invits.png" alt="List of invitations (proposals for time slots)">
-    </div>
-    <div id="slide12" class="carousel-item relative w-full">
-      <img src="/Images/guide/outils.png" alt="List of tools">
-    </div>
-  </div>
-  <div data-controller="carousel-paginate">
-    <div class="flex flex-wrap justify-center w-full gap-2 mt-4">
-      <a href="#slide1" class="btn btn-accent hover:btn-accent btn-xs carousel-page" data-action="click->carousel-paginate#activate">1</a> 
-      <a href="#slide2" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">2</a> 
-      <a href="#slide3" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">3</a> 
-      <a href="#slide4" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">4</a> 
-      <a href="#slide5" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">5</a> 
-      <a href="#slide6" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">6</a> 
-      <a href="#slide7" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">7</a> 
-      <a href="#slide8" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">8</a> 
-      <a href="#slide9" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">9</a> 
-      <a href="#slide10" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">10</a> 
-      <a href="#slide11" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">11</a> 
-      <a href="#slide12" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">12</a>
-    </div>
-  </div>
-
-  <div class="hidden lg:flex flex-wrap justify-center gap-4 mt-24">
-    <%= link_to "I am the training manager", aikku_plann_path(anchor: "bref"), class: 'btn btn-accent sm:btn-lg max-w-full' %>
-    <%= link_to "I am the administrator", aikku_plann_path(anchor: "details_fonctionnalites"), class: 'btn btn-secondary sm:btn-lg max-w-full' %>
   </div>
 </section>
-
-<section id="bref" class="w-full text-center bg-secondary text-secondary-content py-24">
-  <h2 class="apps-title">
-    A powerful tool. Features designed to boost efficiency
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path d="M0,60 Q300,0 600,30 Q900,60 1200,30 L1200,60 L0,60 Z" fill="#1f1f3d"/>
+  </svg>
+</div>
+<section id="fonctionnalités" class="w-full text-center bg-info text-white p-20">
+  <h2 class="text-4xl lg:text-5xl font-black mb-12">
+    Everything you need <span class="text-gradient">in one place</span>
   </h2>
-  <div class="flex flex-col sm:flex-row flex-wrap justify-around gap-16 mt-12">
-    <div class="flex flex-col flex-1">
-      <p class="text-2xl font-black mb-6">
-        Quickly schedule classes
-      </p>
-      <p>
-        Select the course, instructor(s), and classroom (automatically selected from available rooms), and your session is created in just a few clicks and integrated into the timetable.
-      </p>
-    </div>
-    <div class="flex flex-col flex-1">
-      <p class="text-2xl font-black mb-6">
-        Manage room occupancy
-      </p>
-      <p>
-        View all available slots in your facility. Monitor classroom occupancy rates at a glance.
-      </p>
-    </div>
-    <div class="flex flex-col flex-1">
-      <p class="text-2xl font-black mb-6">
-        Easily communicate
-      </p>
-      <p>
-        Notify students and instructors by email or SMS in case of any course changes or cancellations.
-      </p>
-    </div>
-  </div>
-</section>
-
-<section id="responsive" class="flex flex-col md:flex-row flex-wrap items-center gap-16 mt-24">
-  <div class="flex-1 card w-full sm:w-full">
-    <%= image_tag "misc/planning-responsive.png", class:"shadow rounded-2xl" %>
-  </div>
-  <div class="flex-1">
-    <p class="text-2xl text-secondary font-light">
-      Information always available
-    </p>
-    <p class="text-4xl font-black my-4">
-      An accessible schedule anytime,
-      <br>on any device.
-    </p>
-    <p class="text-xl">
-      The app is optimized to display perfectly on all screen sizes.
-      <br><br>Display the daily schedule on digital boards throughout your facility: course progress updates in real-time, providing clear and readable information.
-      <br><br>Students and instructors can view the schedule on their phones, computers, or tablets, 24/7.
-      An .ics feed allows them to sync it with the calendar app of their choice.
-    </p>
-    <div class="flex gap-8 mt-12">
-      <%= image_tag "logos/Gmail.svg", width: "50px" %>
-      <%= image_tag "logos/Outlook.svg", width: "50px" %>
-      <%= image_tag "logos/MacOSCalendar.webp", width: "50px" %>
-      <%= image_tag "logos/GoogleCalendar.svg", width: "50px" %>
-
-    </div>
-  </div>
-</section>
-
-<section id="fonctionnalités" class="w-full text-center bg-secondary text-secondary-content mt-24 pt-24">
-  <h2 class="apps-title">A comprehensive software, tailored to every role in your institution:</h2>
-  <div class="flex flex-col w-full gap-16 mt-24">
-    <div class="flex-1 flex flex-col md:flex-row flex-wrap justify-around gap-16">
-      <div class="flex flex-col flex-1">
-        <i class="fa-regular fa-calendar-days fa-2xl mb-4"></i>
-        <p class="text-2xl font-black my-4"><b>Course scheduling</b></p>
-        <p class="font-thin!">
-          Create or modify a course: the software automatically finds an available room. Save time with advanced search features and make bulk updates to multiple courses in just a few clicks.
-        </p>
-      </div>
-      <div class="flex flex-col flex-1">
-        <i class="fa-solid fa-chalkboard fa-2xl mb-4"></i>
-        <p class="text-2xl font-black my-4">Classrooms</p>
-        <p>
-          View available time slots by day, week, and room. Manage room and facility capacity effectively. Receive alerts when a room's maximum capacity is reached.
-        </p>
-      </div>
-      <div class="flex flex-col flex-1">
-      <i class="fa-solid fa-briefcase fa-2xl mb-4"></i>
-        <p class="text-2xl font-black my-4">Programs</p>
-        <p>
-          Identify each program in the schedule by its color code. Access the list of instructors and easily track course hours for each unit: completed hours, scheduled sessions, and sessions remaining to be created.
-        </p>
-      </div>
-    </div>
-    <div class="flex-1 flex flex-col md:flex-row flex-wrap justify-around gap-16 lg:gap-8">
-      <div class="flex flex-col flex-1">
-        <i class="fa-solid fa-chalkboard-teacher fa-2xl mb-4"></i>
-        <p class="text-2xl font-black my-4">Instructors</p>
-        <p>
-          Centralize all information for each instructor. View their service status according to their role. Track actual teaching hours for part-time instructors to facilitate billing.
-        </p>
-      </div>
-      <div 
-      class=
-      "flex flex-col flex-1">
-<i class="fa-solid fa-graduation-cap fa-2xl mb-4"></i>
-        <p class="text-2xl font-black my-4">Students</p>
-        <p>
-          Access the student list for each program and notify them via email or SMS if their schedule changes.
-        </p>
-      </div>
-      <div class="flex flex-col flex-1">
-        <i class="fa-solid fa-download fa-2xl mb-4"></i>
-        <p class="text-2xl font-black my-4">Data Import and Export</p>
-        <p>
-          Import large data volumes in Excel (XLS) and CSV formats, including courses, programs, and students. All data can be exported in XLS format.
-        </p>
-      </div>
-    </div>
-    
-    <div class="flex-1 flex flex-col md:flex-row flex-wrap justify-around gap-16 lg:gap-8">
-      <div class="flex flex-col flex-1">
-        <i class="fa-solid fa-file-signature fa-2xl mb-4"></i>
-        <p class="text-2xl font-black my-4">Attendance Tracking</p>
-        <p>
-          Simplify attendance management by digitizing signature collection, allowing students to sign directly on their smartphone or computer at the start of each session.
-        </p>
-      </div>
-      <div class="flex flex-col flex-1">
-        <i class="fa-solid fa-robot fa-2xl mb-4"></i>
-        <p class="text-2xl font-black my-4">GPT-4 Query</p>
-        <p>
-          Easily query the schedule database with natural language questions like, “How many teaching hours will instructor Durand have next week?”
-        </p>
-      </div>
-      <div class="flex flex-col flex-1">
-        <p class="text-2xl font-black my-4"></p>
-        <p>
-        </p>
-      </div>
-    </div>
-  </div>
- 
-</section>
-
-<section id="confiance" class="text-center py-24">
-  <h2 class="apps-title ">They trust us</h2>
-  <p class="text-2xl my-12">
-    Over <strong class="font-black">500</strong> programs, <strong class="font-black">900</strong> instructors and <strong class="font-black">60,000</strong> classes managed since <strong class="font-black">2017</strong>
-    <br>
-    by <strong class="font-black">25</strong> training managers
-  </p>
-  <div class="flex flex-col md:flex-row items-center justify-center gap-8">
-  <div class="flex-1">
-    <%= image_tag "misc/amphi_iae.jpg", width: "650px" %>
-  </div>
-  <div class="flex-1">
-    <%= image_tag "projets/planning iae-paris/logo.png", class:"mx-auto mb-8" %>
-    <blockquote>
-      <p class="text-lg">
-        <i class="fa-solid fa-quote-left mr-2" style="color: #000000;"></i>
-        Philippe Nougaillon offers sustainable and reliable solutions, prioritizing simplicity in his vision for development. An advocate of frugal innovation, he provides his clients with original, robust, and perfectly tailored solutions. He possesses strong listening skills and demonstrates a great deal of pedagogy in agile processes.
-        <i class="fa-solid fa-quote-right ml-2" style="color: #000000;"></i>
-      </p>
-      <div class="flex items-center jutify-center md:items-start md:justify-start flex-wrap md:flex-nowrap rounded-full bg-base-100 py-2 md:pr-4 w-full md:w-fit mx-auto mt-4">
-        <%= image_tag 'misc/Eynaud.jpg', class:"mask mask-circle h-24 mx-auto hidden md:block" %>
-        <div class="flex flex-col">
-          <p class="font-black">Philippe Eynaud</p>
-          <p>
-            Professor in Management Sciences at the IAE of Paris
-            <br>
-            <%= link_to "'Le management du système d'information dans sa complexité'", 
-                      "https://www.amazon.fr/management-syst%C3%A8me-dinformation-dans-complexit%C3%A9/dp/1784055026/ref=sr_1_5?qid=1687595735", class: "link", target: '_blank' %> (2018) ISTE Editions
-          </p>
-        </div>
-      </div>
-    </blockquote>
-  </div>
-</section>
-
-<section class="bg-secondary text-secondary-content mx-auto w-full text-center pt-24">
-  <h2 class="apps-title text-center mb-12!">
-    A reliable and sustainable solution.
-    <br>
-    Advanced Administrator Features
+  <h2 class="text-secondary font-bold text-xl">
+    CORE FEATURES
   </h2>
-  <div class="flex flex-col w-full gap-16 mt-24">
-    <div class="flex-1 flex flex-col md:flex-row flex-wrap justify-around gap-16">
-      <div class="flex flex-col flex-1">
-        <i class="fa-solid fa-triangle-exclamation fa-2xl mb-4"></i>
-        <p class="text-2xl font-black my-4"><b>Anomaly Prevention</b></p>
-        <p>
-          A constraint-checking algorithm (capacity, availability of instructors, closure days, etc.) prevents scheduling errors. An icon alerts the user in case of data entry anomalies.
-        </p>
-      </div>
-      <div id="details_fonctionnalites" class="flex flex-col flex-1">
-        <i class="fa-solid fa-calendar-check fa-2xl mb-4"></i>
-        <p class="text-2xl font-black my-4">Activity Plans</p>
-        <p>
-          Simplify the forecasting of your activity plans with the New Season feature. Reserve time slots for each program in bulk for an entire academic year.
-        </p>
-      </div>
-      <div class="flex flex-col flex-1">
-        <i class="fa-solid fa-gears fa-2xl mb-4"></i>
-        <p class="text-2xl font-black my-4">Intelligent Workflows</p>
-        <p>
-          Centralize and automate the management of application files for new instructors and the process of proposing time slots.
-        </p>
-      </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 mt-16">
+    <div class="flex flex-col p-4 text-left">
+      <h3 class="text-xl font-black my-4 underline underline-offset-8 text-white">
+        <i class="fa-regular fa-calendar-days fa-lg mr-4 text-[#51c7fd]"></i>
+        Course scheduling
+      </h3>
+      <p class="text-gray-300">
+        Create or modify schedules for a set of courses and/or a session
+        in just a few clicks. The software automatically selects an 
+        available classroom.       </p>
     </div>
-    <div class="flex-1 flex flex-col md:flex-row flex-wrap justify-around gap-16 lg:gap-8">
-      <div class="flex flex-col flex-1">
-        <i class="fa-solid fa-tools fa-2xl mb-4"></i>
-        <p class="text-2xl font-black my-4">Administration Tools</p>
-        <p>
-          Manage user access through their accounts with seven possible roles. Configure course time slots by building and the closure days of the institution.
-        </p>
-      </div>
-      <div class="flex flex-col flex-1">
-        <i class="fa-solid fa-search fa-2xl mb-4"></i>
-        <p class="text-2xl font-black my-4">Audit Trail</p>
-        <p>
-          Trace any modifications made by each user in the application data if necessary, thanks to the change history (Audit Trail).
-        </p>
-      </div>
-      <div class="flex flex-col flex-1">
-        <i class="fa-solid fa-envelope-open fa-2xl mb-4"></i>
-        <p class="text-2xl font-black my-4">Mail Log</p>
-        <p>
-          Access the history of notifications sent to students and instructors. Easily identify incorrect addresses and unread notifications.
-        </p>
-      </div>
+    <div class="flex flex-col p-4 text-left">
+      <h3 class="text-xl font-black my-4 underline underline-offset-8 text-white">
+        <i class="fa-solid fa-chalkboard fa-lg mr-4 text-[#51c7fd]"></i>
+        Room occupancy
+      </h3>
+      <p class="text-gray-300">
+        View available time slots by day, week, and classroom. 
+        Manage room capacity across your institution. 
+        Get alerts when a room reaches its capacity.      </p>
     </div>
-  </div>
-
-  <div class="mt-8">
-    <p class="text-2xl text-center mt-24 mb-12">
-      Would you like to explore all the features? Contact us.
-      <%= link_to "Contact us", aikku_plann_path(anchor: 'contact'), class: 'link' %>.
-      <br>
-      Need a custom feature? We can develop it!
-    </p>
-  </div>
-</section> 
-
-<% if false %>
-
-  <section id="légal" class="flex flex-col md:flex-row flex-wrap gap-16 lg:p-24 items-center">
-    <div class="flex-auto md:w-1/3">
-      <p class="text-2xl text-secondary mb-4">Transparency, costs, collaboration</p>
-      <p class="text-4xl font-black mb-12">Free, open-source and French software</p>
-      <p class="text-xl mb-12">
-        With Aïkku Plann, you benefit from all the power of open-source.You choose a customizable solution, while maintaining total control over your planning system and your costs.
-        <br><br>
-        On request, our team of developers designs features adapted to your specific needs, respecting your requirements and your budget.
-        <br><br>
-        You want to focus on your core business: we can support accommodation and application maintenance.
-      </p>
-      <div>
-        <p class="mb-12">
-          <i class="fa-solid fa-scale-balanced fa-xl mr-4"></i>
-          GNU General Public License v3.0
-        </p>
-      </div>
-      <%= link_to "See the GitHub page of the project ➡", "https://github.com/philippe-nougaillon/IAE_Planning/", class: "link link-primary text-xl", target: '_blank' %>
+    <div class="flex flex-col p-4 text-left">
+      <h3 class="text-xl font-black my-4 underline underline-offset-8 text-white">
+        <i class="fa-solid fa-chalkboard-teacher fa-lg mr-4 text-[#51c7fd]"></i>
+        Instructors and students
+      </h3>
+      <p class="text-gray-300">
+        Centralize all information for each instructor. 
+        Track actual teaching time for adjunct lecturers
+        to simplify billing. Notify students by email
+        or SMS in case of schedule changes      </p>
     </div>
-    <div class="flex-1 mx-auto md:w-2/3">
-      <%= image_tag "logos/adullact.png", class:"mb-24" %>
-      <%= image_tag "logos/framalibre.webp" %>
+    <div class="flex flex-col p-4 text-left">
+      <h3 class="text-xl font-black my-4 underline underline-offset-8 text-white">
+        <i class="fa-solid fa-briefcase fa-lg mr-4 text-[#51c7fd]"></i>
+        Programs
+      </h3>
+      <p class="text-gray-300">
+        Identify each program in the schedule using color codes.
+        Access the list of instructors. Easily manage
+        course hours: completed, scheduled, and remaining.    
+      </div>
+      <div class="flex flex-col p-4 text-left">
+        <h3 class="text-xl font-black my-4 underline underline-offset-8 text-white">
+          <i class="fa-solid fa-download fa-lg mr-4 text-[#51c7fd]"></i>
+          Import and export
+        </h3>
+        <p class="text-gray-300">
+          Import large volumes of data in Excel 
+          (XLS) and CSV formats: courses, programs, students… All 
+          data can be exported in XLS format.       </p>
+      </div>
+      <div class="flex flex-col p-4 text-left">
+        <h3 class="text-xl font-black my-4 underline underline-offset-8 text-white">
+          <i class="fa-solid fa-file-signature fa-lg mr-4 text-[#51c7fd]"></i>
+          Attendance tracking
+        </h3>
+        <p class="text-gray-300">
+          Thanks to Edusign integration, sign digitally 
+          directly from the student’s smartphone or computer 
+          at the beginning of each session.       </p>
+      </div>
     </div>
   </section>
-
-  <section id="offres" class="bg-secondary text-secondary-content py-24">
-    <h2 class="apps-title text-content text-center mb-12">
-      More than software, a service
+  <div class="footer-wave">
+    <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+      <path d="M0,0 Q300,60 600,30 Q900,0 1200,30 L1200,0 L0,0 Z" fill="#1f1f3d"/>
+    </svg>
+  </div>
+  <section id="responsive" class="flex flex-col p-20 md:flex-row items-center gap-16">
+    <div class="flex-1">
+      <%= image_tag "misc/planning-responsive.png", class:"shadow rounded-2xl", alt: "Software across multiple screens" %>
+    </div>
+    <div class="flex-1">
+      <h3 class="text-2xl text-accent font-bold mb-4 text-center md:text-left">
+        Information always available
+      </h3>
+      <h2 class="text-4xl font-black mb-10 text-center md:text-left">
+        Your schedule accessible on any device
+      </h2>
+      <p class="text-xl text-justify">
+        The application perfectly adapts to all screen sizes. 
+        Display the daily schedule on your institution’s digital screens, 
+        updated in real time.       
+        <br>
+        <br>
+        Students and instructors can access the schedule from their phone,
+        computer, or tablet, 24/7. With one click, subscribe your calendar 
+        (Google, Outlook, or Apple) to your schedule so your classes 
+        and sessions update automatically.     </p>
+    </div>
+  </section>
+  <section class="px-6 md:px-20 pb-20 pt-10">
+    <h2 class="text-accent text-left mb-6 font-extrabold text-2xl uppercase tracking-wider">
+      They trust us
     </h2>
-    <h3 class="text-center text-2xl font-black mb-12">
-      Discover our accommodation, maintenance and continuous improvement offer
-    </h3>
-    <div class="flex flex-col md:flex-row flex-wrap gap-16 justify-center">
-      <div class="card flex-1 bg-base-100 text-base-content">
-        <div class="card-body items-center text-center">
-          <div class="flex gap-2">
-            <p class="flex-1 card-title">
-              Free offer (open source)
-            </p>
-            <div class="badge badge-info badge-lg"><b>Free</b></div>
+    <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+      <div id="confiance" class="flex-1">
+        <div class="bg-white shadow-xl rounded-2xl p-8 flex flex-col border border-gray-100">
+          <i class="fa-solid fa-quote-left text-2xl mb-4 text-left text-accent"></i>
+          <p class="text-gray-700 text-justify leading-relaxed text-sm md:text-base">
+            Philippe Nougaillon delivers sustainable, reliable solutions 
+            and prioritizes simplicity in his development approach.
+            A proponent of frugal innovation, he provides 
+            original, robust, and perfectly adapted solutions 
+            to his clients. He listens carefully and demonstrates 
+            strong pedagogical skills in agile processes.
+          </p>
+          <div class="mt-8 border-t pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div>
+              <%= link_to "https://www.linkedin.com/in/philippe-eynaud-3a3ab835/",
+               class: "flex items-center gap-1.5 font-medium text-accent " do %>
+                <i class="fa-brands fa-linkedin"></i> Philippe EYNAUD
+              <% end %>
+              <p class="text-xs text-gray-500 mt-1">
+                Professor of management sciences at IAE Paris.
+                <br>
+                Author of
+                <%= link_to "'Information Systems Management in Its Complexity'", 
+                          "https://www.amazon.fr/management-syst%C3%A8me-dinformation-dans-complexit%C3%A9/dp/1784055026/ref=sr_1_5?qid=1687595735", 
+                          class: "link italic no-underline", target: '_blank' %>. (2018) ISTE Editions.  
+              </p>
+            </div>
+            <%= image_tag "projets/planning iae-paris/Logo_iae.png", class: "h-10 w-auto opacity-80", alt: "IAE PARIS logo" %>
           </div>
-          <hr>
-          <ul class="text-left">
-            <li class="font-black"><span class="text-success text-2xl mr-4"><b><i class="fa-solid fa-check"></i></b></span>Deploy the Ruby (V3) application for free from the GitHub</li>
-            <li class="font-black"><span class="text-success text-2xl mr-4"><b><i class="fa-solid fa-check"></i></b></span>Host the project on your own infrastructure</li>
-            <li class="font-black"><span class="text-success text-2xl mr-4"><b><i class="fa-solid fa-check"></i></b></span>Your IT teams are responsible for maintenance</li>
-            <li class="font-black"><span class="text-success text-2xl mr-4"><b><i class="fa-solid fa-check"></i></b></span>You enjoy the latest updates for free</li>
-            <li class="font-black"><span class="text-success text-2xl mr-4"><b><i class="fa-solid fa-check"></i></b></span>Unlimited number of users</li>
-          </ul>
         </div>
       </div>
-      <div class="card flex-1 bg-base-100 text-base-content">
-        <div class="card-body items-center text-center">
-          <div class="flex gap-2">
-            <p class="flex-1 card-title">
-              Pro offer
-            </p>
-            <div class="badge badge-info badge-lg"><b>750€ Tax included / Month</b></div>
+      <div id="confiance2" class="flex-1">
+        <div class="bg-white shadow-xl rounded-2xl p-8 flex flex-col border border-gray-100">
+          <i class="fa-solid fa-quote-left text-2xl mb-4 text-left text-accent"></i>
+          <p class="text-gray-700 text-justify leading-relaxed text-sm md:text-base">
+            I had the pleasure of working with the Aïkku team on the deployment of the Planning-IAE tool.
+            What a great experience! The Aïkku team truly embodies the "user-centric approach" I teach my students. 
+            They listen carefully and effectively translate user needs into concrete solutions through co-creation. 
+            A smooth and efficient collaboration that I highly recommend.
+          </p>
+          <div class="mt-8 border-t pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div>
+              <%= link_to "https://www.linkedin.com/in/marieevelaporte/",class: "flex items-center gap-1.5 font-medium text-accent " do %>
+                <i class="fa-brands fa-linkedin"></i> Marie-Eve LAPORTE
+              <% end %>
+              <p class="text-xs text-gray-500 mt-1">
+                Professor, 'Innovation Management & Future of Healthcare'
+              </p>
+            </div>
+            <%= image_tag "projets/planning iae-paris/Logo_iae.png", class: "h-10 w-auto opacity-80", alt: "IAE PARIS logo" %>
           </div>
-          <hr>
-          <ul class="text-left">
-            <li class="font-black"><span class="text-success text-2xl mr-4"><b><i class="fa-solid fa-check"></i></b></span>We ensure the deployment of your tool (V5)</li>
-            <li class="font-black"><span class="text-success text-2xl mr-4"><b><i class="fa-solid fa-check"></i></b></span>We import your existing users, courses and data</li>
-            <li class="font-black"><span class="text-success text-2xl mr-4"><b><i class="fa-solid fa-check"></i></b></span>We provide support and maintenance 24 hours a day, 7 days a week</li>
-            <li class="font-black"><span class="text-success text-2xl mr-4"><b><i class="fa-solid fa-check"></i></b></span>We develop your tailor-made features</li>
-            <li class="font-black"><span class="text-success text-2xl mr-4"><b><i class="fa-solid fa-check"></i></b></span>Unlimited number of users</li>
-          </ul>
         </div>
       </div>
     </div>
   </section>
-
-<% end %>
-
-<section id="contact" class="text-center pt-24">
-  <h2 class="apps-title">Contact us</h2>
-  <p class="text-2xl lg:px-48">
-    Our team is dedicated to providing you with solutions perfectly tailored to your needs, along with personalized support and technical assistance available whenever required.
-  </p>
-  <div class="flex flex-wrap items-center gap-8 mt-24">
-    <% if false %>
-      <div class="flex flex-1 flex-wrap lg:flex-nowrap gap-8 justify-center">
-        <div class="flex flex-col items-center">
-          <!-- Ajouter ring de daisyUI (avatar)-->
-            <%= image_tag "partners/philippe.webp",
-              class: "mask mask-squircle object-contain h-48 w-96 mx-auto opacity-70 mb-6"
-            %>
-          <h4 class="font-bold text-2xl">
-            Philippe
-          </h4>
-          <h5 class="italic text-xl">
-            Product Manager
-            <br>
-            Senior Developer
-            <br>
-            Ruby on Rails
-          </h5>
-        </div>
-        <div class="flex flex-col items-center">
-          <%= image_tag "partners/pierre-emmanuel.webp",
-            class: "mask mask-squircle object-contain h-48 w-96 mx-auto opacity-70 mb-6"
-          %>
-          <h4 class="font-bold text-2xl">
-            Pierre-Emmanuel
-          </h4>
-          <h5 class="italic text-xl">
-            Developer Ruby on Rails
-          </h5>
-        </div>
+  <section class="max-w-5xl mx-auto mb-20 ">
+    <div id="video" class="">
+      <div class="text-center lg:text-left">
+        <h2 class="text-3xl font-black text-accent mb-8">Aïkku PLANN video</h2>
       </div>
-    <% end %>
-    <div class="flex flex-col mx-auto mb-12">
-      <%= form_tag(contact_path) do %>
-        <div class="flex flex-col gap-2">
-          <%= hidden_field_tag :objet, "[Aikku PLANN] Demonstration request" %>
-          <%= hidden_field_tag :contenu, "" %>
-          <div class="form-control">
-            <label class="input-group">
-              <span class="text-black">Email</span>
-              <%= email_field_tag :email, nil, class: 'input input-bordered w-full', required: true %>
-            </label>
-          </div>
-          <%= recaptcha_tags unless Rails.env.development? %>
-          <button class="btn btn-success sm:text-xl max-w-full" data-turbo="false">Ask for a demonstration</button>
-        </div>
-      <% end %>
+      <div class=" flex justify-center"></div>
+      <%= video_tag 'Aikku Plann-VF2.mp4',
+          controls: true,
+          class: 'w-full max-w-3xl rounded-2xl shadow-2xl',
+          preload: 'none',
+          poster: "New_logo.png" %>
     </div>
   </div>
 </section>
-
-<section id="offres" class="bg-secondary text-secondary-content py-24">
-  <h2 class="apps-title text-content mb-4">
-    Learn more
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path d="M0,60 Q300,0 600,30 Q900,60 1200,30 L1200,60 L0,60 Z" fill="#1f1f3d"/>
+  </svg>
+</div>
+<section class="text-center bg-info text-white px-8 py-16 w-full ">
+  <h2 class="text-3xl lg:text-5xl font-black mb-6">
+    Want to see <span class="text-gradient">Aïkku PLANN</span> in action?
   </h2>
-  <p>
-    To find out more, please consult us.
+  <p class="max-w-xl mx-auto mb-8 leading-relaxed">
+    Our team offers solutions tailored to your needs,
+    with personalized support and technical assistance.
   </p>
-
-  <h3 class="text-2xl font-black my-4">Development</h3>
-  <p>
-    This project is developed and maintained by 
-    <%= link_to 'AIKKU SAS', root_path, class:'link' %>.
-  </p>
-
-  <h3 class="text-2xl font-black my-4">Support and services</h3>
-  <p>
-    Do you want a new feature or install it?
-    <%= link_to 'Consult our service offer', '/en/services', class:'link' %>.
-  </p>
+  <%= link_to "View the demo →", "https://plann.aikku.eu",
+        target: "_blank",
+        class: "btn btn-gradient shadow-sm shadow-white/40 mt-6 h-min transition-transform hover:scale-105" %>
 </section>
-<!--
-<%= link_to aikku_plann_path, id: 'fab', class:"hidden lg:flex fixed bottom-4 right-4 bg-accent w-12 h-12 text-white rounded-full items-center z-50" do %>
-  <i class="fa-solid fa-chevron-up fa mx-auto"></i>
-<% end %>
--->
-
-
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path d="M0,0 Q300,60 600,30 Q900,0 1200,30 L1200,0 L0,0 Z" fill="#1f1f3d"/>
+  </svg>
+</div>
+<section class="grid grid-cols-1 md:grid-cols-2 gap-8 px-6 md:px-20 mb-20">
+  <div class="group border border-gray-200 rounded-3xl p-8 bg-white shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+    <div class="flex items-start gap-4">
+      <div class="bg-blue-50 p-3 rounded-xl text-accent group-hover:bg-accent group-hover:text-white transition-colors">
+        <i class="fa-brands fa-github fa-2xl"></i>
+      </div>
+      <div>
+        <p class="text-xs font-bold text-accent uppercase tracking-widest mb-1">Development</p>
+        <h3 class="text-xl font-black  mb-3">Open source code</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">
+          Developed in France and published transparently on 
+          <%= link_to "GitHub",
+            "https://github.com/philippe-nougaillon/Planning_IAE",
+            target: "_blank",
+            class: "font-bold text-accent hover:text-secondary underline decoration-2 underline-offset-4" %>.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="group border border-gray-200 rounded-3xl p-8 bg-white shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+    <div class="flex items-start gap-4">
+      <div class="bg-blue-50 p-3 rounded-xl text-accent group-hover:bg-accent group-hover:text-white transition-colors">
+        <i class="fa-solid fa-rocket fa-2xl"></i>
+      </div>
+      <div>
+        <p class="text-xs font-bold text-accent uppercase tracking-widest mb-1">Support & Services</p>
+        <h3 class="text-xl font-black  mb-3">Need a feature?</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">
+          Our team is available to support your specific needs.
+          <%= link_to services_path, class: "block mt-2 font-semibold text-accent hover:text-secondary transition-colors group/link" do %>
+            Explore our custom service offerings →
+            <span class="block mt-2 font-semibold text-accent cursor-pointer hover:underline">
+            </span>
+          <% end %>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

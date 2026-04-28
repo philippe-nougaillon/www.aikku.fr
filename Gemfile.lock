@@ -96,7 +96,6 @@ GEM
     bootsnap (1.22.0)
       msgpack (~> 1.2)
     builder (3.3.0)
-    coderay (1.1.3)
     concurrent-ruby (1.3.6)
     connection_pool (3.0.2)
     crass (1.0.6)
@@ -126,7 +125,6 @@ GEM
       net-http (~> 0.5)
     globalid (1.3.0)
       activesupport (>= 6.1)
-    htmlbeautifier (1.4.3)
     i18n (1.14.8)
       concurrent-ruby (~> 1.0)
     importmap-rails (2.2.3)
@@ -138,9 +136,6 @@ GEM
       pp (>= 0.6.0)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
-    jbuilder (2.14.1)
-      actionview (>= 7.0.0)
-      activesupport (>= 7.0.0)
     json (2.18.0)
     language_server-protocol (3.17.0.5)
     lint_roller (1.1.0)
@@ -249,7 +244,6 @@ GEM
       psych (>= 4.0.0)
       tsort
     recaptcha (5.21.1)
-    redcarpet (3.6.1)
     regexp_parser (2.11.3)
     reline (0.6.3)
       io-console (~> 0.5)
@@ -293,9 +287,6 @@ GEM
       rubocop-ast (>= 1.47.1, < 2.0)
     ruby-progressbar (1.13.0)
     securerandom (0.4.1)
-    seed_dump (3.4.1)
-      activerecord (>= 4)
-      activesupport (>= 4)
     sitemap_generator (6.3.0)
       builder (~> 3.0)
     sprockets (4.2.2)
@@ -365,13 +356,10 @@ DEPENDENCIES
   acts-as-taggable-on
   bootsnap
   canonical-rails!
-  coderay
   dalli
   debug
   devise
-  htmlbeautifier
   importmap-rails
-  jbuilder
   mailgun-ruby
   meta-tags
   pg
@@ -380,10 +368,7 @@ DEPENDENCIES
   rack-rewrite
   rails (~> 8.1)
   recaptcha
-  redcarpet
   rspec-rails
-  rubocop
-  seed_dump
   sitemap_generator
   sprockets-rails
   standard (~> 1.54)

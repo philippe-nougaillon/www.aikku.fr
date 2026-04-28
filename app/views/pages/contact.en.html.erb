@@ -1,33 +1,53 @@
 <%= form_tag do %>
-  <section class="mx-auto px-4 md:w-1/2 ">
-    <div class="card shadow-lg bg-white mt-4">
-      <div class="card-body px-4 lg:px-8 pt-4">
-        <h1 class="font-black text-5xl lg:text-6xl text-center text-accent mb-8 italic">
-          <%= title "Contact" %>
-        </h1>
-        <p>
-          <%= description "<b>Do you have a question, a remark or a project to submit to us?</b>".html_safe %>
-          <br><br>
-          Complete this form and we will contact you as soon as possible.
-          <br>
-          You can also contact us directly on contact @ aikku .eu
-        </p>
-        <hr class="mb-6">
-        <div>
-          <%= label_tag :objet, "Object" %>
-          <%= text_field_tag :objet, params[:objet], class:"input input-sm input-bordered w-full", required: true, title: "Please fill in this field" %>
-        </div>
-        <div>
-          <%= label_tag :email, "Email" %>
-          <%= email_field_tag :email, params[:email], class:"input input-sm input-bordered w-full", required: true, title: "Please fill in this field" %>
-        </div>
-        <div>
-          <%= label_tag :contenu, "Message" %>
-          <%= text_area_tag :contenu, params[:contenu], class:"textarea textarea-bordered w-full", rows: 5, required: true, title: "Please fill in this field" %>
-        </div>
-        <%= recaptcha_tags unless %w[localhost 127.0.0.1].include?(request.host) %>
-        <%= submit_tag "Send", class:"btn btn-primary btn-outline", 'data-turbo': false %>
+  <div class="relative text-center w-full min-h-[200px] md:min-h-[300px] text-neutral-content p-10 lg:p-20  bg-cover bg-center"
+     style="background-image: url(<%= asset_path('contact.jpg') %>)">
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative z-10 reveal delay-1 ">
+      <h1 class="pt-6 md:pt-0 text-4xl lg:text-6xl font-black">
+        Get in <span class="text-gradient">touch</span>
+      </h1>
+    </div>
+  </div>
+  <div class="flex flex-col md:flex-row gap-12 p-20 reveal delay-2">
+    <div class=" p-8 flex flex-col flex-1 items-center text-center">
+      <h2 class="font-bold text-2xl text-accent mb-6">
+        A project? A question? Let’s talk.
+      </h2>
+      <p class="text-gray-600 leading-relaxed">
+        Feel free to come by for a coffee or tea at our office,
+        <br>
+         we will be delighted to welcome you at the following address:    
+        <br>
+        <br>
+        Aïkku (SAS)<br>
+        Tour Ariane - La Défense<br>
+        5, Place de la Pyramide<br>
+        92800 Puteaux – France
+      </p>
+      <div class="flex gap-6 mt-6">
+        <%= mail_to "contact@aikku.eu", class:"hover:scale-110 transition" do %>
+          <i class="fa-solid fa-envelope text-2xl"></i>
+        <% end %>
+        <%= link_to "https://www.linkedin.com/company/aikku-sas", target: "_blank", class:"hover:scale-110 transition" do %>
+          <i class="fa-brands fa-linkedin text-2xl"></i>
+        <% end %>
       </div>
     </div>
-  </section>
+    <div class="bg-white flex-1 p-10 rounded-2xl shadow-lg">
+      <h2 class="font-bold text-2xl text-accent mb-6">
+        Send us a message
+      </h2>
+      <%= email_field_tag :email, params[:email], class:"input input-bordered rounded-lg w-full", required: true, placeholder: "Enter a valid email address" %>
+      <%= text_field_tag :structure, params[:structure], class:"input input-bordered rounded-lg w-full mt-4", required: true, placeholder: 'Enter your company name' %>
+      <%= text_area_tag :contenu, params[:contenu], class:"textarea textarea-bordered rounded-lg w-full mt-4", rows: 4, required: true, placeholder: "Your message" %>
+      <div class="flex justify-center">
+        <%= button_tag "Send message",
+          type: "submit",
+          class: "btn text-lg btn-gradient  hover:text-white mt-12 shadow-lg ",
+          'data-turbo': false %>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
 <% end %>

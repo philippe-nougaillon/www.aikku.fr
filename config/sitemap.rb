@@ -11,7 +11,6 @@ SitemapGenerator::Sitemap.create do
   # add aikku_sign_path
 
   add qui_sommes_nous_path
-  # add logiciels_path
   add services_path
   # add nos_clients_path
   add contact_path

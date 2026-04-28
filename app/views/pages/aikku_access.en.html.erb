@@ -1,84 +1,225 @@
-<section class="text-center">
-  <h1 class="font-black text-5xl lg:text-6xl text-accent mb-6 pt-8 italic">
-    <%= title "Aikku ACCESS" %>
+<section class="text-center reveal delay-1 m-14">
+  <h1 class="font-black text-6xl text-secondary mb-16 pt-8 italic">
+    <%= title "Your business data, with you everywhere." %>
   </h1>
-  <h2 class="text-lg xl:text-2xl px-6">
-    <%= description "Your business, online and mobility data" %>
-  </h2>
+    <h3 class="text-lg lg:text-2xl m-24">
+    <span class="font-black">Aïkku ACCESS</span> is a 
+    NO-CODE information management platform
+    that allows you to structure 
+    your business data. You can create custom collections 
+    (clients, interventions, technicians, expenses, 
+    etc.), establish relationships between them to reflect your real processes,
+    and share this information online with your teams for 
+    seamless collaboration.
+    </h3>
+
+ 
 </section>
-<div class="px-8">
-  <div id="carousel" class="carousel min-w-16 sm:w-3/4 mx-auto shadow-lg">
-    <div id="slide1" class="carousel-item relative w-full">
-      <%= image_tag "aikku_access/table.png" %>
+
+
+
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path d="
+      M0,60
+      Q300,0 600,30
+      Q900,60 1200,30
+      L1200,60
+      L0,60
+      Z
+    " fill="#1f1f3d"/>
+  </svg>
+</div>
+<section  class="w-full text-center bg-info text-white p-20">
+  
+  <h2 class="text-secondary font-bold text-xl mb-4">
+    Who is it for and what are the use cases?
+  </h2>
+  <h2 class="text-3xl lg:text-5xl font-black mb-12">
+    Four <span class="text-gradient">key use cases</span>
+  </h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mx-8 mt-16 mb-10 md:mt-16">
+
+    <div class="flex flex-col p-6 bg-white rounded-xl ">
+      <h3 class="text-2xl font-black my-4 text-center text-accent">
+        <i class="fa-solid fa-database fa-lg mr-2"></i>
+        Data management</h3>
+        <p class="text-gray-700 text-center leading-relaxed">
+        Centralize and manage all your field data directly from your smartphone.
+        Photos, PDFs, GPS, and weather data are automatically collected,
+        effortlessly.
+      </p>
     </div>
-    <div id="slide2" class="carousel-item relative w-full">
-      <%= image_tag "aikku_access/calendar.png" %>
+
+    <div class="flex flex-col p-6 bg-white rounded-xl ">
+      <h3 class="text-2xl font-black my-4 text-center text-accent">
+        <i class="fa-solid fa-wrench fa-lg mr-2"></i>
+        Field operations management</h3>
+        <p class="text-gray-700 text-center leading-relaxed">
+        Create and structure your business objects (clients, interventions, technicians, expenses),
+        link them together, and easily share them with your teams.
+      </p>
     </div>
-    <div id="slide3" class="carousel-item relative w-full">
-      <%= image_tag "aikku_access/objets.png" %>
+
+    <div class="flex flex-col p-6 bg-white rounded-xl">
+      <h3 class="text-2xl font-black my-4 text-center text-accent">
+        <i class="fa-regular fa-calendar-days fa-lg mr-2"></i>
+        Project management</h3>
+        <p class="text-gray-700 text-center leading-relaxed">
+        Track your project progress in real time,
+        receive alerts on important changes, and
+        visualize your deadlines through a clear calendar view.
+      </p>
     </div>
-    <div id="slide4" class="carousel-item relative w-full">
-      <%= image_tag "aikku_access/attributs.png" %>
+
+    <div class="flex flex-col p-6 bg-white rounded-xl">
+        <h3 class="text-2xl font-black my-4 text-center text-accent">
+        <i class="fa-solid fa-brain fa-lg mr-2"></i>
+        Integrated AI assistant</h3>
+        <p class="text-gray-700 text-center leading-relaxed">
+        Ask questions directly about your data and get instant, actionable answers.
+        <em>Example: "Generate the next 3 priority interventions."</em>
+        </p>
     </div>
-    <div id="slide5" class="carousel-item relative w-full">
-      <%= image_tag "aikku_access/filtres.png" %>
-    </div>
+
   </div>
-  <div data-controller="carousel-paginate">
-    <div class="flex flex-wrap justify-center w-full gap-2 mt-4">
-      <a href="#slide1" class="btn btn-accent hover:btn-accent btn-xs carousel-page" data-action="click->carousel-paginate#activate">1</a>
-      <a href="#slide2" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">2</a>
-      <a href="#slide3" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">3</a>
-      <a href="#slide4" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">4</a>
-      <a href="#slide5" class="btn btn-primary btn-outline btn-xs carousel-page hover:btn-accent" data-action="click->carousel-paginate#activate">5</a>
-    </div>
+</section>
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path d="
+      M0,0
+      Q300,60 600,30
+      Q900,0 1200,30
+      L1200,0
+      L0,0
+      Z
+    " fill="#1f1f3d"/>
+  </svg>
+</div>
+
+
+<section class="w-full py-24 px-6 lg:px-20 bg-slate-50">
+
+  <div class="text-center mb-16">
+    <h2 class="text-accent font-bold text-xl">
+      CORE FEATURES </h2>
+    <h3 class="text-3xl lg:text-5xl font-black mt-4">
+      One platform, <span class="text-gradient">all your operations</span>
+    </h3>
   </div>
-  <p class="text-xl mt-12">
-    Are you a service company with teams in the field (e.g., construction, customer service, installation, maintenance, etc.) looking for a method to manage interventions or field service management (FSM)?
-    <br>
-    <br>
-    Aïkku ACCESS is a NO-CODE information management tool that allows you to create collections of business objects (e.g., Clients, Interventions, Technicians, Expenses, Projects, etc.), link them together (Clients <==> Interventions <==> Technicians <==> Expenses) and share them online with your collaborators.
-        </p>
-        <p class="mt-5">
-          For more information, please refer to
-          <%= link_to "the user guide", "https://access.aikku.eu/en/a_propos", class: 'link', target: '_blank' %>.
-        </p>
-        <h3 class="apps-title">Learn more</h3>
-        <p>
-          To find out more, please consult us.
-        </p>
-        <h3 class="apps-title">Development</h3>
-        <p>
-          Aïkku ACCESS is developed and maintained by
-          <%= link_to 'AIKKU SAS', root_path, class:'link' %>.
-        </p>
-        <h3 class="apps-title">Support and Services</h3>
-        <p>
-          Do you need a new feature or want to install Aïkku ACCESS?
-          <%= link_to 'Check out our service offerings', '/en/services', class:'link' %>.
-        </p>
-        <section id="contact" class="text-center pt-24">
-          <h2 class="apps-title">Contact us</h2>
-          <p class="text-2xl lg:px-48">
-            Our team is dedicated to providing you with solutions perfectly tailored to your needs, along with personalized support and technical assistance available whenever required.
+
+  <div class="grid lg:grid-cols-2 gap-10 items-center">
+
+    <div class="space-y-8">
+
+      <div class="flex gap-4 rounded-xl p-4 border border-gray/30">
+        <i class="fa-solid fa-list fa-lg text-accent mt-3"></i>
+        <div>
+          <h3 class="text-xl font-black">Object collections</h3>
+          <p class="text-gray-600">
+            Create your own data structures without code:
+            text, numbers, photos, PDFs…
           </p>
-          <div class="flex flex-wrap items-center gap-8 mt-24">
-            <div class="flex flex-col mx-auto mb-12">
-              <%= form_tag(contact_path) do %>
-                <div class="flex flex-col gap-2">
-                  <%= hidden_field_tag :objet, "[Aikku ACCESS] Demonstration request" %>
-                  <%= hidden_field_tag :contenu, "" %>
-                  <div class="form-control">
-                    <label class="input-group">
-                      <span class="text-black">Email</span>
-                      <%= email_field_tag :email, nil, class: 'input input-bordered w-full', required: true %>
-                    </label>
-                  </div>
-                  <%= recaptcha_tags unless Rails.env.development? %>
-                  <button class="btn btn-success sm:text-xl max-w-full" data-turbo="false">Ask for a demonstration</button>
-                </div>
-              <% end %>
-            </div>
-          </div>
-        </section>
+        </div>
       </div>
+
+      <div class="flex gap-4 rounded-xl p-4 border border-gray/30">
+        <i class="fa-solid fa-link fa-lg text-accent mt-3"></i>
+        <div>
+          <h3 class="text-xl font-black">Data relationships</h3>
+          <p class="text-gray-600">
+            Connect your entities: Clients, Interventions,
+            Technicians, and Expenses.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex gap-4 rounded-xl p-4 border border-gray/30">
+        <i class="fa-solid fa-users fa-lg text-accent mt-3"></i>
+        <div>
+          <h3 class="text-xl font-black">Real-time collaboration</h3>
+          <p class="text-gray-600">
+            Share and synchronize your data with your teams,
+            across all devices.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex gap-4 rounded-xl p-4 border border-gray/30">
+        <i class="fa-solid fa-chart-bar fa-lg text-accent mt-3"></i>
+        <div>
+          <h3 class="text-xl font-black">Visualization & analytics</h3>
+          <p class="text-gray-600">
+            Turn your data into clear charts
+            for better decision-making.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex gap-4 rounded-xl p-4 border border-gray/30">
+        <i class="fa-solid fa-location-dot fa-lg text-accent mt-3"></i>
+        <div>
+          <h3 class="text-xl font-black">Automatic field data</h3>
+          <p class="text-gray-600">
+            GPS, weather, and contextual data are automatically collected
+            during interventions.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex gap-4 rounded-xl p-4 border border-gray/30">
+        <i class="fa-regular fa-calendar fa-lg text-accent mt-3"></i>
+        <div>
+          <h3 class="text-xl font-black">Calendar view</h3>
+          <p class="text-gray-600">
+            Plan and track your deadlines with synchronization
+            across Google, Outlook, and Apple.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="carousel" class="w-full carousel min-w-16 sm:w-3/4 mx-auto shadow-lg rounded-xl" data-turbo="false">
+      <div id="slide1" class="carousel-item relative w-full">
+        <%= image_tag "aikku_access/Aikku Access page login.png" %>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide5" class="btn btn-circle btn-primary">❮</a>
+          <a href="#slide2" class="btn btn-circle btn-primary">❯</a>
+        </div>
+      </div> 
+      <div id="slide2" class="carousel-item relative w-full">
+        <%= image_tag "aikku_access/Aikku Access page Objets.png" %>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide1" class="btn btn-circle btn-primary">❮</a>
+          <a href="#slide3" class="btn btn-circle btn-primary">❯</a>
+        </div>
+      </div> 
+      <div id="slide3" class="carousel-item relative w-full">
+        <%= image_tag "aikku_access/Aikku Access page Data.png" %>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide2" class="btn btn-circle btn-primary">❮</a>
+          <a href="#slide4" class="btn btn-circle btn-primary">❯</a>
+        </div>
+      </div>
+      <div id="slide4" class="carousel-item relative w-full">
+        <%= image_tag "aikku_access/Aikku Access page Dashboard.png" %>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide3" class="btn btn-circle btn-primary">❮</a>
+          <a href="#slide5" class="btn btn-circle btn-primary">❯</a>
+        </div>
+      </div>
+      <div id="slide5" class="carousel-item relative w-full">
+        <%= image_tag "aikku_access/Aikku Access page AI.png" %>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide4" class="btn btn-circle btn-primary">❮</a>
+          <a href="#slide1" class="btn btn-circle btn-primary">❯</a>
+        </div>
+      </div>
+    </div>
+</div>
+
+  </div>
+
+</section>

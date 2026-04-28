@@ -1,105 +1,326 @@
-<section>
-  <div class="text-center">
-    <h1 class="font-black text-5xl lg:text-6xl text-accent mb-6 pt-8 italic">
-      <%= title "Transform your ideas into realities" %>
-    </h1>
-    <h2 class="xl:text-2xl text-accent px-10 mb-6">
-      (<%= description "But it all starts with a good discussion!" %>)
+<div>
+  <div class="relative text-center w-full min-h-[200px] md:min-h-[300px] text-neutral-content p-10 lg:p-20 bg-cover bg-center"
+     style="background-image: url(<%= asset_path('backgroundservices.jpg') %>)">
+    <div class="absolute inset-0 bg-black/70"></div>
+    <div class="relative z-10 reveal delay-1">
+      <h1 class="text-4xl lg:text-6xl font-black">
+        <%= title 'Your ideas deserve to become <span class="text-gradient">reality</span>'.html_safe %>
+      </h1>
+      <p class="text-xl p-6 md:text-center lg:text-2xl text-primary-content font-black">
+        <%= description "and it all starts with a conversation!" %>
+      </p>
+    </div>
+  </div>
+
+  <section class="py-16 px-8 md:p-20 reveal delay-2">
+    <h2 class="text-4xl lg:text-5xl font-black text-accent text-center mb-16">
+      Our services
     </h2>
+
+    <div class="flex flex-col md:flex-row justify-center mx-8 md:mx-20 gap-8 items-start">
+
+      <div class="flex-1 w-full md:text-center">
+        <div class="flex flex-col items-center">
+          <h3 class="text-justify font-black text-accent text-2xl min-h-[4rem] flex items-center justify-center gap-2">
+            <i class="fa-brands fa-sketch fa-lg text-accent"></i>
+            Development
+          </h3>
+          <p class="mt-4 text-justify md:text-center text-gray-700">
+            We have been developing Ruby on Rails applications since 2008 and are gradually adopting React for more dynamic interfaces.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex-1 w-full md:text-center">
+        <div class="flex flex-col items-center">
+          <h3 class="text-justify font-black text-accent text-2xl min-h-[4rem] flex items-center justify-center gap-2">
+            <i class="fa-solid fa-wrench fa-lg text-accent"></i>
+            Maintenance
+          </h3>
+          <p class="mt-4 text-justify md:text-center text-gray-700">
+            We ensure the maintenance of your Rails application by providing regular updates and bug fixes.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex-1 w-full md:text-center">
+        <div class="flex flex-col items-center">
+          <h3 class="text-justify font-black text-accent text-2xl min-h-[4rem] flex items-center justify-center gap-2">
+            <i class="fa-solid fa-gears fa-lg text-accent"></i>
+            Integration
+          </h3>
+          <p class="mt-4 text-justify md:text-center text-gray-700">
+            Need to automate or connect different systems? We support you in integrating your tools.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex-1 w-full md:text-center">
+        <div class="flex flex-col items-center">
+          <h3 class="text-justify font-black text-accent text-2xl min-h-[4rem] flex items-center justify-center gap-2">
+            <i class="fa-solid fa-desktop fa-lg text-accent"></i>
+            UX/UI Design          
+          </h3>
+          <p class="mt-4 text-justify md:text-center text-gray-700">
+            We design intuitive user experiences and create functional prototypes tailored to your needs.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="footer-wave">
+    <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+      <path d="
+      M0,60
+      Q300,0 600,30
+      Q900,60 1200,30
+      L1200,60
+      L0,60
+      Z
+    " fill="#1f1f3d"/>
+    </svg>
   </div>
 
-  <div class="flex flex-wrap justify-center">
-    <div class="w-full sm:w-1/2 lg:w-1/4 mt-20 text-center sm:px-3">
-      <i class="fa-brands fa-sketch fa-2xl text-accent"></i>
-      <h3 class="font-black text-2xl mt-7">Development</h3>
-      <p class="mt-7">We have been developing on Ruby on Rails since 2008. We would be delighted to help you.</p>
+  <section id="secteurs" class="w-full px-10 py-20 md:p-20 bg-info">
+    <h2 class="text-3xl lg:text-5xl text-center text-white font-black mb-12">
+      Our tools and <span class="text-gradient">areas of expertise</span>
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-16">
+
+      <div class="bg-white h-full border border-gray-100 rounded-xl p-6 flex flex-col gap-4">
+        <div class="flex flex-col items-center md:mx-4">
+          <%= image_tag 'logos/rails_logo.png', class: 'h-50 w-50', alt: 'Ruby on Rails Logo' %>
+          <h3 class="text-center font-black text-accent text-2xl mt-2 mb-4">Ruby on Rails</h3>
+        </div>
+        <p class="px-4">
+          Ruby on Rails (RoR) is an open-source web framework based on Ruby, known for its speed of development and reliability.
+          <br><br>
+          Used by major companies such as Airbnb, Shopify, GitHub, Twitch, SoundCloud, Coinbase, and Heroku.
+        </p>
+      </div>
+
+      <div class="bg-white h-full border border-gray-100 rounded-xl p-6 flex flex-col gap-4">
+        <div class="flex flex-col items-center md:mx-4">
+          <%= image_tag 'logos/agile.svg', class: 'h-50 w-50', alt: 'Agile methodology symbol' %>
+          <h3 class="font-black text-accent text-center text-2xl mt-2 mb-4">Agile</h3>
+        </div>
+        <p class="px-4">
+          This approach is a flexible and iterative project management method focused on collaboration and continuous improvement.
+          <br><br>
+          It helps reduce development time, optimize costs, and quickly adapt to changing requirements.
+        </p>
+      </div>
+
+      <div class="bg-white h-full border border-gray-100 rounded-xl p-6 flex flex-col gap-4">
+        <div class="flex flex-col items-center md:mx-4">
+          <%= image_tag "logos/mistral.png", class: 'h-50 w-50', alt: 'Mistral' %>
+          <h3 class="font-black text-accent text-center text-2xl mt-2 mb-4">AI and Machine Learning</h3>
+        </div>
+        <p class="px-4">
+          We integrate AI solutions tailored to your needs, whether embedded in your platform or via external services.
+          <br><br>
+          We work with advanced models such as Mistral and Gemini to build high-performance and innovative solutions.
+        </p>
+      </div>
+
     </div>
-    <div class="w-full sm:w-1/2 lg:w-1/4 mt-20 text-center sm:px-3">
-      <i class="fa-solid fa-desktop fa-2xl text-accent"></i>
-      <h3 class="font-black text-2xl mt-7">UX/UI Design</h3>
-      <p class="mt-7">We design reflected user experiences and can build functional prototypes.</p>
-    </div>
-    <div class="w-full sm:w-1/2 lg:w-1/4 mt-20 text-center sm:px-3">
-      <i class="fa-solid fa-wrench fa-2xl text-accent"></i>
-      <h3 class="font-black text-2xl mt-7">Maintenance</h3>
-      <p class="mt-7">We will keep your rails application up to date with the current features and bug corrections.</p>
-    </div>
-    <div class="w-full sm:w-1/2 lg:w-1/4 mt-20 text-center sm:px-3">
-      <i class="fa-solid fa-gears fa-2xl text-accent"></i>
-      <h3 class="font-black text-2xl mt-7">Integration</h3>
-      <p class="mt-7">Need to automate something, an exchange between two systems? We can probably help you!</p>
-    </div>
+  </section>
+
+  <div class="footer-wave">
+    <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+      <path d="
+      M0,0
+      Q300,60 600,30
+      Q900,0 1200,30
+      L1200,0
+      L0,0
+      Z
+    " fill="#1f1f3d"/>
+    </svg>
   </div>
 
-  <h2 class="font-black text-4xl text-accent mx-auto text-center mt-20">
-    Our tailor-made software development process
-  </h2>
+  <section class="px-6 md:px-20 pb-20 pt-10">
+    <h2 class="text-accent text-left mb-6 font-extrabold text-2xl uppercase tracking-wider">
+      They trust us
+    </h2>
 
-  <p class="mt-10 mx-auto xl:text-2xl text-center">
-    We want to be part of your vision and we will guide you throughout the development course.
-  </p>
+    <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
 
-  <div class="flex flex-wrap text-center sm:text-left">
-    <div class="w-full sm:w-1/2 mt-16 sm:px-8">
-      <i class="fa-solid fa-magnifying-glass fa-2xl text-accent"></i>
-      <h3 class="font-black text-2xl mt-7">
-        1. Discover
-      </h3>
-      <p class="mt-7">
-        We start by analyzing your idea and identifying your need. We assess the linked business process and the software environment in order to create the minimum viable product (MVP) which will serve as a basis for the development of your solution.
-      </p>
+      <div id="confiance" class="flex-1">
+        <div class="bg-white shadow-xl rounded-2xl p-8 flex flex-col border border-gray-100">
+          <i class="fa-solid fa-quote-left text-2xl mb-4 text-left text-accent"></i>
+          <p class="text-gray-700 text-justify leading-relaxed text-sm md:text-base">
+            Philippe Nougaillon provides sustainable and reliable solutions and prioritizes simplicity in his development approach.
+            A strong advocate of frugal innovation, he delivers original, robust, and well-adapted solutions.
+            He is attentive and highly pedagogical in agile methodologies.
+          </p>
+          <div class="mt-8 border-t pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div>
+              <%= link_to "https://www.linkedin.com/in/philippe-eynaud-3a3ab835/", class: "flex items-center gap-1.5 font-medium text-accent " do %>
+                <i class="fa-brands fa-linkedin"></i> Philippe EYNAUD
+              <% end %>
+              <p class="text-xs text-gray-500 mt-1">
+                Professor of Management Sciences at IAE Paris.
+                <br>
+                Author of
+                <%= link_to "'The Management of Information Systems in Its Complexity'", 
+                          "https://www.amazon.fr/management-syst%C3%A8me-dinformation-dans-complexit%C3%A9/dp/1784055026/ref=sr_1_5?qid=1687595735", 
+                          class: "link italic no-underline", target: '_blank' %>. (2018) ISTE Editions.
+              </p>
+            </div>
+            <%= image_tag "projets/planning iae-paris/Logo_iae.png", class: "h-10 w-auto opacity-80", alt: "IAE Paris Logo" %>
+          </div>
+        </div>
+      </div>
+
+      <div id="confiance2" class="flex-1">
+        <div class="bg-white shadow-xl rounded-2xl p-8 flex flex-col border border-gray-100">
+          <i class="fa-solid fa-quote-left text-2xl mb-4 text-left text-accent"></i>
+          <p class="text-gray-700 text-justify leading-relaxed text-sm md:text-base">
+            I had the pleasure of working with the Aïkku team on the deployment of the Planning-IAE tool.
+            What a great experience! The Aïkku team embodies the "user orientation" I teach my students.
+            Attentive and collaborative, they effectively translate user needs into concrete solutions.
+            A smooth and efficient collaboration that I highly recommend.
+          </p>
+          <div class="mt-8 border-t pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div>
+              <%= link_to "https://www.linkedin.com/in/marieevelaporte/", class: "flex items-center gap-1.5 font-medium text-accent " do %>
+                <i class="fa-brands fa-linkedin"></i> Marie-Eve LAPORTE
+              <% end %>
+              <p class="text-xs text-gray-500 mt-1">
+                Professor, Innovation Management & Future of Healthcare
+              </p>
+            </div>
+            <%= image_tag "projets/planning iae-paris/Logo_iae.png", class: "h-10 w-auto opacity-80", alt: "IAE Paris Logo" %>
+          </div>
+        </div>
+      </div>
+
     </div>
-    <div class="w-full sm:w-1/2 mt-16 sm:px-8">
-      <i class="fa-solid fa-object-group fa-2xl text-accent"></i>
-      <h3 class="font-black text-2xl mt-7">
-        2. MVP (Minimum Viable Product)
-      </h3>
-      <p class="mt-7">
-        From our platform, we create a MVP which will be the basis of step 3
-      </p>
-    </div>
-    <div class="w-full sm:w-1/2 mt-16 sm:px-8">
-      <i class="fa-solid fa-code fa-2xl text-accent"></i>
-      <h3 class="font-black text-2xl mt-7">
-        3. Build
-      </h3>
-      <p class="mt-7">
-        This is the agile phase. We start with a workshop on the MVP that will allow us to adapt it and refine it with user feedback. We will perform between 3 and 5 cycles to cover all the features.
-      </p>
-    </div>
-    <div class="w-full sm:w-1/2 mt-16 sm:px-8">
-      <i class="fa-solid fa-wand-magic-sparkles fa-2xl text-accent"></i>
-      <h3 class="font-black text-2xl mt-7">
-        4. Deploy (Go Live)
-      </h3>
-      <p class="mt-7">
-        Prepare the launch (users and administrators), inject data and documents from legacy systems and D -Day: opening and support to end users.
-      </p>
-    </div>
-    <div class="w-full sm:w-1/2 mt-16 sm:px-8">
-      <i class="fa-solid fa-rocket fa-2xl text-accent"></i>
-      <h3 class="font-black text-2xl mt-7">
-        5. Maintain the system and make it evolve
-      </h3>
-      <p class="mt-7">
-        We support you during the production phase helping administrators and users to adopt as fast as possible. We are also here to develop the system according to new needs for a continuous improvement.
-      </p>
-    </div>
-    <div class="w-full sm:w-1/2 mt-16 sm:px-8">
-      <i class="fa-solid fa-chart-line fa-2xl text-accent"></i>
-      <h3 class="font-black text-2xl mt-7">
-        6. Scaling
-      </h3>
-      <p class="mt-7">
-        As far as your adoption is growing we will be there to collect user comments in order to implement new features. We will manage to your infrastructure and provide you a new release annually.
-      </p>
-    </div>
+  </section>
+
+<section class="p-0 mb-20 ">
+  <div class="text-center mx-auto mb-20 px-4">
+    <h2 class="font-black text-4xl lg:text-5xl text-accent mt-20">
+      Our development process
+    </h2>
+    <p class="mt-6 text-gray-600 text-lg">
+      We support you at every stage, from idea to deployment,
+      <br>
+      with a user-centered approach.
+    </p>
   </div>
 
-  <h2 class="font-black text-4xl text-accent mx-auto text-center mt-20">
-    AI
-  </h2>
-  <p class="mt-10 mx-auto xl:text-2xl text-center">
-    Thanks to our platform, we are able to integrate the AI you need, whether it is to integrate it into a Business process within the platform or to use it as a Middleware for AI.
-  </p>
+  <div class="relative max-w-5xl mx-auto px-4">
+    <div class="absolute left-4 md:left-1/2 top-0 h-full w-1 bg-gray-200"></div>
+
+    <div class="relative flex flex-col md:flex-row items-start md:items-center mb-8">
+      <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center font-bold shadow">
+        1
+      </div>
+      <div class="ml-16 md:ml-0 md:w-1/2 md:pr-12">
+        <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition">
+          <div class="flex flex-row items-center gap-4 text-accent text-xl">
+            <i class="fa-solid fa-magnifying-glass mb-4"></i>
+            <h3 class="font-bold text-xl mb-3">Discover</h3>
+          </div>
+          <p class="text-gray-600 text-justify">
+            Analysis of your needs and environment, and definition of a tailored MVP for your business.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative flex flex-col md:flex-row items-start md:items-center mb-8">
+      <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center font-bold shadow">
+        2
+      </div>
+      <div class="ml-16 md:ml-auto md:w-1/2 md:pl-12">
+        <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition">
+          <div class="flex flex-row items-center gap-4 text-accent text-xl">
+            <i class="fa-solid fa-object-group mb-4"></i>
+            <h3 class="font-bold text-xl mb-3">MVP</h3>
+          </div>
+          <p class="text-gray-600 text-justify">
+            Rapid creation of a first functional version to validate the foundations of the project.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative flex flex-col md:flex-row items-start md:items-center mb-8">
+      <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center font-bold shadow">
+        3
+      </div>
+      <div class="ml-16 md:ml-0 md:w-1/2 md:pr-12">
+        <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition">
+          <div class="flex flex-row items-center gap-4 text-accent text-xl">
+            <i class="fa-solid fa-code mb-4"></i>
+            <h3 class="font-bold text-xl mb-3">Build</h3>
+          </div>
+          <p class="text-gray-600 text-justify">
+            Agile cycles, user testing, and continuous improvement to refine the solution.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative flex flex-col md:flex-row items-start md:items-center mb-8">
+      <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center font-bold shadow">
+        4
+      </div>
+      <div class="ml-16 md:ml-auto md:w-1/2 md:pl-12">
+        <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition">
+          <div class="flex flex-row items-center gap-4 text-accent text-xl">
+            <i class="fa-solid fa-wand-magic-sparkles mb-4"></i>
+            <h3 class="font-bold text-xl mb-3">Deploy</h3>
+          </div>
+          <p class="text-gray-600 text-justify">
+            Production launch, team training, and onboarding support.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative flex flex-col md:flex-row items-start md:items-center mb-16">
+      <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center font-bold shadow">
+        5
+      </div>
+      <div class="ml-16 md:ml-0 md:w-1/2 md:pr-12">
+        <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition">
+          <div class="flex flex-row items-center gap-4 text-accent text-xl">
+            <i class="fa-solid fa-rocket mb-4"></i>
+            <h3 class="font-bold text-xl mb-3">Maintain & evolve</h3>
+          </div>
+          <p class="text-gray-600 text-justify">
+            Support, continuous improvement, and adaptation to new needs.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative flex flex-col md:flex-row items-start md:items-center">
+      <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center font-bold shadow">
+        6
+      </div>
+      <div class="ml-16 md:ml-auto md:w-1/2 md:pl-12">
+        <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition">
+          <div class="flex flex-row items-center gap-4 text-accent text-xl">
+            <i class="fa-solid fa-chart-line mb-4"></i>
+            <h3 class="font-bold text-xl mb-3">Scale up</h3>
+          </div>
+          <p class="text-gray-600 text-justify">
+            Feature expansion, scaling, and performance optimization.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </section>
+
+
+</div>
