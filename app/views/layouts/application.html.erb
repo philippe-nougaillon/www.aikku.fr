@@ -5,29 +5,25 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= render 'partials/favicon' %>
     <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
     <%= render 'partials/gtag' %>
-    <script type="text/javascript"> (function() { 
-      var css = document.createElement('link'); 
-      css.href = 'https://use.fontawesome.com/releases/v6.1.2/css/all.css'; 
-      css.rel = 'stylesheet'; 
-      css.type = 'text/css'; 
-      document.getElementsByTagName('head')[0].appendChild(css); 
-      })(); 
+    <script type="text/javascript">
+      (function() {
+           var css = document.createElement('link');
+           css.href = 'https://use.fontawesome.com/releases/v6.7.2/css/all.css';
+           css.rel = 'stylesheet';
+           css.type = 'text/css';
+           document.getElementsByTagName('head')[0].appendChild(css);
+           })();
     </script>
-
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
   </head>
-
   <body class="flex flex-col justify-between min-h-screen">
     <%= render partial: "partials/navbar" %>
     <%= render partial: "partials/notification" %>
