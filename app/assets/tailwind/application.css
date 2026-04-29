@@ -137,11 +137,11 @@
   display: block;
   animation: waveMove 6s ease-in-out infinite;
   animation-direction: alternate;
-
 }
 .footer-wave path {
   shape-rendering: geometricPrecision;
 }
+
 
 
 }
