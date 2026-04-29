@@ -1,8 +1,8 @@
-<section class="text-center reveal delay-1 md:m-10">
+<section class="text-center reveal delay-1 m-0 md:m-20">
   <h1 class="font-black text-5xl md:text-6xl text-secondary mb-12 pt-8 italic">
     <%= title "Gérez vos cours et vos salles. Sans complications" %>
   </h1>
-  <h3 class="text-lg lg:text-2xl">
+  <h3 class="text-lg lg:text-2xl p-0 md:p-12">
     Développé en collaboration avec IAE Paris-Sorbonne,
     <span class="font-black">Aïkku PLANN</span>
     est un logiciel de planification d'emplois du temps et de gestion de salles de cours.
@@ -10,7 +10,7 @@
   </h3>
 </section>
 <section>
-  <div class="flex flex-col md:flex-row border-t border-b border-gray-300 reveal delay-2">
+  <div class="flex flex-col md:flex-row border-t border-b border-gray-300 reveal delay-2 p-0 md:p-10">
     <div class="flex-1 text-center py-7 px-4 border-b md:border-b-0 md:border-r border-gray-300">
       <p class="text-4xl font-medium text-accent">500+</p>
       <p class="text-sm text-gray-400 mt-1">Formations gérées</p>
@@ -34,7 +34,7 @@
     <path d="M0,60 Q300,0 600,30 Q900,60 1200,30 L1200,60 L0,60 Z" fill="#1f1f3d"/>
   </svg>
 </div>
-<section id="fonctionnalités" class="w-full text-center bg-info text-white p-20">
+<section id="fonctionnalités" class="w-full text-center bg-info text-white p-10 md:p-20">
   <h2 class="text-4xl lg:text-5xl font-black mb-12">
     Tout ce dont vous avez besoin <span class="text-gradient">au même endroit</span>
   </h2>
@@ -111,7 +111,7 @@
       <path d="M0,0 Q300,60 600,30 Q900,0 1200,30 L1200,0 L0,0 Z" fill="#1f1f3d"/>
     </svg>
   </div>
-  <section id="responsive" class="flex flex-col p-20 md:flex-row items-center gap-16">
+  <section id="responsive" class="flex flex-col  p-10 md:p-20 md:flex-row items-center gap-16">
     <div class="flex-1">
       <%= image_tag "misc/planning-responsive.png", class:"shadow rounded-2xl", alt: "Logiciel sur différents écrans" %>
     </div>
@@ -157,14 +157,19 @@
                class: "flex items-center gap-1.5 font-medium text-accent " do %>
                 <i class="fa-brands fa-linkedin"></i> Philippe EYNAUD
               <% end %>
-              <p class="text-xs text-gray-500 mt-1">
-                Professeur en sciences de gestion à l'IAE de Paris.
-                <br>
-                Auteur de
-                <%= link_to "'Le management du système d’information dans sa complexité'", 
+             <p class="text-xs text-gray-500 mt-1">
+            Professeur en sciences de gestion à l'IAE de Paris, Université Paris 1 Panthéon-Sorbonne
+            <br>
+            Auteur de
+            <%= link_to "'Le management du système d’information dans sa complexité'", 
                           "https://www.amazon.fr/management-syst%C3%A8me-dinformation-dans-complexit%C3%A9/dp/1784055026/ref=sr_1_5?qid=1687595735", 
                           class: "link italic no-underline", target: '_blank' %>. (2018) ISTE Editions.  
-              </p>
+            <br>
+            Auteur de 
+            <%= link_to "'Dictionnaire d'une autre gestion'", 
+                      "https://www.editions-eres.com/ouvrage/5545/dictionnaire-dune-autre-gestion", 
+                      class: "italic link no-underline", target: '_blank' %>, (2026), érés Editions.  
+          </p>
             </div>
             <%= image_tag "projets/planning iae-paris/Logo_iae.png", class: "h-10 w-auto opacity-80", alt: "Logo IAE PARIS" %>
           </div>
@@ -213,6 +218,7 @@
     <path d="M0,60 Q300,0 600,30 Q900,60 1200,30 L1200,60 L0,60 Z" fill="#1f1f3d"/>
   </svg>
 </div>
+
 <section class="text-center bg-info text-white px-8 py-16 w-full ">
   <h2 class="text-3xl lg:text-5xl font-black mb-6">
     Envie de voir <span class="text-gradient">Aïkku PLANN</span> en action ?
