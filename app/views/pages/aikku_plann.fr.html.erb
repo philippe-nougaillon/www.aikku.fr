@@ -106,9 +106,17 @@
       </div>
     </div>
   </section>
-  <div class="footer-wave">
-    <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
-      <path d="M0,0 Q300,60 600,30 Q900,0 1200,30 L1200,0 L0,0 Z" fill="#1f1f3d"/>
+  <div class="footer-wave" style=" margin-bottom: -1px;">
+    <svg viewBox="0 0 1200 60" preserveAspectRatio="none" 
+       style="width: 200%;">
+      <path d="
+      M0,60
+      Q300,0 600,30
+      Q900,60 1200,30
+      L1200,60
+      L0,60
+      Z
+    " fill="#1f1f3d"/>
     </svg>
   </div>
   <section id="responsive" class="flex flex-col  p-10 md:p-20 md:flex-row items-center gap-16">
@@ -157,19 +165,19 @@
                class: "flex items-center gap-1.5 font-medium text-accent " do %>
                 <i class="fa-brands fa-linkedin"></i> Philippe EYNAUD
               <% end %>
-             <p class="text-xs text-gray-500 mt-1">
-            Professeur en sciences de gestion à l'IAE de Paris, Université Paris 1 Panthéon-Sorbonne
-            <br>
-            Auteur de
-            <%= link_to "'Le management du système d’information dans sa complexité'", 
+              <p class="text-xs text-gray-500 mt-1">
+                Professeur en sciences de gestion à l'IAE de Paris, Université Paris 1 Panthéon-Sorbonne
+                <br>
+                Auteur de
+                <%= link_to "'Le management du système d’information dans sa complexité'", 
                           "https://www.amazon.fr/management-syst%C3%A8me-dinformation-dans-complexit%C3%A9/dp/1784055026/ref=sr_1_5?qid=1687595735", 
                           class: "link italic no-underline", target: '_blank' %>. (2018) ISTE Editions.  
-            <br>
-            Auteur de 
-            <%= link_to "'Dictionnaire d'une autre gestion'", 
+                <br>
+                Auteur de 
+                <%= link_to "'Dictionnaire d'une autre gestion'", 
                       "https://www.editions-eres.com/ouvrage/5545/dictionnaire-dune-autre-gestion", 
                       class: "italic link no-underline", target: '_blank' %>, (2026), érés Editions.  
-          </p>
+              </p>
             </div>
             <%= image_tag "projets/planning iae-paris/Logo_iae.png", class: "h-10 w-auto opacity-80", alt: "Logo IAE PARIS" %>
           </div>
@@ -218,7 +226,6 @@
     <path d="M0,60 Q300,0 600,30 Q900,60 1200,30 L1200,60 L0,60 Z" fill="#1f1f3d"/>
   </svg>
 </div>
-
 <section class="text-center bg-info text-white px-8 py-16 w-full ">
   <h2 class="text-3xl lg:text-5xl font-black mb-6">
     Envie de voir <span class="text-gradient">Aïkku PLANN</span> en action ?

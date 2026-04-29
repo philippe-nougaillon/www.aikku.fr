@@ -1,63 +1,57 @@
-
-<section id="mention_légales_content">
-  <h1 class="font-black text-5xl lg:text-6xl text-accent mb-6 pt-8 italic">
-    <%= title "Mentions légales" %> 
-  </h1>
-  <h2 class="text-xl font-black mt-8 mb-4">
-    1. Site editor
-  </h2>
-  
-  <p class="mb-4">
-    <b><%= @sitename %></b>
-
-    <br><br>
-    Director of publication: Philippe Nougaillon<br>
-    <br>
-
-    Headquarters:
-    <br><br>
-    AÏKKU SAS
-    <br>
-    Tour CB21/LA DÉFENSE 
-    <br>
-    16 PLACE DE L'IRIS
-    <br>
-    92400 COURBEVOIE
-    <br>
-    FRANCE
-    <br><br>
-
-    SIREN : 934 780 735 R.C.S. Nanterre
-    <br><br>
-    
-    Contact : <%= mail_to "contact@aikku.eu", class:"link" %>
-  </p>
-
-  <h2 class="text-xl font-black mt-8 mb-4">
-    2. Design and development
-  </h2>
-  <p class="mb-4">
-    Creation of the site in 2024
-    <br>
-    This site was designed and developed by ourselves in Ruby on Rails.
-  </p>
-
-  <h2 class="text-xl font-black mt-8 mb-4">
-    3. Hosting
-  </h2>
-  <p class="mb-4">
-    <strong>GANDI SAS</strong>
-    <br>
-    63-65 boulevard Masséna
-    <br>
-    75013 Paris
-    <br>
-    FRANCE
-    <br><br>
-    Contact : <%= link_to "gandi.net", "https://www.gandi.net/fr", target: '_blank', class:'link' %>
-  </p>
-
-  <h2 class="text-xl font-black mt-8 mb-4">
-    2025 © <%= @sitename %> - All rights reserved
-  </h2>
+<section id="mention_légales_content" class="px-6 md:px-20 py-16">
+  <div class="max-w-5xl mx-auto space-y-12">
+    <h1 class="font-black text-5xl lg:text-6xl text-accent italic">
+      <%= title "Legal Notice" %>
+    </h1>
+    <p class="text-lg md:text-xl text-slate-600 leading-relaxed">
+      Important information about the publisher, development and hosting of the Aïkku website.
+    </p>
+    <div class="grid gap-8">
+      <article class="rounded-[2rem] border border-base-200 bg-base-100 p-8 shadow-sm">
+        <h2 class="text-2xl lg:text-3xl font-black text-accent mb-4">
+          1. Publisher
+        </h2>
+        <div class="space-y-4 text-gray-700 leading-relaxed">
+          <p class="font-semibold text-lg text-slate-900"><%= @sitename %></p>
+          <address class="not-italic space-y-2">
+            <p>Director of publication: Philippe Nougaillon</p>
+            <p>
+              Aïkku SAS<br>
+              Tour Ariane - La Défense<br>
+              5 Place de la Pyramide<br>
+              92800 Puteaux<br>
+              France
+            </p>
+            <p>SIREN: 934 780 735 R.C.S. Nanterre</p>
+            <p>Contact: <%= mail_to "contact@aikku.eu", class: "link" %></p>
+          </address>
+        </div>
+      </article>
+      <article class="rounded-[2rem] border border-base-200 bg-base-100 p-8 shadow-sm">
+        <h2 class="text-2xl lg:text-3xl font-black text-accent mb-4">
+          2. Design & development
+        </h2>
+        <p class="text-gray-700 leading-relaxed">
+          This website was created in 2024. It was designed and developed internally by Aïkku using Ruby on Rails.
+        </p>
+      </article>
+      <article class="rounded-[2rem] border border-base-200 bg-base-100 p-8 shadow-sm">
+        <h2 class="text-2xl lg:text-3xl font-black text-accent mb-4">
+          3. Hosting
+        </h2>
+        <div class="space-y-3 text-gray-700 leading-relaxed">
+          <p>
+            <strong>OVH Cloud</strong><br>
+            2 rue Kellermann,<br>
+            59100 Roubaix <br>
+            France
+          </p>
+          <p>
+            Contact: <%= link_to "ovh.com", "https://www.ovh.com/fr/", target: '_blank', class: 'link' %>
+          </p>
+        </div>
+      </article>
+    </div>
+    <p class="font-bold">2026 © <%= @sitename %> – All rights reserved.</p>
+  </div>
 </section>
