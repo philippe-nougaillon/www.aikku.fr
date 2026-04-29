@@ -1,6 +1,6 @@
 @import 'tailwindcss';
 
-@plugin "./daisyui.js"{
+@plugin "./daisyui.js" {
   themes: lofi --default;
 }
 @plugin "./daisyui-theme.js" {
@@ -43,30 +43,48 @@
 
 @layer components {
   input[required], select[required] {
-    @apply border-red-400;
+    border-color: #f87171;
     &:valid{
-      @apply border-green-400;
+      border-color: #22c55e;
     }
   }
 
   h2.apps-title {
-    @apply !text-4xl !font-black my-4
+    font-size: 2.25rem !important;
+    line-height: 2.5rem !important;
+    font-weight: 900 !important;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
   }
 
   h3.apps-title {
-    @apply !text-2xl !font-black my-4 text-accent
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
+    font-weight: 900 !important;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
   }
 
   #guide_planning ul {
-    @apply pl-4
+    padding: 40px 0px;
   }
 
   .section {
-    @apply px-4 py-8 lg:p-24
+    main section {
+      padding-left: 6rem;
+      padding-right: 6rem;
+    }
   }
 
   main section {
-    @apply px-4 py-8 lg:px-24
+    padding: 2rem 1rem;
+  }
+
+  @media (min-width: 1024px) {
+    main section {
+      padding-left: 6rem;
+      padding-right: 6rem;
+    }
   }
 
 @keyframes reveal {
