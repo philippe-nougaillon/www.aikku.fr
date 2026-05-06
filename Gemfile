@@ -64,7 +64,7 @@ gem "rspec-rails"
 # Flexible authentication solution for Rails with Warden.
 gem "devise"
 
-
+gem "image_processing", "~> 1.2"
 
 # A tagging plugin for Rails applications that allows for custom tagging along dynamic contexts.
 gem "acts-as-taggable-on"
