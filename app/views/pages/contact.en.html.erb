@@ -1,17 +1,20 @@
 <%= form_tag do %>
-  <div class="relative text-center w-full min-h-[200px] md:min-h-[300px] text-neutral-content p-10 lg:p-20  bg-cover bg-center"
-     style="background-image: url(<%= asset_path('contact.jpg') %>)">
+  <div class="relative text-center w-full min-h-[200px] md:min-h-[300px] text-neutral-content p-10 lg:p-30  bg-cover bg-center"
+     style="background-image: url(<%= asset_path('background/contact.jpg') %>)">
     <div class="absolute inset-0 bg-black/50"></div>
     <div class="relative z-10 reveal delay-1 ">
       <h1 class="pt-6 md:pt-0 text-4xl lg:text-6xl font-black">
         Get in <span class="text-gradient">touch</span>
       </h1>
+          <p class="text-xl p-8 hidden md:block md:text-center lg:text-2xl text-primary-content font-black">
+<br>
+</p>
     </div>
   </div>
   <div class="flex flex-col md:flex-row gap-12 p-4 md:p-20 reveal delay-2">
     <div class=" p-8 flex flex-col flex-1 items-center text-center">
       <h2 class="font-bold text-2xl text-accent mb-6">
-        A project? A question? Let’s talk.
+         A project? A question? Let’s talk.
       </h2>
       <p class="text-gray-600 leading-relaxed">
         Feel free to come by for a coffee or tea at our office,

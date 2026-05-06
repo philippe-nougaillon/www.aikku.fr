@@ -1,0 +1,50 @@
+{
+  "name": "tailwind-animations",
+  "version": "1.0.1",
+  "description": "Tailwind CSS plugin to add animations to your website",
+  "style": "./src/index.css",
+  "exports": {
+    ".": "./src/index.css",
+    "./index.css": "./src/index.css"
+  },
+  "type": "module",
+  "keywords": [
+    "tailwind",
+    "css",
+    "animations",
+    "plugin"
+  ],
+  "author": "Miguel Ángel Durán (@midudev) & su maravillosa comunidad",
+  "license": "MIT",
+  "peerDependencies": {
+    "tailwindcss": "^4.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.1.18",
+    "@csstools/postcss-minify": "2.0.5",
+    "eslint": "9.39.2",
+    "neostandard": "0.12.2",
+    "postcss": "8.5.6",
+    "tailwindcss": "4.1.18",
+    "vitest": "4.0.16",
+    "@typescript-eslint/parser": "8.52.0",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-astro": "1.5.0",
+    "eslint-plugin-jsx-a11y": "6.10.2",
+    "prettier": "3.7.4",
+    "prettier-config-standard": "7.0.0",
+    "prettier-plugin-astro": "0.14.1",
+    "prettier-plugin-tailwindcss": "0.7.2"
+  },
+  "scripts": {
+    "lint": "eslint ./src",
+    "lint:fix": "eslint --fix ./src",
+    "test": "vitest",
+    "test:ci": "vitest run",
+    "sync:scoped": "node ./scripts/sync-scoped-package.mjs",
+    "publish:official": "pnpm publish --access public --no-git-checks",
+    "publish:scoped": "pnpm --dir ./packages/scoped publish --access public --no-git-checks",
+    "deprecate:scoped": "node ./scripts/deprecate-scoped.mjs",
+    "publish:both": "node ./scripts/publish-both.mjs"
+  }
+}

@@ -1,21 +1,20 @@
 <%
   set_meta_tags(
-    title: "Welcome"
+    title: "Bienvenue"
   )
 %>
 <div class="relative text-center w-full min-h-[200px] md:min-h-[300px] text-neutral-content p-10 lg:p-30  bg-cover bg-center"
-       style="background-image: url(<%= asset_path('background.webp') %>)">
+     style="background-image: url(<%= asset_path('background/background.webp') %>)">
   <div class="absolute inset-0 bg-black/50"></div>
   <div class="relative z-10 reveal delay-1 ">
     <h1 class="pt-6 md:pt-0 text-4xl lg:text-6xl font-black">
-     Digital <span class="text-gradient">solutions</span> serving your needs
+      Digital <span class="text-gradient">solutions</span> serving your needs
     </h1>
-    <p class="text-xl p-6 hidden md:block md:text-center lg:text-2xl text-primary-content font-black">
+    <p class="text-xl p-8 hidden md:block md:text-center lg:text-2xl text-primary-content font-black">
       AÏKKU translates customer needs into simple, robust, and tailored software solutions
     </p>
   </div>
 </div>
-
 <section class="w-full text-secondary-content py-20 px-10 md:p-20 text-justify reveal delay-2">
   <h2 class="text-3xl lg:text-5xl text-center font-black mb-12">
     Our motto : <span class="text-gradient-reverse">AI for You</span>
@@ -34,7 +33,6 @@
   class: 'btn text-lg lg:btn-sm btn-gradient hover:text-white! mt-12 shadow-lg h-min transition-transform hover:scale-105' %>
   </div>
 </section>
-
 <div class="footer-wave">
   <svg viewBox="0 0 1200 62" preserveAspectRatio="none">
     <path d="
@@ -47,11 +45,9 @@
     " fill="#1f1f3d"/>
   </svg>
 </div>
-
 <section id="secteurs" class="w-full text-white px-10 py-20 md:p-20 bg-info">
   <h2 class="text-3xl lg:text-5xl text-center font-black mb-12">Our <span class="text-gradient">key sectors</span></h2>
   <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-16">
-
     <div class="bg-white h-full border border-gray-100 rounded-xl overflow-hidden flex flex-col">
       <figure>
         <%= image_tag "misc/students.jpg", class: "w-full h-48 object-cover", alt: "Students" %>
@@ -65,7 +61,6 @@
         </div>
       </div>
     </div>
-
     <div class="bg-white h-full border border-gray-100 rounded-xl overflow-hidden flex flex-col">
       <figure>
         <%= image_tag "misc/communauté-communes.jpg", class: "w-full h-48 object-cover", alt: 'Local community' %>
@@ -79,7 +74,6 @@
         </div>
       </div>
     </div>
-
     <div class="bg-white h-full border border-gray-100 rounded-xl overflow-hidden flex flex-col">
       <figure>
         <%= image_tag "misc/dsi.jpg", class: "w-full h-48 object-cover", alt: 'IT department / Data scientist working' %>
@@ -93,10 +87,8 @@
         </div>
       </div>
     </div>
-
   </div>
 </section>
-
 <div class="footer-wave">
   <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
     <path d="
@@ -109,7 +101,6 @@
     " fill="#1f1f3d"/>
   </svg>
 </div>
-
 <section id="expérience" class="px-10 py-20 md:p-20">
   <h2 class="text-3xl text-center lg:text-5xl font-black mb-12">Over 20 years of experience</h2>
   <p class="lg:text-2xl text-center">
@@ -120,37 +111,30 @@
     for clients such as <b>Sanofi</b> (eCRF), <b>L’Oréal</b> (ePRO), <b>PPRS Research</b> (CDMS), <b>AirJin</b> (IoT)
   </p>
 </section>
-
 <section id="clients" class="flex flex-col justify-center p-15 ">
   <h2 class="text-center text-3xl lg:text-5xl font-black mb-12 ">
     They trust <span class="text-gradient">us</span>
   </h2>
-
   <div class="flex flex-wrap justify-center items-center gap-8 ">
-
     <div class="w-64 h-64 rounded flex items-center">
       <%= link_to "https://www.iae-paris.com", target: "_blank" do %>
         <%= image_tag "logos/1.png", class:"mx-auto p-8", alt: 'IAE Paris-Sorbonne logo' %>
       <% end %>
     </div>
-
     <div class="w-64 h-64 rounded flex items-center">
       <%= link_to "https://www.madmoselle.com", target: "_blank" do %>
         <%= image_tag "logos/madmoselle.jpg", class:"mx-auto p-8", alt: 'Mad & Moselle logo' %>
       <% end %>
     </div>
-
     <div class="w-64 h-64 rounded flex items-center">
       <%= link_to "https://www.grohe.com", target: "_blank" do %>
         <%= image_tag "logos/8.png", class:"mx-auto p-8", alt: 'GROHE logo' %>
       <% end %>
     </div>
-
     <div class="w-64 h-64 rounded flex items-center">
       <%= link_to "https://www.infogene.fr", target: "_blank" do %>
         <%= image_tag "logos/infogene.webp", class:"mx-auto p-8 rounded", alt: 'Infogene logo' %>
       <% end %>
     </div>
-
   </div>
 </section>

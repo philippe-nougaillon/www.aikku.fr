@@ -1,15 +1,31 @@
-<section class="text-center reveal delay-1 md:m-50">
-  <h1 class="font-black text-5xl md:text-6xl text-secondary mb-12 pt-8 italic">
-    <%= title "Collaborate more, spend less!" %>
-  </h1>
-  <h3 class="text-lg lg:text-2xl m-0 md:m-20">
-    <span class="font-black ">Aïkku CoopComm</span>
-    is an inter-municipal resource-sharing platform designed to 
+<div class="text-center reveal delay-1 m-8 md:m-30 flex flex-col lg:flex-row items-center gap-6 md:gap-16">
+ 
+    <div class="flex-1 text-center lg:text-left reveal">
+      <h1 class="font-black text-5xl md:text-7xl text-secondary mb-8 leading-tight italic tracking-tight">
+         <%= title "Collaborate more, spend less!" %>
+   </h1>
+      <p class="text-xl lg:text-2xl text-gray-600 mb-10 leading-relaxed  text-justify ">
+        <span class="font-black text-secondary">Aïkku CoopComm</span>
+    is an <strong>inter-municipal resource-sharing platform </strong>designed to 
     meet the needs of communities of municipalities,
     inter-municipal associations, and local authorities.
     It supports them in optimizing and pooling
     their human resources, investments, and technical assets within a single tool.
-  </h3>
+ </p>
+    </div>
+
+ <div class="flex-1 w-full max-w-xl reveal delay-1">
+      <div class="relative group">
+        <div class="absolute -inset-4 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full blur-3xl opacity-10 group-hover:opacity-20 transition duration-1000"></div>
+        <%= image_tag "logos/CoopCommlogo.png", 
+            class: "relative bg-white shadow-xl rounded-3xl p-12 animate-pulsing", 
+            alt: "CoopComm Logo" %>
+      </div>
+    </div>
+  </div>
+
+
+
 </section>
 <div class="footer-wave">
   <svg viewBox="0 0 1200 62" preserveAspectRatio="none">
@@ -23,105 +39,63 @@
     " fill="#1f1f3d"/>
   </svg>
 </div>
-<section id="fonctionnalités" class="w-full text-center bg-info text-white p-10 md:p-20">
-  <h2 class="text-4xl lg:text-5xl font-black mb-12">
-     Everything you need
-    <span class="text-gradient">in one place</span>
-  </h2>
-  <p class="text-center text-[#51c7fd] font-bold text-sm uppercase  mb-16">
-    Core features
-  </p>
-  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
-    <div class="flex flex-col p-4 text-left">
-      <h3 class="text-xl font-black my-4 underline underline-offset-8 text-white">
-        <i class="fa-solid fa-boxes-stacked fa-lg mr-4 text-[#51c7fd]"></i>
-        Asset management
-      </h3>
-      <p class="text-justify text-gray-300">
-        Track inventory and equipment loans. Manage all usage
+<section id="fonctionnalités" class="w-full bg-[#1f1f3d] text-white py-24 px-6 md:px-12">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-20">
+      <h2 class="text-4xl lg:text-6xl font-black mb-6">
+        Everything you need
+        <span class="text-gradient">in one place</span>
+      </h2>
+      <p class="text-[#51c7fd] font-bold text-sm uppercase tracking-[0.3em]">
+        Core features
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+      <% 
+        features = [
+          { icon: "fa-boxes-stacked", title: " Asset management", text: "Track inventory and equipment loans. Manage all usage
         of your assets during field operations. Easily locate your equipment
         using our interactive map.
-      </p>
-    </div>
-    <div class="flex flex-col p-4 text-left">
-      <h3 class="text-xl font-black my-4 underline underline-offset-8 text-white">
-        <i class="fa-solid fa-screwdriver-wrench fa-lg mr-4 text-[#51c7fd]"></i>
-        Operations
-      </h3>
-      <p class="text-justify text-gray-300">
-        A service request is submitted by a member to a local team.
+      " },
+          { icon: "fa-screwdriver-wrench", title: " Operations", text: "A service request is submitted by a member to a local team.
         The agent goes on-site, records the information, and the member validates the intervention.
-      </p>
-    </div>
-    <div class="flex flex-col p-4 text-left">
-      <h3 class="text-xl font-black my-4 underline underline-offset-8 text-white">
-        <i class="fa-solid fa-users fa-lg mr-4 text-[#51c7fd]"></i>
-        Agents and managers
-      </h3>
-      <p class="text-justify text-gray-300">
-        Agents have limited access to data related to their operations.
+     " },
+          { icon: "fa-users", title: "Agents and managers", text: " Agents have limited access to data related to their operations.
         Managers have full access to their organization’s data.
-      </p>
-    </div>
-    <div class="flex flex-col p-4 text-left">
-      <h3 class="text-xl font-black my-4 underline underline-offset-8 text-white">
-        <i class="fa-solid fa-qrcode fa-lg mr-4 text-[#51c7fd]"></i>
-        QR code tracking
-      </h3>
-      <p class="text-justify text-gray-300">
-        For recurring operations, create a template intervention and print its QR code.
+     " },
+          { icon: "fa-qrcode", title: "QR code tracking", text: " For recurring operations, create a template intervention and print its QR code.
         By scanning it, the agent directly opens the intervention without manual input.
-      </p>
-    </div>
-    <div class="flex flex-col p-4 text-left">
-      <h3 class="text-xl font-black my-4 underline underline-offset-8 text-white">
-        <i class="fa-solid fa-euro-sign fa-lg mr-4 text-[#51c7fd]"></i>
-        Budget control
-      </h3>
-      <p class="text-justify text-gray-300">
-        A management dashboard allows members and managers
+     " },
+          { icon: "fa-euro-sign", title: "Budget control", text: " A management dashboard allows members and managers
         to track key indicators in real time.
-      </p>
-    </div>
-    <div class="flex flex-col p-4 text-left">
-      <h3 class="text-xl font-black my-4 underline underline-offset-8 text-white">
-        <i class="fa-solid fa-gears fa-lg mr-4 text-[#51c7fd]"></i>
-        Workflow
-      </h3>
-      <p class="text-justify text-gray-300">
-        Each operation moves from one state to another through predefined actions.
+     " },
+          { icon: "fa-gears", title: "Workflow", text: "  Each operation moves from one state to another through predefined actions.
         Some actions automatically trigger notifications.
-      </p>
-    </div>
-    <div class="flex flex-col p-4 text-left">
-      <h3 class="text-xl font-black my-4 underline underline-offset-8 text-white">
-        <i class="fa-solid fa-message fa-lg mr-4 text-[#51c7fd]"></i>
-        Instant messaging
-      </h3>
-      <p class="text-justify text-gray-300">
-        A real-time communication space allows managers to directly interact
+     " },
+          { icon: "fa-message", title: "Instant messaging", text: "  A real-time communication space allows managers to directly interact
         with agents, with built-in moderation features.
-      </p>
-    </div>
-    <div class="flex flex-col p-4 text-left">
-      <h3 class="text-xl font-black my-4 underline underline-offset-8 text-white">
-        <i class="fa-solid fa-bell fa-lg mr-4 text-[#51c7fd]"></i>
-        Notifications and alerts
-      </h3>
-      <p class="text-justify text-gray-300">
-        Certain state changes trigger email or WhatsApp notifications
+     " },
+          { icon: "fa-bell", title: " Notifications and alerts", text: "Certain state changes trigger email or WhatsApp notifications
         to keep all stakeholders informed.
-      </p>
-    </div>
-    <div class="flex flex-col p-4 text-left">
-      <h3 class="text-xl font-black my-4 underline underline-offset-8 text-white">
-        <i class="fa-solid fa-robot fa-lg mr-4 text-[#51c7fd]"></i>
-        Intervention forecasting (AI)
-      </h3>
-      <p class="text-justify text-gray-300">
-        Based on previous operations, artificial intelligence
+    " },
+          { icon: "fa-robot", title: "        Intervention forecasting (AI)", text: " Based on previous operations, artificial intelligence
         suggests upcoming interventions to plan.
-      </p>
+      " }
+        ]
+      %>
+      <% features.each do |f| %>
+        <div class="group p-10 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#51c7fd]/50 transition-all duration-300">
+          <div class="flex flex-row  items-center gap-2 mb-2">
+            <div class="w-14 h-14 flex items-center justify-center rounded-2xl bg-[#51c7fd]/10 group-hover:scale-110 group-hover:bg-[#51c7fd] transition-all duration-300">
+              <i class="fa-solid <%= f[:icon] %> text-2xl text-[#51c7fd] group-hover:text-[#1f1f3d]"></i>
+            </div>
+            <h3 class=" text-2xl font-black text-white group-hover:text-[#51c7fd] transition-colors"><%= f[:title] %></h3>
+          </div>
+          <p class="text-gray-400 leading-relaxed text-base">
+            <%= f[:text] %>
+          </p>
+        </div>
+      <% end %>
     </div>
   </div>
 </section>
@@ -132,21 +106,35 @@
 </div>
 <section class="flex flex-col p-10 md:p-20 md:flex-row items-center gap-16">
   <div class="flex-1 card w-full">
-    <%# Replace with your actual dashboard image %>
     <%= image_tag "coopcoomImage.png",
           class: "shadow rounded-2xl",
           alt: "CoopComm dashboard across multiple devices" %>
   </div>
-  <div class="flex-1">
-    <h3 class="text-lg text-[#51c7fd] font-bold mb-3 text-center md:text-left uppercase tracking-widest">
-      Why choose Aïkku CoopComm?     </h3>
-    <h2 class="text-3xl lg:text-4xl font-black mb-8 text-center md:text-left leading-tight">
-      A complete solution to optimize the management of your inter-municipal organization    </h2>
-    <p class="text-lg text-justify text-gray-600 leading-relaxed">
-      A comprehensive solution to optimize the management of your inter-municipal organization by 
-      reducing costs, improving team efficiency, ensuring GDPR compliance, 
-      and guaranteeing 100% French digital sovereignty.
+
+  <div class="flex-1 order-1 lg:order-2">
+    <h3 class="text-[#51c7fd] font-black mb-4 uppercase tracking-[0.2em] text-sm">
+      Why Aïkku CoopComm?
+    </h3>
+
+    <h2 class="text-4xl lg:text-5xl font-black mb-8 leading-tight text-secondary">
+      A complete solution for your inter-municipal organization
+    </h2>
+
+    <p class="text-lg text-gray-600 mb-8 leading-relaxed text-justify">
+      Reduce costs, improve team efficiency, and ensure
+      <strong>100% French digital sovereignty</strong>.
+      Our platform guarantees GDPR compliance while providing a smooth user experience
+      for all field agents.
     </p>
+
+    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <% ["Cost reduction", "GDPR compliance", "Field efficiency", "French support"].each do |item| %>
+        <li class="flex items-center gap-3 font-bold text-secondary">
+          <i class="fa-solid fa-circle-check text-[#51c7fd]"></i>
+          <%= item %>
+        </li>
+      <% end %>
+    </ul>
   </div>
 </section>
 <div class="footer-wave">
@@ -204,7 +192,7 @@
       </div>
       <div>
         <p class="text-xs font-bold text-accent uppercase tracking-widest mb-1">Support & Services</p>
-        <h3 class="text-xl font-black  mb-3">Need a feature?</h3>
+        <h3 class="text-xl font-black  mb-3">Need a specific feature?</h3>
         <p class="text-sm text-gray-500 leading-relaxed">
           Our team is here to support your specific needs.
           <%= link_to services_path, class: "block mt-2 font-semibold text-accent hover:text-secondary transition-colors group/link" do %>
