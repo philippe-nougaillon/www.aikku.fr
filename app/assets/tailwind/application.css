@@ -1,9 +1,14 @@
-@import 'tailwindcss';
-@import 'tailwind-animations';
+@import "tailwindcss";
+@import "tailwind-animations";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 @plugin "./daisyui.js" {
   themes: lofi --default;
 }
+
 @plugin "./daisyui-theme.js" {
   name: "aikku";
   default: true;
@@ -18,131 +23,142 @@
   --color-info: #1f1f3d;
   --radius-field: 0rem;
 }
+
 @source "../../../public/*.html";
 @source "../../../app/helpers/**/*.rb";
 @source "../../../app/javascript/**/*.js";
 @source "../../../app/views/**/*";
 
-
-/*
-  The default border color has changed to `currentcolor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
 @layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
+  html {
+    scroll-padding-top: 72.25px;
+  }
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+  .font-caveat {
+    font-family: "Caveat", cursive !important;
+  }
+  :root {
+    --color_gradient_blue--end: #51c7fd;
+    --color_gradient_purple--end: #b24dff;
+  }
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
     border-color: var(--color-gray-200, currentcolor);
   }
 }
 
 @layer components {
-  input[required], select[required] {
-    border-color: #f87171;
-    &:valid{
-      border-color: #22c55e;
-    }
+
+  .text-gradient {
+    background-image: linear-gradient(to right, var(--color_gradient_blue--end), var(--color_gradient_purple--end)) !important;
+    -webkit-text-fill-color: transparent !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important; 
   }
 
-  h2.apps-title {
-    font-size: 2.25rem !important;
-    line-height: 2.5rem !important;
-    font-weight: 900 !important;
-    margin-top: 1rem !important;
-    margin-bottom: 1rem !important;
+  .text-gradient-reverse {
+    background-image: linear-gradient(to right, var(--color_gradient_purple--end), var(--color_gradient_blue--end)) !important;
+    -webkit-text-fill-color: transparent !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
   }
 
-  h3.apps-title {
-    font-size: 1.5rem !important;
-    line-height: 2rem !important;
-    font-weight: 900 !important;
-    margin-top: 1rem !important;
-    margin-bottom: 1rem !important;
+  .btn-gradient {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 1.5rem !important;
+    border-radius: 0.375rem !important;
+    font-weight: bold !important;
+    border: none !important;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background-color: #ffffff !important; 
+    background-image: linear-gradient(to right, #51c7fd, #b24dff) !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    color: transparent !important;
+    -webkit-text-fill-color: transparent !important;
+  }
+
+  .btn-gradient:hover {
+    background-clip: border-box !important;
+    -webkit-background-clip: border-box !important;
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(81, 199, 253, 0.4);
+  }
+
+  .btn-inverse {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.375rem;
+    font-weight: bold;
+    background-image: linear-gradient(to right, var(--color_gradient_blue--end), var(--color_gradient_purple--end));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    border: 2px solid var(--color_gradient_blue--end);
+    transition: all 0.3s ease;
+  }
+
+  .btn-inverse:hover {
+    background-clip: border-box;
+    -webkit-background-clip: border-box;
+    color: white !important;
+    background-image: linear-gradient(to right, var(--color_gradient_blue--end), var(--color_gradient_purple--end));
+    border-color: transparent;
   }
 
   #guide_planning ul {
     padding: 40px 0px;
   }
 
-  .section {
-    main section {
-      padding-left: 6rem;
-      padding-right: 6rem;
-    }
+  .menu a, .menu summary {
+    background-color: transparent;
   }
 
-  main section {
-    padding: 2rem 1rem;
-  }
-
-  @media (min-width: 1024px) {
-    main section {
-      padding-left: 6rem;
-      padding-right: 6rem;
-    }
-  }
-
-@keyframes reveal {
-  0% {
+  .reveal {
     opacity: 0;
-    transform: translateY(24px);
+    animation: reveal 0.8s ease-out forwards;
   }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
+
+  @keyframes reveal {
+    0% { opacity: 0; transform: translateY(24px); }
+    100% { opacity: 1; transform: translateY(0); }
   }
-}
 
-.reveal {
-  opacity: 0;
-  animation: reveal 0.8s ease-out forwards;
-}
+  .delay-1 { animation-delay: 0.2s; }
+  .delay-2 { animation-delay: 0.4s; }
 
-/* delays escalonados */
-.delay-1 {
-  animation-delay: 0.2s;
-}
-
-.delay-2 {
-  animation-delay: 0.4s;
-}
-
-@keyframes waveMove {
-  0% {
-    transform: translateX(0);
+  @keyframes waveMove {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
   }
-  100% {
-    transform: translateX(-50%);
+
+  .footer-wave {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    margin-bottom: -2px;
   }
-}
 
-.footer-wave {
-  position: relative;
-  width: 100%;
-  height: 60px;
-  overflow: hidden;
-  margin-bottom: -2px;
-}
+  .footer-wave svg {
+    width: 200%;
+    height: 60px;
+    display: block;
+    animation: waveMove 6s ease-in-out infinite;
+    animation-direction: alternate;
+  }
 
-
-
-.footer-wave svg {
-  width: 200%;
-  height: 60px;
-  display: block;
-  animation: waveMove 6s ease-in-out infinite;
-  animation-direction: alternate;
-}
-.footer-wave path {
-  shape-rendering: geometricPrecision;
-}
-
-
-
-}
+  .footer-wave path {
+    shape-rendering: geometricPrecision;
+  }
+} 
