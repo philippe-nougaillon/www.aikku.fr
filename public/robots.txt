@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.philnoug.com/sitemap.xml
+Sitemap: https://www.aikku.eu/sitemap.xml
