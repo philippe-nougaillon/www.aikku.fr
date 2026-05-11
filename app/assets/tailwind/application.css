@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @import "tailwind-animations";
 
-
 @plugin "./daisyui.js" {
   themes: lofi --default;
 }
@@ -26,17 +25,29 @@
 @source "../../../app/javascript/**/*.js";
 @source "../../../app/views/**/*";
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hurricane";
+  src: url("fonts/Hurricane/Hurricane-Regular.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
 @layer base {
   html {
     scroll-padding-top: 72.25px;
   }
+
   body {
     font-family: "Montserrat", sans-serif;
-  }
-  .font-hurricane {
-    font-family: "Hurricane";
-    font-weight: 400;
-    font-style: normal;
   }
 
   :root {
@@ -49,6 +60,12 @@
   ::backdrop,
   ::file-selector-button {
     border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@layer utilities {
+  .font-hurricane {
+    font-family: "Hurricane", cursive;
   }
 }
 
@@ -143,8 +160,6 @@
   .menu summary {
     background-color: transparent;
   }
-
-  
 
   .reveal {
     opacity: 0;

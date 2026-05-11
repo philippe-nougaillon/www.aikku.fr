@@ -9,15 +9,10 @@
     <%= csp_meta_tag %>
     <%= render 'partials/favicon' %>
     <!-- PRECONNECT (IMPORTANTE PARA FONTS) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
-    <!-- TAILWIND CSS -->
+   <!-- TAILWIND CSS -->
     <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
     <!-- JS -->
-    <%= javascript_importmap_tags %>
+    <%= javascript_importmap_tags  %>    
     <%= render 'partials/gtag' %>
   </head>
   <body class="flex flex-col justify-between min-h-screen">
