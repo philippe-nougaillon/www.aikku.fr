@@ -1,9 +1,9 @@
 @import "tailwindcss";
 @import "tailwind-animations";
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hurricane&display=swap");
 
 @plugin "./daisyui.js" {
   themes: lofi --default;
@@ -12,13 +12,13 @@
 @plugin "./daisyui-theme.js" {
   name: "aikku";
   default: true;
-  --color-base-100: #FAFAFA;
-  --color-base-content: #1E1B18;
+  --color-base-100: #fafafa;
+  --color-base-content: #1e1b18;
   --color-primary: #7030a0;
   --color-secondary: #46b1e1;
   --color-secondary-content: #000000;
   --color-neutral: #3d4451;
-  --color-success: #00A96E;
+  --color-success: #00a96e;
   --color-accent: #6161b9;
   --color-info: #1f1f3d;
   --radius-field: 0rem;
@@ -34,31 +34,45 @@
     scroll-padding-top: 72.25px;
   }
   body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
-  .font-caveat {
-    font-family: "Caveat", cursive !important;
+  .font-hurricane {
+    font-family: "Hurricane";
+    font-weight: 400;
+    font-style: normal;
   }
+
   :root {
     --color_gradient_blue--end: #51c7fd;
     --color_gradient_purple--end: #b24dff;
   }
-  *, ::after, ::before, ::backdrop, ::file-selector-button {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
     border-color: var(--color-gray-200, currentcolor);
   }
 }
 
 @layer components {
-
   .text-gradient {
-    background-image: linear-gradient(to right, var(--color_gradient_blue--end), var(--color_gradient_purple--end)) !important;
+    background-image: linear-gradient(
+      to right,
+      var(--color_gradient_blue--end),
+      var(--color_gradient_purple--end)
+    ) !important;
     -webkit-text-fill-color: transparent !important;
     -webkit-background-clip: text !important;
-    background-clip: text !important; 
+    background-clip: text !important;
   }
 
   .text-gradient-reverse {
-    background-image: linear-gradient(to right, var(--color_gradient_purple--end), var(--color_gradient_blue--end)) !important;
+    background-image: linear-gradient(
+      to right,
+      var(--color_gradient_purple--end),
+      var(--color_gradient_blue--end)
+    ) !important;
     -webkit-text-fill-color: transparent !important;
     -webkit-background-clip: text !important;
     background-clip: text !important;
@@ -75,7 +89,7 @@
     border: none !important;
     transition: all 0.3s ease;
     cursor: pointer;
-    background-color: #ffffff !important; 
+    background-color: #ffffff !important;
     background-image: linear-gradient(to right, #51c7fd, #b24dff) !important;
     background-clip: text !important;
     -webkit-background-clip: text !important;
@@ -100,7 +114,11 @@
     padding: 0.5rem 1.25rem;
     border-radius: 0.375rem;
     font-weight: bold;
-    background-image: linear-gradient(to right, var(--color_gradient_blue--end), var(--color_gradient_purple--end));
+    background-image: linear-gradient(
+      to right,
+      var(--color_gradient_blue--end),
+      var(--color_gradient_purple--end)
+    );
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -112,7 +130,11 @@
     background-clip: border-box;
     -webkit-background-clip: border-box;
     color: white !important;
-    background-image: linear-gradient(to right, var(--color_gradient_blue--end), var(--color_gradient_purple--end));
+    background-image: linear-gradient(
+      to right,
+      var(--color_gradient_blue--end),
+      var(--color_gradient_purple--end)
+    );
     border-color: transparent;
   }
 
@@ -120,7 +142,8 @@
     padding: 40px 0px;
   }
 
-  .menu a, .menu summary {
+  .menu a,
+  .menu summary {
     background-color: transparent;
   }
 
@@ -130,16 +153,30 @@
   }
 
   @keyframes reveal {
-    0% { opacity: 0; transform: translateY(24px); }
-    100% { opacity: 1; transform: translateY(0); }
+    0% {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
-  .delay-1 { animation-delay: 0.2s; }
-  .delay-2 { animation-delay: 0.4s; }
+  .delay-1 {
+    animation-delay: 0.2s;
+  }
+  .delay-2 {
+    animation-delay: 0.4s;
+  }
 
   @keyframes waveMove {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
   }
 
   .footer-wave {
@@ -161,4 +198,4 @@
   .footer-wave path {
     shape-rendering: geometricPrecision;
   }
-} 
+}
