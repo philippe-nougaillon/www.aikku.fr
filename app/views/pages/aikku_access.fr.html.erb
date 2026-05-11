@@ -5,7 +5,7 @@
     </h1>
     <p class="text-xl lg:text-2xl text-gray-600 mb-10 leading-relaxed  text-justify ">
       <span class="text-secondary">Aïkku ACCESS</span> est un 
-          <span class="font-semibold">gestionnaire d'informations NO-CODE</span>
+      <span class="font-semibold">gestionnaire d'informations NO-CODE</span>
       qui permet de structurer 
       vos données métiers. Vous pouvez créer des collections 
       personnalisées (clients, interventions, techniciens, frais, 
@@ -50,7 +50,7 @@
       <div class="group p-10 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#51c7fd]/50 transition-all duration-300">
         <div class="flex flex-row items-center gap-4 mb-4">
           <div class="w-14 h-14 flex items-center justify-center rounded-2xl bg-[#51c7fd]/10 group-hover:scale-110 group-hover:bg-[#51c7fd] transition-all duration-300">
-            <i class="fa-solid fa-database text-2xl text-[#51c7fd] group-hover:text-[#1f1f3d]"></i>
+            <%= icon("database", class: "w-8 h-8 text-[#51c7fd] group-hover:text-[#1f1f3d] text-current") %>
           </div>
           <h3 class="text-2xl  text-white group-hover:text-[#51c7fd] transition-colors">
             Gestion des données
@@ -63,7 +63,7 @@
       <div class="group p-10 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#51c7fd]/50 transition-all duration-300">
         <div class="flex flex-row items-center gap-4 mb-4">
           <div class="w-14 h-14 flex items-center justify-center rounded-2xl bg-[#51c7fd]/10 group-hover:scale-110 group-hover:bg-[#51c7fd] transition-all duration-300">
-            <i class="fa-solid fa-wrench text-2xl text-[#51c7fd] group-hover:text-[#1f1f3d]"></i>
+            <%= icon("wrench", class: "w-8 h-8 text-[#51c7fd] group-hover:text-[#1f1f3d] text-current") %>
           </div>
           <h3 class="text-2xl text-white group-hover:text-[#51c7fd] transition-colors">
             Gestion des opérations terrain
@@ -76,7 +76,7 @@
       <div class="group p-10 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#51c7fd]/50 transition-all duration-300">
         <div class="flex flex-row items-center gap-4 mb-4">
           <div class="w-14 h-14 flex items-center justify-center rounded-2xl bg-[#51c7fd]/10 group-hover:scale-110 group-hover:bg-[#51c7fd] transition-all duration-300">
-            <i class="fa-regular fa-calendar-days text-2xl text-[#51c7fd] group-hover:text-[#1f1f3d]"></i>
+            <%= icon("follow", class: "w-8 h-8 text-[#51c7fd] group-hover:text-[#1f1f3d] text-current") %>
           </div>
           <h3 class="text-2xl  text-white group-hover:text-[#51c7fd] transition-colors">
             Gestion de projet
@@ -89,7 +89,7 @@
       <div class="group p-10 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#51c7fd]/50 transition-all duration-300">
         <div class="flex flex-row items-center gap-4 mb-4">
           <div class="w-14 h-14 flex items-center justify-center rounded-2xl bg-[#51c7fd]/10 group-hover:scale-110 group-hover:bg-[#51c7fd] transition-all duration-300">
-            <i class="fa-solid fa-brain text-2xl text-[#51c7fd] group-hover:text-[#1f1f3d]"></i>
+            <%= icon("network", class: "w-8 h-8 text-[#51c7fd] group-hover:text-[#1f1f3d] text-current") %>
           </div>
           <h3 class="text-2xl  text-white group-hover:text-[#51c7fd] transition-colors">
             Assistant IA intégré
@@ -126,7 +126,7 @@
   <div class="grid lg:grid-cols-2 gap-10 items-center">
     <div class="space-y-8">
       <div class="flex gap-4 rounded-xl p-4 border border-gray/30">
-        <i class="fa-solid fa-list fa-lg text-accent mt-3"></i>
+        <%= icon("list", class: "w-6 h-6  mt-1 text-accent shrink-0") %>        
         <div>
           <h3 class="text-xl ">Collections d’objets</h3>
           <p class="text-gray-600">
@@ -136,7 +136,7 @@
         </div>
       </div>
       <div class="flex gap-4 rounded-xl p-4 border border-gray/30">
-        <i class="fa-solid fa-link fa-lg text-accent mt-3"></i>
+        <%= icon("link", class: "w-6 h-6 text-accent mt-1  shrink-0") %>        
         <div>
           <h3 class="text-xl ">Relations entre données</h3>
           <p class="text-gray-600">
@@ -146,7 +146,7 @@
         </div>
       </div>
       <div class="flex gap-4 rounded-xl p-4 border border-gray/30">
-        <i class="fa-solid fa-users fa-lg text-accent mt-3"></i>
+        <%= icon("userscollab", class: "w-6 h-6 text-accent mt-1  shrink-0") %>        
         <div>
           <h3 class="text-xl ">Collaboration en temps réel</h3>
           <p class="text-gray-600">
@@ -156,7 +156,7 @@
         </div>
       </div>
       <div class="flex gap-4 rounded-xl p-4 border border-gray/30">
-        <i class="fa-solid fa-chart-bar fa-lg text-accent mt-3"></i>
+        <%= icon("chart", class: "w-6 h-6 text-accent mt-1 shrink-0") %>        
         <div>
           <h3 class="text-xl ">Visualisation & analytics</h3>
           <p class="text-gray-600">
@@ -166,7 +166,7 @@
         </div>
       </div>
       <div class="flex gap-4 rounded-xl p-4 border border-gray/30">
-        <i class="fa-solid fa-location-dot fa-lg text-accent mt-3"></i>
+        <%= icon("location", class: "w-6 h-6 text-accent mt-1  shrink-0") %>
         <div>
           <h3 class="text-xl ">Données terrain automatiques</h3>
           <p class="text-gray-600">
@@ -176,7 +176,7 @@
         </div>
       </div>
       <div class="flex gap-4 rounded-xl p-4 border border-gray/30">
-        <i class="fa-regular fa-calendar fa-lg text-accent mt-3"></i>
+        <%= icon("calendar", class: "w-6 h-6 text-accent mt-1  shrink-0") %>        
         <div>
           <h3 class="text-xl ">Vue calendrier</h3>
           <p class="text-gray-600">
@@ -226,8 +226,6 @@
   </div>
 </div>
 </section>
-
-
 <div class="footer-wave">
   <svg viewBox="0 0 1200 62" preserveAspectRatio="none">
     <path d="
@@ -261,7 +259,7 @@
   <div class=" border-gray-200 rounded-3xl p-8 bg-white shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
     <div class="flex items-start gap-4 justify-center">
       <div class="bg-blue-50 p-3 rounded-xl text-accent group-hover:bg-accent group-hover:text-white transition-colors">
-        <i class="fa-solid fa-rocket fa-2xl"></i>
+        <%= icon("rocket", class: "w-6 h-6") %>
       </div>
       <div>
         <p class="text-xs font-bold text-accent uppercase tracking-widest mb-1">Support & Services</p>

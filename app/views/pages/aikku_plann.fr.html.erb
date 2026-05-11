@@ -54,28 +54,29 @@
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
       <% 
           features = [
-          { icon: "fa-calendar-days", title: "Planification des cours", text: "Créez ou modifiez pour un ensemble de cours et/ou pour une session,
+          { icon: "calendar-days", title: "Planification des cours", text: "Créez ou modifiez pour un ensemble de cours et/ou pour une session,
         en quelques clics. Le logiciel sélectionne automatiquement une 
         salle disponible.  
       " },
-          { icon: "fa-chalkboard", title: "Occupation des salles", text: "Visualisez les créneaux horaires libres, par jour, semaine et salle. 
+          { icon: "salles", title: "Occupation des salles", text: "Visualisez les créneaux horaires libres, par jour, semaine et salle. 
         Gérez la capacité de vos salles et de votre établissement. 
         Alertes dès qu'une salle atteint sa capacité.  " },
-          { icon: "fa-chalkboard-teacher", title: "Intervenants et étudiants", text: " Centralisez toutes les informations pour chaque intervenant. 
+
+        { icon: "teachers", title: "Intervenants et étudiants", text: " Centralisez toutes les informations pour chaque intervenant. 
         Valorisez le temps de cours effectif des intervenant vacataires
         pour une facturation facilitée. Notifiez aux étudiants par e-mail
         ou SMS en cas de modification de cours.
      " },
-          { icon: "fa-briefcase", title: "Formations", text: "I Repérez chaque formation dans le planning grâce à son code couleur.
+          { icon: "formation", title: "Formations", text: "I Repérez chaque formation dans le planning grâce à son code couleur.
         Accédez à la liste des intervenants. Pilotez plus facilement le
         volume horaire des UE : heures réalisées, cours planifiés et 
         restant à créer.    
      " },
-          { icon: "fa-download", title: "Import et export", text: "Importez de grands volumes de données aux formats Excel 
+          { icon: "import", title: "Import et export", text: "Importez de grands volumes de données aux formats Excel 
           (XLS) et CSV : cours, formations, étudiants… Toutes les 
           données peuvent être exportées au format XLS.
      " },
-          { icon: "fa-file-signature", title: "Suivi des présences", text: "Grâce à l'intégration d'Edusign, signez numériquement 
+          { icon: "sign", title: "Suivi des présences", text: "Grâce à l'intégration d'Edusign, signez numériquement 
           directement depuis le smartphone ou l'ordinateur de 
           l'étudiant au début de chaque séance.
      " }]
@@ -85,7 +86,7 @@
         <div class="group p-10 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#51c7fd]/50 transition-all duration-300">
           <div class="flex flex-row  items-center gap-2 mb-2">
             <div class="w-14 h-14 flex items-center justify-center rounded-2xl bg-[#51c7fd]/10 group-hover:scale-110 group-hover:bg-[#51c7fd] transition-all duration-300">
-              <i class="fa-solid <%= f[:icon] %> text-2xl text-[#51c7fd] group-hover:text-[#1f1f3d]"></i>
+              <%= icon(f[:icon], class: "text-2xl text-[#51c7fd] group-hover:text-[#1f1f3d]") %>
             </div>
             <h3 class=" text-2xl text-white group-hover:text-[#51c7fd] transition-colors"><%= f[:title] %></h3>
           </div>
@@ -266,7 +267,7 @@
   <div class="group border border-gray-200 rounded-3xl p-8 bg-white shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
     <div class="flex items-start gap-4">
       <div class="bg-blue-50 p-3 rounded-xl text-accent group-hover:bg-accent group-hover:text-white transition-colors">
-        <i class="fa-solid fa-rocket fa-2xl"></i>
+        <%= icon("rocket", class: "w-6 h-6") %>
       </div>
       <div>
         <p class="text-xs font-bold text-accent uppercase tracking-widest mb-1">Support & Services</p>

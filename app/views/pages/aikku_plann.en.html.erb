@@ -55,27 +55,28 @@
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
       <% 
         features = [
-          { icon: "fa-calendar-days", title: "Course scheduling", text: "Create or modify schedules for a set of courses and/or a session
+          { icon: "calendar-days", title: "Course scheduling", text: "Create or modify schedules for a set of courses and/or a session
         in just a few clicks. The software automatically selects an 
         available classroom. 
       " },
-          { icon: "fa-chalkboard", title: "Room occupancy", text: "View available time slots by day, week, and classroom. 
+          { icon: "salles", title: "Room occupancy", text: "View available time slots by day, week, and classroom. 
         Manage room capacity across your institution. 
         Get alerts when a room reaches its capacity." },
-          { icon: "fa-chalkboard-teacher", title: "Instructors and students", text: "Centralize all information for each instructor. 
+
+      { icon: "teachers", title: "Instructors and students", text: "Centralize all information for each instructor. 
         Track actual teaching time for adjunct lecturers
         to simplify billing. Notify students by email
         or SMS in case of schedule changes 
      " },
-          { icon: "fa-briefcase", title: "Programs", text: "Identify each program in the schedule using color codes.
+          { icon: "formation", title: "Programs", text: "Identify each program in the schedule using color codes.
         Access the list of instructors. Easily manage
         course hours: completed, scheduled, and remaining. 
      " },
-          { icon: "fa-download", title: "Import and export", text: "Import large volumes of data in Excel 
+          { icon: "import", title: "Import and export", text: "Import large volumes of data in Excel 
           (XLS) and CSV formats: courses, programs, students… All 
           data can be exported in XLS format. 
      " },
-          { icon: "fa-file-signature", title: "Attendance tracking", text: "Thanks to Edusign integration, sign digitally 
+          { icon: "sign", title: "Attendance tracking", text: "Thanks to Edusign integration, sign digitally 
           directly from the student’s smartphone or computer 
           at the beginning of each session.  
      " }]
@@ -85,7 +86,7 @@
         <div class="group p-10 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#51c7fd]/50 transition-all duration-300">
           <div class="flex flex-row  items-center gap-2 mb-2">
             <div class="w-14 h-14 flex items-center justify-center rounded-2xl bg-[#51c7fd]/10 group-hover:scale-110 group-hover:bg-[#51c7fd] transition-all duration-300">
-              <i class="fa-solid <%= f[:icon] %> text-2xl text-[#51c7fd] group-hover:text-[#1f1f3d]"></i>
+              <%= icon(f[:icon], class: "text-2xl text-[#51c7fd] group-hover:text-[#1f1f3d]") %>
             </div>
             <h3 class=" text-2xl text-white group-hover:text-[#51c7fd] transition-colors"><%= f[:title] %></h3>
           </div>
@@ -260,7 +261,7 @@
   <div class="group border border-gray-200 rounded-3xl p-8 bg-white shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
     <div class="flex items-start gap-4">
       <div class="bg-blue-50 p-3 rounded-xl text-accent group-hover:bg-accent group-hover:text-white transition-colors">
-        <i class="fa-solid fa-rocket fa-2xl"></i>
+        <%= icon("rocket", class: "w-6 h-6") %>
       </div>
       <div>
         <p class="text-xs font-bold text-accent uppercase tracking-widest mb-1">Support & Services</p>

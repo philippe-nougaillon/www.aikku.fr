@@ -44,22 +44,22 @@
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
       <% 
         features = [
-          { icon: "fa-boxes-stacked", title: "Gestion des actifs", text: "Suivi de l'inventaire du matériel et des prêts. Localisez facilement votre matériel grâce à notre carte interactive." },
-          { icon: "fa-screwdriver-wrench", title: "Interventions", text: "Demande émise par l'adhérent, réalisée par l'agent sur le terrain et validée en un clic." },
-          { icon: "fa-users", title: "Agents et Managers", text: "Accès segmentés : données terrain pour les agents, vision stratégique complète pour les managers." },
-          { icon: "fa-qrcode", title: "Pointage par QR Code", text: "Gagnez du temps : scannez le code pour ouvrir directement l'intervention sans saisie manuelle." },
-          { icon: "fa-euro-sign", title: "Maîtrise budgétaire", text: "Tableau de bord en temps réel pour suivre vos indicateurs clés et vos dépenses." },
-          { icon: "fa-gears", title: "Workflow", text: "Automatisation des processus et notifications intelligentes à chaque changement d'état." },
-          { icon: "fa-message", title: "Messagerie instantanée", text: "Communication directe entre managers et agents avec modération intégrée." },
-          { icon: "fa-bell", title: "Notifications et alertes", text: "Alertes automatiques par e-mail ou WhatsApp pour informer toutes les parties prenantes." },
-          { icon: "fa-robot", title: "Prévision d'intervention (IA)", text: "Une intelligence artificielle suggère les interventions à prévoir selon l'historique." }
+          { icon: "boxes", title: "Gestion des actifs", text: "Suivi de l'inventaire du matériel et des prêts. Localisez facilement votre matériel grâce à notre carte interactive." },
+          { icon: "handyman", title: "Interventions", text: "Demande émise par l'adhérent, réalisée par l'agent sur le terrain et validée en un clic." },
+          { icon: "users", title: "Agents et Managers", text: "Accès segmentés : données terrain pour les agents, vision stratégique complète pour les managers." },
+          { icon: "qrcode", title: "Pointage par QR Code", text: "Gagnez du temps : scannez le code pour ouvrir directement l'intervention sans saisie manuelle." },
+          { icon: "euro", title: "Maîtrise budgétaire", text: "Tableau de bord en temps réel pour suivre vos indicateurs clés et vos dépenses." },
+          { icon: "gears", title: "Workflow", text: "Automatisation des processus et notifications intelligentes à chaque changement d'état." },
+          { icon: "message", title: "Messagerie instantanée", text: "Communication directe entre managers et agents avec modération intégrée." },
+          { icon: "bell", title: "Notifications et alertes", text: "Alertes automatiques par e-mail ou WhatsApp pour informer toutes les parties prenantes." },
+          { icon: "robot", title: "Prévision d'intervention (IA)", text: "Une intelligence artificielle suggère les interventions à prévoir selon l'historique." }
         ]
       %>
       <% features.each do |f| %>
         <div class="group p-10 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#51c7fd]/50 transition-all duration-300">
           <div class="flex flex-row  items-center gap-2 mb-2">
             <div class="w-14 h-14 flex items-center justify-center rounded-2xl bg-[#51c7fd]/10 group-hover:scale-110 group-hover:bg-[#51c7fd] transition-all duration-300">
-              <i class="fa-solid <%= f[:icon] %> text-2xl text-[#51c7fd] group-hover:text-[#1f1f3d]"></i>
+              <%= icon(f[:icon], class: "text-2xl text-[#51c7fd] group-hover:text-[#1f1f3d]") %>
             </div>
             <h3 class=" text-2xl  text-white group-hover:text-[#51c7fd] transition-colors"><%= f[:title] %></h3>
           </div>
@@ -154,7 +154,7 @@
   <div class="group border border-gray-200 rounded-3xl p-8 bg-white shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
     <div class="flex items-start gap-4">
       <div class="bg-blue-50 p-3 rounded-xl text-accent group-hover:bg-accent group-hover:text-white transition-colors">
-        <i class="fa-solid fa-rocket fa-2xl"></i>
+        <%= icon("rocket", class: "w-6 h-6") %>
       </div>
       <div>
         <p class="text-xs font-bold text-accent uppercase tracking-widest mb-1">Support & Services</p>
