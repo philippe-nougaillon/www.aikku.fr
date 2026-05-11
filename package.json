@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "tailwind-animations": "^1.0.1"
+    "tailwind-animations": "^1.0.1",
+    "tw-elements": "^2.0.0"
   }
 }
