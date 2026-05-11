@@ -1,16 +1,16 @@
 <%= navbar_item 'home', root_path, 'Accueil' %>
 <li>
   <details>
-    <summary class="hover:underline hover:underline-offset-8 hover:text-primary hover:font-black <%= 'underline underline-offset-8 text-primary font-black' if ['logiciels', 'aikku_plann', 'aikku_coopcom', 'aikku_access', 'aikku_sign', 'aikku_projects', 'prestofacto', 'talea'].include?(params[:action]) %>">Solutions</summary>
+    <summary class="hover:underline hover:underline-offset-8 hover:text-primary hover:font-semibold <%= 'underline underline-offset-8 text-primary font-semibold' if ['logiciels', 'aikku_plann', 'aikku_coopcom', 'aikku_access', 'aikku_sign', 'aikku_projects', 'prestofacto', 'talea'].include?(params[:action]) %>">Solutions</summary>
     <ul class="bg-base-100 rounded-t-none p-2 lg:w-min end-0">
       <li>
-        <%= link_to "Vous êtes un organisme de formation ?", aikku_plann_path, class: "hover:underline hover:underline-offset-8 hover:text-primary hover:font-black lg:whitespace-nowrap #{'underline underline-offset-8 text-primary font-black' if params[:action] == 'aikku_plann' }" %>
+        <%= link_to "Vous êtes un organisme de formation ?", aikku_plann_path, class: "hover:underline hover:underline-offset-8 hover:text-primary hover:font-semibold lg:whitespace-nowrap #{'underline underline-offset-8 text-primary font-semibold' if params[:action] == 'aikku_plann' }" %>
       </li>
       <li>
-        <%= link_to "Vous êtes une communauté de communes, un EPCI ?", aikku_coopcomm_path, class: "hover:underline hover:underline-offset-8 hover:text-primary hover:font-black lg:whitespace-nowrap #{'underline underline-offset-8 text-primary font-black' if params[:action] == 'aikku_coopcomm' }" %>
+        <%= link_to "Vous êtes une communauté de communes, un EPCI ?", aikku_coopcomm_path, class: "hover:underline hover:underline-offset-8 hover:text-primary hover:font-semibold lg:whitespace-nowrap #{'underline underline-offset-8 text-primary font-semibold' if params[:action] == 'aikku_coopcomm' }" %>
       </li>
       <li>
-        <%= link_to "Vous êtes DSI / Data Scientist ?", aikku_access_path, class: "hover:underline hover:underline-offset-8 hover:text-primary hover:font-black lg:whitespace-nowrap #{'underline underline-offset-8 text-primary font-black' if params[:action] == 'aikku_access' }" %>
+        <%= link_to "Vous êtes DSI / Data Scientist ?", aikku_access_path, class: "hover:underline hover:underline-offset-8 hover:text-primary hover:font-semibold lg:whitespace-nowrap #{'underline underline-offset-8 text-primary font-semibold' if params[:action] == 'aikku_access' }" %>
       </li>
     </ul>
   </details>
@@ -18,7 +18,7 @@
 <%= navbar_item 'services', services_path, 'Nos services' %>
 <%= navbar_item 'qui_sommes_nous', qui_sommes_nous_path, 'À propos' %>
 <li>
-  <%= link_to contact_path, 'data-turbo': false, class: "hover:underline hover:underline-offset-8 hover:text-primary hover:font-black #{'underline underline-offset-8 text-primary font-black' if params[:action] == 'contact'}" do %>
+  <%= link_to contact_path, 'data-turbo': false, class: "hover:underline hover:underline-offset-8 hover:text-primary hover:font-semibold #{'underline underline-offset-8 text-primary font-semibold' if params[:action] == 'contact'}" do %>
     <span class="whitespace-nowrap">Contact</span>
   <% end %>
 </li>

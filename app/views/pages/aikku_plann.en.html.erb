@@ -1,11 +1,11 @@
 <section class="text-center reveal delay-1 m-0 md:m-8">
-  <h1 class="font-black text-5xl md:text-6xl text-secondary mb-12 pt-8 italic">
+  <h1 class=" text-5xl md:text-6xl text-secondary mb-12 pt-8 italic">
     <%= title "Manage your courses and classrooms. Without complexity" %>
   </h1>
   <h3 class="text-lg lg:text-2xl p-0 md:p-12">
     Developed in collaboration with IAE Paris-Sorbonne,
-    <span class="font-black">Aïkku PLANN</span>
-    is a scheduling and classroom management software.
+    <span class="text-secondary">Aïkku PLANN</span>
+    is a <span class="font-semibold">scheduling and classroom management software</span>
     It is tailored to the needs of universities, business schools, and specialized training institutes.
   </h3>
 </section>
@@ -44,7 +44,7 @@
 <section id="fonctionnalités" class="w-full bg-[#1f1f3d] text-white py-24 px-6 md:px-12">
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-20">
-      <h2 class="text-4xl lg:text-6xl font-black mb-6">
+      <h2 class="text-4xl lg:text-6xl mb-6">
         Everything you need
         <span class="text-gradient">in one place</span>
       </h2>
@@ -87,7 +87,7 @@
             <div class="w-14 h-14 flex items-center justify-center rounded-2xl bg-[#51c7fd]/10 group-hover:scale-110 group-hover:bg-[#51c7fd] transition-all duration-300">
               <i class="fa-solid <%= f[:icon] %> text-2xl text-[#51c7fd] group-hover:text-[#1f1f3d]"></i>
             </div>
-            <h3 class=" text-2xl font-black text-white group-hover:text-[#51c7fd] transition-colors"><%= f[:title] %></h3>
+            <h3 class=" text-2xl text-white group-hover:text-[#51c7fd] transition-colors"><%= f[:title] %></h3>
           </div>
           <p class="text-gray-400 leading-relaxed text-base">
             <%= f[:text] %>
@@ -112,7 +112,7 @@
     <h3 class="text-[#51c7fd] font-black mb-4 uppercase tracking-[0.2em] text-sm">
       Information always available
     </h3>
-    <h2 class="text-4xl lg:text-5xl font-black mb-8 leading-tight text-secondary">
+    <h2 class="text-4xl lg:text-5xl  mb-8 leading-tight text-secondary">
       Your schedule accessible on any device
     </h2>
     <p class="text-lg text-gray-600 mb-8 leading-relaxed text-justify">
@@ -137,7 +137,7 @@
   </div>
 </section>
 <section class="px-6 md:px-20 pb-20 pt-10">
-  <h2 class="text-accent text-left mb-6 font-extrabold text-2xl uppercase tracking-wider">
+  <h2 class="text-accent text-left mb-6 font-medium text-2xl uppercase tracking-wider">
     They trust us
   </h2>
   <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
@@ -198,14 +198,14 @@
 <section class="max-w-5xl mx-auto p-6 mb-0 md:mb-20">
   <div id="video" class="items-center flex flex-col reveal delay-2">
     <div class="text-center lg:text-left">
-      <h2 class="text-3xl font-black text-accent mb-8">Aïkku PLANN video</h2>
+      <h2 class="text-3xl font-medium text-accent mb-8">Aïkku PLANN video</h2>
     </div>
     <div class=" flex justify-center"></div>
     <%= video_tag 'Aikku Plann-VF2.mp4',
           controls: true,
           class: 'w-full max-w-3xl rounded-2xl shadow-2xl',
           preload: 'none',
-          poster: "New_logo.png" %>
+          poster: "New_logo.webp" %>
   </div>
 </div>
 </section>
@@ -222,7 +222,7 @@
   </svg>
 </div>
 <section class="text-center bg-info text-white px-8 py-16  w-full ">
-  <h2 class="text-3xl lg:text-5xl font-black mb-6">
+  <h2 class="text-3xl lg:text-5xl mb-6">
     Want to see <span class="text-gradient">Aïkku PLANN</span> in action?
   </h2>
   <p class="max-w-xl mx-auto mb-8 leading-relaxed">
@@ -246,7 +246,7 @@
       </div>
       <div>
         <p class="text-xs font-bold text-accent uppercase tracking-widest mb-1">Development</p>
-        <h3 class="text-xl font-black  mb-3">Open source code</h3>
+        <h3 class="text-xl   mb-3">Open source code</h3>
         <p class="text-sm text-gray-500 leading-relaxed">
           Developed in France and published transparently on 
           <%= link_to "GitHub",
@@ -264,7 +264,7 @@
       </div>
       <div>
         <p class="text-xs font-bold text-accent uppercase tracking-widest mb-1">Support & Services</p>
-        <h3 class="text-xl font-black  mb-3">Need a specific feature?</h3>
+        <h3 class="text-xl  mb-3">Need a specific feature?</h3>
         <p class="text-sm text-gray-500 leading-relaxed">
           Our team is available to support your specific needs.
           <%= link_to services_path, class: "block mt-2 font-semibold text-accent hover:text-secondary transition-colors group/link" do %>

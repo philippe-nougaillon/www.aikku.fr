@@ -7,20 +7,20 @@
      style="background-image: url(<%= asset_path('background/background.webp') %>)">
   <div class="absolute inset-0 bg-black/50"></div>
   <div class="relative z-10 reveal delay-1 ">
-    <h1 class="pt-6 md:pt-0 text-4xl lg:text-6xl font-black">
+    <h1 class="pt-6 md:pt-0 text-4xl lg:text-6xl ">
       Digital <span class="text-gradient">solutions</span> serving your needs
     </h1>
-    <p class="text-xl p-8 hidden md:block md:text-center lg:text-2xl text-primary-content font-black">
+    <p class="text-xl p-8 hidden md:block md:text-center lg:text-2xl text-primary-content ">
       AÏKKU translates customer needs into simple, robust, and tailored software solutions
     </p>
   </div>
 </div>
 <section class="w-full text-secondary-content py-20 px-10 md:p-20 text-justify reveal delay-2">
-  <h2 class="text-3xl lg:text-5xl text-center font-black mb-12">
+  <h2 class="text-3xl lg:text-5xl text-center mb-12">
     Our motto : <span class="text-gradient-reverse">AI for You</span>
   </h2>
   <p class="text-xl mb-3">
-    Discover the <b>Aïkku platform</b> and our software solutions developed for public institutions, private organizations, and higher education establishments.
+    Discover the <span class="font-semibold">Aïkku platform</span> and our software solutions developed for public institutions, private organizations, and higher education establishments.
   </p>
   <p class="hidden md:block">
     Digital transformation goes hand in hand with the evolution of business processes. 
@@ -30,7 +30,7 @@
   </p>
   <div class="flex justify-center">
     <%= link_to 'Learn more ...', services_path, 
-  class: 'btn text-lg lg:btn-sm btn-gradient hover:text-white! mt-12 shadow-lg h-min transition-transform hover:scale-105' %>
+    class: 'btn-gradient  mt-12 shadow-lg h-min transition-transform hover:scale-105 border-none' %>
   </div>
 </section>
 <div class="footer-wave">
@@ -46,48 +46,93 @@
   </svg>
 </div>
 <section id="secteurs" class="w-full text-white px-10 py-20 md:p-20 bg-info">
-  <h2 class="text-3xl lg:text-5xl text-center font-black mb-12">Our <span class="text-gradient">key sectors</span></h2>
+  <h2 class="text-3xl lg:text-5xl text-center  mb-12">
+    Our <span class="text-gradient">key sectors</span></h2>
   <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-16">
     <div class="bg-white h-full border border-gray-100 rounded-xl overflow-hidden flex flex-col">
       <figure>
-        <%= image_tag "misc/students.avif", class: "w-full h-48 object-cover", alt: "Students" %>
+        <%= image_tag(
+          "misc/students.avif",
+          class: "w-full h-48 object-cover",
+          alt: "Étudiants",
+          loading: "lazy",
+          width: 800,
+          height: 450,
+          
+          sizes: "(max-width: 768px) 100vw, 33vw"
+        ) %>
       </figure>
-      <div class="card-body text-black">
-        <h2 class="card-title mb-4">Higher education</h2>
-        <p>Manage all your training programs and classrooms with a simple, affordable, and customizable solution</p>
-        <div class="card-actions">
-          <%= link_to 'Learn more about Aikku PLANN', aikku_plann_path, 
-          class: 'btn btn-sm btn-gradient w-full shadow mt-4 h-min' %>
+      <div class="card-body text-black flex flex-col flex-grow">
+        <h2 class="card-title mb-4">
+          Higher education </h2>
+        <p class="flex-grow">Manage all your training programs and classrooms with a simple, 
+          affordable, and customizable solution  </p>
+        <div class="card-actions mt-6">
+          <%= link_to(
+            'En savoir plus sur Aikku PLANN',
+            aikku_plann_path,
+            class: 'btn btn-sm btn-gradient w-full shadow h-min'
+          ) %>
         </div>
       </div>
     </div>
     <div class="bg-white h-full border border-gray-100 rounded-xl overflow-hidden flex flex-col">
       <figure>
-        <%= image_tag "misc/communauté-communes.avif", class: "w-full h-48 object-cover", alt: 'Local community' %>
+        <%= image_tag(
+          "misc/communauté-communes.avif",
+          class: "w-full h-48 object-cover",
+          alt: "Village",
+          loading: "lazy",
+          width: 800,
+          height: 450,
+          
+          sizes: "(max-width: 768px) 100vw, 33vw"
+        ) %>
       </figure>
-      <div class="card-body text-black">
-        <h2 class="card-title mb-4">Local authorities</h2>
-        <p>Effortlessly manage cooperation and resource sharing within your inter-municipal structure (EPCI)</p>
-        <div class="card-actions">
-          <%= link_to 'Learn more about Aikku COOPCOMM', aikku_coopcomm_path, 
-          class: 'btn btn-sm btn-gradient w-full shadow mt-4 h-min' %>
-        </div>
-      </div>
-    </div>
-    <div class="bg-white h-full border border-gray-100 rounded-xl overflow-hidden flex flex-col">
-      <figure>
-        <%= image_tag "misc/dsi.avif", class: "w-full h-48 object-cover", alt: 'IT department / Data scientist working' %>
-      </figure>
-      <div class="card-body text-black">
-        <h2 class="card-title mb-4">IT Departments</h2>
-        <p>Manage your business data online and on the go with your no-code tool enhanced with integrated AI</p>
-        <div class="card-actions">
-          <%= link_to 'Learn more about Aikku ACCESS', aikku_access_path, 
-          class: 'btn btn-sm btn-gradient w-full shadow mt-4 h-min' %>
-        </div>
+      <div class="card-body text-black flex flex-col flex-grow">
+        <h2 class="card-title mb-4">
+          Local authorities </h2>
+        <p class="flex-grow">
+          Effortlessly manage cooperation and resource sharing within your inter-municipal structure (EPCI)</p>
+      </p>
+      <div class="card-actions mt-6">
+        <%= link_to(
+            'En savoir plus sur Aikku COOPCOMM',
+            aikku_coopcomm_path,
+            class: 'btn btn-sm btn-gradient w-full shadow h-min'
+          ) %>
       </div>
     </div>
   </div>
+  <div class="bg-white h-full border border-gray-100 rounded-xl overflow-hidden flex flex-col">
+    <figure>
+      <%= image_tag(
+          "misc/dsi.avif",
+          class: "w-full h-48 object-cover",
+          alt: "DSI / Data Scientist qui travaille",
+          loading: "lazy",
+          width: 800,
+          height: 450,
+          
+          sizes: "(max-width: 768px) 100vw, 33vw"
+        ) %>
+    </figure>
+    <div class="card-body text-black flex flex-col flex-grow">
+      <h2 class="card-title mb-4">
+        IT Departments </h2>
+      <p class="flex-grow">
+        Manage your business data online and on the go with your no-code tool enhanced with integrated AI</p>
+    </p>
+    <div class="card-actions mt-6">
+      <%= link_to(
+            'En savoir plus sur Aikku ACCESS',
+            aikku_access_path,
+            class: 'btn btn-sm btn-gradient w-full shadow h-min'
+          ) %>
+    </div>
+  </div>
+</div>
+</div>
 </section>
 <div class="footer-wave">
   <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
@@ -102,17 +147,17 @@
   </svg>
 </div>
 <section id="expérience" class="px-10 py-20 md:p-20">
-  <h2 class="text-3xl text-center lg:text-5xl font-black mb-12">Over 20 years of experience</h2>
+  <h2 class="text-3xl text-center lg:text-5xl  mb-12">Over 20 years of experience</h2>
   <p class="lg:text-2xl text-center">
     Aïkku is a young company, but its founders have been working together for over 20 years.
     <br>
     Together, they have delivered numerous validated projects in the healthcare sector,
     <br>
-    for clients such as <b>Sanofi</b> (eCRF), <b>L’Oréal</b> (ePRO), <b>PPRS Research</b> (CDMS), <b>AirJin</b> (IoT)
+    for clients such as <span class="font-semibold">Sanofi</span> (eCRF), <span class="font-semibold">L’Oréal</span> (ePRO), <span class="font-semibold">PPRS Research</span> (CDMS), <span class="font-semibold">AirJin</span> (IoT)
   </p>
 </section>
 <section id="clients" class="flex flex-col justify-center p-15 ">
-  <h2 class="text-center text-3xl lg:text-5xl font-black mb-12 ">
+  <h2 class="text-center text-3xl lg:text-5xl  mb-12 ">
     They trust <span class="text-gradient">us</span>
   </h2>
   <div class="flex flex-wrap justify-center items-center gap-8 ">

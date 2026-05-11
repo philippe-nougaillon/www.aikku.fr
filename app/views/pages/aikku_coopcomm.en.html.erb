@@ -1,31 +1,26 @@
 <div class="text-center reveal delay-1 m-8 md:m-30 flex flex-col lg:flex-row items-center gap-6 md:gap-16">
- 
-    <div class="flex-1 text-center lg:text-left reveal">
-      <h1 class="font-black text-5xl md:text-7xl text-secondary mb-8 leading-tight italic tracking-tight">
-         <%= title "Collaborate more, spend less!" %>
-   </h1>
-      <p class="text-xl lg:text-2xl text-gray-600 mb-10 leading-relaxed  text-justify ">
-        <span class="font-black text-secondary">Aïkku CoopComm</span>
-    is an <strong>inter-municipal resource-sharing platform </strong>designed to 
-    meet the needs of communities of municipalities,
-    inter-municipal associations, and local authorities.
-    It supports them in optimizing and pooling
-    their human resources, investments, and technical assets within a single tool.
- </p>
-    </div>
-
- <div class="flex-1 w-full max-w-xl reveal delay-1">
-      <div class="relative group">
-        <div class="absolute -inset-4 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full blur-3xl opacity-10 group-hover:opacity-20 transition duration-1000"></div>
-        <%= image_tag "logos/CoopCommlogo.png", 
+  <div class="flex-1 text-center lg:text-left reveal">
+    <h1 class=" text-5xl md:text-7xl text-secondary mb-8 leading-tight italic tracking-tight">
+      <%= title "Collaborate more, spend less!" %>
+    </h1>
+    <p class="text-xl lg:text-2xl text-gray-600 mb-10 leading-relaxed  text-justify ">
+      <span class=" text-secondary">Aïkku CoopComm</span>
+      is an <span class="font-semibold">inter-municipal resource-sharing platform </span>designed to 
+      meet the needs of communities of municipalities,
+      inter-municipal associations, and local authorities.
+      It supports them in optimizing and pooling
+      their human resources, investments, and technical assets within a single tool.
+    </p>
+  </div>
+  <div class="flex-1 w-full max-w-xl reveal delay-1">
+    <div class="relative group">
+      <div class="absolute -inset-4 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full blur-3xl opacity-10 group-hover:opacity-20 transition duration-1000"></div>
+      <%= image_tag "logos/CoopCommlogo.png", 
             class: "relative bg-white shadow-xl rounded-3xl p-12 animate-pulsing", 
             alt: "CoopComm Logo" %>
-      </div>
     </div>
   </div>
-
-
-
+</div>
 </section>
 <div class="footer-wave">
   <svg viewBox="0 0 1200 62" preserveAspectRatio="none">
@@ -42,7 +37,7 @@
 <section id="fonctionnalités" class="w-full bg-[#1f1f3d] text-white py-24 px-6 md:px-12">
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-20">
-      <h2 class="text-4xl lg:text-6xl font-black mb-6">
+      <h2 class="text-4xl lg:text-6xl  mb-6">
         Everything you need
         <span class="text-gradient">in one place</span>
       </h2>
@@ -89,7 +84,7 @@
             <div class="w-14 h-14 flex items-center justify-center rounded-2xl bg-[#51c7fd]/10 group-hover:scale-110 group-hover:bg-[#51c7fd] transition-all duration-300">
               <i class="fa-solid <%= f[:icon] %> text-2xl text-[#51c7fd] group-hover:text-[#1f1f3d]"></i>
             </div>
-            <h3 class=" text-2xl font-black text-white group-hover:text-[#51c7fd] transition-colors"><%= f[:title] %></h3>
+            <h3 class=" text-2xl  text-white group-hover:text-[#51c7fd] transition-colors"><%= f[:title] %></h3>
           </div>
           <p class="text-gray-400 leading-relaxed text-base">
             <%= f[:text] %>
@@ -110,23 +105,19 @@
           class: "shadow rounded-2xl",
           alt: "CoopComm dashboard across multiple devices" %>
   </div>
-
   <div class="flex-1 order-1 lg:order-2">
     <h3 class="text-[#51c7fd] font-black mb-4 uppercase tracking-[0.2em] text-sm">
       Why Aïkku CoopComm?
     </h3>
-
-    <h2 class="text-4xl lg:text-5xl font-black mb-8 leading-tight text-secondary">
+    <h2 class="text-4xl lg:text-5xl  mb-8 leading-tight text-secondary">
       A complete solution for your inter-municipal organization
     </h2>
-
     <p class="text-lg text-gray-600 mb-8 leading-relaxed text-justify">
       Reduce costs, improve team efficiency, and ensure
-      <strong>100% French digital sovereignty</strong>.
+      <span class="font-semibold">100% French digital sovereignty</span>.
       Our platform guarantees GDPR compliance while providing a smooth user experience
       for all field agents.
     </p>
-
     <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
       <% ["Cost reduction", "GDPR compliance", "Field efficiency", "French support"].each do |item| %>
         <li class="flex items-center gap-3 font-bold text-secondary">
@@ -150,7 +141,7 @@
   </svg>
 </div>
 <section class="text-center bg-info text-white px-8 py-16 w-full ">
-  <h2 class="text-3xl lg:text-5xl font-black mb-6">
+  <h2 class="text-3xl lg:text-5xl  mb-6">
     Want to see <span class="text-gradient">Aïkku COOPCOMM</span> in action?
   </h2>
   <p class="max-w-xl mx-auto mb-8 leading-relaxed">
@@ -174,7 +165,7 @@
       </div>
       <div>
         <p class="text-xs font-bold text-accent uppercase tracking-widest mb-1">Development</p>
-        <h3 class="text-xl font-black  mb-3">Open source code</h3>
+        <h3 class="text-xl font-medium mb-3">Open source code</h3>
         <p class="text-sm text-gray-500 leading-relaxed">
           Developed in France and published with full transparency on 
           <%= link_to "GitHub",
@@ -192,7 +183,7 @@
       </div>
       <div>
         <p class="text-xs font-bold text-accent uppercase tracking-widest mb-1">Support & Services</p>
-        <h3 class="text-xl font-black  mb-3">Need a specific feature?</h3>
+        <h3 class="text-xl font-medium mb-3">Need a specific feature?</h3>
         <p class="text-sm text-gray-500 leading-relaxed">
           Our team is here to support your specific needs.
           <%= link_to services_path, class: "block mt-2 font-semibold text-accent hover:text-secondary transition-colors group/link" do %>
