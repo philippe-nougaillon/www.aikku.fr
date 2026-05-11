@@ -34,18 +34,22 @@ module Portfolio
     #
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.
-    #
-    # config.time_zone = "Central Time (US & Canada)"
-    # config.eager_load_paths << Rails.root.join("extras")
-
-    # Don't generate system test files.
-    config.generators.system_tests = nil
-
+    
+    # Configuración de zona horaria e idioma
     config.time_zone = "Paris"
     config.i18n.default_locale = :fr
 
+    # --- OPTIMIZACIÓN DE RENDIMIENTO ---
+    # Activa la compresión Gzip para HTML, CSS y JavaScript.
+    # Esto soluciona el aviso de "activar la compresión de texto".
+    config.middleware.use Rack::Deflater
+
+    # Gestión de redirecciones (quita la barra final de las URLs)
     config.middleware.insert_before(Rack::Runtime, Rack::Rewrite) do
       r301 %r{^/(.*)/$}, "/$1"
     end
+
+    # Don't generate system test files.
+    config.generators.system_tests = nil
   end
 end
