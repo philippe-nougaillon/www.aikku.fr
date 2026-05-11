@@ -1,6 +1,9 @@
 <div>
-  <div class="relative text-center w-full min-h-[200px] md:min-h-[300px] text-neutral-content p-10 lg:p-30  bg-contain bg-center bg-no-repeat"  
-     style="background-image: url(<%= asset_path('background/Nouveauprojet.png')%>)">
+  <div class="relative text-center w-full min-h-[200px] md:min-h-[300px] text-neutral-content p-10 lg:p-30" >
+    <%= image_tag "background/Nouveauprojet.png",
+      class: "absolute inset-0 w-full h-full object-cover bg-contain bg-center bg-no-repeat",
+      fetchpriority: "high",
+      loading: "eager" %>
     <div class="absolute inset-0 bg-black/70"></div>
     <div class="relative z-10 reveal delay-1">
       <h1 class="text-4xl lg:text-6xl ">
