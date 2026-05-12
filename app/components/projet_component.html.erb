@@ -24,41 +24,34 @@
       </div>
     </div>
   </label>
-
   <!-- Put this part before </body> tag -->
   <input type="checkbox" id="my-modal-<%= @projet.id %>" class="modal-toggle" />
   <label for="my-modal-<%= @projet.id %>" class="modal cursor-pointer">
     <label class="modal-box max-w-max">
       <label for="my-modal-<%= @projet.id %>" class="btn btn-primary btn-sm btn-circle absolute right-2 top-2">✕</label>
-
       <div class="card shadow mx-auto lg:w-4/5 p-4">
         <div class="mx-auto">
           <div id="<%= dom_id @projet %>">
-
             <h2 class="my-8 text-4xl font-black text-accent">
               <span class="underline underline-offset-8">
                 <%= @projet.nom.upcase %>
               </span>
             </h2>
-
             <p class="my-8">
               <% @projet.tags.each do |tag| %>
                 <div class="badge badge-primary badge-outline"><%= tag %></div>
               <% end %>
             </p>
             <br>
-            
             <p class="first-line:uppercase first-line:tracking-widest first-letter:text-5xl first-letter:font-black first-letter:mr-3 first-letter:float-left">
               <%= @projet.contenu %>
             </p>
-
             <%= render(StatComponent.new(
                 nbr_projets: 0, 
                 nbr_commits: @projet.commit, 
                 nbr_deploys: @projet.deploy, 
                 nbr_coffees: @projet.coffee)) 
             %>
-
             <div class="flex justify-between items-center">
               <div class="link link-hover underline underline-offset-8">
                 <%= link_to URI.parse(@projet.url).host, @projet.url, target: "_blank" %>
@@ -66,16 +59,14 @@
               </div>
               <p class="link link-hover">
                 <% if @projet.github %>
-                  <i class="fa-brands fa-github"></i>
+                  <%= icon("github", class: "w-6 h-6 text-accent mt-1  shrink-0") %>
                   <%= link_to URI.parse(@projet.github).path, @projet.github, target: "_blank" %>
                 <% end %>
               </p>
-
               <div class="flex items-end float-right rounded w-16 md:w-32 lg:w-64 p-3">
                 <%= image_tag @projet.logo_image_path if File.exist?("app/assets/images/" + @projet.logo_image_path) %>
               </div>
             </div>
-
           </div>
         </div>
       </div>

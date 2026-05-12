@@ -255,15 +255,33 @@
     <path d="M0,0 Q300,60 600,30 Q900,0 1200,30 L1200,0 L0,0 Z" fill="#1f1f3d"/>
   </svg>
 </div>
-<section class="px-8 my-10 md:my-20 md:px-90 ">
-  <div class=" border-gray-200 rounded-3xl p-8 bg-white shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
-    <div class="flex items-start gap-4 justify-center">
+<section class="grid grid-cols-1 md:grid-cols-2 gap-8 px-6 pt-20 md:px-20 mb-20">
+  <div class="group border border-gray-200 rounded-3xl p-8 bg-white shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+    <div class="flex items-start gap-4">
+      <div class="bg-blue-50 p-3 rounded-xl text-accent group-hover:bg-accent group-hover:text-white transition-colors">
+        <%= icon("github", class: "w-6 h-6 ") %>
+      </div>
+      <div>
+        <p class="text-xs font-bold text-accent uppercase tracking-widest mb-1">Développement</p>
+        <h3 class="text-xl font-medium  mb-3">Code source ouvert</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">
+          Développé en France et publié en toute transparence sur 
+          <%= link_to "GitHub",
+            "https://github.com/philippe-nougaillon/aikku-access",
+            target: "_blank",
+            class: "font-bold text-accent hover:text-secondary underline decoration-2 underline-offset-4" %>.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="group border border-gray-200 rounded-3xl p-8 bg-white shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+    <div class="flex items-start gap-4">
       <div class="bg-blue-50 p-3 rounded-xl text-accent group-hover:bg-accent group-hover:text-white transition-colors">
         <%= icon("rocket", class: "w-6 h-6") %>
       </div>
       <div>
         <p class="text-xs font-bold text-accent uppercase tracking-widest mb-1">Support & Services</p>
-        <h3 class="text-xl font-medium  mb-3">Besoin d'une fonctionnalité ?</h3>
+        <h3 class="text-xl  font-medium mb-3">Besoin d'une fonctionnalité ?</h3>
         <p class="text-sm text-gray-500 leading-relaxed">
           Notre équipe est à votre écoute pour des besoins spécifiques.
           <%= link_to services_path, class: "block mt-2 font-semibold text-accent hover:text-secondary transition-colors group/link" do %>

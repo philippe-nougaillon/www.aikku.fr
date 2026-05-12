@@ -1,4 +1,4 @@
-<section class="text-center reveal delay-1 m-0 md:m-8">
+<section class="text-center reveal delay-1 m-8 ">
   <h1 class=" text-5xl md:text-6xl text-secondary mb-12 pt-8 italic">
     <%= title "Gérez vos cours et vos salles. Sans complications" %>
   </h1>
@@ -130,7 +130,7 @@
         "Synchronisation des calendriers"
       ].each do |item| %>
         <li class="flex items-center gap-3 font-bold text-secondary">
-          <i class="fa-solid fa-circle-check text-[#51c7fd]"></i>
+         <%= icon("cercle-check", class: "w-6 h-6 text-[#51c7fd] ") %></i> 
           <%= item %>
         </li>
       <% end %>
@@ -144,7 +144,7 @@
   <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
     <div id="confiance" class="flex-1">
       <div class="bg-white shadow-xl rounded-2xl p-8 flex flex-col border border-gray-100">
-        <i class="fa-solid fa-quote-left text-2xl mb-4 text-left text-accent"></i>
+                 <%= icon("quote", class: "w-6 h-6 mb-4 text-left text-accent ") %></i> 
         <p class="text-gray-700 text-justify leading-relaxed text-sm md:text-base">
           Philippe Nougaillon propose des solutions pérennes, fiables 
           et fait primer dans sa vision du développement la simplicité
@@ -158,7 +158,7 @@
           <div>
             <%= link_to "https://www.linkedin.com/in/philippe-eynaud-3a3ab835/",
                class: "flex items-center gap-1.5 font-medium text-accent " do %>
-              <i class="fa-brands fa-linkedin"></i> Philippe EYNAUD
+                      <%= icon("linkedin", class: "w-6 h-6 ") %></i> Philippe EYNAUD
             <% end %>
             <p class="text-xs text-gray-500 mt-1">
               Professeur en sciences de gestion à l'IAE de Paris, Université Paris 1 Panthéon-Sorbonne
@@ -174,13 +174,13 @@
                       class: "italic link no-underline", target: '_blank' %>, (2026), érés Editions.  
             </p>
           </div>
-          <%= image_tag "projets/planning iae-paris/Logo_iae.png", class: "h-10 w-auto opacity-80", alt: "Logo IAE PARIS" %>
+          <%= image_tag "logos/iaelogo.avif", class: "h-10 w-auto opacity-80", alt: "Logo IAE PARIS" %>
         </div>
       </div>
     </div>
     <div id="confiance2" class="flex-1">
       <div class="bg-white shadow-xl rounded-2xl p-8 flex flex-col border border-gray-100">
-        <i class="fa-solid fa-quote-left text-2xl mb-4 text-left text-accent"></i>
+                 <%= icon("quote", class: "w-6 h-6 mb-4 text-left text-accent ") %></i> 
         <p class="text-gray-700 text-justify leading-relaxed text-sm md:text-base">
           J’ai eu le plaisir de travailler avec l’équipe Aïkku sur le déploiement de l’outil Planning-IAE.
           Quelle chance! L'équipe Aïkku incarne "l'orientation utilisateur" que j'enseigne à mes étudiants ! 
@@ -190,13 +190,13 @@
         <div class="mt-8 border-t pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
           <div>
             <%= link_to "https://www.linkedin.com/in/marieevelaporte/",class: "flex items-center gap-1.5 font-medium text-accent " do %>
-              <i class="fa-brands fa-linkedin"></i> Marie-Eve LAPORTE
+              <%= icon("linkedin", class: "w-6 h-6 ") %> Marie-Eve LAPORTE
             <% end %>
             <p class="text-xs text-gray-500 mt-1">
               Professeure, 'Innovation Management & Future of Healthcare'
             </p>
           </div>
-          <%= image_tag "projets/planning iae-paris/Logo_iae.png", class: "h-10 w-auto opacity-80", alt: "Logo IAE PARIS" %>
+          <%= image_tag "logos/iaelogo.avif", class: "h-10 w-auto opacity-80", alt: "Logo IAE PARIS" %>
         </div>
       </div>
     </div>
@@ -249,7 +249,7 @@
   <div class="group border border-gray-200 rounded-3xl p-8 bg-white shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
     <div class="flex items-start gap-4">
       <div class="bg-blue-50 p-3 rounded-xl text-accent group-hover:bg-accent group-hover:text-white transition-colors">
-        <i class="fa-brands fa-github fa-2xl"></i>
+        <%= icon("github", class: "w-6 h-6 ") %>
       </div>
       <div>
         <p class="text-xs font-bold text-accent uppercase tracking-widest mb-1">Développement</p>

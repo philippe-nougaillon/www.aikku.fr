@@ -27,6 +27,6 @@
 
 <li>
   <%= link_to url_for(request.params.merge(locale: 'fr')), class: 'text-black-50', title: "Switch language / Changer de langue" do %>
-    <i class="fa-solid fa-globe"></i> FR
+            <%= icon("language", class: "w-6 h-6 ") %> FR
   <% end %>
 </li>
