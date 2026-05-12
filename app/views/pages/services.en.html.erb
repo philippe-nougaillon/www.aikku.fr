@@ -1,9 +1,10 @@
 <div>
   <div class="relative text-center w-full min-h-[200px] md:min-h-[300px] text-neutral-content p-10 lg:p-30 ">
-    <%= image_tag "background/backgroundservices.jpg",
-      class: "absolute inset-0 w-full h-full object-cover  bg-cover bg-center",
-      fetchpriority: "high",
-      loading: "eager" %>
+    <%= image_tag "background/backgroundservices.avif",
+        class: "absolute inset-0 w-full h-full object-cover",
+        alt: "Background image with someone working on a computer project",
+        fetchpriority: "high",
+        loading: "eager" %>
     <div class="absolute inset-0 bg-black/70"></div>
     <div class="relative z-10 reveal delay-1">
       <h1 class="text-4xl lg:text-6xl ">
@@ -84,7 +85,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-16">
       <div class="bg-white h-full border border-gray-100 rounded-xl p-6 flex flex-col gap-4">
         <div class="flex flex-col items-center md:mx-4">
-          <%= image_tag 'logos/rails_logo.png', class: 'h-50 w-50', alt: 'Ruby on Rails Logo' %>
+          <%= image_tag 'logos/rails_logo.avif', class: 'h-50 w-50', alt: 'Ruby on Rails Logo' %>
           <h3 class="text-center text-accent text-2xl mt-2 mb-4">Ruby on Rails</h3>
         </div>
         <p class="px-4">
@@ -108,7 +109,7 @@
       </div>
       <div class="bg-white h-full border border-gray-100 rounded-xl p-6 flex flex-col gap-4">
         <div class="flex flex-col items-center md:mx-4">
-          <%= image_tag "logos/mistral.png", class: 'h-50 w-50', alt: 'Mistral' %>
+          <%= image_tag "logos/mistral.avif", class: 'h-50 w-50', alt: 'Mistral' %>
           <h3 class=" text-accent text-center text-2xl mt-2 mb-4">AI and Machine Learning</h3>
         </div>
         <p class="px-4">
