@@ -2,5 +2,8 @@
   "dependencies": {
     "tailwind-animations": "^1.0.1",
     "tw-elements": "^2.0.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.0"
   }
 }

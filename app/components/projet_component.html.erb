@@ -55,11 +55,11 @@
             <div class="flex justify-between items-center">
               <div class="link link-hover underline underline-offset-8">
                 <%= link_to URI.parse(@projet.url).host, @projet.url, target: "_blank" %>
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <%= icon("arrowup", class: "w-6 h-6 text-accent") %>
               </div>
               <p class="link link-hover">
                 <% if @projet.github %>
-                  <%= icon("github", class: "w-6 h-6 text-accent mt-1  shrink-0") %>
+                  <%= icon("github", class: "w-6 h-6 text-accent ") %>
                   <%= link_to URI.parse(@projet.github).path, @projet.github, target: "_blank" %>
                 <% end %>
               </p>
