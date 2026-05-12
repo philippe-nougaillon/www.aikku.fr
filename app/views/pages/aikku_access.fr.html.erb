@@ -16,10 +16,12 @@
   </div>
   <div class="flex-1 w-full max-w-xl reveal delay-1">
     <div class="relative group">
-      <div class="absolute -inset-4 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full blur-3xl opacity-10 group-hover:opacity-20 transition duration-1000"></div>
+      <div class="absolute -inset-4 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full blur-xl opacity-10 group-hover:opacity-20 transition duration-1000"></div>
       <%= image_tag "aikkuaccess.png", 
-            class: "relative bg-white shadow-xl rounded-3xl animate-pulsing", 
-            alt: "Aïkku ACCESS Logo" %>
+             width: 1200,
+      height: 900,
+      loading: "lazy",
+      class: "relative bg-white shadow-xl rounded-3xl animate-pulsing" %>
     </div>
   </div>
 </div>
@@ -188,35 +190,50 @@
     </div>
     <div id="carousel" class="w-full carousel min-w-16 sm:w-3/4 mx-auto shadow-lg rounded-xl" data-turbo="false">
       <div id="slide1" class="carousel-item relative w-full">
-        <%= image_tag "aikku_access/Aikku Access page login.png" %>
+        <%= image_tag "aikku_access/Aikku Access page login.png",
+         width: 1200,
+      height: 900,
+      loading: "lazy"  %>
         <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
           <a href="#slide5" class="btn btn-circle btn-primary">❮</a>
           <a href="#slide2" class="btn btn-circle btn-primary">❯</a>
         </div>
       </div>
       <div id="slide2" class="carousel-item relative w-full">
-        <%= image_tag "aikku_access/Aikku Access page Objets.png" %>
+        <%= image_tag "aikku_access/Aikku Access page Objets.png",
+         width: 1200,
+      height: 900,
+      loading: "lazy"  %>
         <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
           <a href="#slide1" class="btn btn-circle btn-primary">❮</a>
           <a href="#slide3" class="btn btn-circle btn-primary">❯</a>
         </div>
       </div>
       <div id="slide3" class="carousel-item relative w-full">
-        <%= image_tag "aikku_access/Aikku Access page Data.png" %>
+        <%= image_tag "aikku_access/Aikku Access page Data.png",
+         width: 1200,
+      height: 900,
+      loading: "lazy" %>
         <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
           <a href="#slide2" class="btn btn-circle btn-primary">❮</a>
           <a href="#slide4" class="btn btn-circle btn-primary">❯</a>
         </div>
       </div>
       <div id="slide4" class="carousel-item relative w-full">
-        <%= image_tag "aikku_access/Aikku Access page Dashboard.png" %>
+        <%= image_tag "aikku_access/Aikku Access page Dashboard.png",
+         width: 1200,
+      height: 900,
+      loading: "lazy"  %>
         <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
           <a href="#slide3" class="btn btn-circle btn-primary">❮</a>
           <a href="#slide5" class="btn btn-circle btn-primary">❯</a>
         </div>
       </div>
       <div id="slide5" class="carousel-item relative w-full">
-        <%= image_tag "aikku_access/Aikku Access page AI.png" %>
+        <%= image_tag "aikku_access/Aikku Access page AI.png",
+         width: 1200,
+      height: 900,
+      loading: "lazy"  %>
         <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
           <a href="#slide4" class="btn btn-circle btn-primary">❮</a>
           <a href="#slide1" class="btn btn-circle btn-primary">❯</a>

@@ -16,10 +16,13 @@
   </div>
   <div class="flex-1 w-full max-w-xl reveal delay-1">
     <div class="relative group">
-      <div class="absolute -inset-4 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full blur-3xl opacity-10 group-hover:opacity-20 transition duration-1000"></div>
-      <%= image_tag "aikkuaccess.png", 
-            class: "relative bg-white shadow-xl rounded-3xl animate-pulsing", 
-            alt: "Aïkku ACCESS Logo" %>
+      <div class="absolute -inset-4 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full blur-xl opacity-10 group-hover:opacity-20 transition duration-1000"></div>
+      <%= image_tag "aikkuaccess.png",
+      width: 1200,
+      height: 900,
+      loading: "lazy",
+      alt: "Aïkku ACCESS Logo",
+      class: "relative bg-white shadow-xl rounded-3xl animate-pulsing" %>
     </div>
   </div>
 </div>
@@ -129,7 +132,7 @@
   <div class="grid lg:grid-cols-2 gap-10 items-center">
     <div class="space-y-8">
       <div class="flex gap-4 rounded-xl p-4 border border-gray/30">
-        <%= icon("list", class: "w-6 h-6  mt-1 text-accent shrink-0") %>        
+        <%= icon("list", class: "w-6 h-6  mt-1 text-accent shrink-0") %>
         <div>
           <h3 class="text-xl ">Object collections</h3>
           <p class="text-gray-600">
@@ -139,7 +142,7 @@
         </div>
       </div>
       <div class="flex gap-4 rounded-xl p-4 border border-gray/30">
-        <%= icon("link", class: "w-6 h-6 text-accent mt-1  shrink-0") %>        
+        <%= icon("link", class: "w-6 h-6 text-accent mt-1  shrink-0") %>
         <div>
           <h3 class="text-xl ">Data relationships</h3>
           <p class="text-gray-600">
@@ -149,7 +152,7 @@
         </div>
       </div>
       <div class="flex gap-4 rounded-xl p-4 border border-gray/30">
-        <%= icon("userscollab", class: "w-6 h-6 text-accent mt-1  shrink-0") %>        
+        <%= icon("userscollab", class: "w-6 h-6 text-accent mt-1  shrink-0") %>
         <div>
           <h3 class="text-xl ">Real-time collaboration</h3>
           <p class="text-gray-600">
@@ -159,7 +162,7 @@
         </div>
       </div>
       <div class="flex gap-4 rounded-xl p-4 border border-gray/30">
-        <%= icon("chart", class: "w-6 h-6 text-accent mt-1 shrink-0") %>        
+        <%= icon("chart", class: "w-6 h-6 text-accent mt-1 shrink-0") %>
         <div>
           <h3 class="text-xl ">Visualization & analytics</h3>
           <p class="text-gray-600">
@@ -179,7 +182,7 @@
         </div>
       </div>
       <div class="flex gap-4 rounded-xl p-4 border border-gray/30">
-        <%= icon("calendar", class: "w-6 h-6 text-accent mt-1  shrink-0") %>        
+        <%= icon("calendar", class: "w-6 h-6 text-accent mt-1  shrink-0") %>
         <div>
           <h3 class="text-xl ">Calendar view</h3>
           <p class="text-gray-600">
@@ -191,35 +194,50 @@
     </div>
     <div id="carousel" class="w-full carousel min-w-16 sm:w-3/4 mx-auto shadow-lg rounded-xl" data-turbo="false">
       <div id="slide1" class="carousel-item relative w-full">
-        <%= image_tag "aikku_access/Aikku Access page login.png" %>
+        <%= image_tag "aikku_access/Aikku Access page login.png",
+         width: 1200,
+      height: 900,
+      loading: "lazy" %>
         <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
           <a href="#slide5" class="btn btn-circle btn-primary">❮</a>
           <a href="#slide2" class="btn btn-circle btn-primary">❯</a>
         </div>
       </div>
       <div id="slide2" class="carousel-item relative w-full">
-        <%= image_tag "aikku_access/Aikku Access page Objets.png" %>
+        <%= image_tag "aikku_access/Aikku Access page Objets.png",
+         width: 1200,
+      height: 900,
+      loading: "lazy" %>
         <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
           <a href="#slide1" class="btn btn-circle btn-primary">❮</a>
           <a href="#slide3" class="btn btn-circle btn-primary">❯</a>
         </div>
       </div>
       <div id="slide3" class="carousel-item relative w-full">
-        <%= image_tag "aikku_access/Aikku Access page Data.png" %>
+        <%= image_tag "aikku_access/Aikku Access page Data.png",
+         width: 1200,
+      height: 900,
+      loading: "lazy" %>
         <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
           <a href="#slide2" class="btn btn-circle btn-primary">❮</a>
           <a href="#slide4" class="btn btn-circle btn-primary">❯</a>
         </div>
       </div>
       <div id="slide4" class="carousel-item relative w-full">
-        <%= image_tag "aikku_access/Aikku Access page Dashboard.png" %>
+        <%= image_tag "aikku_access/Aikku Access page Dashboard.png",
+         width: 1200,
+      height: 900,
+      loading: "lazy" %>
         <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
           <a href="#slide3" class="btn btn-circle btn-primary">❮</a>
           <a href="#slide5" class="btn btn-circle btn-primary">❯</a>
         </div>
       </div>
       <div id="slide5" class="carousel-item relative w-full">
-        <%= image_tag "aikku_access/Aikku Access page AI.png" %>
+        <%= image_tag "aikku_access/Aikku Access page AI.png",
+         width: 1200,
+      height: 900,
+      loading: "lazy" %>
         <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
           <a href="#slide4" class="btn btn-circle btn-primary">❮</a>
           <a href="#slide1" class="btn btn-circle btn-primary">❯</a>
@@ -257,10 +275,6 @@
     <path d="M0,0 Q300,60 600,30 Q900,0 1200,30 L1200,0 L0,0 Z" fill="#1f1f3d"/>
   </svg>
 </div>
-
-
-
-
 <section class="grid grid-cols-1 md:grid-cols-2 gap-8 px-6 pt-20 md:px-20 mb-20">
   <div class="group border border-gray-200 rounded-3xl p-8 bg-white shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
     <div class="flex items-start gap-4">
