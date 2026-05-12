@@ -5,7 +5,6 @@
         alt: "image de fond avec de quelqu'un travaillant sur un projet informatique",
         fetchpriority: "high",
         loading: "eager" %>
-     
     <div class="absolute inset-0 bg-black/70"></div>
     <div class="relative z-10 reveal delay-1">
       <h1 class="text-4xl lg:text-6xl ">
@@ -24,7 +23,7 @@
       <div class="flex-1 w-full md:text-center">
         <div class="flex flex-col items-center">
           <h3 class="text-justify  text-accent text-2xl min-h-[4rem] flex items-center justify-center gap-2">
-              <%= icon("code", class: "w-6 h-6 text-accent ") %>
+            <%= icon("code", class: "w-6 h-6 text-accent ") %>
             Développement    
           </h3>
           <p class="mt-4 text-justify md:text-center text-gray-700">
@@ -35,7 +34,7 @@
       <div class="flex-1 w-full md:text-center">
         <div class="flex flex-col items-center">
           <h3 class="text-justify  text-accent text-2xl min-h-[4rem] flex items-center justify-center gap-2">
-              <%= icon("handyman", class: "w-6 h-6  text-accent ") %>
+            <%= icon("handyman", class: "w-6 h-6  text-accent ") %>
             Maintenance
           </h3>
           <p class="mt-4 text-justify md:text-center text-gray-700">
@@ -46,7 +45,7 @@
       <div class="flex-1 w-full md:text-center">
         <div class="flex flex-col items-center">
           <h3 class="text-justify  text-accent text-2xl min-h-[4rem] flex items-center justify-center gap-2">
-              <%= icon("integration", class: "w-6 h-6 text-accent ") %>
+            <%= icon("integration", class: "w-6 h-6 text-accent ") %>
             Intégration
           </h3>
           <p class="mt-4 text-justify md:text-center text-gray-700">
@@ -56,7 +55,7 @@
       <div class="flex-1 w-full md:text-center">
         <div class="flex flex-col items-center">
           <h3 class="text-justify  text-accent text-2xl min-h-[4rem] flex items-center justify-center gap-2">
-              <%= icon("design", class: "w-6 h-6 text-accent ") %>
+            <%= icon("design", class: "w-6 h-6 text-accent ") %>
             UX/UI Design          
           </h3>
           <p class="mt-4 text-justify md:text-center text-gray-700">
@@ -139,167 +138,167 @@
     <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
       <div id="confiance" class="flex-1">
         <div class="bg-white shadow-xl rounded-2xl p-8 flex flex-col border border-gray-100">
-                 <%= icon("quote", class: "w-6 h-6 mb-4 text-left text-accent ") %></i> 
-          <p class="text-gray-700 text-justify leading-relaxed text-sm md:text-base">
-            Philippe Nougaillon propose des solutions pérennes, fiables 
-            et fait primer dans sa vision du développement la simplicité
-            de la solution. Partisan de l'innovation frugale, il 
-            fournit à ses clients des solutions originales, robustes 
-            et parfaitement adaptées. Il a le sens de l'écoute et sait 
-            faire preuve d'une grande pédagogie dans les démarches 
-            agiles.
-          </p>
-          <div class="mt-8 border-t pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <div>
-              <%= link_to "https://www.linkedin.com/in/philippe-eynaud-3a3ab835/", class: "flex items-center gap-1.5 font-medium text-accent " do %>
-                                    <%= icon("linkedin", class: "w-6 h-6 ") %>Philippe EYNAUD
-              <% end %>
-              <p class="text-xs text-gray-500 mt-1">
-                Professeur en sciences de gestion à l'IAE de Paris.
-                <br>
-                Auteur de
-                <%= link_to "'Le management du système d’information dans sa complexité'", 
+          <%= icon("quote", class: "w-6 h-6 mb-4 text-left text-accent ") %></i>
+        <p class="text-gray-700 text-justify leading-relaxed text-sm md:text-base">
+          Philippe Nougaillon propose des solutions pérennes, fiables 
+          et fait primer dans sa vision du développement la simplicité
+          de la solution. Partisan de l'innovation frugale, il 
+          fournit à ses clients des solutions originales, robustes 
+          et parfaitement adaptées. Il a le sens de l'écoute et sait 
+          faire preuve d'une grande pédagogie dans les démarches 
+          agiles.
+        </p>
+        <div class="mt-8 border-t pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+          <div>
+            <%= link_to "https://www.linkedin.com/in/philippe-eynaud-3a3ab835/", class: "flex items-center gap-1.5 font-medium text-accent " do %>
+              <%= icon("linkedin", class: "w-6 h-6 ") %>Philippe EYNAUD
+            <% end %>
+            <p class="text-xs text-gray-500 mt-1">
+              Professeur en sciences de gestion à l'IAE de Paris.
+              <br>
+              Auteur de
+              <%= link_to "'Le management du système d’information dans sa complexité'", 
                           "https://www.amazon.fr/management-syst%C3%A8me-dinformation-dans-complexit%C3%A9/dp/1784055026/ref=sr_1_5?qid=1687595735", 
                           class: "link italic no-underline", target: '_blank' %>. (2018) ISTE Editions.  
-              </p>
-            </div>
-            <%= image_tag "logos/iaelogo.avif", class: "h-10 w-auto opacity-80", alt: "Logo IAE PARIS" %>
+            </p>
           </div>
-        </div>
-      </div>
-      <div id="confiance2" class="flex-1">
-        <div class="bg-white shadow-xl rounded-2xl p-8 flex flex-col border border-gray-100">
-                 <%= icon("quote", class: "w-6 h-6 mb-4 text-left text-accent ") %></i> 
-          <p class="text-gray-700 text-justify leading-relaxed text-sm md:text-base">
-            J’ai eu le plaisir de travailler avec l’équipe ïkku sur le déploiement de l’outil Planning-IAE.
-            Quelle chance! L'équipe ïkku incarne "l'orientation utilisateur" que j'enseigne à mes étudiants ! 
-            À l’écoute, ils traduisent efficacement les besoins utilisateurs en solutions concrètes, dans une logique de co-construction. 
-            Une collaboration fluide et performante que je recommande vivement.
-          </p>
-          <div class="mt-8 border-t pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <div>
-              <%= link_to "https://www.linkedin.com/in/marieevelaporte/",class: "flex items-center gap-1.5 font-medium text-accent " do %>
-                        <%= icon("linkedin", class: "w-6 h-6 ") %> Marie-Eve LAPORTE
-              <% end %>
-              <p class="text-xs text-gray-500 mt-1">
-                Professeure, 'Innovation Management & Future of Healthcare' research chair
-              </p>
-            </div>
-            <%= image_tag "logos/iaelogo.avif", class: "h-10 w-auto opacity-80", alt: "Logo IAE PARIS" %>
-          </div>
+          <%= image_tag "logos/iaelogo.avif", class: "h-10 w-auto opacity-80", alt: "Logo IAE PARIS" %>
         </div>
       </div>
     </div>
-  </section>
-  <section class="p-0 mb-20 ">
-    <div class="text-center  mx-auto mb-20 px-4">
-      <h2 class=" text-4xl lg:text-5xl text-accent mt-20">
-        Notre processus de développement
-      </h2>
-      <p class="mt-6 text-gray-600 text-lg">
-        Nous vous accompagnons à chaque étape, de l’idée au déploiement, 
-        <br>
-        avec une approche centrée sur l'utilisateur.
+    <div id="confiance2" class="flex-1">
+      <div class="bg-white shadow-xl rounded-2xl p-8 flex flex-col border border-gray-100">
+        <%= icon("quote", class: "w-6 h-6 mb-4 text-left text-accent ") %></i>
+      <p class="text-gray-700 text-justify leading-relaxed text-sm md:text-base">
+        J’ai eu le plaisir de travailler avec l’équipe ïkku sur le déploiement de l’outil Planning-IAE.
+        Quelle chance! L'équipe ïkku incarne "l'orientation utilisateur" que j'enseigne à mes étudiants ! 
+        À l’écoute, ils traduisent efficacement les besoins utilisateurs en solutions concrètes, dans une logique de co-construction. 
+        Une collaboration fluide et performante que je recommande vivement.
       </p>
+      <div class="mt-8 border-t pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div>
+          <%= link_to "https://www.linkedin.com/in/marieevelaporte/",class: "flex items-center gap-1.5 font-medium text-accent " do %>
+            <%= icon("linkedin", class: "w-6 h-6 ") %> Marie-Eve LAPORTE
+          <% end %>
+          <p class="text-xs text-gray-500 mt-1">
+            Professeure, 'Innovation Management & Future of Healthcare' research chair
+          </p>
+        </div>
+        <%= image_tag "logos/iaelogo.avif", class: "h-10 w-auto opacity-80", alt: "Logo IAE PARIS" %>
+      </div>
     </div>
-    <div class="relative max-w-5xl mx-auto px-4">
-      <div class="absolute left-4 md:left-1/2 top-0 h-full w-1 bg-gray-200"></div>
-      <div class="relative flex flex-col md:flex-row items-start md:items-center mb-8">
-        <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center font-bold shadow">
-          1
-        </div>
-        <div class="ml-16 md:ml-0 md:w-1/2 md:pr-12">
-          <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition">
-            <div class="flex flex-row items-center gap-4 text-accent text-xl">
-          <%= icon("discover", class: "w-6 h-6 mb-2 text-accent ") %>
-              <h3 class="font-medium text-xl mb-3">Découvrir</h3>
-            </div>
-            <p class="text-gray-600 text-justify">
-              Analyse de votre besoin, de votre environnement et définition d’un MVP adapté à votre métier.
-            </p>
-          </div>
-        </div>
+  </div>
+</div>
+</section>
+<section class="p-0 mb-20 ">
+  <div class="text-center  mx-auto mb-20 px-4">
+    <h2 class=" text-4xl lg:text-5xl text-accent mt-20">
+      Notre processus de développement
+    </h2>
+    <p class="mt-6 text-gray-600 text-lg">
+      Nous vous accompagnons à chaque étape, de l’idée au déploiement, 
+      <br>
+      avec une approche centrée sur l'utilisateur.
+    </p>
+  </div>
+  <div class="relative max-w-5xl mx-auto px-4">
+    <div class="absolute left-4 md:left-1/2 top-0 h-full w-1 bg-gray-200"></div>
+    <div class="relative flex flex-col md:flex-row items-start md:items-center mb-8">
+      <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center font-bold shadow">
+        1
       </div>
-      <div class="relative flex flex-col md:flex-row items-start md:items-center mb-8">
-        <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center font-bold shadow">
-          2
-        </div>
-        <div class="ml-16 md:ml-auto md:w-1/2 md:pl-12">
-          <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition">
-            <div class="flex flex-row items-center gap-4 text-accent text-xl">
-          <%= icon("creation", class: "w-6 h-6 mb-2 text-accent ") %>
-              <h3 class="font-medium text-xl mb-3">MVP</h3>
-            </div>
-            <p class="text-gray-600 text-justify">
-              Création rapide d’une première version fonctionnelle pour valider les bases du projet.
-            </p>
+      <div class="ml-16 md:ml-0 md:w-1/2 md:pr-12">
+        <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition">
+          <div class="flex flex-row items-center gap-4 text-accent text-xl">
+            <%= icon("discover", class: "w-6 h-6 mb-2 text-accent ") %>
+            <h3 class="font-medium text-xl mb-3">Découvrir</h3>
           </div>
-        </div>
-      </div>
-      <div class="relative flex flex-col md:flex-row items-start md:items-center mb-8">
-        <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center font-bold shadow">
-          3
-        </div>
-        <div class="ml-16 md:ml-0 md:w-1/2 md:pr-12">
-          <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition">
-            <div class="flex flex-row items-center gap-4 text-accent text-xl">
-          <%= icon("build", class: "w-6 h-6 mb-2 text-accent ") %>
-              <h3 class="font-medium text-xl mb-3">Construire</h3>
-            </div>
-            <p class="text-gray-600 text-justify">
-              Cycles agiles, tests utilisateurs et amélioration continue pour affiner la solution.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="relative flex flex-col md:flex-row items-start md:items-center mb-8">
-        <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center font-bold shadow">
-          4
-        </div>
-        <div class="ml-16 md:ml-auto md:w-1/2 md:pl-12">
-          <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition">
-            <div class="flex flex-row items-center gap-4 text-accent text-xl">
-          <%= icon("deployer", class: "w-6 h-6 mb-2 text-accent ") %>
-              <h3 class="font-medium text-xl mb-3">Déployer</h3>
-            </div>
-            <p class="text-gray-600 text-justify">
-              Mise en production, formation des équipes et accompagnement au lancement.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="relative flex flex-col md:flex-row items-start md:items-center mb-16">
-        <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center font-bold shadow">
-          5
-        </div>
-        <div class="ml-16 md:ml-0 md:w-1/2 md:pr-12">
-          <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition">
-            <div class="flex flex-row items-center gap-4 text-accent text-xl">
-              <%= icon("evolution", class: "w-6 h-6 mb-2 text-accent ") %>
-              <h3 class="font-medium text-xl mb-3">Maintenir & évoluer</h3>
-            </div>
-            <p class="text-gray-600 text-justify">
-              Support, amélioration continue et adaptation aux nouveaux besoins.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="relative flex flex-col md:flex-row items-start md:items-center">
-        <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center font-bold shadow">
-          6
-        </div>
-        <div class="ml-16 md:ml-auto md:w-1/2 md:pl-12">
-          <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition">
-            <div class="flex flex-row items-center gap-4 text-accent text-xl">
-              <%= icon("add", class: "w-6 h-6 mb-2 text-accent ") %>
-              <h3 class="font-medium text-xl mb-3">Changer d’échelle</h3>
-            </div>
-            <p class="text-gray-600 text-justify">
-              Ajout de fonctionnalités, montée en charge et optimisation des performances.
-            </p>
-          </div>
+          <p class="text-gray-600 text-justify">
+            Analyse de votre besoin, de votre environnement et définition d’un MVP adapté à votre métier.
+          </p>
         </div>
       </div>
     </div>
-  </section>
+    <div class="relative flex flex-col md:flex-row items-start md:items-center mb-8">
+      <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center font-bold shadow">
+        2
+      </div>
+      <div class="ml-16 md:ml-auto md:w-1/2 md:pl-12">
+        <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition">
+          <div class="flex flex-row items-center gap-4 text-accent text-xl">
+            <%= icon("creation", class: "w-6 h-6 mb-2 text-accent ") %>
+            <h3 class="font-medium text-xl mb-3">MVP</h3>
+          </div>
+          <p class="text-gray-600 text-justify">
+            Création rapide d’une première version fonctionnelle pour valider les bases du projet.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="relative flex flex-col md:flex-row items-start md:items-center mb-8">
+      <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center font-bold shadow">
+        3
+      </div>
+      <div class="ml-16 md:ml-0 md:w-1/2 md:pr-12">
+        <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition">
+          <div class="flex flex-row items-center gap-4 text-accent text-xl">
+            <%= icon("build", class: "w-6 h-6 mb-2 text-accent ") %>
+            <h3 class="font-medium text-xl mb-3">Construire</h3>
+          </div>
+          <p class="text-gray-600 text-justify">
+            Cycles agiles, tests utilisateurs et amélioration continue pour affiner la solution.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="relative flex flex-col md:flex-row items-start md:items-center mb-8">
+      <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center font-bold shadow">
+        4
+      </div>
+      <div class="ml-16 md:ml-auto md:w-1/2 md:pl-12">
+        <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition">
+          <div class="flex flex-row items-center gap-4 text-accent text-xl">
+            <%= icon("deployer", class: "w-6 h-6 mb-2 text-accent ") %>
+            <h3 class="font-medium text-xl mb-3">Déployer</h3>
+          </div>
+          <p class="text-gray-600 text-justify">
+            Mise en production, formation des équipes et accompagnement au lancement.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="relative flex flex-col md:flex-row items-start md:items-center mb-16">
+      <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center font-bold shadow">
+        5
+      </div>
+      <div class="ml-16 md:ml-0 md:w-1/2 md:pr-12">
+        <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition">
+          <div class="flex flex-row items-center gap-4 text-accent text-xl">
+            <%= icon("evolution", class: "w-6 h-6 mb-2 text-accent ") %>
+            <h3 class="font-medium text-xl mb-3">Maintenir & évoluer</h3>
+          </div>
+          <p class="text-gray-600 text-justify">
+            Support, amélioration continue et adaptation aux nouveaux besoins.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="relative flex flex-col md:flex-row items-start md:items-center">
+      <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center font-bold shadow">
+        6
+      </div>
+      <div class="ml-16 md:ml-auto md:w-1/2 md:pl-12">
+        <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition">
+          <div class="flex flex-row items-center gap-4 text-accent text-xl">
+            <%= icon("add", class: "w-6 h-6 mb-2 text-accent ") %>
+            <h3 class="font-medium text-xl mb-3">Changer d’échelle</h3>
+          </div>
+          <p class="text-gray-600 text-justify">
+            Ajout de fonctionnalités, montée en charge et optimisation des performances.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 </div>

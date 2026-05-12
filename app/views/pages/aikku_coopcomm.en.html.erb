@@ -121,13 +121,12 @@
     <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
       <% ["Cost reduction", "GDPR compliance", "Field efficiency", "French support"].each do |item| %>
         <li class="flex items-center gap-3 font-bold text-secondary">
-              <%= icon("cercle-check", class: "w-6 h-6 text-[#51c7fd] ") %></i> 
-
-          <%= item %>
-        </li>
-      <% end %>
-    </ul>
-  </div>
+          <%= icon("cercle-check", class: "w-6 h-6 text-[#51c7fd] ") %></i>
+        <%= item %>
+      </li>
+    <% end %>
+  </ul>
+</div>
 </section>
 <div class="footer-wave">
   <svg viewBox="0 0 1200 62" preserveAspectRatio="none">

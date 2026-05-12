@@ -15,18 +15,15 @@
     </ul>
   </details>
 </li>
-
 <%= navbar_item 'services', services_path, 'Our services' %>
 <%= navbar_item 'qui_sommes_nous', qui_sommes_nous_path, 'About us' %>
-
 <li>
   <%= link_to contact_path, 'data-turbo': false, class: "hover:underline hover:underline-offset-8 hover:text-primary  #{'underline underline-offset-8 text-primary ' if params[:action] == 'contact'}" do %>
     <span class="whitespace-nowrap">Contact</span>
   <% end %>
 </li>
-
 <li>
   <%= link_to url_for(request.params.merge(locale: 'fr')), class: 'text-black-50', title: "Switch language / Changer de langue" do %>
-            <%= icon("language", class: "w-6 h-6 ") %> FR
+    <%= icon("language", class: "w-6 h-6 ") %> FR
   <% end %>
 </li>

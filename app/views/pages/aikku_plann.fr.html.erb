@@ -130,12 +130,12 @@
         "Synchronisation des calendriers"
       ].each do |item| %>
         <li class="flex items-center gap-3 font-bold text-secondary">
-         <%= icon("cercle-check", class: "w-6 h-6 text-[#51c7fd] ") %></i> 
-          <%= item %>
-        </li>
-      <% end %>
-    </ul>
-  </div>
+          <%= icon("cercle-check", class: "w-6 h-6 text-[#51c7fd] ") %></i>
+        <%= item %>
+      </li>
+    <% end %>
+  </ul>
+</div>
 </section>
 <section class="px-6 md:px-20 pb-20 pt-10">
   <h2 class="text-accent text-left mb-6 font-medium text-2xl uppercase tracking-wider">
@@ -144,63 +144,63 @@
   <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
     <div id="confiance" class="flex-1">
       <div class="bg-white shadow-xl rounded-2xl p-8 flex flex-col border border-gray-100">
-                 <%= icon("quote", class: "w-6 h-6 mb-4 text-left text-accent ") %></i> 
-        <p class="text-gray-700 text-justify leading-relaxed text-sm md:text-base">
-          Philippe Nougaillon propose des solutions pérennes, fiables 
-          et fait primer dans sa vision du développement la simplicité
-          de la solution. Partisan de l'innovation frugale, il 
-          fournit à ses clients des solutions originales, robustes 
-          et parfaitement adaptées. Il a le sens de l'écoute et sait 
-          faire preuve d'une grande pédagogie dans les démarches 
-          agiles.
-        </p>
-        <div class="mt-8 border-t pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <div>
-            <%= link_to "https://www.linkedin.com/in/philippe-eynaud-3a3ab835/",
+        <%= icon("quote", class: "w-6 h-6 mb-4 text-left text-accent ") %></i>
+      <p class="text-gray-700 text-justify leading-relaxed text-sm md:text-base">
+        Philippe Nougaillon propose des solutions pérennes, fiables 
+        et fait primer dans sa vision du développement la simplicité
+        de la solution. Partisan de l'innovation frugale, il 
+        fournit à ses clients des solutions originales, robustes 
+        et parfaitement adaptées. Il a le sens de l'écoute et sait 
+        faire preuve d'une grande pédagogie dans les démarches 
+        agiles.
+      </p>
+      <div class="mt-8 border-t pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div>
+          <%= link_to "https://www.linkedin.com/in/philippe-eynaud-3a3ab835/",
                class: "flex items-center gap-1.5 font-medium text-accent " do %>
-                      <%= icon("linkedin", class: "w-6 h-6 ") %></i> Philippe EYNAUD
-            <% end %>
-            <p class="text-xs text-gray-500 mt-1">
-              Professeur en sciences de gestion à l'IAE de Paris, Université Paris 1 Panthéon-Sorbonne
-              <br>
-              Auteur de
-              <%= link_to "'Le management du système d’information dans sa complexité'", 
+            <%= icon("linkedin", class: "w-6 h-6 ") %></i> Philippe EYNAUD
+        <% end %>
+        <p class="text-xs text-gray-500 mt-1">
+          Professeur en sciences de gestion à l'IAE de Paris, Université Paris 1 Panthéon-Sorbonne
+          <br>
+          Auteur de
+          <%= link_to "'Le management du système d’information dans sa complexité'", 
                           "https://www.amazon.fr/management-syst%C3%A8me-dinformation-dans-complexit%C3%A9/dp/1784055026/ref=sr_1_5?qid=1687595735", 
                           class: "link italic no-underline", target: '_blank' %>. (2018) ISTE Editions.  
-              <br>
-              Auteur de 
-              <%= link_to "'Dictionnaire d'une autre gestion'", 
+          <br>
+          Auteur de 
+          <%= link_to "'Dictionnaire d'une autre gestion'", 
                       "https://www.editions-eres.com/ouvrage/5545/dictionnaire-dune-autre-gestion", 
                       class: "italic link no-underline", target: '_blank' %>, (2026), érés Editions.  
-            </p>
-          </div>
-          <%= image_tag "logos/iaelogo.avif", class: "h-10 w-auto opacity-80", alt: "Logo IAE PARIS" %>
-        </div>
-      </div>
-    </div>
-    <div id="confiance2" class="flex-1">
-      <div class="bg-white shadow-xl rounded-2xl p-8 flex flex-col border border-gray-100">
-                 <%= icon("quote", class: "w-6 h-6 mb-4 text-left text-accent ") %></i> 
-        <p class="text-gray-700 text-justify leading-relaxed text-sm md:text-base">
-          J’ai eu le plaisir de travailler avec l’équipe Aïkku sur le déploiement de l’outil Planning-IAE.
-          Quelle chance! L'équipe Aïkku incarne "l'orientation utilisateur" que j'enseigne à mes étudiants ! 
-          À l’écoute, ils traduisent efficacement les besoins utilisateurs en solutions concrètes, dans une logique de co-construction. 
-          Une collaboration fluide et performante que je recommande vivement.
         </p>
-        <div class="mt-8 border-t pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <div>
-            <%= link_to "https://www.linkedin.com/in/marieevelaporte/",class: "flex items-center gap-1.5 font-medium text-accent " do %>
-              <%= icon("linkedin", class: "w-6 h-6 ") %> Marie-Eve LAPORTE
-            <% end %>
-            <p class="text-xs text-gray-500 mt-1">
-              Professeure, 'Innovation Management & Future of Healthcare'
-            </p>
-          </div>
-          <%= image_tag "logos/iaelogo.avif", class: "h-10 w-auto opacity-80", alt: "Logo IAE PARIS" %>
-        </div>
       </div>
+      <%= image_tag "logos/iaelogo.avif", class: "h-10 w-auto opacity-80", alt: "Logo IAE PARIS" %>
     </div>
   </div>
+</div>
+<div id="confiance2" class="flex-1">
+  <div class="bg-white shadow-xl rounded-2xl p-8 flex flex-col border border-gray-100">
+    <%= icon("quote", class: "w-6 h-6 mb-4 text-left text-accent ") %></i>
+  <p class="text-gray-700 text-justify leading-relaxed text-sm md:text-base">
+    J’ai eu le plaisir de travailler avec l’équipe Aïkku sur le déploiement de l’outil Planning-IAE.
+    Quelle chance! L'équipe Aïkku incarne "l'orientation utilisateur" que j'enseigne à mes étudiants ! 
+    À l’écoute, ils traduisent efficacement les besoins utilisateurs en solutions concrètes, dans une logique de co-construction. 
+    Une collaboration fluide et performante que je recommande vivement.
+  </p>
+  <div class="mt-8 border-t pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+    <div>
+      <%= link_to "https://www.linkedin.com/in/marieevelaporte/",class: "flex items-center gap-1.5 font-medium text-accent " do %>
+        <%= icon("linkedin", class: "w-6 h-6 ") %> Marie-Eve LAPORTE
+      <% end %>
+      <p class="text-xs text-gray-500 mt-1">
+        Professeure, 'Innovation Management & Future of Healthcare'
+      </p>
+    </div>
+    <%= image_tag "logos/iaelogo.avif", class: "h-10 w-auto opacity-80", alt: "Logo IAE PARIS" %>
+  </div>
+</div>
+</div>
+</div>
 </section>
 <section class="max-w-5xl mx-auto p-6 mb-0 md:mb-20">
   <div id="video" class="items-center flex flex-col reveal delay-2">
