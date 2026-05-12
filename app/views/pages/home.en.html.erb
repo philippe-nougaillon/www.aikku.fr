@@ -4,8 +4,7 @@
   )
 %>
 <div class="relative text-center w-full min-h-[200px] md:min-h-[300px] text-neutral-content p-10 lg:p-30  ">
- 
-      <%= image_tag "background/contact.avif",
+  <%= image_tag "background/contact.avif",
   class: "absolute inset-0 w-full h-full object-cover bg-cover bg-center",
   alt: "background image with two hands shaking",
   fetchpriority: "high",
@@ -167,11 +166,6 @@
   </h2>
   <div class="flex flex-wrap justify-center items-center gap-8 ">
     <div class="w-64 h-64 rounded flex items-center">
-      <%= link_to "https://www.iae-paris.com", target: "_blank" do %>
-        <%= image_tag "logos/iaelogo.avif", class:"mx-auto p-8", alt: 'IAE Paris-Sorbonne logo' %>
-      <% end %>
-    </div>
-    <div class="w-64 h-64 rounded flex items-center">
       <%= link_to "https://www.madmoselle.com", target: "_blank" do %>
         <%= image_tag "logos/madmoselle.avif", class:"mx-auto p-8", alt: 'Mad & Moselle logo' %>
       <% end %>
@@ -179,6 +173,16 @@
     <div class="w-64 h-64 rounded flex items-center">
       <%= link_to "https://www.grohe.com", target: "_blank" do %>
         <%= image_tag "logos/grohe.avif", class:"mx-auto p-8", alt: 'GROHE logo' %>
+      <% end %>
+    </div>
+    <div class="w-64 h-64 rounded flex items-center">
+      <%= link_to "https://www.iae-paris.com", target: "_blank" do %>
+        <%= image_tag "logos/iaelogo.avif", class:"mx-auto p-8", alt: 'IAE Paris-Sorbonne logo' %>
+      <% end %>
+    </div>
+    <div class="w-64 h-64 rounded flex items-center">
+      <%= link_to "https://www.fnaut.fr/", target: "_blank" do %>
+        <%= image_tag "logos/fnaut.avif", class:"mx-auto p-8", alt: 'Logo FNAUT' %>
       <% end %>
     </div>
     <div class="w-64 h-64 rounded flex items-center">

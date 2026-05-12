@@ -1,4 +1,4 @@
-<%# <!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVX1E07V95"></script>
 
 <script>
@@ -14,47 +14,6 @@ gtag('config', 'G-QVX1E07V95', {
 
 // Google Ads
 gtag('config', 'AW-950444581');
-</script> %>
-
-
-
-<script>
-(function() {
-  let gtagLoaded = false;
-
-  function loadGtag() {
-    if (gtagLoaded) return;
-    gtagLoaded = true;
-
-    const script = document.createElement('script');
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-QVX1E07V95';
-    script.async = true;
-    document.head.appendChild(script);
-
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag(){dataLayer.push(arguments);}
-    window.gtag = gtag;
-
-    gtag('js', new Date());
-
-    // Google Analytics 4
-    gtag('config', 'G-QVX1E07V95', {
-      anonymize_ip: true
-    });
-
-    // Google Ads
-    gtag('config', 'AW-950444581');
-  }
-
-  // Charge après première interaction utilisateur
-  window.addEventListener('scroll', loadGtag, { once: true });
-  window.addEventListener('click', loadGtag, { once: true });
-  window.addEventListener('touchstart', loadGtag, { once: true });
-
-  // Fallback sécurité
-  window.addEventListener('load', () => {
-    setTimeout(loadGtag, 3500);
-  });
-})();
 </script>
+
+
