@@ -162,20 +162,18 @@
   }
 
   .reveal {
-    opacity: 0;
-    animation: reveal 0.8s ease-out forwards;
-  }
+  opacity: 0;
+  transform: translateY(24px);
+  will-change: transform, opacity;
+  animation: reveal 0.8s ease-out forwards;
+}
 
-  @keyframes reveal {
-    0% {
-      opacity: 0;
-      transform: translateY(24px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+ @keyframes reveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
 
   .delay-1 {
     animation-delay: 0.2s;
@@ -201,13 +199,14 @@
     margin-bottom: -2px;
   }
 
-  .footer-wave svg {
-    width: 200%;
-    height: 60px;
-    display: block;
-    animation: waveMove 6s ease-in-out infinite;
-    animation-direction: alternate;
-  }
+ .footer-wave svg {
+  width: 200%;
+  height: 60px;
+  display: block;
+  will-change: transform;
+  transform: translateZ(0);
+  animation: waveMove 6s ease-in-out infinite alternate;
+}
 
   .footer-wave path {
     shape-rendering: geometricPrecision;
