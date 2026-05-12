@@ -33,11 +33,15 @@
         92800 Puteaux – France
       </p>
       <div class="flex gap-6 mt-6">
-        <%= mail_to "contact@aikku.eu", class:"hover:scale-110 transition" do %>
-          <%= icon("enveloppe", class: "w-6 h-6 ") %>
+        <%= mail_to "contact@aikku.eu", class: "hover:scale-110 transition", aria: { label: "Envoyer un e-mail à Aikku" } do %>
+          <%= icon("enveloppe", class: "w-6 h-6 text-accent", aria: { hidden: true }) %>
         <% end %>
-        <%= link_to "https://www.linkedin.com/company/aikku-sas", target: "_blank", class:"hover:scale-110 transition" do %>
-          <%= icon("linkedin", class: "w-6 h-6 ") %>
+        <%= link_to "https://www.linkedin.com/company/aikku-sas",
+            target: "_blank",
+            rel: "noopener",
+            class: "hover:scale-110 transition",
+            aria: { label: "Voir la page LinkedIn d’Aikku (nouvel onglet)" } do %>
+          <%= icon("linkedin", class: "w-6 h-6 text-accent", aria: { hidden: true }) %>
         <% end %>
       </div>
     </div>
